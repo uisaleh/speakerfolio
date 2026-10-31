@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Requests | Speakerfolio admin</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+:root { --bg: #f6f5f2; --surface: #ffffff; --ink: #14161a; --muted: #5d6068; --line: rgba(20,22,26,0.12); --brand: #e31837; --dark: #0b0c0e; --chip: #f0efeb; }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+header { background: var(--dark); color: #fff; }
+.bar { max-width: 1180px; margin: 0 auto; padding: 16px max(16px, env(safe-area-inset-left, 0px)); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 19px; letter-spacing: -0.02em; color: #fff; text-decoration: none; }
+.logo span { font-weight: 400; color: rgba(255,255,255,0.7); }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px max(16px, env(safe-area-inset-left, 0px)) 64px; display: flex; flex-direction: column; gap: 20px; }
+h1 { margin: 0; font-size: 28px; letter-spacing: -0.03em; }
+.muted { color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.stat { background: var(--surface); border: 1px solid var(--line); padding: 16px; display: flex; flex-direction: column; gap: 2px; }
+.stat b { font-size: 26px; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 13px; color: var(--muted); }
+.tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.filters button { border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; font-size: 13.5px; font-weight: 700; padding: 8px 14px; cursor: pointer; }
+.filters button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+input[type="search"], input[type="password"] { height: 44px; padding: 0 14px; border: 1px solid var(--line); background: var(--surface); font: inherit; font-size: 14.5px; color: var(--ink); min-width: 0; }
+.btn { height: 44px; padding: 0 18px; border: 0; background: var(--brand); color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.btn.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.3); }
+.list { display: flex; flex-direction: column; gap: 10px; }
+.item { background: var(--surface); border: 1px solid var(--line); padding: 18px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px 20px; }
+.item.is-new { border-left: 4px solid var(--brand); }
+.top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.name { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
+.tag { font-size: 12px; font-weight: 700; padding: 3px 9px; background: var(--chip); }
+.tag.req { background: #ffe3e6; color: #a30f25; }
+.when { font-size: 13px; color: var(--muted); }
+dl { margin: 10px 0 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 14px; font-size: 14px; }
+dt { color: var(--muted); }
+dd { margin: 0; overflow-wrap: anywhere; }
+dd a { color: var(--ink); }
+.side { display: flex; flex-direction: column; gap: 8px; align-items: stretch; min-width: 170px; }
+select { height: 40px; padding: 0 10px; border: 1px solid var(--line); background: var(--surface); font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); }
+.small { height: 38px; font-size: 13.5px; padding: 0 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
+.small.del { color: #a30f25; }
+.empty, .login { background: var(--surface); border: 1px solid var(--line); padding: 32px; text-align: center; display: flex; flex-direction: column; gap: 12px; align-items: center; }
+.login form { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 420px; }
+.login input { flex: 1 1 220px; }
+.err { color: #a30f25; font-weight: 700; font-size: 14px; min-height: 20px; }
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+@media (max-width: 760px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .item { grid-template-columns: minmax(0, 1fr); } .side { min-width: 0; flex-direction: row; flex-wrap: wrap; } .side select { flex: 1 1 160px; } }
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <a class="logo" href="/"><svg aria-hidden="true" width="26" height="24" viewBox="0 0 14 13" shape-rendering="crispEdges"><path fill="#e31837" d="M1 0h12v1h1v7h-1v1H5v1H4v1H3v1H2V9H1V8H0V1h1z"/><path fill="#ffffff" d="M3 4h1.5v2H3zM5.5 2.5H7v5H5.5zM8 3.5h1.5v3H8zM10.5 4.5H12v1h-1.5z"/></svg>Speaker<span>folio</span>&nbsp;admin</a>
+  <div style="display: flex; gap: 8px;"><button class="btn ghost" id="refresh" type="button" hidden>Refresh</button><button class="btn ghost" id="logout" type="button" hidden>Sign out</button></div>
+</div></header>
+
+<main class="wrap">
+  <section class="login" id="login">
+    <h1>Sign in</h1>
+    <p class="muted" style="margin: 0;">Enter the admin password you set in Cloudflare.</p>
+    <form id="login-form"><input type="password" id="pw" autocomplete="current-password" placeholder="Admin password" aria-label="Admin password" required><button class="btn" type="submit">Sign in</button></form>
+    <div class="err" id="login-err" role="alert"></div>
+  </section>
+
+  <section id="panel" hidden style="display: flex; flex-direction: column; gap: 20px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px;"><h1>Requests</h1><span class="muted" id="updated"></span></div>
+    <div class="stats">
+      <div class="stat"><b id="s-new">0</b><span>New, not answered</span></div>
+      <div class="stat"><b id="s-req">0</b><span>Website requests</span></div>
+      <div class="stat"><b id="s-prem">0</b><span>Want Premium</span></div>
+      <div class="stat"><b id="s-q">0</b><span>Questions</span></div>
+    </div>
+    <div class="tools">
+      <div class="filters" role="group" aria-label="Filter">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="New" aria-pressed="false">New</button>
+        <button type="button" data-f="req" aria-pressed="false">Website requests</button>
+        <button type="button" data-f="q" aria-pressed="false">Questions</button>
+      </div>
+      <input type="search" id="search" placeholder="Search name, email or LinkedIn" aria-label="Search">
+    </div>
+    <div class="err" id="panel-err" role="alert"></div>
+    <div class="list" id="list"></div>
+  </section>
+</main>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var KEY = 'sf_admin_pw', items = [], statuses = ['New', 'Contacted', 'Building', 'Live', 'Not a fit'], filter = 'all';
+  function pw() { try { return sessionStorage.getItem(KEY) || ''; } catch (e) { return window.__pw || ''; } }
+  function setPw(v) { try { sessionStorage.setItem(KEY, v); } catch (e) { window.__pw = v; } }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function link(v) {
+    if (!v || v === '-') return esc(v || '-');
+    if (/^[^\s@]+@[^\s@]+$/.test(v)) return '<a href="mailto:' + esc(v) + '">' + esc(v) + '</a>';
+    var u = /^https?:\/\//i.test(v) ? v : 'https://' + v;
+    if (/^(https?:\/\/)?[\w.-]+\.[a-z]{2,}(\/\S*)?$/i.test(v)) return '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(v) + '</a>';
+    return esc(v);
+  }
+  function when(iso) {
+    var d = new Date(iso), diff = (Date.now() - d.getTime()) / 60000;
+    var rel = diff < 60 ? Math.max(1, Math.round(diff)) + ' min ago' : diff < 1440 ? Math.round(diff / 60) + ' h ago' : Math.round(diff / 1440) + ' days ago';
+    return d.toLocaleString(undefined, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) + ' · ' + rel;
+  }
+  function api(method, body) {
+    return fetch('/api/submissions', { method: method, headers: { 'Authorization': 'Bearer ' + pw(), 'Content-Type': 'application/json' }, body: body ? JSON.stringify(body) : undefined })
+      .then(function (r) { return r.json().then(function (j) { if (!r.ok) { var e = new Error(j.error || 'Something went wrong.'); e.status = r.status; throw e; } return j; }); });
+  }
+  function show(signedIn) { $('login').hidden = signedIn; $('panel').hidden = !signedIn; $('refresh').hidden = !signedIn; $('logout').hidden = !signedIn; }
+  function render() {
+    var q = $('search').value.trim().toLowerCase();
+    $('s-new').textContent = items.filter(function (i) { return i.status === 'New'; }).length;
+    $('s-req').textContent = items.filter(function (i) { return i.kind !== 'Question'; }).length;
+    $('s-prem').textContent = items.filter(function (i) { return i.fields && i.fields.Plan === 'Premium'; }).length;
+    $('s-q').textContent = items.filter(function (i) { return i.kind === 'Question'; }).length;
+    var shown = items.filter(function (i) {
+      if (filter === 'New' && i.status !== 'New') return false;
+      if (filter === 'req' && i.kind === 'Question') return false;
+      if (filter === 'q' && i.kind !== 'Question') return false;
+      if (q && JSON.stringify(i.fields || {}).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+    if (!shown.length) {
+      $('list').innerHTML = '<div class="empty"><b>' + (items.length ? 'Nothing matches this filter.' : 'No requests yet.') + '</b><span class="muted">' + (items.length ? 'Try All, or clear the search.' : 'When someone sends the form on your site, it shows up here and in Telegram.') + '</span></div>';
+      return;
+    }
+    $('list').innerHTML = shown.map(function (i) {
+      var f = i.fields || {};
+      var rows = Object.keys(f).filter(function (k) { return k !== 'Name'; }).map(function (k) { return '<dt>' + esc(k) + '</dt><dd>' + link(f[k]) + '</dd>'; }).join('');
+      if (i.country) rows += '<dt>Country</dt><dd>' + esc(i.country) + '</dd>';
+      var opts = statuses.map(function (s) { return '<option' + (s === i.status ? ' selected' : '') + '>' + esc(s) + '</option>'; }).join('');
+      return '<article class="item' + (i.status === 'New' ? ' is-new' : '') + '"><div><div class="top"><span class="name">' + esc(f.Name || 'No name') + '</span>'
+        + '<span class="tag' + (i.kind === 'Question' ? '' : ' req') + '">' + esc(i.kind) + '</span><span class="when">' + esc(when(i.createdAt)) + '</span></div><dl>' + rows + '</dl></div>'
+        + '<div class="side"><label class="muted" style="font-size: 12.5px; font-weight: 700;" for="st-' + esc(i.id) + '">Status</label><select id="st-' + esc(i.id) + '" data-key="' + esc(i.key) + '">' + opts + '</select>'
+        + (f.Email ? '<a class="small" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none;" href="mailto:' + esc(f.Email) + '?subject=' + encodeURIComponent(i.kind === 'Question' ? 'Re: your question to Speakerfolio' : 'Your free speaker website') + '">Reply by email</a>' : '')
+        + '<button type="button" class="small del" data-del="' + esc(i.key) + '">Delete</button></div></article>';
+    }).join('');
+  }
+  function load() {
+    $('panel-err').textContent = '';
+    return api('GET').then(function (j) { items = j.items || []; statuses = j.statuses || statuses; show(true); render(); $('updated').textContent = 'Updated ' + new Date().toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' }); })
+      .catch(function (e) { if (e.status === 401) { show(false); $('login-err').textContent = pw() ? 'Wrong password. Try again.' : ''; } else { show(true); $('panel-err').textContent = e.message; } });
+  }
+  $('login-form').addEventListener('submit', function (ev) { ev.preventDefault(); setPw($('pw').value); load(); });
+  $('logout').addEventListener('click', function () { setPw(''); items = []; show(false); $('pw').value = ''; });
+  $('refresh').addEventListener('click', load);
+  $('search').addEventListener('input', render);
+  document.querySelectorAll('.filters button').forEach(function (b) { b.addEventListener('click', function () { filter = b.getAttribute('data-f'); document.querySelectorAll('.filters button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); render(); }); });
+  $('list').addEventListener('change', function (ev) {
+    var s = ev.target; if (!s.matches('select[data-key]')) return;
+    api('POST', { key: s.getAttribute('data-key'), status: s.value }).then(function (j) { items = items.map(function (i) { return i.key === j.item.key ? j.item : i; }); render(); }).catch(function (e) { $('panel-err').textContent = e.message; });
+  });
+  var pendingDelete = '';
+  $('list').addEventListener('click', function (ev) {
+    var b = ev.target.closest('[data-del]'); if (!b) return;
+    var key = b.getAttribute('data-del');
+    if (pendingDelete !== key) { pendingDelete = key; b.textContent = 'Click again to delete'; return; }
+    api('POST', { key: key, delete: true }).then(function () { items = items.filter(function (i) { return i.key !== key; }); pendingDelete = ''; render(); }).catch(function (e) { $('panel-err').textContent = e.message; });
+  });
+  setInterval(function () { if (!$('panel').hidden && document.visibilityState === 'visible') load(); }, 60000);
+  if (pw()) load(); else show(false);
+})();
+</script>
+</body>
+</html>

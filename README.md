@@ -20,21 +20,19 @@ Free and Premium portfolio websites for public speakers. This repository is the 
 
 Every push to `main` goes live in about a minute.
 
-## Receiving form submissions
+## Requests, admin and Telegram alerts
 
-Website requests and questions from the landing page are sent to the address set in `assets/js/site.js`:
+Form submissions go to `/api/submit` (`functions/api/submit.js`). Each one is saved in Cloudflare KV and sent to Telegram.
+See them all at **`/admin/`** (password protected).
 
-```js
-window.SF_CONFIG = {
-  FORM_ENDPOINT: '',                      // paste your Formspree form address here
-  CONTACT_EMAIL: 'projectui.saleh@gmail.com'
-};
-```
+Set up once in Cloudflare (Workers & Pages > speakerfolio > Settings):
 
-1. Create a free form at formspree.io and copy its address (it looks like `https://formspree.io/f/abcdwxyz`).
-2. Paste it into `FORM_ENDPOINT` and push.
+1. **Storage:** Storage & Databases > KV > Create a namespace called `speakerfolio-submissions`. Then in the Pages project: Settings > Bindings > Add > KV namespace, variable name `SUBMISSIONS`, choose that namespace.
+2. **Admin password:** Settings > Variables and Secrets > Add, type Secret, name `ADMIN_PASSWORD`, value your password.
+3. **Telegram:** in Telegram, message @BotFather, send `/newbot`, copy the token. Add a Secret `TELEGRAM_BOT_TOKEN` with it. Send any message to your new bot, then open `https://api.telegram.org/bot<TOKEN>/getUpdates` and copy `chat.id`. Add a variable `TELEGRAM_CHAT_ID` with it.
+4. **Redeploy:** Deployments > latest > Retry deployment, so the settings apply.
 
-Until `FORM_ENDPOINT` is set, the forms open the visitor's email app with the details filled in, addressed to `CONTACT_EMAIL`.
+If the function fails, the form falls back to opening the visitor's email app addressed to `CONTACT_EMAIL` in `assets/js/site.js`.
 
 ## Notes
 
