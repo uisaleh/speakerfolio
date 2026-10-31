@@ -36,7 +36,7 @@
 <section id="tp-home" style="position: relative; background: #111111; color: #ffffff; overflow: hidden;">
 <div style="position: absolute; inset: 0; height: 100%; z-index: 0;"><img src="/emilyadams/img/emily-hero-wide.jpg" alt="Emily Adams on stage with a microphone in front of a blue curtain" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 62% 20%; ">
 <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(17,17,17,0.94) 0%, rgba(17,17,17,0.72) 38%, rgba(17,17,17,0.05) 70%, rgba(17,17,17,0.55) 100%);"></div></div>
-<div style="max-width: 1180px; margin: 0 auto; padding: 0 56px; box-sizing: border-box; "><div style="position: relative; z-index: 1; min-height: 580px; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 32px; padding: 44px 0 72px;">
+<div style="max-width: 1180px; margin: 0 auto; padding: 0 56px; box-sizing: border-box; "><div style="position: relative; z-index: 1; min-height: 580px; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 32px; padding: 104px 0 72px;">
 <div style="flex: 0 1 660px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
 <span style="display: inline-flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.85);"><span style="width: 22px; height: 2px; background: currentColor;"></span>Managing Partner · Board Member · Speaker</span>
 <span style="display: flex; flex-direction: column;"><span style="font-family: 'Anton', 'Archivo', Impact, sans-serif; font-size: 80px; line-height: 0.95; text-transform: uppercase;">Find what's broken.</span><span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 68px; line-height: 1; color: #c9d1ff;">Build what's missing.</span></span>
@@ -302,7 +302,7 @@ class Component extends DCLogic {
     L.kHeroImgPos = n ? 'relative' : 'absolute'; L.kHeroImgH = n ? Math.round(w * 0.78) + 'px' : '100%';
     L.kHeroFocus = n ? '64% 20%' : '62% 20%';
     L.kHeroShade = n ? 'linear-gradient(180deg, rgba(17,17,17,0) 55%, #111111 100%)' : 'linear-gradient(90deg, rgba(17,17,17,0.94) 0%, rgba(17,17,17,0.72) 38%, rgba(17,17,17,0.05) 70%, rgba(17,17,17,0.55) 100%)';
-    L.kHeroMin = n ? 0 : (m ? 540 : 580); L.kHeroAlign = n ? 'stretch' : 'flex-start'; L.kHeroPad = n ? '8px' : (m ? '36px' : '44px'); L.kHero2 = n ? L.kHero2 : Math.min(68, L.kHero2); L.kHero = n ? L.kHero : Math.min(90, L.kHero);
+    L.kHeroMin = n ? 0 : (m ? 540 : 580); L.kHeroAlign = n ? 'stretch' : 'flex-start'; L.kHeroPad = n ? '8px' : (m ? '72px' : '104px'); L.kHero2 = n ? L.kHero2 : Math.min(68, L.kHero2); L.kHero = n ? L.kHero : Math.min(90, L.kHero);
     L.kStatW = n ? '100%' : (m ? '180px' : '220px'); L.kStatCols = n ? 'repeat(3, minmax(0, 1fr))' : 'minmax(0, 1fr)';
     L.kSplit = n ? 'minmax(0, 1fr)' : 'repeat(2, minmax(0, 1fr))'; L.kGap = n ? 28 : (m ? 40 : 64);
     L.kTalkCols = n ? 'minmax(0, 1fr)' : (m ? '70px minmax(0, 1fr) minmax(0, 1.1fr)' : '110px minmax(0, 1fr) minmax(0, 1.1fr)');
