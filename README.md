@@ -32,7 +32,7 @@ Set up once in Cloudflare (Workers & Pages > speakerfolio > Settings):
 3. **Telegram:** in Telegram, message @BotFather, send `/newbot`, copy the token. Add a Secret `TELEGRAM_BOT_TOKEN` with it. Send any message to your new bot, then open `https://api.telegram.org/bot<TOKEN>/getUpdates` and copy `chat.id`. Add a variable `TELEGRAM_CHAT_ID` with it.
 4. **Redeploy:** Deployments > latest > Retry deployment, so the settings apply.
 
-If the function fails, the form falls back to opening the visitor's email app addressed to `CONTACT_EMAIL` in `assets/js/site.js`.
+The form script is `assets/js/form-v2.js`. It never opens an email app; if a send fails it retries twice.
 
 ## Notes
 
