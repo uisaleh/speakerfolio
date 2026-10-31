@@ -38,4 +38,11 @@ The form script is `assets/js/form-v2.js`. It never opens an email app; if a sen
 
 - Pages are rendered by a small script (`assets/js/dc-mini.js`) with `morphdom` (MIT licence). The landing and terms pages also contain pre-rendered HTML, so search engines and AI tools can read them without running scripts.
 - Template thumbnails live in `assets/thumbs/`, photos in `assets/img/`.
-- Client sites can be added as folders (for example `/rina/index.html`) and connected as `rina.speakerfolio.com` under Custom domains in Cloudflare Pages.
+## Client sites
+
+Each client site lives in its own folder, for example `/emilyadams/index.html` with its photos in `/emilyadams/img/`.
+`functions/_middleware.js` serves that folder at `emilyadams.speakerfolio.com`. To put a new one live: add the folder, push, then in Cloudflare Pages go to Custom domains > Set up a custom domain and enter `<name>.speakerfolio.com`.
+
+| Client | Address | Folder |
+| --- | --- | --- |
+| Emily Adams | emilyadams.speakerfolio.com | `/emilyadams/` |
