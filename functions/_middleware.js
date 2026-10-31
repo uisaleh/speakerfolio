@@ -3,6 +3,9 @@
 // The main domain, www and *.pages.dev addresses are served as usual.
 
 const SKIP = new Set(['www']);
+// Client sites taken down at the client's request: answer 410 Gone so search engines drop them quickly.
+const REMOVED = new Set(['emilyadams']);
+const GONE_PAGE = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Page removed</title><style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0b0c0e;color:#fff;font-family:system-ui,sans-serif;padding:24px;box-sizing:border-box;text-align:center}</style></head><body><p>This page has been removed.</p></body></html>';
 
 export async function onRequest(context) {
   const { request, env, next } = context;
@@ -16,6 +19,9 @@ export async function onRequest(context) {
 
   const sub = labels[0].replace(/[^a-z0-9-]/g, '');
   if (!sub) return next();
+  if (REMOVED.has(sub)) {
+    return new Response(GONE_PAGE, { status: 410, headers: { 'Content-Type': 'text/html; charset=utf-8', 'X-Robots-Tag': 'noindex', 'Cache-Control': 'no-store' } });
+  }
 
   // Files the client site links to with its own folder prefix, or shared /assets, work as they are.
   if (url.pathname.startsWith('/' + sub + '/') || url.pathname.startsWith('/assets/') || /^\/(favicon|apple-touch-icon)/.test(url.pathname)) {

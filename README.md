@@ -45,4 +45,4 @@ Each client site lives in its own folder, for example `/emilyadams/index.html` w
 
 | Client | Address | Folder |
 | --- | --- | --- |
-| Emily Adams | emilyadams.speakerfolio.com | `/emilyadams/` |
+| Emily Adams | removed at the client's request (subdomain returns 410 Gone) | none |
