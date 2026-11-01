@@ -6,10 +6,18 @@ Free and Premium portfolio websites for public speakers. This repository is the 
 
 | Path | What it is |
 | --- | --- |
-| `/` (`index.html`) | Landing page: how it works, templates, pricing, tips, FAQ, request form |
+| `/` | Home: overview of how it works, templates, pricing, articles, FAQ and the request form |
+| `/templates/` | The 6 free templates with live previews |
+| `/pricing/` | Free, Premium and social media design, plus pricing questions |
+| `/articles/` | Articles for speakers; each article has its own page at `/articles/<slug>/` |
+| `/faq/` | All questions and answers (FAQPage structured data) |
+| `/contact/` | Request a free website or ask a question |
 | `/terms.html` | Terms of service and privacy policy |
-| `/templates/<name>.html` | Live demos of the 6 templates (headliner, ignite, coach, trainer, studio, spotlight). Not indexed by search engines. |
-| `/404.html` | Page shown for broken links |
+| `/templates/<name>.html` | Template previews used inside the site (not indexed) |
+
+Every page has its own title, description, canonical link, Open Graph image, JSON-LD and pre-rendered HTML,
+so search engines and AI tools can read it without running scripts. `sitemap.xml`, `robots.txt` and `llms.txt`
+are at the root. Google Analytics (G-FW50KBR0Y7) runs on all public pages.
 
 ## Cloudflare Pages settings
 

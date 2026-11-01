@@ -1,3 +1,12 @@
 User-agent: *
 Allow: /
-Disallow: /templates/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /templates/headliner.html
+Disallow: /templates/ignite.html
+Disallow: /templates/coach.html
+Disallow: /templates/trainer.html
+Disallow: /templates/studio.html
+Disallow: /templates/spotlight.html
+
+Sitemap: https://speakerfolio.com/sitemap.xml

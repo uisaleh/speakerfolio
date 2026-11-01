@@ -1,0 +1,33 @@
+# Speakerfolio
+
+> Speakerfolio builds free one-page websites for public speakers, trainers and coaches. Sites go live on yourname.speakerfolio.com in about two working days, after the speaker approves a private preview. Premium moves the site to the speaker's own domain with hosting included.
+
+## Pages
+- [Home](https://speakerfolio.com/): what Speakerfolio is and how it works
+- [Templates](https://speakerfolio.com/templates/): six free speaker website templates (Headliner, Ignite, Coach, Trainer, Studio, Spotlight)
+- [Pricing](https://speakerfolio.com/pricing/): Free plan; Premium $500 a year (launch offer $100) on your own domain with hosting included; social media design $40 a month
+- [Articles](https://speakerfolio.com/articles/): short guides for speakers
+- [FAQ](https://speakerfolio.com/faq/)
+- [Contact](https://speakerfolio.com/contact/): request a free website or ask a question
+- [Terms and privacy](https://speakerfolio.com/terms.html)
+
+## Articles
+- [What every speaker website needs](https://speakerfolio.com/articles/what-every-speaker-website-needs/): Event planners decide in a few minutes. Here is what they look for, in the order they look for it.
+- [How to write a speaker bio planners can actually use](https://speakerfolio.com/articles/how-to-write-a-speaker-bio-planners-can-actually-use/): Planners paste your bio into programmes, emails and introductions. Write it so they never have to edit it.
+- [Make a two-minute speaker reel from footage you already have](https://speakerfolio.com/articles/make-a-two-minute-speaker-reel-from-footage-you-already-have/): You do not need a film crew. Event recordings, phone clips and clear audio will do.
+- [Ask for testimonials the right way, right after the event](https://speakerfolio.com/articles/ask-for-testimonials-the-right-way-right-after-the-event/): The best quotes come within 48 hours of your talk. Here is a simple way to get them.
+
+## FAQ
+- **Is the free website really free?** Yes. No card and no trial period. Your one-page site at yourname.speakerfolio.com stays free for as long as you use it. The only condition is a small designer credit in the footer.
+- **What do I need to send?** Your name, email and LinkedIn profile. A YouTube talk helps but is optional. We write your bio and talks from your profile and use your LinkedIn photo unless you send a better one.
+- **How long until my site is live?** We email you a private preview within two working days. Once you approve it, your site goes live the same day.
+- **What is the difference between Free and Premium?** Free is a one-page site from one of our six templates on a speakerfolio.com address. Premium is a custom design on your own domain with as many pages as you need, full admin access, no credit, and your first month of social media posts designed for you.
+- **Do I need my own domain for Premium?** Yes, and it is registered in your name so it always stays yours. Domains usually cost $10 to $20 a year from a registrar. If you do not have one yet, we help you choose and set it up.
+- **Is hosting included with Premium?** Yes. Your Premium site runs on our servers at no extra cost, with an SSL certificate, daily backups and updates handled for you. Hosting like this usually costs $100 to $300 a year with other providers. You only pay for the domain itself.
+- **How does social media design work?** Each month we design 20 posts in your website's colours and fonts: talk announcements, audience quotes, event posts and tip carousels, with captions. It is $40 a month on either plan, the first month is included with Premium, and you can stop any month.
+- **Who owns my content?** You do. Your bio, photos, videos and testimonials stay yours, and you can ask for a copy at any time.
+- **Can I start free and upgrade later?** Yes, at any time. When you move to Premium, your speakerfolio.com address redirects to your new domain, so every link you have shared keeps working.
+
+## Contact
+- Email: projectui.saleh@gmail.com
+- Based in Sylhet, Bangladesh; works with speakers worldwide
