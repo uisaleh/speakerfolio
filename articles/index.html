@@ -10,7 +10,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#0b0c0e">
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FW50KBR0Y7"></script>
+<script>window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-FW50KBR0Y7';document.head.appendChild(s);},1200);});</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -18,7 +18,6 @@
 
   gtag('config', 'G-FW50KBR0Y7');
 </script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="canonical" href="https://speakerfolio.com/articles/">
 <meta property="og:site_name" content="Speakerfolio">
 <meta property="og:title" content="Articles for speakers: websites, bios, video and testimonials | Speakerfolio">
@@ -32,8 +31,9 @@
 <meta name="robots" content="index, follow, max-image-preview:large">
 <style>.art-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.art-grid > a:first-child{grid-column:1 / -1}.art-card:hover h2{text-decoration:underline;text-underline-offset:4px}@media (max-width: 900px){.art-grid{grid-template-columns:minmax(0,1fr)}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://speakerfolio.com/#org", "name": "Speakerfolio", "url": "https://speakerfolio.com/", "logo": "https://speakerfolio.com/apple-touch-icon.png", "email": "projectui.saleh@gmail.com", "description": "Speakerfolio builds free one-page websites for public speakers, trainers and coaches. Premium moves the site to your own domain with hosting included.", "founder": {"@type": "Person", "name": "Saleh"}, "areaServed": "Worldwide", "address": {"@type": "PostalAddress", "addressLocality": "Sylhet", "addressCountry": "BD"}}, {"@type": "WebSite", "@id": "https://speakerfolio.com/#site", "url": "https://speakerfolio.com/", "name": "Speakerfolio", "publisher": {"@id": "https://speakerfolio.com/#org"}, "inLanguage": "en"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://speakerfolio.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles", "item": "https://speakerfolio.com/articles/"}]}, {"@type": "Blog", "name": "Speakerfolio articles for speakers", "url": "https://speakerfolio.com/articles/", "publisher": {"@id": "https://speakerfolio.com/#org"}, "blogPost": [{"@type": "BlogPosting", "headline": "What every speaker website needs", "url": "https://speakerfolio.com/articles/what-every-speaker-website-needs/"}, {"@type": "BlogPosting", "headline": "How to write a speaker bio planners can actually use", "url": "https://speakerfolio.com/articles/how-to-write-a-speaker-bio-planners-can-actually-use/"}, {"@type": "BlogPosting", "headline": "Make a two-minute speaker reel from footage you already have", "url": "https://speakerfolio.com/articles/make-a-two-minute-speaker-reel-from-footage-you-already-have/"}, {"@type": "BlogPosting", "headline": "Ask for testimonials the right way, right after the event", "url": "https://speakerfolio.com/articles/ask-for-testimonials-the-right-way-right-after-the-event/"}]}]}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:wght@400;600&amp;display=swap">
+<link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-600-normal.woff2) format('woff2')}@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-700-normal.woff2) format('woff2')}@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-600-normal.woff2) format('woff2')}</style>
 <style>
 body{margin:0;background:#ffffff}
 a{color:#14161a}a:hover{color:#e31837}
@@ -406,7 +406,7 @@ class Component extends DCLogic {
       startFreeAfter: function () { start('free'); },
       askQ: function () { try { window.sessionStorage.setItem('sf_start', JSON.stringify({ tab: 'ask', done: '' })); } catch (e) {} self.setState({ tab: 'ask', done: '', err: {} }); goTo('start', 80); },
 
-      heroT: TPLS[st.hero].t, heroThumbD: '/assets/thumbs/' + TPLS[st.hero].slug + '-desktop.jpg', heroThumbM: '/assets/thumbs/' + TPLS[st.hero].slug + '-phone.jpg',
+      heroT: TPLS[st.hero].t, heroThumbD: '/assets/thumbs/' + TPLS[st.hero].slug + '-desktop.webp', heroThumbM: '/assets/thumbs/' + TPLS[st.hero].slug + '-phone.webp',
       heroAltD: 'The ' + TPLS[st.hero].name + ' template on a laptop', heroAltM: 'The ' + TPLS[st.hero].name + ' template on a phone',
       heroChips: TPLS.map(function (x, i) {
         var on = i === st.hero;
@@ -415,7 +415,7 @@ class Component extends DCLogic {
       }),
 
       tpls: TPLS.map(function (x, i) {
-        return { name: x.name, brief: x.brief, t: x.t, thumbD: '/assets/thumbs/' + x.slug + '-desktop.jpg', thumbM: '/assets/thumbs/' + x.slug + '-phone.jpg',
+        return { name: x.name, brief: x.brief, t: x.t, thumbD: '/assets/thumbs/' + x.slug + '-desktop.webp', thumbM: '/assets/thumbs/' + x.slug + '-phone.webp',
           altD: 'The ' + x.name + ' template on a laptop', altM: 'The ' + x.name + ' template on a phone', numLabel: 'Template 0' + (i + 1), pvLabel: 'Preview the ' + x.name + ' template',
           goPreview: function () { openPv(i); }, goUse: function () { useTpl(i); } };
       }),
@@ -524,6 +524,6 @@ class Component extends DCLogic {
 <script src="/assets/js/morphdom.min.js"></script>
 <script src="/assets/js/dc-mini.js"></script>
 <script src="/assets/js/form-v2.js"></script>
-<script>window.SF_APP = DCMini.mount(document.getElementById('app'), document.getElementById('dc-tpl').innerHTML, document.getElementById('dc-script').textContent, {});</script>
+<script>(function(){var done=false;function sfBoot(){if(done){return;}done=true;['pointerdown','keydown','touchstart','scroll','mousemove','focusin'].forEach(function(e){window.removeEventListener(e,sfBoot);});window.SF_APP = DCMini.mount(document.getElementById('app'), document.getElementById('dc-tpl').innerHTML, document.getElementById('dc-script').textContent, {});}['pointerdown','keydown','touchstart','scroll','mousemove','focusin'].forEach(function(e){window.addEventListener(e,sfBoot,{passive:true});});if(window.location.hash||window.sessionStorage&&(function(){try{return window.sessionStorage.getItem('sf_start');}catch(e){return null;}})()){sfBoot();}else{setTimeout(sfBoot,7000);}})();</script>
 </body>
 </html>

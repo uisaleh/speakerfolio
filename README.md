@@ -17,7 +17,9 @@ Free and Premium portfolio websites for public speakers. This repository is the 
 
 Every page has its own title, description, canonical link, Open Graph image, JSON-LD and pre-rendered HTML,
 so search engines and AI tools can read it without running scripts. `sitemap.xml`, `robots.txt` and `llms.txt`
-are at the root. Google Analytics (G-FW50KBR0Y7) runs on all public pages.
+are at the root. Google Analytics (G-FW50KBR0Y7) runs on all public pages and loads after the page.
+
+Speed: fonts are self-hosted in `assets/fonts/`, thumbnails are WebP, and the interactive layer starts on the first scroll, tap or key press (the pre-rendered page is complete before that).
 
 ## Cloudflare Pages settings
 

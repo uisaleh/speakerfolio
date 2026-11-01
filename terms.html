@@ -5,14 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Terms and privacy | Speakerfolio</title>
 <link rel="canonical" href="https://speakerfolio.com/terms.html">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <meta name="description" content="Terms of service and privacy policy for Speakerfolio free and Premium speaker websites.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#0b0c0e">
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FW50KBR0Y7"></script>
+<script>window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-FW50KBR0Y7';document.head.appendChild(s);},1200);});</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -20,8 +19,9 @@
 
   gtag('config', 'G-FW50KBR0Y7');
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap">
+<link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-600-normal.woff2) format('woff2')}@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-700-normal.woff2) format('woff2')}@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-600-normal.woff2) format('woff2')}</style>
 <style>
 body{margin:0;background:#ffffff}
 a{color:#14161a}a:hover{color:#e31837}
@@ -332,6 +332,6 @@ class Component extends DCLogic {
 <script src="/assets/js/morphdom.min.js"></script>
 <script src="/assets/js/dc-mini.js"></script>
 <script src="/assets/js/form-v2.js"></script>
-<script>window.SF_APP = DCMini.mount(document.getElementById('app'), document.getElementById('dc-tpl').innerHTML, document.getElementById('dc-script').textContent, {});</script>
+<script>(function(){var done=false;function sfBoot(){if(done){return;}done=true;['pointerdown','keydown','touchstart','scroll','mousemove','focusin'].forEach(function(e){window.removeEventListener(e,sfBoot);});window.SF_APP = DCMini.mount(document.getElementById('app'), document.getElementById('dc-tpl').innerHTML, document.getElementById('dc-script').textContent, {});}['pointerdown','keydown','touchstart','scroll','mousemove','focusin'].forEach(function(e){window.addEventListener(e,sfBoot,{passive:true});});if(window.location.hash||window.sessionStorage&&(function(){try{return window.sessionStorage.getItem('sf_start');}catch(e){return null;}})()){sfBoot();}else{setTimeout(sfBoot,7000);}})();</script>
 </body>
 </html>
