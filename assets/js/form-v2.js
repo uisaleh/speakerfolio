@@ -12,6 +12,7 @@ window.SF_CONFIG = {
 window.sfSend = function (kind, data) {
   var cfg = window.SF_CONFIG || {};
   var body = JSON.stringify(Object.assign({ Type: kind }, data));
+  try { if (window.gtag) { window.gtag('event', 'generate_lead', { form_type: kind === 'Question' ? 'question' : 'website_request', plan: data.Plan || '' }); } } catch (e) {}
   var attempt = function (n) {
     try {
       fetch(cfg.SUBMIT_URL, {
