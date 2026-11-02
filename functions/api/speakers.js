@@ -4,6 +4,7 @@
 //   GET  ?slug=<slug>         admin: one full record + a preview link
 //   POST { action: 'save', speaker, oldSlug?, photo?: 'data:image/webp;base64,...', removePhoto? }   admin
 //   POST { action: 'delete', slug }                                                                    admin
+import { SEEDS } from '../_lib/seed.js';
 import { json, authorised, getIndex, getSpeaker, writeIndex, cleanSpeaker, summary, photoUrl, previewToken, TOPICS, FORMATS } from '../_lib/speakers.js';
 
 export async function onRequestGet({ request, env }) {
@@ -21,8 +22,27 @@ export async function onRequestGet({ request, env }) {
     if (!s) return json({ ok: false, error: 'Speaker not found.' }, 404);
     return json({ ok: true, speaker: s, photo: photoUrl(s), preview: '/speakers/' + s.slug + '/?preview=' + (await previewToken(env, s.slug)) });
   }
+  await addSeeds(env);
   const list = (await getIndex(env)).map((s) => Object.assign({}, s, { photo: photoUrl(s) }));
   return json({ ok: true, speakers: list, topics: TOPICS, formats: FORMATS });
+}
+
+async function addSeeds(env) {
+  const kv = env.SUBMISSIONS;
+  let index = null;
+  for (const d of SEEDS) {
+    const slug = d.slug;
+    if (await kv.get('seed-done:' + slug)) continue;
+    await kv.put('seed-done:' + slug, '1');
+    if (await kv.get('spk:' + slug)) continue;
+    const res = cleanSpeaker(d, null);
+    if (res.error) continue;
+    await kv.put('spk:' + slug, JSON.stringify(res.speaker));
+    index = index || (await getIndex(env));
+    index = index.filter((x) => x.slug !== slug);
+    index.push(summary(res.speaker));
+  }
+  if (index) await writeIndex(env, index);
 }
 
 function decodePhoto(dataUrl) {

@@ -133,7 +133,7 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
     <form class="ed" id="sp-form" hidden novalidate>
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;"><h1 id="ed-title">Add speaker</h1><button type="button" class="small" id="ed-back">Back to list</button></div>
       <fieldset><legend>Basics</legend>
-        <div class="photo"><div class="sp-av" id="ed-photo">?</div><div style="display: flex; flex-direction: column; gap: 8px;"><label style="font-weight: 700;">Photo <small>Square works best. We crop it to a square and make it small and fast.</small><input type="file" id="ed-file" accept="image/*"></label><button type="button" class="small" id="ed-rmphoto" hidden>Remove photo</button></div></div>
+        <div class="photo"><div class="sp-av" id="ed-photo">?</div><div id="ed-drop" tabindex="0" style="flex: 0 1 220px; align-self: stretch; display: flex; align-items: center; justify-content: center; text-align: center; padding: 10px; border: 2px dashed rgba(20,22,26,0.22); font-size: 13px; font-weight: 700; color: var(--muted); cursor: copy;">Paste a photo here with Ctrl+V (⌘+V), or drop an image</div><div style="display: flex; flex-direction: column; gap: 8px;"><label style="font-weight: 700;">Photo <small>Square works best. We crop it to a square and make it small and fast.</small><input type="file" id="ed-file" accept="image/*"></label><button type="button" class="small" id="ed-rmphoto" hidden>Remove photo</button></div></div>
         <label>Full name<input type="text" name="name" required maxlength="80" placeholder="Rina Akter"></label>
         <label>Web address <small>speakerfolio.com/speakers/<b id="ed-slugv">...</b>/</small><input type="text" name="slug" maxlength="60" placeholder="Made from the name"></label>
         <label class="full">Headline <small>One line planners scan. "Keynote speaker on leading teams through change"</small><input type="text" name="headline" maxlength="140"></label>
@@ -344,8 +344,21 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
   $('sp-add').addEventListener('click', function () { open(null); });
   $('ed-back').addEventListener('click', close);
   $('ed-rmphoto').addEventListener('click', function () { photoData = ''; removePhoto = true; $('ed-file').value = ''; setPhoto(''); });
-  $('ed-file').addEventListener('change', function () {
-    var f = this.files && this.files[0]; if (!f) return;
+  $('ed-file').addEventListener('change', function () { useImage(this.files && this.files[0]); });
+  // paste an image (screenshot or copied image) anywhere while the editor is open
+  document.addEventListener('paste', function (e) {
+    if (form.hidden) return;
+    var items = (e.clipboardData && e.clipboardData.items) || [];
+    for (var i = 0; i < items.length; i++) {
+      if (items[i].kind === 'file' && /^image\//.test(items[i].type)) { e.preventDefault(); useImage(items[i].getAsFile()); $('ed-err').style.color = '#17602f'; $('ed-err').textContent = 'Photo pasted. Click Save speaker to keep it.'; return; }
+    }
+  });
+  $('ed-drop').addEventListener('dragover', function (e) { e.preventDefault(); this.style.borderColor = '#e31837'; });
+  $('ed-drop').addEventListener('dragleave', function () { this.style.borderColor = ''; });
+  $('ed-drop').addEventListener('drop', function (e) { e.preventDefault(); this.style.borderColor = ''; var f = e.dataTransfer.files && e.dataTransfer.files[0]; if (f && /^image\//.test(f.type)) useImage(f); });
+  $('ed-drop').addEventListener('click', function () { $('ed-drop').focus(); });
+  function useImage(f) {
+    if (!f) return;
     var img = new Image(), url = URL.createObjectURL(f);
     img.onload = function () {
       var side = Math.min(img.naturalWidth, img.naturalHeight), out = Math.min(800, side), c = document.createElement('canvas');
@@ -359,7 +372,7 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
     };
     img.onerror = function () { $('ed-err').textContent = 'That file could not be opened as an image.'; };
     img.src = url;
-  });
+  }
   function collect() {
     var d = {};
     ['name', 'slug', 'headline', 'speakerType', 'location', 'languages', 'travel', 'length', 'audience', 'fee', 'shortBio', 'bio', 'video', 'videoTitle', 'bookingEmail', 'consentNote'].forEach(function (k) { d[k] = form[k].value; });
