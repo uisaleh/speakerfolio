@@ -1,9 +1,11 @@
 # Speakerfolio
 
-> Speakerfolio builds free one-page websites for public speakers, trainers and coaches. Sites go live on yourname.speakerfolio.com in about two working days, after the speaker approves a private preview. Premium moves the site to the speaker's own domain with hosting included.
+> Speakerfolio is a speaker directory where every speaker has a real website. Event planners search and send booking requests for free, with no booking fee. Speakerfolio also builds free one-page websites for public speakers, trainers and coaches. Sites go live on yourname.speakerfolio.com in about two working days, after the speaker approves a private preview. Premium moves the site to the speaker's own domain with hosting included.
 
 ## Pages
-- [Home](https://speakerfolio.com/): what Speakerfolio is and how it works
+- [Home](https://speakerfolio.com/): speaker directory home: find keynote speakers, trainers and coaches by topic and format
+- [Find a speaker](https://speakerfolio.com/speakers/): every listed speaker, with filters by topic, format and location. Topic pages: https://speakerfolio.com/speakers/topic/leadership/, https://speakerfolio.com/speakers/topic/sales/, https://speakerfolio.com/speakers/topic/motivation/, https://speakerfolio.com/speakers/topic/hr-and-culture/, https://speakerfolio.com/speakers/topic/technology/, https://speakerfolio.com/speakers/topic/health-and-wellbeing/, https://speakerfolio.com/speakers/topic/communication/, https://speakerfolio.com/speakers/topic/entrepreneurship/
+- [For speakers](https://speakerfolio.com/for-speakers/): free speaker websites, how it works, templates and the request form
 - [Templates](https://speakerfolio.com/templates/): six free speaker website templates (Headliner, Ignite, Coach, Trainer, Studio, Spotlight)
 - [Pricing](https://speakerfolio.com/pricing/): Free plan; Premium $500 a year (launch offer $100) on your own domain with hosting included; social media design $40 a month
 - [Articles](https://speakerfolio.com/articles/): short guides for speakers

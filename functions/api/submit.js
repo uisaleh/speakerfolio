@@ -22,7 +22,8 @@ export async function onRequestPost({ request, env }) {
   if (!data || typeof data !== 'object') { return json({ ok: false, error: 'Empty form.' }, 400); }
   if (data._hp) { return json({ ok: true }); } // spam bots fill the hidden field
 
-  const kind = clean(data.Type) === 'Question' ? 'Question' : 'Website request';
+  const type = clean(data.Type);
+  const kind = type === 'Question' ? 'Question' : type === 'Booking request' ? 'Booking request' : 'Website request';
   const fields = {};
   for (const [k, v] of Object.entries(data)) {
     if (k.startsWith('_') || k === 'Type') continue;
@@ -30,6 +31,14 @@ export async function onRequestPost({ request, env }) {
   }
   if (!fields.Email || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(fields.Email)) {
     return json({ ok: false, error: 'A valid email is required.' }, 400);
+  }
+
+  // booking requests from a speaker profile: add the speaker's booking email so the request can be forwarded
+  if (kind === 'Booking request' && env.SUBMISSIONS && /^[a-z0-9-]{1,60}$/.test(String(data._speaker || ''))) {
+    try {
+      const sp = JSON.parse((await env.SUBMISSIONS.get('spk:' + data._speaker)) || 'null');
+      if (sp) { fields.Speaker = sp.name; fields['Speaker profile'] = new URL(request.url).origin + '/speakers/' + sp.slug + '/'; if (sp.bookingEmail) fields['Forward to'] = sp.bookingEmail; }
+    } catch (e) { /* keep going */ }
   }
 
   const now = new Date();
@@ -46,7 +55,7 @@ export async function onRequestPost({ request, env }) {
   }
 
   if (env.TELEGRAM_BOT_TOKEN && env.TELEGRAM_CHAT_ID) {
-    const lines = [(kind === 'Question' ? '❓ New question' : '🎉 New website request') + ' on Speakerfolio', ''];
+    const lines = [(kind === 'Question' ? '❓ New question' : kind === 'Booking request' ? '📅 New booking request' : '🎉 New website request') + ' on Speakerfolio', ''];
     for (const [k, v] of Object.entries(fields)) lines.push(k + ': ' + v);
     if (record.country) lines.push('Country: ' + record.country);
     const origin = new URL(request.url).origin;

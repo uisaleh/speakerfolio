@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Requests | Speakerfolio admin</title>
+<title>Admin | Speakerfolio</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>@font-face{font-family:'Plus Jakarta Sans';font-weight:400;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Plus Jakarta Sans';font-weight:700;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-700-normal.woff2) format('woff2')}</style>
 <style>
 :root { --bg: #f6f5f2; --surface: #ffffff; --ink: #14161a; --muted: #5d6068; --line: rgba(20,22,26,0.12); --brand: #e31837; --dark: #0b0c0e; --chip: #f0efeb; }
 * { box-sizing: border-box; }
@@ -51,6 +51,39 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
 .login input { flex: 1 1 220px; }
 .err { color: #a30f25; font-weight: 700; font-size: 14px; min-height: 20px; }
 :focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
+.tabs button { border: 0; border-bottom: 3px solid transparent; background: none; font: inherit; font-size: 15px; font-weight: 700; padding: 10px 14px; color: var(--muted); cursor: pointer; margin-bottom: -1px; }
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--brand); }
+.tag.book { background: #e7f0ff; color: #163e8a; }
+.sp-row { background: var(--surface); border: 1px solid var(--line); padding: 14px; display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 16px; align-items: center; }
+.sp-av { width: 64px; height: 64px; background: var(--ink); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; overflow: hidden; }
+.sp-av img { width: 100%; height: 100%; object-fit: cover; }
+.tag.pub { background: #dff3e6; color: #17602f; }
+.tag.draft { background: var(--chip); color: var(--muted); }
+.tag.feat { background: #fff1d6; color: #7a4b00; }
+.ed { background: var(--surface); border: 1px solid var(--line); padding: 24px; display: flex; flex-direction: column; gap: 22px; }
+.ed fieldset { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 18px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.ed legend { font-size: 13px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 0 0 6px; }
+.ed label { display: flex; flex-direction: column; gap: 5px; font-size: 13.5px; font-weight: 700; min-width: 0; }
+.ed label small, .hint { font-weight: 400; color: var(--muted); font-size: 12.5px; }
+.ed .full { grid-column: 1 / -1; }
+.ed input[type=text], .ed input[type=email], .ed input[type=url], .ed textarea, .ed select { width: 100%; height: 42px; padding: 0 12px; border: 1px solid rgba(20,22,26,0.22); background: #fff; font: inherit; font-size: 14.5px; color: var(--ink); border-radius: 0; }
+.ed textarea { height: auto; min-height: 92px; padding: 10px 12px; resize: vertical; }
+.checks { display: flex; flex-wrap: wrap; gap: 6px; }
+.checks label { flex-direction: row; align-items: center; gap: 7px; border: 1px solid var(--line); padding: 7px 11px; font-weight: 600; cursor: pointer; }
+.checks label:has(input:checked) { background: var(--ink); color: #fff; border-color: var(--ink); }
+.rep { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 10px; }
+.rep-item { border: 1px solid var(--line); background: #fbfaf8; padding: 52px 14px 14px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; position: relative; }
+.rep-item .x { position: absolute; right: 8px; top: 8px; }
+.rep-item label.w2 { grid-column: span 2; } .rep-item label.w4 { grid-column: 1 / -1; }
+.photo { display: flex; gap: 16px; align-items: center; grid-column: 1 / -1; }
+.photo .sp-av { width: 110px; height: 110px; font-size: 32px; }
+.consent { grid-column: 1 / -1; background: #fff7f8; border: 1px solid #f5c2ca; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+.consent label.inline, .ed label.inline { flex-direction: row; align-items: center; gap: 8px; font-weight: 700; }
+.ed-bar { position: sticky; bottom: 0; background: var(--surface); border-top: 1px solid var(--line); padding: 14px 0 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+@media (max-width: 760px) { .ed fieldset { grid-template-columns: minmax(0, 1fr); } .rep-item { grid-template-columns: minmax(0, 1fr); } .rep-item label.w2 { grid-column: auto; } .sp-row { grid-template-columns: 52px minmax(0, 1fr); } .sp-row .side { grid-column: 1 / -1; } }
+
 @media (max-width: 760px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .item { grid-template-columns: minmax(0, 1fr); } .side { min-width: 0; flex-direction: row; flex-wrap: wrap; } .side select { flex: 1 1 160px; } }
 </style>
 </head>
@@ -68,12 +101,13 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
     <div class="err" id="login-err" role="alert"></div>
   </section>
 
+  <div class="tabs" id="tabs" role="tablist" hidden><button type="button" role="tab" data-tab="panel" aria-selected="true">Requests</button><button type="button" role="tab" data-tab="speakers" aria-selected="false">Speakers</button></div>
   <section id="panel" hidden style="display: flex; flex-direction: column; gap: 20px;">
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px;"><h1>Requests</h1><span class="muted" id="updated"></span></div>
     <div class="stats">
       <div class="stat"><b id="s-new">0</b><span>New, not answered</span></div>
       <div class="stat"><b id="s-req">0</b><span>Website requests</span></div>
-      <div class="stat"><b id="s-prem">0</b><span>Want Premium</span></div>
+      <div class="stat"><b id="s-book">0</b><span>Booking requests</span></div>
       <div class="stat"><b id="s-q">0</b><span>Questions</span></div>
     </div>
     <div class="tools">
@@ -81,12 +115,66 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
         <button type="button" data-f="all" aria-pressed="true">All</button>
         <button type="button" data-f="New" aria-pressed="false">New</button>
         <button type="button" data-f="req" aria-pressed="false">Website requests</button>
+        <button type="button" data-f="book" aria-pressed="false">Booking requests</button>
         <button type="button" data-f="q" aria-pressed="false">Questions</button>
       </div>
       <input type="search" id="search" placeholder="Search name, email or LinkedIn" aria-label="Search">
     </div>
     <div class="err" id="panel-err" role="alert"></div>
     <div class="list" id="list"></div>
+  </section>
+  <section id="speakers" hidden style="display: flex; flex-direction: column; gap: 20px;">
+    <div id="sp-listview" style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;"><div><h1>Speakers</h1><span class="muted" id="sp-sum"></span></div><button type="button" class="btn" id="sp-add">Add speaker</button></div>
+      <p class="hint" style="margin: 0;">Only list speakers who agreed to it. A speaker shows on the site once you tick Published. Changes can take up to a minute to appear everywhere.</p>
+      <div class="err" id="sp-err" role="alert"></div>
+      <div class="list" id="sp-list"></div>
+    </div>
+    <form class="ed" id="sp-form" hidden novalidate>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;"><h1 id="ed-title">Add speaker</h1><button type="button" class="small" id="ed-back">Back to list</button></div>
+      <fieldset><legend>Basics</legend>
+        <div class="photo"><div class="sp-av" id="ed-photo">?</div><div style="display: flex; flex-direction: column; gap: 8px;"><label style="font-weight: 700;">Photo <small>Square works best. We crop it to a square and make it small and fast.</small><input type="file" id="ed-file" accept="image/*"></label><button type="button" class="small" id="ed-rmphoto" hidden>Remove photo</button></div></div>
+        <label>Full name<input type="text" name="name" required maxlength="80" placeholder="Rina Akter"></label>
+        <label>Web address <small>speakerfolio.com/speakers/<b id="ed-slugv">...</b>/</small><input type="text" name="slug" maxlength="60" placeholder="Made from the name"></label>
+        <label class="full">Headline <small>One line planners scan. "Keynote speaker on leading teams through change"</small><input type="text" name="headline" maxlength="140"></label>
+        <div class="full"><span style="font-size: 13.5px; font-weight: 700;">Topics <small class="hint">The first ticked topic is the main one. Up to 4.</small></span><div class="checks" id="ed-topics"></div></div>
+        <div class="full"><span style="font-size: 13.5px; font-weight: 700;">Formats</span><div class="checks" id="ed-formats"></div></div>
+        <label>Speaker type <small>Shown above the name, e.g. "Keynote speaker"</small><input type="text" name="speakerType" maxlength="40"></label>
+        <label>Location <small>City, Country</small><input type="text" name="location" maxlength="80" placeholder="Dhaka, Bangladesh"></label>
+        <label>Languages<input type="text" name="languages" maxlength="80" placeholder="English, Bengali"></label>
+        <label>Travel<input type="text" name="travel" maxlength="80" placeholder="Travels worldwide · Virtual"></label>
+        <label>Typical length<input type="text" name="length" maxlength="40" placeholder="45 to 60 min"></label>
+        <label>Audience size<input type="text" name="audience" maxlength="40" placeholder="50 to 2,000 people"></label>
+        <label>Fee range <small>Leave empty to hide</small><input type="text" name="fee" maxlength="40" placeholder="$5,000 to $10,000"></label>
+      </fieldset>
+      <fieldset><legend>About</legend>
+        <label class="full">Short bio <small>About 90 words, third person. Planners copy this.</small><textarea name="shortBio" maxlength="900" rows="4"></textarea></label>
+        <label class="full">Longer bio <small>Optional. One paragraph per line.</small><textarea name="bio" maxlength="4000" rows="6"></textarea></label>
+      </fieldset>
+      <fieldset><legend>Talks</legend><div class="rep" id="rep-talks"></div><button type="button" class="small" data-add="talks" style="justify-self: start;">Add a talk</button></fieldset>
+      <fieldset><legend>Video</legend>
+        <label>YouTube link<input type="url" name="video" placeholder="https://www.youtube.com/watch?v=..."></label>
+        <label>Video title<input type="text" name="videoTitle" maxlength="120" placeholder="Keynote at People Leaders Forum, 2025"></label>
+      </fieldset>
+      <fieldset><legend>Past events</legend><div class="rep" id="rep-events"></div><button type="button" class="small" data-add="events" style="justify-self: start;">Add an event</button></fieldset>
+      <fieldset><legend>Testimonials</legend><div class="rep" id="rep-quotes"></div><button type="button" class="small" data-add="quotes" style="justify-self: start;">Add a testimonial</button></fieldset>
+      <fieldset><legend>Links</legend>
+        <label>Website <small>Their Speakerfolio site or own site</small><input type="url" name="l_website"></label>
+        <label>LinkedIn<input type="url" name="l_linkedin"></label>
+        <label>YouTube channel<input type="url" name="l_youtube"></label>
+        <label>Instagram<input type="url" name="l_instagram"></label>
+        <label>X<input type="url" name="l_x"></label>
+        <label>Facebook<input type="url" name="l_facebook"></label>
+      </fieldset>
+      <fieldset><legend>Booking and publishing</legend>
+        <label class="full">Booking email <small>Private. Shown only in your admin so you can forward booking requests.</small><input type="email" name="bookingEmail" maxlength="120"></label>
+        <div class="consent"><label class="inline"><input type="checkbox" name="consent"> The speaker agreed to be listed on Speakerfolio</label>
+          <label>How they agreed <small>For your records, e.g. "Email reply, 2 Nov 2026" or "LinkedIn message"</small><input type="text" name="consentNote" maxlength="300"></label></div>
+        <label class="inline"><input type="checkbox" name="featured"> Featured on the home page</label>
+        <label class="inline"><input type="checkbox" name="published"> Published (visible on the site)</label>
+      </fieldset>
+      <div class="ed-bar"><span class="err" id="ed-err" role="alert"></span><span style="display: flex; flex-wrap: wrap; gap: 8px;"><a class="small" id="ed-preview" target="_blank" rel="noopener" hidden style="display: inline-flex; align-items: center; text-decoration: none;">Open profile</a><button type="submit" class="btn">Save speaker</button></span></div>
+    </form>
   </section>
 </main>
 
@@ -113,16 +201,20 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
     return fetch('/api/submissions', { method: method, headers: { 'Authorization': 'Bearer ' + pw(), 'Content-Type': 'application/json' }, body: body ? JSON.stringify(body) : undefined })
       .then(function (r) { return r.json().then(function (j) { if (!r.ok) { var e = new Error(j.error || 'Something went wrong.'); e.status = r.status; throw e; } return j; }); });
   }
-  function show(signedIn) { $('login').hidden = signedIn; $('panel').hidden = !signedIn; $('refresh').hidden = !signedIn; $('logout').hidden = !signedIn; }
+  var tab = 'panel';
+  function show(signedIn) { $('login').hidden = signedIn; $('tabs').hidden = !signedIn; $('panel').hidden = !signedIn || tab !== 'panel'; $('speakers').hidden = !signedIn || tab !== 'speakers'; $('refresh').hidden = !signedIn; $('logout').hidden = !signedIn; }
+  window.SF_ADMIN = { pw: pw, esc: esc, show: show };
+  document.querySelectorAll('#tabs button').forEach(function (b) { b.addEventListener('click', function () { tab = b.getAttribute('data-tab'); document.querySelectorAll('#tabs button').forEach(function (x) { x.setAttribute('aria-selected', String(x === b)); }); show(true); if (tab === 'speakers' && window.SF_SPK) window.SF_SPK.load(); }); });
   function render() {
     var q = $('search').value.trim().toLowerCase();
     $('s-new').textContent = items.filter(function (i) { return i.status === 'New'; }).length;
-    $('s-req').textContent = items.filter(function (i) { return i.kind !== 'Question'; }).length;
-    $('s-prem').textContent = items.filter(function (i) { return i.fields && i.fields.Plan === 'Premium'; }).length;
+    $('s-req').textContent = items.filter(function (i) { return i.kind === 'Website request'; }).length;
+    $('s-book').textContent = items.filter(function (i) { return i.kind === 'Booking request'; }).length;
     $('s-q').textContent = items.filter(function (i) { return i.kind === 'Question'; }).length;
     var shown = items.filter(function (i) {
       if (filter === 'New' && i.status !== 'New') return false;
-      if (filter === 'req' && i.kind === 'Question') return false;
+      if (filter === 'req' && i.kind !== 'Website request') return false;
+      if (filter === 'book' && i.kind !== 'Booking request') return false;
       if (filter === 'q' && i.kind !== 'Question') return false;
       if (q && JSON.stringify(i.fields || {}).toLowerCase().indexOf(q) < 0) return false;
       return true;
@@ -137,8 +229,9 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
       if (i.country) rows += '<dt>Country</dt><dd>' + esc(i.country) + '</dd>';
       var opts = statuses.map(function (s) { return '<option' + (s === i.status ? ' selected' : '') + '>' + esc(s) + '</option>'; }).join('');
       return '<article class="item' + (i.status === 'New' ? ' is-new' : '') + '"><div><div class="top"><span class="name">' + esc(f.Name || 'No name') + '</span>'
-        + '<span class="tag' + (i.kind === 'Question' ? '' : ' req') + '">' + esc(i.kind) + '</span><span class="when">' + esc(when(i.createdAt)) + '</span></div><dl>' + rows + '</dl></div>'
+        + '<span class="tag' + (i.kind === 'Question' ? '' : i.kind === 'Booking request' ? ' book' : ' req') + '">' + esc(i.kind) + '</span><span class="when">' + esc(when(i.createdAt)) + '</span></div><dl>' + rows + '</dl></div>'
         + '<div class="side"><label class="muted" style="font-size: 12.5px; font-weight: 700;" for="st-' + esc(i.id) + '">Status</label><select id="st-' + esc(i.id) + '" data-key="' + esc(i.key) + '">' + opts + '</select>'
+        + (f['Forward to'] ? '<a class="small" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; background: #14161a; color: #fff;" href="mailto:' + esc(f['Forward to']) + '?subject=' + encodeURIComponent('Booking request: ' + (f.Event || 'new event') + ' via Speakerfolio') + '&body=' + encodeURIComponent(Object.keys(f).filter(function (k) { return ['Forward to', 'Speaker profile'].indexOf(k) < 0; }).map(function (k) { return k + ': ' + f[k]; }).join('\n')) + '">Forward to speaker</a>' : '')
         + (f.Email ? '<a class="small" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none;" href="mailto:' + esc(f.Email) + '?subject=' + encodeURIComponent(i.kind === 'Question' ? 'Re: your question to Speakerfolio' : 'Your free speaker website') + '">Reply by email</a>' : '')
         + '<button type="button" class="small del" data-del="' + esc(i.key) + '">Delete</button></div></article>';
     }).join('');
@@ -150,7 +243,7 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
   }
   $('login-form').addEventListener('submit', function (ev) { ev.preventDefault(); setPw($('pw').value); load(); });
   $('logout').addEventListener('click', function () { setPw(''); items = []; show(false); $('pw').value = ''; });
-  $('refresh').addEventListener('click', load);
+  $('refresh').addEventListener('click', function () { if (tab === 'speakers' && window.SF_SPK) window.SF_SPK.load(); else load(); });
   $('search').addEventListener('input', render);
   document.querySelectorAll('.filters button').forEach(function (b) { b.addEventListener('click', function () { filter = b.getAttribute('data-f'); document.querySelectorAll('.filters button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); render(); }); });
   $('list').addEventListener('change', function (ev) {
@@ -166,6 +259,143 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
   });
   setInterval(function () { if (!$('panel').hidden && document.visibilityState === 'visible') load(); }, 60000);
   if (pw()) load(); else show(false);
+})();
+</script>
+<script>
+(function () {
+  var A = window.SF_ADMIN, $ = function (id) { return document.getElementById(id); }, esc = A.esc;
+  var TOPICS = ['Leadership', 'Sales', 'Motivation', 'HR and culture', 'Technology', 'Health and wellbeing', 'Communication', 'Entrepreneurship'];
+  var FORMATS = ['Keynote', 'Workshop', 'Training', 'Virtual', 'Panel', 'Emcee'];
+  var list = [], cur = null, oldSlug = '', photoData = '', removePhoto = false, topicOrder = [];
+  var form = $('sp-form');
+  function api(method, body, q) {
+    return fetch('/api/speakers' + (q || ''), { method: method, headers: { 'Authorization': 'Bearer ' + A.pw(), 'Content-Type': 'application/json' }, body: body ? JSON.stringify(body) : undefined })
+      .then(function (r) { return r.json().then(function (j) { if (!r.ok) { var e = new Error(j.error || 'Something went wrong.'); e.status = r.status; throw e; } return j; }); });
+  }
+  function ini(n) { return String(n || '?').split(/\s+/).filter(Boolean).slice(0, 2).map(function (w) { return w[0].toUpperCase(); }).join(''); }
+  function slugify(t) { return String(t || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60); }
+  function renderList() {
+    var pub = list.filter(function (s) { return s.published; }).length;
+    $('sp-sum').textContent = list.length ? pub + ' published, ' + (list.length - pub) + ' draft' : '';
+    if (!list.length) { $('sp-list').innerHTML = '<div class="empty"><b>No speakers yet.</b><span class="muted">Click Add speaker. Until the first one is published, the site shows a "Founding speakers" invitation.</span></div>'; return; }
+    $('sp-list').innerHTML = list.map(function (s) {
+      return '<article class="sp-row"><div class="sp-av">' + (s.photo ? '<img src="' + esc(s.photo) + '" alt="">' : esc(ini(s.name))) + '</div>'
+        + '<div style="min-width: 0;"><div class="top"><span class="name">' + esc(s.name) + '</span><span class="tag ' + (s.published ? 'pub">Published' : 'draft">Draft') + '</span>' + (s.featured ? '<span class="tag feat">Featured</span>' : '') + '</div>'
+        + '<div class="muted" style="font-size: 14px;">' + esc(s.headline) + '</div><div class="when">' + esc((s.topics || []).join(', ')) + (s.location ? ' · ' + esc(s.location) : '') + '</div></div>'
+        + '<div class="side" style="flex-direction: row; flex-wrap: wrap; min-width: 0;"><button type="button" class="small" data-edit="' + esc(s.slug) + '">Edit</button>'
+        + (s.published ? '<a class="small" style="display: inline-flex; align-items: center; text-decoration: none;" target="_blank" rel="noopener" href="/speakers/' + esc(s.slug) + '/">View</a>' : '')
+        + '<button type="button" class="small del" data-sdel="' + esc(s.slug) + '">Delete</button></div></article>';
+    }).join('');
+  }
+  function load() {
+    $('sp-err').textContent = '';
+    return api('GET', null, '?admin=1').then(function (j) { list = j.speakers || []; renderList(); })
+      .catch(function (e) { if (e.status === 401) { A.show(false); } else { $('sp-err').textContent = e.message; } });
+  }
+  // ---------- editor ----------
+  function checks(el, items, name) {
+    $(el).innerHTML = items.map(function (t) { return '<label><input type="checkbox" name="' + name + '" value="' + esc(t) + '">' + esc(t) + '</label>'; }).join('');
+  }
+  checks('ed-topics', TOPICS, 'topics'); checks('ed-formats', FORMATS, 'formats');
+  $('ed-topics').addEventListener('change', function (e) {
+    var v = e.target.value; topicOrder = topicOrder.filter(function (x) { return x !== v; });
+    if (e.target.checked) { if (topicOrder.length >= 4) { e.target.checked = false; return; } topicOrder.push(v); }
+  });
+  var REP = {
+    talks: [['title', 'Talk title', 'w4'], ['format', 'Format', ''], ['length', 'Length', ''], ['summary', 'One-sentence summary', 'w2'], ['takeaways', 'Audience takeaways (one per line, up to 4)', 'w4', 'area']],
+    events: [['event', 'Event', 'w2'], ['organizer', 'Organizer', ''], ['format', 'Format', ''], ['year', 'Year', '']],
+    quotes: [['quote', 'Quote', 'w4', 'area'], ['name', 'Name', 'w2'], ['role', 'Role and organization', 'w2']]
+  };
+  function addRep(kind, v) {
+    v = v || {};
+    var d = document.createElement('div'); d.className = 'rep-item'; d.setAttribute('data-kind', kind);
+    d.innerHTML = REP[kind].map(function (f) {
+      var val = Array.isArray(v[f[0]]) ? v[f[0]].join('\n') : (v[f[0]] || '');
+      return '<label class="' + f[2] + '">' + f[1] + (f[3] ? '<textarea data-f="' + f[0] + '" rows="3">' + esc(val) + '</textarea>' : '<input type="text" data-f="' + f[0] + '" value="' + esc(val) + '">') + '</label>';
+    }).join('') + '<button type="button" class="small x" data-rm="1" aria-label="Remove">Remove</button>';
+    $('rep-' + kind).appendChild(d);
+  }
+  form.addEventListener('click', function (e) {
+    var a = e.target.closest('[data-add]'); if (a) { addRep(a.getAttribute('data-add')); return; }
+    var r = e.target.closest('[data-rm]'); if (r) { r.parentNode.remove(); }
+  });
+  function setPhoto(src) { $('ed-photo').innerHTML = src ? '<img src="' + esc(src) + '" alt="">' : esc(ini(form.name.value)); $('ed-rmphoto').hidden = !src; }
+  function open(s, photo, preview) {
+    cur = s; oldSlug = s ? s.slug : ''; photoData = ''; removePhoto = false; $('ed-file').value = ''; $('ed-err').textContent = '';
+    form.reset();
+    ['rep-talks', 'rep-events', 'rep-quotes'].forEach(function (id) { $(id).innerHTML = ''; });
+    s = s || { topics: [], formats: [], talks: [{}], events: [], quotes: [], links: {} };
+    ['name', 'slug', 'headline', 'speakerType', 'location', 'languages', 'travel', 'length', 'audience', 'fee', 'shortBio', 'bio', 'video', 'videoTitle', 'bookingEmail', 'consentNote'].forEach(function (k) { form[k].value = s[k] || ''; });
+    ['consent', 'featured', 'published'].forEach(function (k) { form[k].checked = !!s[k]; });
+    Object.keys(s.links || {}).forEach(function (k) { if (form['l_' + k]) form['l_' + k].value = s.links[k]; });
+    topicOrder = (s.topics || []).slice();
+    form.querySelectorAll('input[name=topics]').forEach(function (c) { c.checked = topicOrder.indexOf(c.value) >= 0; });
+    form.querySelectorAll('input[name=formats]').forEach(function (c) { c.checked = (s.formats || []).indexOf(c.value) >= 0; });
+    (s.talks || []).forEach(function (t) { addRep('talks', t); }); (s.events || []).forEach(function (t) { addRep('events', t); }); (s.quotes || []).forEach(function (t) { addRep('quotes', t); });
+    $('ed-title').textContent = cur ? 'Edit ' + cur.name : 'Add speaker';
+    $('ed-slugv').textContent = form.slug.value || slugify(form.name.value) || '...';
+    setPhoto(photo || '');
+    $('ed-preview').hidden = !preview; if (preview) $('ed-preview').href = preview;
+    $('sp-listview').hidden = true; form.hidden = false; window.scrollTo(0, 0);
+  }
+  function close() { form.hidden = true; $('sp-listview').hidden = false; load(); }
+  form.name.addEventListener('input', function () { if (!form.slug.value) $('ed-slugv').textContent = slugify(form.name.value) || '...'; if (!photoData && !$('ed-photo').querySelector('img')) setPhoto(''); });
+  form.slug.addEventListener('input', function () { $('ed-slugv').textContent = slugify(form.slug.value || form.name.value) || '...'; });
+  $('sp-add').addEventListener('click', function () { open(null); });
+  $('ed-back').addEventListener('click', close);
+  $('ed-rmphoto').addEventListener('click', function () { photoData = ''; removePhoto = true; $('ed-file').value = ''; setPhoto(''); });
+  $('ed-file').addEventListener('change', function () {
+    var f = this.files && this.files[0]; if (!f) return;
+    var img = new Image(), url = URL.createObjectURL(f);
+    img.onload = function () {
+      var side = Math.min(img.naturalWidth, img.naturalHeight), out = Math.min(800, side), c = document.createElement('canvas');
+      c.width = out; c.height = out;
+      // keep the top of the photo (faces are usually in the upper part)
+      var sx = (img.naturalWidth - side) / 2, sy = img.naturalHeight > img.naturalWidth ? Math.min((img.naturalHeight - side) * 0.2, img.naturalHeight - side) : 0;
+      c.getContext('2d').drawImage(img, sx, sy, side, side, 0, 0, out, out);
+      photoData = c.toDataURL('image/webp', 0.84);
+      if (photoData.indexOf('data:image/webp') !== 0) photoData = c.toDataURL('image/jpeg', 0.86);
+      removePhoto = false; setPhoto(photoData); URL.revokeObjectURL(url);
+    };
+    img.onerror = function () { $('ed-err').textContent = 'That file could not be opened as an image.'; };
+    img.src = url;
+  });
+  function collect() {
+    var d = {};
+    ['name', 'slug', 'headline', 'speakerType', 'location', 'languages', 'travel', 'length', 'audience', 'fee', 'shortBio', 'bio', 'video', 'videoTitle', 'bookingEmail', 'consentNote'].forEach(function (k) { d[k] = form[k].value; });
+    ['consent', 'featured', 'published'].forEach(function (k) { d[k] = form[k].checked; });
+    d.topics = topicOrder.slice();
+    d.formats = [].slice.call(form.querySelectorAll('input[name=formats]:checked')).map(function (c) { return c.value; });
+    d.links = {}; ['website', 'linkedin', 'youtube', 'instagram', 'x', 'facebook'].forEach(function (k) { d.links[k] = form['l_' + k].value; });
+    ['talks', 'events', 'quotes'].forEach(function (k) {
+      d[k] = [].slice.call($('rep-' + k).children).map(function (it) { var o = {}; it.querySelectorAll('[data-f]').forEach(function (f) { o[f.getAttribute('data-f')] = f.value; }); return o; });
+    });
+    return d;
+  }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); $('ed-err').textContent = '';
+    var b = form.querySelector('button[type=submit]'); b.disabled = true; b.textContent = 'Saving...';
+    api('POST', { action: 'save', speaker: collect(), oldSlug: oldSlug, photo: photoData || undefined, removePhoto: removePhoto })
+      .then(function (j) { b.disabled = false; b.textContent = 'Save speaker'; cur = j.speaker; oldSlug = j.speaker.slug; photoData = ''; removePhoto = false; form.slug.value = j.speaker.slug;
+        $('ed-title').textContent = 'Edit ' + j.speaker.name; $('ed-preview').hidden = false; $('ed-preview').href = j.speaker.published ? '/speakers/' + j.speaker.slug + '/' : j.preview;
+        $('ed-preview').textContent = j.speaker.published ? 'Open profile' : 'Open private preview'; $('ed-err').style.color = '#17602f'; $('ed-err').textContent = j.speaker.published ? 'Saved. The profile is live.' : 'Saved as a draft.'; })
+      .catch(function (er) { b.disabled = false; b.textContent = 'Save speaker'; $('ed-err').style.color = ''; $('ed-err').textContent = er.message; });
+  });
+  var pend = '';
+  $('sp-list').addEventListener('click', function (e) {
+    var ed = e.target.closest('[data-edit]');
+    if (ed) {
+      api('GET', null, '?slug=' + encodeURIComponent(ed.getAttribute('data-edit'))).then(function (j) { open(j.speaker, j.photo, j.speaker.published ? '/speakers/' + j.speaker.slug + '/' : j.preview); $('ed-preview').textContent = j.speaker.published ? 'Open profile' : 'Open private preview'; }).catch(function (er) { $('sp-err').textContent = er.message; });
+      return;
+    }
+    var del = e.target.closest('[data-sdel]');
+    if (del) {
+      var slug = del.getAttribute('data-sdel');
+      if (pend !== slug) { pend = slug; del.textContent = 'Click again to delete'; return; }
+      api('POST', { action: 'delete', slug: slug }).then(function () { pend = ''; load(); }).catch(function (er) { $('sp-err').textContent = er.message; });
+    }
+  });
+  window.SF_SPK = { load: load };
 })();
 </script>
 </body>
