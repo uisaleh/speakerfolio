@@ -1,0 +1,860 @@
+# Speakerfolio: full text of all articles
+
+> Speakerfolio is a speaker directory where every speaker has a real website. Event planners search and send booking requests for free, with no booking fee. Speakerfolio also builds free one-page websites for public speakers, trainers and coaches. Sites go live on yourname.speakerfolio.com in about two working days, after the speaker approves a private preview. Premium moves the site to the speaker's own domain with hosting included.
+
+---
+
+# What Should a Motivational Speaker Website Include? A Planner's Checklist
+
+URL: https://speakerfolio.com/articles/motivational-speaker-website-checklist/
+Published: 2026-11-01 · Author: Saleh, Speakerfolio
+
+An event planner has a shortlist of five speakers and an afternoon to decide. They open five browser tabs. Within a few minutes, two of those tabs are closed.
+
+They didn't close them because the speakers were bad. They closed them because the websites didn't answer the planner's questions fast enough. Where's the video? What does this person actually talk about? Have they spoken to an audience like mine? How do I check if they're free on 14 May?
+
+This guide looks at your **motivational speaker website** from the other side of the screen. It's built around the questions planners, meeting organizers and speaker bureaus ask when they review a speaker, and it turns those questions into a checklist you can work through section by section.
+
+If you're building your site from scratch, [Speakerfolio](https://speakerfolio.com/) builds a one-page speaker website for you, free, with these sections already in place. If you already have a site, use the checklist as an audit.
+
+## How event planners actually review a speaker website
+
+Before the checklist, it helps to know what a planner is doing when they land on your site. In most cases, they're not browsing. They're trying to rule you in or out quickly, and then defend their choice to someone else: a boss, a committee or a client.
+
+That gives a planner four jobs:
+
+1. **Check fit.** Does this speaker talk about the theme of our event, for an audience like ours?
+2. **Check quality.** Are they actually good on stage? Will the audience stay in their seats?
+3. **Check risk.** Have other organizers booked them and been happy? Will they be easy to work with?
+4. **Check logistics.** Are they available, roughly in budget, and easy to contact?
+
+Every item in the checklist below serves one of those four jobs. If something on your site doesn't help a planner check fit, quality, risk or logistics, it's probably clutter.
+
+**Tip:** Planners often share your link with people who never met you. Write every page so it makes sense to someone forwarded the URL with no context.
+
+## The motivational speaker website checklist at a glance
+
+Here is the full list. Each item is explained in the sections that follow.
+
+| # | What to include | Planner's question it answers |
+|---|---|---|
+| 1 | A clear headline above the fold | "Who is this and what do they talk about?" |
+| 2 | Demo reel or full-length video | "Are they good on stage?" |
+| 3 | Signature keynote topics | "Do they fit our theme?" |
+| 4 | Audience outcomes | "What will our people take away?" |
+| 5 | Short and long speaker bios | "What's their story, and can I copy it?" |
+| 6 | Testimonials from event organizers | "Did other planners like them?" |
+| 7 | Client logos and past events | "Have they spoken to people like ours?" |
+| 8 | Downloadable one-sheet and media kit | "Can I send this to my committee?" |
+| 9 | Professional photos and headshots | "Can I use these in our promotion?" |
+| 10 | Books, podcast or media appearances | "Are they credible beyond the stage?" |
+| 11 | Speaking formats and delivery options | "Can they do a workshop, virtual session or emcee?" |
+| 12 | Simple booking or inquiry form | "How do I check availability?" |
+| 13 | Fee guidance or a clear next step | "Is this in our budget?" |
+| 14 | Upcoming and past engagements | "Are they active and in demand?" |
+| 15 | Mobile speed and easy navigation | "Can I review this on my phone between meetings?" |
+| 16 | Search and AI visibility basics | "Can I find them when I search for a topic?" |
+
+## Section 1: First impressions (fit at a glance)
+
+### 1. A clear headline above the fold
+
+The top of your home page has one job: tell a planner who you are, what you speak about, and who you speak to. Most speaker sites waste it on a big photo and a vague line like "Inspiring audiences worldwide."
+
+A stronger headline names your topic and audience:
+
+- **Weak:** "Igniting passion. Unlocking potential."
+- **Stronger:** "Keynotes on resilience and change for healthcare and frontline teams."
+
+Under the headline, add one short sentence on what makes you different (your story, your method or your results) and two buttons: **Watch my reel** and **Check availability**.
+
+**Tip:** Read your headline out loud and ask, "Could a planner tell my topic without scrolling?" If the answer is no, rewrite it.
+
+### 2. A demo reel and at least one full-length talk
+
+Video is the closest a planner gets to seeing you live. It's usually the first thing they look for, and the main way they judge quality.
+
+Include two types of video:
+
+- **A demo reel (2 to 4 minutes):** your best moments, real audience reactions, and a clear sense of your energy and humor. Put this near the top of your home page.
+- **A longer clip (10 minutes or more):** an uncut section of a real talk. Experienced planners want to see that you can hold a room, not just that you have good highlights.
+
+Keep video recent, show real audiences (wide shots of a full room help), and make sure it plays well on a phone. Avoid autoplaying with sound. No reel yet? Our guide to [making a two-minute speaker reel from footage you already have](https://speakerfolio.com/articles/make-a-two-minute-speaker-reel-from-footage-you-already-have/) walks you through it.
+
+Every Speakerfolio template has a stage video section, so your reel sits on the page where planners look for it.
+
+### 3. Signature keynote topics
+
+Planners book topics, not people in general. Give each of your signature talks its own block, or its own page if you have several.
+
+For each topic, include:
+
+- **A specific title** that a planner could put straight into a conference agenda.
+- **A two- or three-sentence description** of the problem the talk addresses.
+- **Who it's for:** industries, roles or event types it works best with.
+- **Formats available:** keynote, breakout, workshop, virtual.
+
+Keep it to three to five topics. A list of twelve makes you look like a generalist, and a planner hunting for a resilience speaker will trust the person who focuses on resilience.
+
+### 4. Audience outcomes
+
+A motivational talk can sound fluffy to a buyer who needs to justify the spend. Make the result concrete. Under each topic, list three things the audience will leave with.
+
+**Example:** "After this keynote, your team will:
+
+- Have a simple three-step reset they can use under pressure.
+- Know how to talk about setbacks without blame.
+- Leave with a 30-day challenge they can start the next morning."
+
+Outcomes help planners sell you internally. They can paste them straight into an event brief.
+
+## Section 2: Proof and credibility (quality and risk)
+
+### 5. Short and long speaker bios
+
+Planners need your bio for programs, introductions, event apps and press releases. Make it easy to copy.
+
+Provide three lengths:
+
+- **One line (about 25 words)** for agendas and social posts.
+- **Short bio (about 100 words)** for event programs.
+- **Long bio (250 to 400 words)** for the website and media.
+
+Write all three in the third person, lead with what you speak about rather than your childhood, and include the one story or credential that makes you worth hearing. Add a separate **introduction script** the emcee can read on the day; planners appreciate it more than you'd expect. For a step-by-step version, read [how to write a speaker bio planners can actually use](https://speakerfolio.com/articles/how-to-write-a-speaker-bio-planners-can-actually-use/).
+
+### 6. Testimonials from event organizers
+
+Audience praise is nice. Praise from someone who booked you is what a planner trusts, because that person had the same job they do.
+
+Strong testimonials include:
+
+- **The person's name, role and organization**, not "Sarah, HR."
+- **The event type and audience size**, if possible.
+- **A specific result:** "highest-rated session of the conference," "our team still uses her three-step reset."
+- **A comment on working with you:** easy to work with, customized the talk, arrived early for tech checks.
+
+Place two or three testimonials on your home page and the rest on each topic page, matched to the talk they're about. A short video testimonial from an organizer is even better. Here's [how to ask for testimonials right after the event](https://speakerfolio.com/articles/ask-for-testimonials-the-right-way-right-after-the-event/), when organizers are happiest to give them.
+
+### 7. Client logos and past events
+
+Logos answer "Have they spoken to people like us?" in a glance. Show organizations you've spoken for, grouped by industry if you serve several (for example, healthcare, education, sales teams).
+
+Only use logos you have permission to display, and keep the list honest. A planner who calls a reference and finds you spoke at a breakfast meeting, not the annual conference, will quietly drop you.
+
+### 8. A downloadable one-sheet and media kit
+
+A **speaker one-sheet** is a single page (usually a PDF) that summarizes you: photo, headline, topics, short bio, a few testimonials, logos and contact details. Planners use it to pitch you to their committee.
+
+Your media kit can add:
+
+- Headshots and action photos (see item 9)
+- All three bio lengths and your introduction script
+- Topic descriptions and outcomes
+- Technical and room requirements (your **speaker rider**)
+- Logos and testimonials
+
+Put a visible **Download one-sheet** button on your home page and booking page. Don't hide it behind an email form; planners in a hurry will skip it.
+
+A free speaker one-sheet comes with every Speakerfolio site, ready to send to planners.
+
+### 9. Professional photos and headshots
+
+Planners need images for brochures, event websites and social posts. Provide:
+
+- **A recent headshot** in color, in both portrait and landscape crops.
+- **Action shots** of you on stage with an audience visible.
+- **High-resolution downloads** with clear usage permission.
+
+Label the files with your name (for example, `jane-doe-headshot.jpg`), so they don't get lost in a planner's downloads folder.
+
+### 10. Books, podcasts and media appearances
+
+If you've written a book, host a podcast or appeared in the press, add a short **As featured in** section. Third-party mentions do two things: they show credibility beyond the stage, and they give planners extra material (a book bundle for attendees, a podcast episode to share before the event).
+
+Link each mention to the source so the claim is easy to check.
+
+## Section 3: Logistics and booking (make it easy to say yes)
+
+### 11. Speaking formats and delivery options
+
+Many events need more than a 45-minute keynote. Spell out what you offer:
+
+- Keynote (in-person)
+- Breakout or workshop session
+- Half-day or full-day training
+- Virtual or hybrid keynote
+- Emcee or host
+- Fireside chat or panel moderator
+
+For virtual talks, mention your setup in a sentence (studio, camera, lighting, backup internet). It removes a common worry.
+
+### 12. A simple booking or inquiry form
+
+This is where many speaker websites lose bookings. The form is buried in the footer, asks fifteen questions, or is just an email address.
+
+Make your booking page easy to find (in the top menu, labeled **Book [Your Name]** or **Check availability**) and keep the form short. Ask for:
+
+- Name, organization and email
+- Event date and location (or "virtual")
+- Event type and audience size
+- Topic of interest
+- Budget range (optional, as a dropdown)
+- Anything else they want you to know
+
+Then tell them what happens next: "I'll reply within one business day with availability and a short call link." That single sentence reduces uncertainty and makes planners more likely to send the form.
+
+Every Speakerfolio site includes a booking form, so inquiries come straight to you.
+
+### 13. Fee guidance or a clear next step
+
+Speakers often avoid listing fees, and that's fine. But a planner with a fixed budget doesn't want to spend a call finding out you're out of range.
+
+Pick one approach:
+
+- **Show a range:** "Keynote fees start at $7,500 plus travel."
+- **Show tiers:** virtual, regional and international.
+- **Explain how pricing works** ("fees depend on format, location and date") and offer a quick call.
+
+Any of these is better than silence. If you work with a speaker bureau, say so and explain whether planners should contact you or your agent.
+
+### 14. Upcoming and past engagements
+
+A short **Upcoming events** list shows you're active and in demand. A **Past engagements** list shows range and experience.
+
+Keep it current. A calendar where the last event is from three years ago does more harm than having no calendar at all.
+
+## Section 4: Technical basics (don't lose them on the way in)
+
+### 15. Mobile speed and easy navigation
+
+Many planners review speakers between meetings on a phone. Check your site on your own phone and ask:
+
+- Does the home page load quickly?
+- Does the reel play without zooming or rotating?
+- Can you reach the booking form in two taps?
+- Is the text readable without pinching?
+
+Keep your main menu short: **About, Topics, Video, Testimonials, Book**. Anything else can live in the footer.
+
+### 16. Search and AI visibility basics
+
+Planners don't only arrive from your business card. Many start with a search like "resilience keynote speaker for nurses" or ask an AI assistant for speaker suggestions. Help them find you:
+
+- **Use your topic words** in page titles and headings, not just your name.
+- **Give each signature talk its own page** with a clear title and description.
+- **Write a plain-language FAQ** answering the questions planners ask (formats, travel, customization).
+- **Keep your name, topics and bio consistent** across your website, LinkedIn, speaker directories and bureau listings, so search engines and AI tools see the same story everywhere.
+- **Add alt text** to photos describing what's in them.
+
+Speakerfolio sites come with a basic AI visibility setup, so search engines and AI assistants can read your topics and bio.
+
+## Common mistakes on motivational speaker websites
+
+Even good speakers lose bookings to these:
+
+- **All about you, nothing about the audience.** Your story matters, but planners buy outcomes for their people.
+- **No video, or only a five-year-old clip.** Planners will assume your current talks aren't as strong.
+- **Testimonials with no names.** "Amazing speaker! - J." doesn't reduce anyone's risk.
+- **Booking hidden in the footer.** If a planner can't find the next step, they move to the next tab.
+- **Too many topics.** Five focused talks beat twelve vague ones.
+- **Out-of-date content.** Old photos, past events from years ago or broken links make you look inactive.
+
+For a shorter version of this list, see [what every speaker website needs](https://speakerfolio.com/articles/what-every-speaker-website-needs/).
+
+## How Speakerfolio helps you build a planner-ready speaker website
+
+You can build a speaker site on any general website builder, but you'll spend time working out the structure yourself. [Speakerfolio](https://speakerfolio.com/) is built only for speakers, trainers and coaches, so the sections planners look for are there from the start:
+
+- **Six speaker templates** to choose from. [See the templates](https://speakerfolio.com/templates/).
+- **Your talks, stage video, testimonials and a booking form** on one page.
+- **A free speaker one-sheet** to send to planners.
+- **Written and set up for you** from your LinkedIn profile, with a private preview before anything goes live.
+- **Free on yourname.speakerfolio.com**, live in about two days. Premium moves your site to your own domain with hosting included. [See pricing](https://speakerfolio.com/pricing/).
+
+Use the checklist above as your build plan: start with the headline, reel and topics, add proof, then make booking effortless.
+
+## Frequently asked questions
+
+### What should a motivational speaker website include?
+
+At minimum: a clear headline naming your topic and audience, a demo reel, your signature keynote topics with audience outcomes, testimonials from event organizers, client logos, a downloadable one-sheet, professional photos, and a simple booking form. Fee guidance, an events calendar and media mentions make it stronger.
+
+### What do event planners look for on a speaker website?
+
+Planners look for four things: fit (does your topic match their event and audience), quality (usually judged from video), risk (testimonials and past clients) and logistics (formats, availability, budget and how to contact you). A site that answers all four quickly gets more inquiries.
+
+### How long should a speaker demo reel be?
+
+Most demo reels run two to four minutes. Pair it with a longer, uncut clip of 10 minutes or more so planners can see you hold a room, not just your best highlights.
+
+### Should I put my speaking fee on my website?
+
+You don't have to list an exact fee, but give planners some guidance, such as a starting range or an explanation of what affects price. It saves both sides time and filters out events that can't afford you.
+
+### What is a speaker one-sheet?
+
+A speaker one-sheet is a one-page summary, usually a PDF, that includes your photo, topics, short bio, testimonials, client logos and contact details. Planners use it to pitch you to a committee or decision-maker.
+
+### Do I need a separate website if I'm listed with a speaker bureau?
+
+Yes. A bureau listing helps, but your own website is where you control your story, video, topics and booking path. Many planners check a speaker's own site even when they found them through a bureau.
+
+## Turn your website into your best booking tool
+
+A motivational speaker website isn't a digital brochure. It's the place a planner decides whether to take the next step. Go through the checklist, fix the gaps that stop a planner checking fit, quality, risk and logistics, and keep your video, testimonials and calendar fresh.
+
+Ready to build a site planners can say yes to? [Get your free speaker website](https://speakerfolio.com/contact/#start) and put your reel, topics and booking form in front of the people who hire speakers.
+
+---
+
+# What Every Speaker Website Needs: 5 Sections Planners Look For
+
+URL: https://speakerfolio.com/articles/what-every-speaker-website-needs/
+Published: 2026-11-01 · Author: Saleh, Speakerfolio
+
+Event planners decide in a few minutes. They open your site with one question in mind: can this person do the job for my audience? Everything on your **speaker website** should help them answer yes, quickly, and in the order they look.
+
+Most speaker sites have the right pieces in the wrong order. The video sits three scrolls down, the talks are hidden under "Services", and the only way to book is an email address in the footer. This guide covers the five sections every speaker website needs, where each one goes on the page, and examples you can copy.
+
+If you want the full 16-point audit, read the [motivational speaker website checklist](https://speakerfolio.com/articles/motivational-speaker-website-checklist/). This article is the short version: the five sections that matter most, and how to lay them out.
+
+## Why the order of your speaker website matters
+
+Planners rarely read a speaker site from top to bottom. They scan for answers, and they stop as soon as one is missing. A typical visit goes like this:
+
+1. **Who is this, and what do they talk about?** Answered by the first line on the page.
+2. **Is the topic right for us?** Answered by your talks.
+3. **Are they good on stage?** Answered by video.
+4. **Can we trust them?** Answered by proof from other organizers.
+5. **How do we book?** Answered by a form or a clear next step.
+
+Put your sections in that order and the page does the planner's thinking for them. Put them in any other order and you make the planner hunt.
+
+## The 5 sections every speaker website needs
+
+| # | Section | What it answers | Where it goes |
+|---|---|---|---|
+| 1 | A clear line about who you help | "Who is this?" | Top of the page, first thing seen |
+| 2 | Your talks, with takeaways | "Do they fit our event?" | Straight after the opening |
+| 3 | Video | "Are they good on stage?" | Near the top, next to or under the opening |
+| 4 | Proof from people who booked you | "Can we trust them?" | After talks and video |
+| 5 | An easy way to book | "How do we book?" | In the menu and at the end of the page |
+
+### 1. A clear line about who you help
+
+Not "Speaker, author, coach". Say what you talk about and for whom. Planners skim, so one line has to place you.
+
+- **Weak:** "Inspiring audiences to reach their full potential."
+- **Strong:** "Keynotes on hybrid leadership for engineering teams."
+- **Strong:** "Resilience talks for nurses and frontline healthcare staff."
+
+Under that line, add one sentence on what makes you different (your story, your method or your results) and two buttons: **Watch me speak** and **Check availability**.
+
+A good test: cover your photo and read the line on its own. If a planner could forward it to their boss with "this is the speaker I mean", it works.
+
+### 2. Your talks, with takeaways
+
+List two to four talks. For each one, give:
+
+- **A title** a planner could drop straight into an agenda.
+- **One sentence on the problem it solves** for the audience.
+- **Three things the audience will leave with.** This is the part planners copy into their proposal.
+- **Formats:** keynote, workshop, virtual, half-day.
+
+Here is what a talk block can look like:
+
+> **The 90-Second Reset: staying calm when the pressure is on**
+> For frontline teams who make high-stakes decisions every day.
+> Your team will leave with a breathing routine they can use mid-shift, a script for handing over under pressure, and a 30-day habit plan.
+> Keynote (45 min) · Workshop (half day) · Virtual
+
+Fewer, sharper talks beat a long list. Twelve topics makes you look like a generalist; three focused ones make you look like the expert.
+
+### 3. Video near the top
+
+A two-minute reel or a full talk on YouTube is how planners judge quality. They want to see how you hold a room before they risk their event on you.
+
+Put the video high on the page, not on a separate "Media" tab. Show a real audience, keep it recent, and make sure it plays on a phone without zooming. If you only have event recordings and phone clips, our guide to [making a two-minute speaker reel from footage you already have](https://speakerfolio.com/articles/make-a-two-minute-speaker-reel-from-footage-you-already-have/) shows you how to cut them together.
+
+### 4. Proof from people who booked you
+
+Logos of organizations you've spoken for, and two or three short quotes from organizers, with their name, role and event. Specific beats glowing:
+
+- **Weak:** "Amazing speaker! Highly recommend."
+- **Strong:** "Our highest-rated session of the day. Teams were still quoting her reset routine a month later." Head of People, Northwind, Leadership Summit 2026.
+
+Only show logos you have permission to use, and keep them honest. If you don't have organizer quotes yet, read [how to ask for speaker testimonials right after the event](https://speakerfolio.com/articles/ask-for-testimonials-the-right-way-right-after-the-event/).
+
+### 5. An easy way to book
+
+A short form that asks for date, location, audience size and budget range. Every extra field costs you enquiries, so ask only what you need to reply.
+
+- Put **Book [your name]** in the top menu, not just the footer.
+- Repeat the booking button at the end of the page.
+- Say what happens next: "I reply within one working day with availability."
+
+An email address on its own is not a booking path. Planners want to send the details once and know someone will answer.
+
+## A one-page speaker website layout you can copy
+
+Most speakers don't need ten pages. One well-ordered page does the job, and it's easier for planners to forward. Here's the layout we use on every [Speakerfolio template](https://speakerfolio.com/templates/):
+
+| Order | Section | What goes in it | Length |
+|---|---|---|---|
+| 1 | Header | Your name, menu, **Book me** button | One line |
+| 2 | Opening | Who you help, one line on what's different, two buttons | 2 to 3 lines |
+| 3 | Video | Reel or best full talk | 2 to 4 minutes of video |
+| 4 | Talks | 2 to 4 talks with takeaways and formats | One short block each |
+| 5 | Proof | Logos and 2 to 3 organizer quotes | One row plus quotes |
+| 6 | About | Short bio with a **Copy bio** button | About 100 words |
+| 7 | Booking | Short form, what happens next | 5 to 6 fields |
+| 8 | Footer | Email, social links, one-sheet download | One line |
+
+If you have a book, a podcast or many talks, add pages later. Start with the one page that answers the five questions.
+
+## Single page or multiple pages?
+
+A **single page** is best when you're starting out or have up to four talks. It loads fast, works well on phones, and planners can send one link to their committee.
+
+**Multiple pages** make sense when you have a lot to show: one page per talk, a media page, a blog. Separate talk pages can also help you show up in search for specific topics, such as "resilience speaker for nurses". Keep the five essentials on the home page either way.
+
+## Common speaker website mistakes
+
+- **Opening with your life story.** Your story matters, but planners need to know your topic first.
+- **Video hidden on another page.** If they have to click "Media", many won't.
+- **Talks without takeaways.** A title alone doesn't tell a planner what their people get.
+- **Anonymous testimonials.** "Great talk! J." doesn't reduce anyone's risk.
+- **No booking form.** An email address alone loses enquiries.
+- **Out-of-date content.** A calendar that ends three years ago makes you look inactive.
+
+## Frequently asked questions
+
+### What does a speaker website need?
+
+A speaker website needs five things: a clear line about who you help, your talks with audience takeaways, video near the top, proof from organizers who booked you, and an easy way to book. Put them in that order, because it's the order planners look.
+
+### Should my speaker website be one page or several?
+
+One page is enough for most speakers, especially with up to four talks. Add separate pages for each talk, media or a blog when you have more to show or want to rank for specific topics.
+
+### Where should video go on a speaker website?
+
+Near the top of the home page, close to your opening line. Planners judge quality from video first, so don't hide it on a separate media page.
+
+### How many talks should I list?
+
+Two to four. A few focused talks make you look like the expert on those topics; a long list makes you look like a generalist.
+
+### What should a speaker booking form ask?
+
+Name, organization, email, event date and location, audience size, topic of interest and an optional budget range. Keep it short and say when you'll reply.
+
+## Build your speaker website the planner-friendly way
+
+A speaker website isn't a brochure. It's where a planner decides whether to take the next step. Put the five sections in the order planners look, keep them current, and make booking easy.
+
+Every Speakerfolio site is built around these five sections. [Get your free speaker website](https://speakerfolio.com/contact/#start), live in about two days, with a private preview before anything goes live.
+
+---
+
+# How to Write a Speaker Bio Planners Can Actually Use (Templates and Examples)
+
+URL: https://speakerfolio.com/articles/how-to-write-a-speaker-bio-planners-can-actually-use/
+Published: 2026-11-01 · Author: Saleh, Speakerfolio
+
+Planners paste your bio into programs, emails, event apps and the host's introduction. If they have to rewrite it, they will, and you lose control of how you're described. A good **speaker bio** is written for other people to use: short enough to fit, clear enough to read aloud, and specific enough to make an audience want to hear you.
+
+This guide shows you how to write a speaker bio in three lengths, with a simple formula, templates you can fill in and examples you can adapt.
+
+## What a speaker bio is for
+
+Your bio is not a CV. It's a tool for the people who book and introduce you:
+
+- **The planner** pastes it into the event page and the program.
+- **The committee** reads it to approve the booking.
+- **The host or emcee** reads it out loud before you walk on stage.
+- **The marketing team** uses a line of it in emails and social posts.
+
+Each of them needs a different length, so you need more than one version.
+
+## The three speaker bio lengths you need
+
+| Version | Length | Where it's used |
+|---|---|---|
+| One-line bio | Under 25 words | Agendas, social posts, event apps |
+| Short bio | About 80 to 100 words | Event pages, programs, speaker one-sheet |
+| Long bio | About 200 to 300 words | Your website, media kit, press |
+
+Write all three with the same facts at different depths. When a planner asks for "your bio", send the short one and link to the others.
+
+## The speaker bio formula
+
+Every version follows the same four parts, in this order:
+
+1. **Who you help and with what.** Lead with your topic and audience, not your job title.
+2. **Proof.** The companies you've worked with, the book, a result, a credential that matters to your audience.
+3. **Your story in one line.** The experience that makes you worth hearing.
+4. **Something human.** Where you live, or what you do outside work. It gives the host something warm to say.
+
+The one-line bio uses part 1 and a hint of part 2. The short bio uses all four briefly. The long bio expands each one.
+
+### Write in the third person
+
+"Rina helps operations teams..." reads naturally when someone else says it out loud, and planners won't need to edit it. Keep a first-person version for your own About section if you like.
+
+### Lead with the outcome, not the history
+
+Open with what you help audiences do, then the proof. Your early career can go last, or go. Compare:
+
+- **History first:** "After graduating in 2004, Rina joined a logistics firm, where she spent ten years in various roles..."
+- **Outcome first:** "Rina Akter helps operations teams cut wasted hours without burning people out."
+
+The second one tells a planner in one sentence whether she fits their event.
+
+## Speaker bio templates
+
+Copy these, fill in the brackets, then read each one out loud. If you stumble, shorten it.
+
+### One-line bio template
+
+> [Name] helps [audience] [achieve outcome] through [method or topic].
+
+**Example:** Rina Akter helps operations teams cut wasted hours without burning people out.
+
+### Short bio template (about 90 words)
+
+> [Name] helps [audience] [outcome]. [He/She/They] [proof: worked with X, Y and Z / wrote [book] / led [result]]. [One line of story: what happened that makes this talk matter]. [Name]'s keynotes give audiences [two concrete takeaways]. [Human line: lives in [place], [one personal detail]].
+
+**Example:** Rina Akter helps operations teams cut wasted hours without burning people out. She spent twelve years running warehouse and logistics teams through three company mergers, and now advises manufacturers and retailers on calmer, faster ways of working. Her keynote, *Less Busy, More Done*, gives audiences a one-page weekly plan and a meeting rule teams can start the next morning. She lives in Dhaka and has not missed a Friday cricket match in six years.
+
+### Long bio template (about 250 words)
+
+Use the short bio as your first paragraph, then add:
+
+- **A paragraph of proof:** organizations you've spoken for, results, awards, media, your book.
+- **A paragraph on your talks:** the two or three topics you're booked for, and what audiences leave with.
+- **A closing line:** how to book you, or where to learn more.
+
+## Write an introduction script for the host
+
+Hosts often read your bio word for word, and long bios don't sound good spoken. Give them a separate **introduction script** of about 60 words, written to be said out loud:
+
+> Our next speaker has spent twelve years keeping warehouses running through three company mergers. Today she helps teams get more done with less stress. Please welcome Rina Akter.
+
+Short sentences, no lists, and end on your name so the applause lands on cue. Planners appreciate it more than you'd expect.
+
+## Common speaker bio mistakes
+
+- **Too long.** If a planner has to cut it, they'll cut the part you care about.
+- **A list of job titles.** "Speaker, author, coach, consultant" tells nobody what you talk about.
+- **Vague claims.** "World-class", "renowned" and "thought leader" add nothing. Use a fact instead.
+- **Out-of-date details.** Old book titles or past roles make you look inactive.
+- **Inconsistent versions.** If LinkedIn, your website and a bureau listing describe you differently, planners, search engines and AI tools get mixed messages.
+
+## Where to use your speaker bio
+
+- **Your website:** the short bio on your home page with a **Copy bio** button, and the long bio on your About section. Every Speakerfolio site includes a Copy bio button so planners take the version they need in one click.
+- **Your speaker one-sheet:** the short bio, next to your photo and talks.
+- **LinkedIn:** the first lines of your About section should match your one-line bio.
+- **Speaker directories and bureaus:** use the same short bio so your story is consistent everywhere.
+
+Your bio is one of [the sections every speaker website needs](https://speakerfolio.com/articles/what-every-speaker-website-needs/). For the full list, see the [motivational speaker website checklist](https://speakerfolio.com/articles/motivational-speaker-website-checklist/).
+
+## Frequently asked questions
+
+### How long should a speaker bio be?
+
+Have three versions: a one-line bio under 25 words, a short bio of about 80 to 100 words, and a long bio of about 200 to 300 words. Send the short bio by default.
+
+### Should a speaker bio be in first or third person?
+
+Third person. Planners and hosts use your bio to describe you, and "Rina helps teams..." reads naturally when someone else says it.
+
+### What should a speaker bio include?
+
+Who you help and with what, proof such as clients, results or a book, one line of your story, and a human detail. Lead with the outcome for the audience, not your career history.
+
+### What's the difference between a speaker bio and an introduction?
+
+A bio is written to be read, in programs and on websites. An introduction is a shorter script, about 60 words, written for the host to say out loud before you speak.
+
+### Where should I put my speaker bio online?
+
+On your website with a copy button, at the top of your LinkedIn About section, on your speaker one-sheet and on every directory or bureau listing, using the same facts each time.
+
+## Make your bio easy to use
+
+Write it once in three lengths, keep the facts the same everywhere, and make it easy to copy. Planners will use your words instead of their own.
+
+Want it done for you? Speakerfolio writes your bio from your LinkedIn profile and puts it on a free speaker website with a Copy bio button. [Get your free speaker website](https://speakerfolio.com/contact/#start).
+
+---
+
+# How to Make a Two-Minute Speaker Demo Reel From Footage You Already Have
+
+URL: https://speakerfolio.com/articles/make-a-two-minute-speaker-reel-from-footage-you-already-have/
+Published: 2026-11-01 · Author: Saleh, Speakerfolio
+
+A planner rarely watches a 45-minute talk before shortlisting you. They will watch two minutes. A **speaker demo reel** shows your energy, your stage presence and the audience reacting, all in the time it takes to finish a coffee.
+
+You don't need a film crew to make one. Event recordings, phone clips from the audience and clear audio are enough. This guide shows you what footage to collect, how to structure a two-minute reel, how to edit it with free tools, and where to put it so planners actually see it.
+
+## Why every speaker needs a demo reel
+
+Video is the closest a planner gets to seeing you live. A reel answers the question your bio and testimonials can't: are you good on stage?
+
+A reel also travels. Planners forward it to their committee, bureaus put it on your profile, and you can pin it to LinkedIn. One short video does more selling than a page of text.
+
+## Demo reel vs full-length talk
+
+You need both, for different jobs.
+
+| | Demo reel | Full-length talk |
+|---|---|---|
+| Length | 2 to 4 minutes | 10 minutes or more, uncut |
+| Purpose | Get you shortlisted | Prove you can hold a room |
+| Who watches | Planners skimming many speakers | Committees making the final call |
+| Where it goes | Top of your website, LinkedIn, emails | Your website and YouTube |
+
+Start with the reel. Add a longer uncut clip when you have a good recording.
+
+## Step 1: Collect the footage you already have
+
+You likely have more usable footage than you think.
+
+- **Ask past organizers for their recordings.** Many events film the main stage. A short, friendly email asking for the file is usually enough.
+- **Search your phone and email** for clips people sent you after events.
+- **Check LinkedIn, Instagram and event hashtags** for videos audience members posted. Message them and ask for the original file.
+- **Look for audience reactions:** laughter, applause, people leaning in, hands raised. Even 20 seconds of a laughing room is useful.
+- **Find podcast or webinar recordings** if you've been a guest. A good soundbite works even without stage footage.
+
+Always ask permission before using someone else's recording, and check that event branding can appear.
+
+## Step 2: Structure your reel in three beats
+
+A two-minute reel works best with a simple shape. Here's a structure you can follow:
+
+| Time | Beat | What to show |
+|---|---|---|
+| 0:00 to 0:15 | The hook | Your strongest 10 to 15 seconds: a line that makes people lean in |
+| 0:15 to 1:30 | The range | A short story, a point that lands, a moment with the audience, a laugh |
+| 1:30 to 2:00 | The close | Applause, a wide shot of the room, your name, topic and website |
+
+### Open with your strongest moment
+
+Don't start with a logo or a slow walk onto the stage. Start with the line people quote back to you. Planners decide in the first few seconds whether to keep watching.
+
+### Show range, not just highlights
+
+Mix a serious moment with a light one, a story with a practical point, and at least one shot of the audience reacting. Planners want to see that you connect with people, not just that you have good slides.
+
+### Close on your name and topic
+
+End with applause and a simple title card: your name, what you speak about, and your website. Keep it on screen for three or four seconds.
+
+## Step 3: Get the sound right
+
+Viewers forgive a shaky shot. They don't forgive muddy audio.
+
+- **Choose clips where your voice is clear**, even if the picture is less perfect.
+- **Turn music down** under speech, or leave it out.
+- **Add captions.** Many planners watch with the sound off, especially on LinkedIn and on phones. Most editing apps can generate captions automatically; check them for mistakes.
+- **Keep volume even** between clips so nobody has to reach for the volume button.
+
+## Step 4: Edit with free tools
+
+You don't need expensive software. Free options include **CapCut**, **DaVinci Resolve** and **iMovie** on a Mac or iPhone. Pick the one you find easiest; the editing steps are the same:
+
+1. Put all your clips in one project.
+2. Cut each clip down to its best seconds.
+3. Arrange them in the three-beat structure.
+4. Add captions and a title card at the end.
+5. Export as an MP4 in 1080p.
+
+**Tip:** Watch the finished reel on your phone with the sound off. If it still makes sense and still makes you look good, it's ready.
+
+## Step 5: Put your reel where planners will see it
+
+- **YouTube:** upload it as public or unlisted and use that one link everywhere. Give it a clear title, like "[Your name] speaker demo reel: [topic]".
+- **Your website:** near the top of the home page, not on a separate media page. Every Speakerfolio template has a stage video section for exactly this.
+- **LinkedIn:** add it to the Featured section of your profile.
+- **Emails to planners:** link to it in the first message, not as an attachment.
+- **Your speaker one-sheet:** add the link or a QR code.
+
+Video is one of [the five sections every speaker website needs](https://speakerfolio.com/articles/what-every-speaker-website-needs/).
+
+## Common speaker reel mistakes
+
+- **Too long.** Over four minutes and planners stop watching.
+- **Slow opening.** Logos, intros and walk-ons waste the most valuable seconds.
+- **Slides instead of you.** Planners want to see you, not your presentation.
+- **No audience.** Without reactions, it's hard to judge how you land with a room.
+- **Old footage.** If your reel is five years old, planners assume your current talks aren't as strong.
+- **Autoplay with sound on your website.** It annoys visitors; let them press play.
+
+## Frequently asked questions
+
+### How long should a speaker demo reel be?
+
+Two to four minutes. Two minutes is ideal for a first look. Pair it with a longer, uncut clip of 10 minutes or more for planners who want to see a full section of a talk.
+
+### Can I make a speaker reel without professional footage?
+
+Yes. Event recordings, clips from audience members and phone videos all work, as long as your voice is clear. Ask permission before using other people's recordings.
+
+### What should a speaker reel include?
+
+Your strongest opening line, a short story, a practical point, audience reactions such as laughter and applause, and a closing card with your name, topic and website.
+
+### Should I add captions to my speaker reel?
+
+Yes. Many planners watch with the sound off, especially on LinkedIn and phones. Captions make sure your message still lands.
+
+### Where should I upload my speaker reel?
+
+Upload it to YouTube and use that link on your website, in the Featured section of LinkedIn, in emails to planners and on your speaker one-sheet.
+
+## Your reel is your best first impression
+
+Collect the footage you have, cut it into three beats, get the sound right and put it where planners look first. Two good minutes of video can do more for your bookings than any amount of text.
+
+Speakerfolio puts your reel at the top of a free speaker website, next to your talks and booking form. [Get your free speaker website](https://speakerfolio.com/contact/#start).
+
+---
+
+# How to Ask for Speaker Testimonials the Right Way, Right After the Event
+
+URL: https://speakerfolio.com/articles/ask-for-testimonials-the-right-way-right-after-the-event/
+Published: 2026-11-01 · Author: Saleh, Speakerfolio
+
+The best **speaker testimonials** come from the people who booked you, and they come quickly. Organizers are happiest with you the day after the event, while the feedback forms are still coming in. A week later they're planning the next one, and your request sits in their inbox.
+
+This guide shows you when to ask, the two questions that get usable quotes, an email template you can copy, how to get permission and attribution right, and where to use testimonials so they help you get booked.
+
+## Why organizer testimonials matter most
+
+Audience praise is nice. Praise from an organizer is what another planner trusts, because that person had the same job: they took a risk on a speaker, and it paid off.
+
+A strong organizer testimonial answers the questions a planner can't answer from your video:
+
+- Did the audience respond well?
+- Was the speaker easy to work with?
+- Would they book them again?
+
+## When to ask: within 48 hours
+
+Timing does most of the work. Ask within two days of your talk, while the energy from the event is still fresh.
+
+- **Before the event:** let the organizer know you'll ask for brief feedback afterwards. It makes the request expected, not awkward.
+- **Same day or next morning:** send a thank-you note. Mention one specific moment from the event.
+- **Within 48 hours:** ask for the testimonial, in the same email thread or a short follow-up.
+- **After a week:** one polite reminder, then let it go.
+
+## The two-question method
+
+Don't ask "Could you write a testimonial?". It sounds like homework, and you'll get a vague line like "Great speaker!". Ask two specific questions instead:
+
+1. **"What did attendees say about the session?"**
+2. **"What would you tell another planner who's considering me?"**
+
+Their answers become the quote. The first gives you audience impact; the second gives you a recommendation in their own words.
+
+## Speaker testimonial request email template
+
+Copy this, fill in the brackets and send it from your own email:
+
+> **Subject:** Thank you, and a quick question about [event name]
+>
+> Hi [first name],
+>
+> Thank you again for having me at [event name]. I loved [specific moment, e.g. the questions from your sales team at the end].
+>
+> If you have two minutes, I'd value your answers to two quick questions:
+>
+> 1. What did attendees say about the session?
+> 2. What would you tell another planner who's considering me?
+>
+> With your permission, I'd like to share your answer on my website, with your name, role and organization. Just let me know if you'd prefer it anonymous.
+>
+> Thanks again,
+> [Your name]
+
+Keep it short, specific and easy to answer from a phone.
+
+## Turn their answer into a strong testimonial
+
+Organizers often reply with a few loose sentences. Shape them into one tight quote, then send it back for approval:
+
+- **Keep their words.** Trim, don't rewrite.
+- **Keep the specific result.** "Highest-rated session of the day" beats "really great".
+- **Add a line about working with you** if they mentioned it: easy to work with, customized the talk, on time.
+- **Ask them to approve the final version** before you publish it.
+
+### Weak vs strong speaker testimonials
+
+| Weak testimonial | Strong testimonial |
+|---|---|
+| "Amazing speaker! Highly recommend." | "Our highest-rated session of the conference. Teams were still using her reset routine a month later." |
+| Signed "J., HR" | Signed "Head of People, Northwind, Leadership Summit 2026" |
+| About you as a person | About the audience and the result |
+| No context | Event type and audience size included |
+
+## Get permission and attribution right
+
+A quote signed "Head of People, Northwind, Leadership Summit 2026" carries far more weight than an anonymous one. Before you publish:
+
+- **Ask permission** to use their name, role, organization and event.
+- **Ask about logos separately.** Some organizations allow a quote but not their logo.
+- **Respect a request to stay anonymous.** Use "Event organizer, financial services conference" instead.
+- **Keep a record** of the email where they gave permission.
+
+## Ask for a short video testimonial
+
+If the organizer is happy and you're still at the venue, ask for 20 seconds on your phone: "What would you tell another planner about this session?". A real organizer speaking on camera is one of the strongest pieces of proof you can have. Get their permission on the same clip.
+
+## Where to use your testimonials
+
+- **Your website:** two or three on the home page, and the rest next to the talk they're about. Proof is one of [the five sections every speaker website needs](https://speakerfolio.com/articles/what-every-speaker-website-needs/).
+- **Your speaker one-sheet:** one or two short quotes under your talks.
+- **LinkedIn:** ask the organizer to post it as a recommendation on your profile too.
+- **Emails to planners:** one line from a similar event, in the first message.
+- **Your demo reel:** a short text quote on screen, or the video testimonial at the end.
+
+Use it the same week. Add the quote to your site straight away and keep the organization's logo for your client strip. On Speakerfolio, send it to us and we add it for you.
+
+## Common testimonial mistakes
+
+- **Waiting too long.** After a week, response rates drop and the details fade.
+- **Asking for "a testimonial".** Specific questions get specific answers.
+- **Editing words they didn't say.** Trim, but keep it theirs, and get approval.
+- **Publishing without permission.** It can damage a relationship you worked hard to build.
+- **Only using audience comments.** Planners trust other planners more.
+
+## Frequently asked questions
+
+### When should a speaker ask for a testimonial?
+
+Within 48 hours of the event. Organizers are most enthusiastic right after your talk, and the details are still fresh.
+
+### How do I ask an event organizer for a testimonial?
+
+Thank them for the event, then ask two specific questions: what did attendees say about the session, and what would you tell another planner considering me? Ask permission to share the answer with their name.
+
+### What makes a good speaker testimonial?
+
+A specific result, the person's name, role and organization, the event, and ideally a comment on what you were like to work with. Specific beats glowing.
+
+### Can I use a testimonial without the person's name?
+
+Yes, if they prefer, but it carries less weight. Use a descriptive label such as "Event organizer, healthcare conference" instead of initials.
+
+### Where should speakers display testimonials?
+
+On your website home page and next to each talk, on your speaker one-sheet, as LinkedIn recommendations, and in emails to planners.
+
+## Make proof part of every booking
+
+Make asking for a testimonial a habit after every event: thank, ask two questions, get permission and publish within a week. After a few events, your proof section will do much of your selling for you.
+
+Every Speakerfolio site has a testimonials section ready for organizer quotes. [Get your free speaker website](https://speakerfolio.com/contact/#start).
+

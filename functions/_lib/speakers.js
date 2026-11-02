@@ -163,13 +163,16 @@ const PAGE_CSS = '<style>[hidden]{display:none!important}'
 
 export function page({ title, desc, path, image, ld, body, robots, status = 200, cache = 'public, max-age=60' }) {
   const url = SITE + path;
-  const img = image ? (image.startsWith('http') ? image : SITE + image) : SITE + '/assets/img/speakerfolio-og.jpg';
+  const img = image ? (image.startsWith('http') ? image : SITE + image) : SITE + '/assets/img/speakerfolio-directory-og.jpg';
   const html = '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
     + '<title>' + esc(title) + '</title>\n<meta name="description" content="' + esc(desc) + '">\n'
     + '<link rel="canonical" href="' + esc(url) + '">\n<meta name="robots" content="' + (robots || 'index, follow, max-image-preview:large') + '">\n'
     + '<meta property="og:site_name" content="Speakerfolio">\n<meta property="og:title" content="' + esc(title) + '">\n<meta property="og:description" content="' + esc(desc) + '">\n'
     + '<meta property="og:type" content="' + (ld && ld.ogType ? ld.ogType : 'website') + '">\n<meta property="og:url" content="' + esc(url) + '">\n<meta property="og:image" content="' + esc(img) + '">\n'
-    + '<meta name="twitter:card" content="' + (image ? 'summary' : 'summary_large_image') + '">\n'
+    + (image ? '<meta property="og:image:width" content="800">\n<meta property="og:image:height" content="800">\n' : '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n')
+    + '<meta property="og:image:alt" content="' + esc(title.split(' | ')[0]) + '">\n<meta property="og:locale" content="en_US">\n'
+    + '<meta name="twitter:card" content="' + (image ? 'summary' : 'summary_large_image') + '">\n<meta name="twitter:title" content="' + esc(title) + '">\n<meta name="twitter:description" content="' + esc(desc) + '">\n'
+    + '<link rel="alternate" type="application/rss+xml" title="Speakerfolio articles" href="' + SITE + '/articles/feed.xml">\n'
     + HEAD_BASE + PAGE_CSS
     + (ld && ld.graph ? '<script type="application/ld+json">' + JSON.stringify({ '@context': 'https://schema.org', '@graph': ld.graph }).replace(/</g, '\\u003c') + '</script>\n' : '')
     + '</head>\n<body>\n' + WRAP_OPEN + HEADER + body + CTA + FOOTER + '</div>\n</body>\n</html>\n';

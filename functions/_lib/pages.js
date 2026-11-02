@@ -22,16 +22,23 @@ const ICON = {
   search: '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.2-4.2"/></svg>'
 };
 
+function trimDesc(t, n = 158) {
+  t = String(t).replace(/\s+/g, ' ').trim();
+  if (t.length <= n) return t;
+  const cut = t.slice(0, n - 1);
+  return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,:;]$/, '') + '.';
+}
+
 // ---------------- directory and topic pages ----------------
 export function directoryPage({ all, topic, q, format, path }) {
   const published = all.filter((s) => s.published);
   const list = topic ? published.filter((s) => (s.topics || []).includes(topic)) : published;
   const counts = Object.fromEntries(TOPICS.map((t) => [t, published.filter((s) => (s.topics || []).includes(t)).length]));
   const countries = [...new Set(list.map((s) => country(s.location)).filter(Boolean))].sort();
-  const title = topic ? topic + ' speakers for your event | Speakerfolio' : 'Find a speaker: keynote speakers, trainers and coaches | Speakerfolio';
+  const title = topic ? topic + ' Speakers for Your Event | Speakerfolio' : 'Find a Speaker for Your Event | Speakerfolio';
   const h1 = topic ? topic + ' speakers' : 'Find a speaker for your event.';
   const desc = topic
-    ? (TOPIC_INTRO[topic] + ' Compare talks and send a booking request, free.').slice(0, 300)
+    ? trimDesc(TOPIC_INTRO[topic].split(':')[0] + ': ' + TOPIC_INTRO[topic].split(':').slice(1).join(':').trim() + ' Free to contact.')
     : 'Browse keynote speakers, trainers and coaches by topic and format. Every speaker has a full website with talks and video. Free for event planners, no booking fee.';
   const lead = topic ? TOPIC_INTRO[topic] : 'Every speaker has a full website with talks, video and a booking request form. Narrow the list with the filters.';
   const crumbs = breadcrumbs(topic ? [['Home', '/'], ['Speakers', '/speakers/'], [topic, path]] : [['Home', '/'], ['Speakers', '/speakers/']]);
@@ -220,7 +227,7 @@ export function profilePage({ s, related, preview }) {
   }
   out += '</main>';
 
-  const desc = (s.headline + '. ' + (s.shortBio || '')).replace(/\s+/g, ' ').slice(0, 158);
+  const desc = trimDesc(s.headline.replace(/\.?$/, '. ') + (s.shortBio || ''));
   const sameAs = Object.values(L).filter(Boolean);
   const person = {
     '@type': 'Person', '@id': SITE + path + '#person', name: s.name, url: SITE + path, description: s.shortBio || s.headline, jobTitle: s.headline,
@@ -231,7 +238,7 @@ export function profilePage({ s, related, preview }) {
   const graph = [ORG, crumbs.ld, { '@type': 'ProfilePage', '@id': SITE + path, url: SITE + path, name: s.name + ', ' + topic.toLowerCase() + ' speaker', dateModified: s.updatedAt, mainEntity: { '@id': SITE + path + '#person' } }, person];
   if (vid) graph.push({ '@type': 'VideoObject', name: s.videoTitle || s.name + ' speaking', description: s.headline, thumbnailUrl: 'https://i.ytimg.com/vi/' + vid + '/hqdefault.jpg', embedUrl: 'https://www.youtube.com/embed/' + vid, contentUrl: 'https://www.youtube.com/watch?v=' + vid, uploadDate: (s.createdAt || '').slice(0, 10) });
   return page({
-    title: s.name + ': ' + s.headline + ' | Speakerfolio', desc, path, image: photo || '', body: out,
+    title: (s.name + ': ' + s.headline).length <= 52 ? s.name + ': ' + s.headline + ' | Speakerfolio' : (s.name + ', ' + topic + ' Speaker').length <= 52 ? s.name + ', ' + topic + ' Speaker | Speakerfolio' : s.name + ' | Speakerfolio', desc, path, image: photo || '', body: out,
     ld: { graph, ogType: 'profile' }, robots: preview ? 'noindex, nofollow' : '', cache: preview ? 'no-store' : 'public, max-age=60'
   });
 }
