@@ -193,14 +193,14 @@ export function profilePage({ s, related, preview }) {
       + '</div></div></section>';
   }
 
-  // booking: the form opens Gmail addressed to the speaker; an outside booking link is shown as a button
+  // booking: the form opens the device's email app addressed to the speaker; an outside booking link is shown as a button
   if (bookEmail || bookLink) {
     const sel = (name, opts) => '<select name="' + name + '" class="sf-in">' + opts.map((o) => '<option>' + o + '</option>').join('') + '</select>';
     const linkBtn = bookLink ? '<a href="' + esc(bookLink) + '" rel="noopener" target="_blank" style="' + BTN + ' align-self: flex-start; ' + (bookEmail ? 'border: 1px solid rgba(255,255,255,0.4); color: #ffffff;' : 'background: #e31837; color: #ffffff;') + '">' + (bookEmail ? 'Or use ' + esc(first) + '\'s booking page' : 'Open ' + esc(first) + '\'s booking page') + ARROW + '</a>' : '';
     out += '<section id="book" style="background: #0b0c0e; color: #fff8ef; scroll-margin-top: 90px;"><div class="sf-two" style="' + WD + ' padding-top: 88px; padding-bottom: 88px; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(28px, 4vw, 64px); align-items: start;">'
       + '<div style="display: flex; flex-direction: column; gap: 18px;">' + EB('Book ' + esc(first), true) + '<h2 style="' + H2 + ' color: #fff8ef;">Book ' + esc(first) + ' for your event.</h2>'
       + '<p style="margin: 0; font-size: 17px; line-height: 1.55; color: rgba(255,255,255,0.72);">' + (bookEmail
-        ? 'Add your event details and press the button. Gmail opens with an email to ' + esc(first) + ', ready to send. You agree the fee and details directly, with no booking fee.'
+        ? 'Add your event details and press the button. Your email app opens with a message to ' + esc(first) + ', ready to send. You agree the fee and details directly, with no booking fee.'
         : 'Bookings for ' + esc(first) + ' go through their own booking page. Check dates and send your request there.') + '</p>'
       + (bookEmail ? linkBtn : '') + '</div>';
     if (bookEmail) {
@@ -215,9 +215,9 @@ export function profilePage({ s, related, preview }) {
         + '<label class="sf-lab">Audience size' + sel('Audience size', ['Under 50', '50 to 200', '200 to 500', '500 to 2,000', 'Over 2,000']) + '</label>'
         + '<label class="sf-lab" style="grid-column: 1 / -1;">Budget range' + sel('Budget', ['Not sure yet', 'Under $2,500', '$2,500 to $5,000', '$5,000 to $10,000', '$10,000 to $25,000', 'Over $25,000']) + '</label>'
         + '<label class="sf-lab" style="grid-column: 1 / -1;">Message<textarea class="sf-in" name="Message" placeholder="Tell ' + esc(first) + ' about the audience and what you want them to leave with."></textarea></label>'
-        + '</div><div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;"><span id="sf-msg" role="status" style="font-size: 14px; color: #55585f;">Opens Gmail in a new tab.</span>'
-        + '<button type="submit" style="' + BTN + ' border: 0; background: #e31837; color: #ffffff; cursor: pointer; font-family: inherit;">Write the email in Gmail' + ARROW + '</button></div>'
-        + '<p id="sf-alt" hidden style="margin: 0; font-size: 14px; color: #55585f;">Gmail didn\'t open, or you use another email app? <a id="sf-mailto" href="#" style="color: #14161a; font-weight: 700;">Open it in your email app</a>.</p></form>';
+        + '</div><div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;"><span id="sf-msg" role="status" style="font-size: 14px; color: #55585f;">Opens your email app.</span>'
+        + '<button type="submit" style="' + BTN + ' border: 0; background: #e31837; color: #ffffff; cursor: pointer; font-family: inherit;">Send booking request' + ARROW + '</button></div>'
+        + '<p id="sf-alt" hidden style="margin: 0; font-size: 14px; color: #55585f;">No email app opened? <a id="sf-gmail" href="#" target="_blank" rel="noopener" style="color: #14161a; font-weight: 700;">Write it in Gmail</a> or email <a id="sf-to" href="#" style="color: #14161a; font-weight: 700;"></a>.</p></form>';
       out += '</div></section>'
         + '<script>(function(){var f=document.getElementById("sf-book"),m=document.getElementById("sf-msg");var to=atob(f.getAttribute("data-k")).split("").reverse().join("");'
         + 'f.addEventListener("submit",function(e){e.preventDefault();var d={};new FormData(f).forEach(function(v,k){d[k]=String(v).trim();});if(!d.Name){m.textContent="Add your name first.";m.style.color="#c4122d";return;}'
@@ -226,8 +226,8 @@ export function profilePage({ s, related, preview }) {
         + '["Event","Organization","Date","Location","Audience size","Budget"].forEach(function(k){if(d[k]){lines.push((k==="Date"?"Event date":k)+": "+d[k]);}});'
         + 'if(d.Message){lines.push("","About the event:",d.Message);}lines.push("","Best regards,",d.Name);var body=lines.join("\\n");'
         + 'var g="https://mail.google.com/mail/?view=cm&fs=1&to="+encodeURIComponent(to)+"&su="+encodeURIComponent(su)+"&body="+encodeURIComponent(body);'
-        + 'document.getElementById("sf-mailto").href="mailto:"+to+"?subject="+encodeURIComponent(su)+"&body="+encodeURIComponent(body);document.getElementById("sf-alt").hidden=false;'
-        + 'm.textContent="Gmail opened in a new tab. Press Send there.";m.style.color="#17602f";try{gtag("event","generate_lead",{form:"booking_gmail",speaker:' + JSON.stringify(s.slug) + '});}catch(x){}window.open(g,"_blank","noopener");});})();</script>';
+        + 'var mt="mailto:"+to+"?subject="+encodeURIComponent(su)+"&body="+encodeURIComponent(body);document.getElementById("sf-gmail").href=g;var t=document.getElementById("sf-to");t.href=mt;t.textContent=to;document.getElementById("sf-alt").hidden=false;'
+        + 'm.textContent="Your email app is opening. Press Send there.";m.style.color="#17602f";try{gtag("event","generate_lead",{form:"booking_email",speaker:' + JSON.stringify(s.slug) + '});}catch(x){}window.location.href=mt;});})();</script>';
     } else {
       out += '<div style="background: #ffffff; color: #14161a; padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 16px; align-items: flex-start;"><strong style="font-size: 22px; font-weight: 500; letter-spacing: -0.015em;">Check availability and book directly.</strong>'
         + '<span style="font-size: 16px; line-height: 1.5; color: #55585f;">You agree the fee and details with ' + esc(first) + '. No booking fee from Speakerfolio.</span>' + linkBtn + '</div></div></section>';
