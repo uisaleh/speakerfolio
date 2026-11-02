@@ -104,6 +104,7 @@ export function profilePage({ s, related, preview }) {
   const photo = photoUrl(s);
   const crumbs = breadcrumbs([['Speakers', '/speakers/'], [topic, '/speakers/topic/' + topicSlug(topic) + '/'], [s.name, path]]);
   const L = s.links || {};
+  const bookEmail = s.bookingEmail || '', bookLink = s.bookingLink || '';
   const linkNames = { linkedin: 'LinkedIn', youtube: 'YouTube', instagram: 'Instagram', x: 'X', facebook: 'Facebook' };
   const social = Object.keys(linkNames).filter((k) => L[k]).map((k) => '<a href="' + esc(L[k]) + '" rel="noopener me" target="_blank" style="font-size: 14px; font-weight: 700; color: #14161a; text-underline-offset: 4px;">' + linkNames[k] + ARROW + '</a>').join('');
   const chips = [[ICON.pin, s.location], [ICON.lang, s.languages], [ICON.plane, s.travel]].filter((c) => c[1]).map((c) => '<span class="sf-chip">' + c[0] + esc(c[1]) + '</span>').join('');
@@ -120,7 +121,8 @@ export function profilePage({ s, related, preview }) {
     + '<h1 style="margin: 0; font-size: clamp(40px, 5vw, 68px); line-height: 1; font-weight: 500; letter-spacing: -0.04em;">' + esc(s.name) + '</h1>'
     + '<p style="margin: 0; max-width: 620px; font-size: clamp(18px, 1.6vw, 21px); line-height: 1.45; color: #2a2c31;">' + esc(s.headline) + '</p>'
     + (chips ? '<div style="display: flex; flex-wrap: wrap; gap: 8px;">' + chips + '</div>' : '')
-    + '<div style="display: flex; flex-wrap: wrap; gap: 10px; padding-top: 4px;"><a href="#book" style="' + BTN + ' background: #e31837; color: #ffffff;">Request to book</a>'
+    + '<div style="display: flex; flex-wrap: wrap; gap: 10px; padding-top: 4px;">'
+    + (bookEmail ? '<a href="#book" style="' + BTN + ' background: #e31837; color: #ffffff;">Request to book</a>' : bookLink ? '<a href="' + esc(bookLink) + '" rel="noopener" target="_blank" style="' + BTN + ' background: #e31837; color: #ffffff;">Book ' + esc(first) + ARROW + '</a>' : '')
     + (L.website ? '<a href="' + esc(L.website) + '" rel="noopener" target="_blank" style="' + BTN + ' border: 1px solid rgba(20,22,26,0.32); background: #ffffff; color: #14161a;">Visit website' + ARROW + '</a>' : '') + '</div>'
     + (social ? '<div style="display: flex; flex-wrap: wrap; gap: 18px;">' + social + '</div>' : '')
     + '</div></div></div></section>';
@@ -191,32 +193,46 @@ export function profilePage({ s, related, preview }) {
       + '</div></div></section>';
   }
 
-  // booking request
-  const sel = (name, opts) => '<select name="' + name + '" class="sf-in">' + opts.map((o) => '<option>' + o + '</option>').join('') + '</select>';
-  out += '<section id="book" style="background: #0b0c0e; color: #fff8ef; scroll-margin-top: 20px;"><div class="sf-two" style="' + WD + ' padding-top: 88px; padding-bottom: 88px; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(28px, 4vw, 64px); align-items: start;">'
-    + '<div style="display: flex; flex-direction: column; gap: 18px;">' + EB('Booking request', true) + '<h2 style="' + H2 + ' color: #fff8ef;">Book ' + esc(first) + ' for your event.</h2>'
-    + '<p style="margin: 0; font-size: 17px; line-height: 1.55; color: rgba(255,255,255,0.72);">Send your event details. We pass your request to ' + esc(first) + ' the same working day, and you agree the fee and details directly. No booking fee.</p>'
-    + (L.website ? '<a href="' + esc(L.website) + '" rel="noopener" target="_blank" style="align-self: flex-start; color: #ffffff; font-size: 15px; font-weight: 700; text-underline-offset: 4px;">Or visit ' + esc(first) + '\'s own website' + ARROW + '</a>' : '')
-    + '</div>'
-    + '<form id="sf-book" style="background: #ffffff; color: #14161a; padding: clamp(20px, 3vw, 32px); display: flex; flex-direction: column; gap: 16px;" novalidate>'
-    + '<input type="text" name="_hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px;">'
-    + '<div class="sf-form" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">'
-    + '<label class="sf-lab">Your name<input class="sf-in" name="Name" autocomplete="name" required></label>'
-    + '<label class="sf-lab">Your email<input class="sf-in" name="Email" type="email" autocomplete="email" required></label>'
-    + '<label class="sf-lab">Event name<input class="sf-in" name="Event" placeholder="Annual sales kickoff"></label>'
-    + '<label class="sf-lab">Event date<input class="sf-in" name="Date" type="date"></label>'
-    + '<label class="sf-lab">Location<input class="sf-in" name="Location" placeholder="City, or Virtual"></label>'
-    + '<label class="sf-lab">Audience size' + sel('Audience', ['Under 50', '50 to 200', '200 to 500', '500 to 2,000', 'Over 2,000']) + '</label>'
-    + '<label class="sf-lab" style="grid-column: 1 / -1;">Budget range' + sel('Budget', ['Not sure yet', 'Under $2,500', '$2,500 to $5,000', '$5,000 to $10,000', '$10,000 to $25,000', 'Over $25,000']) + '</label>'
-    + '<label class="sf-lab" style="grid-column: 1 / -1;">Message<textarea class="sf-in" name="Message" placeholder="Tell us about the audience and what you want them to leave with."></textarea></label>'
-    + '</div><div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;"><span id="sf-msg" role="status" style="font-size: 14px; color: #55585f;">Free, with no booking fee.</span>'
-    + '<button type="submit" style="' + BTN + ' border: 0; background: #e31837; color: #ffffff; cursor: pointer; font-family: inherit;">Send booking request</button></div></form>'
-    + '</div></section>'
-    + '<script>(function(){var f=document.getElementById("sf-book"),m=document.getElementById("sf-msg");f.addEventListener("submit",function(e){e.preventDefault();var d={Type:"Booking request",Speaker:' + JSON.stringify(s.name).replace(/</g, '\\u003c') + ',_speaker:' + JSON.stringify(s.slug) + '};'
-    + 'new FormData(f).forEach(function(v,k){d[k]=v;});if(!d.Name||!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$/.test(d.Email||"")){m.textContent="Add your name and a valid email.";m.style.color="#c4122d";return;}'
-    + 'var b=f.querySelector("button[type=submit]");b.disabled=true;b.textContent="Sending...";fetch("/api/submit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)}).then(function(r){return r.json();}).then(function(r){if(!r.ok){throw new Error(r.error||"");}'
-    + 'f.innerHTML="<div style=\\"display:flex;flex-direction:column;gap:10px;padding:12px 0\\"><strong style=\\"font-size:24px;font-weight:500\\">Request sent.</strong><span style=\\"color:#55585f;font-size:16px;line-height:1.5\\">We pass it to ' + esc(first) + ' today. You will hear back at the email you gave.</span></div>";try{gtag("event","generate_lead",{form:"booking_request"});}catch(x){}})'
-    + '.catch(function(){b.disabled=false;b.textContent="Send booking request";m.textContent="Something went wrong. Please email projectui.saleh@gmail.com.";m.style.color="#c4122d";});});})();</script>';
+  // booking: the form opens Gmail addressed to the speaker; an outside booking link is shown as a button
+  if (bookEmail || bookLink) {
+    const sel = (name, opts) => '<select name="' + name + '" class="sf-in">' + opts.map((o) => '<option>' + o + '</option>').join('') + '</select>';
+    const linkBtn = bookLink ? '<a href="' + esc(bookLink) + '" rel="noopener" target="_blank" style="' + BTN + ' align-self: flex-start; ' + (bookEmail ? 'border: 1px solid rgba(255,255,255,0.4); color: #ffffff;' : 'background: #e31837; color: #ffffff;') + '">' + (bookEmail ? 'Or use ' + esc(first) + '\'s booking page' : 'Open ' + esc(first) + '\'s booking page') + ARROW + '</a>' : '';
+    out += '<section id="book" style="background: #0b0c0e; color: #fff8ef; scroll-margin-top: 90px;"><div class="sf-two" style="' + WD + ' padding-top: 88px; padding-bottom: 88px; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(28px, 4vw, 64px); align-items: start;">'
+      + '<div style="display: flex; flex-direction: column; gap: 18px;">' + EB('Book ' + esc(first), true) + '<h2 style="' + H2 + ' color: #fff8ef;">Book ' + esc(first) + ' for your event.</h2>'
+      + '<p style="margin: 0; font-size: 17px; line-height: 1.55; color: rgba(255,255,255,0.72);">' + (bookEmail
+        ? 'Add your event details and press the button. Gmail opens with an email to ' + esc(first) + ', ready to send. You agree the fee and details directly, with no booking fee.'
+        : 'Bookings for ' + esc(first) + ' go through their own booking page. Check dates and send your request there.') + '</p>'
+      + (bookEmail ? linkBtn : '') + '</div>';
+    if (bookEmail) {
+      const enc = btoa(bookEmail.split('').reverse().join(''));
+      out += '<form id="sf-book" data-k="' + enc + '" style="background: #ffffff; color: #14161a; padding: clamp(20px, 3vw, 32px); display: flex; flex-direction: column; gap: 16px;" novalidate>'
+        + '<div class="sf-form" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">'
+        + '<label class="sf-lab">Your name<input class="sf-in" name="Name" autocomplete="name" required></label>'
+        + '<label class="sf-lab">Organization<input class="sf-in" name="Organization" autocomplete="organization"></label>'
+        + '<label class="sf-lab">Event name<input class="sf-in" name="Event" placeholder="Annual sales kickoff"></label>'
+        + '<label class="sf-lab">Event date<input class="sf-in" name="Date" type="date"></label>'
+        + '<label class="sf-lab">Location<input class="sf-in" name="Location" placeholder="City, or Virtual"></label>'
+        + '<label class="sf-lab">Audience size' + sel('Audience size', ['Under 50', '50 to 200', '200 to 500', '500 to 2,000', 'Over 2,000']) + '</label>'
+        + '<label class="sf-lab" style="grid-column: 1 / -1;">Budget range' + sel('Budget', ['Not sure yet', 'Under $2,500', '$2,500 to $5,000', '$5,000 to $10,000', '$10,000 to $25,000', 'Over $25,000']) + '</label>'
+        + '<label class="sf-lab" style="grid-column: 1 / -1;">Message<textarea class="sf-in" name="Message" placeholder="Tell ' + esc(first) + ' about the audience and what you want them to leave with."></textarea></label>'
+        + '</div><div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;"><span id="sf-msg" role="status" style="font-size: 14px; color: #55585f;">Opens Gmail in a new tab.</span>'
+        + '<button type="submit" style="' + BTN + ' border: 0; background: #e31837; color: #ffffff; cursor: pointer; font-family: inherit;">Write the email in Gmail' + ARROW + '</button></div>'
+        + '<p id="sf-alt" hidden style="margin: 0; font-size: 14px; color: #55585f;">Gmail didn\'t open, or you use another email app? <a id="sf-mailto" href="#" style="color: #14161a; font-weight: 700;">Open it in your email app</a>.</p></form>';
+      out += '</div></section>'
+        + '<script>(function(){var f=document.getElementById("sf-book"),m=document.getElementById("sf-msg");var to=atob(f.getAttribute("data-k")).split("").reverse().join("");'
+        + 'f.addEventListener("submit",function(e){e.preventDefault();var d={};new FormData(f).forEach(function(v,k){d[k]=String(v).trim();});if(!d.Name){m.textContent="Add your name first.";m.style.color="#c4122d";return;}'
+        + 'var su="Speaking enquiry"+(d.Event?": "+d.Event:"")+(d.Date?" ("+d.Date+")":"");'
+        + 'var lines=["Hi "+' + JSON.stringify(first).replace(/</g, '\\u003c') + '+",","","I found you on Speakerfolio and would like to talk about booking you for our event.",""];'
+        + '["Event","Organization","Date","Location","Audience size","Budget"].forEach(function(k){if(d[k]){lines.push((k==="Date"?"Event date":k)+": "+d[k]);}});'
+        + 'if(d.Message){lines.push("","About the event:",d.Message);}lines.push("","Best regards,",d.Name);var body=lines.join("\\n");'
+        + 'var g="https://mail.google.com/mail/?view=cm&fs=1&to="+encodeURIComponent(to)+"&su="+encodeURIComponent(su)+"&body="+encodeURIComponent(body);'
+        + 'document.getElementById("sf-mailto").href="mailto:"+to+"?subject="+encodeURIComponent(su)+"&body="+encodeURIComponent(body);document.getElementById("sf-alt").hidden=false;'
+        + 'm.textContent="Gmail opened in a new tab. Press Send there.";m.style.color="#17602f";try{gtag("event","generate_lead",{form:"booking_gmail",speaker:' + JSON.stringify(s.slug) + '});}catch(x){}window.open(g,"_blank","noopener");});})();</script>';
+    } else {
+      out += '<div style="background: #ffffff; color: #14161a; padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 16px; align-items: flex-start;"><strong style="font-size: 22px; font-weight: 500; letter-spacing: -0.015em;">Check availability and book directly.</strong>'
+        + '<span style="font-size: 16px; line-height: 1.5; color: #55585f;">You agree the fee and details with ' + esc(first) + '. No booking fee from Speakerfolio.</span>' + linkBtn + '</div></div></section>';
+    }
+  }
 
   // related
   if (related.length) {

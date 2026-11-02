@@ -15,5 +15,28 @@ export const SEEDS = [
     links: { website: 'https://www.stanleyagwu.com', linkedin: 'https://www.linkedin.com/in/stanley-agwu-65890888/' },
     talks: [], events: [], quotes: [],
     published: false, featured: false, consent: false, consentNote: ''
+  },
+  {
+    name: 'Sunny Isuekebhor',
+    slug: 'sunny-isuekebhor',
+    headline: 'Leadership coach and keynote speaker on adaptive leadership and leading through change',
+    speakerType: 'International keynote speaker',
+    topics: ['Leadership', 'Communication', 'Motivation'],
+    formats: ['Keynote', 'Workshop', 'Training', 'Virtual'],
+    location: 'Lagos, Nigeria',
+    languages: 'English',
+    travel: 'In person and virtual',
+    shortBio: 'Apostle Sunny Isuekebhor is a leadership expert, executive coach and international keynote speaker based in Lagos, Nigeria. With over 15 years of experience working with C-suite leaders and high-growth teams, he helps organizations transform their leadership culture, deliver complex strategic projects and build resilient, high-performing teams. He is the author of Turning Every Leader Into a Star, an Amazon #1 New Release.',
+    bio: 'Sunny Isuekebhor has spoken at industry conferences and corporate events on adaptive leadership, high-impact project leadership, executive presence and leading through change. He delivers keynotes in person and virtually, and his sessions are known for being insightful, energizing and immediately applicable.\nSince 2015 he has advised executives, teams, companies and governments on leadership and project success, on Zoom and onsite. He also coaches senior executives one-on-one and runs leadership development programs, including the 12-module Sunny Leadership course.\nBefore leadership work, Sunny spent more than a decade in engineering and project management, including construction and power plant projects for Shell Petroleum Development Company and Lafarge Nigeria. He holds an MSc in Project Management from the University of Liverpool and a B.Eng in Mechanical Engineering from the University of Benin.\nHe teaches on Udemy, with courses including The 12 Things Every Public Speaker Must Know and Understand, and Follower Leadership Is the World\'s New Solution.',
+    talks: [
+      { title: 'Adaptive Leadership' },
+      { title: 'High-Impact Project Leadership' },
+      { title: 'Executive Presence' },
+      { title: 'Leading Through Change' }
+    ],
+    events: [], quotes: [],
+    links: { linkedin: 'https://www.linkedin.com/in/apostle-sunny-isuekebhor/' },
+    bookingEmail: 'booksunny10@gmail.com',
+    published: false, featured: false, consent: false, consentNote: ''
   }
 ];

@@ -123,6 +123,7 @@ export function cleanSpeaker(d, existing) {
   s.links = {};
   for (const k of ['website', 'linkedin', 'youtube', 'instagram', 'x', 'facebook']) { const u = safeUrl(d.links && d.links[k]); if (u) s.links[k] = u; }
   s.bookingEmail = T(d.bookingEmail, 120);
+  s.bookingLink = safeUrl(d.bookingLink);
   if (s.bookingEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(s.bookingEmail)) return { error: 'The booking email doesn\'t look right.' };
   s.consent = !!d.consent;
   s.consentNote = T(d.consentNote, 300);
@@ -156,7 +157,7 @@ const PAGE_CSS = '<style>[hidden]{display:none!important}'
   + '.sf-pro p{margin:0 0 16px;font-size:17px;line-height:1.65;color:#2a2c31}'
   + '.sf-vid{position:relative;display:block;width:100%;aspect-ratio:16/9;background:#14161a;border:0;padding:0;cursor:pointer;overflow:hidden}.sf-vid img{width:100%;height:100%;object-fit:cover;display:block;opacity:.86}.sf-vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}'
   + '.sf-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:56px;background:#e31837;display:flex;align-items:center;justify-content:center}'
-  + '.sf-side{position:sticky;top:24px}'
+  + '.sf-side{position:sticky;top:96px}'
   + '@media (max-width: 900px){.sf-dir{grid-template-columns:minmax(0,1fr) !important}.sf-side{position:static}.sf-hero{grid-template-columns:minmax(0,1fr) !important}.sf-hero .sf-ph{max-width:320px}.sf-stats{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.sf-stats>div{padding:18px 12px 18px 0 !important;border-left:0 !important;border-bottom:1px solid rgba(20,22,26,0.12)}.sf-two{grid-template-columns:minmax(0,1fr) !important}}'
   + '@media (max-width: 760px){.sf-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:8px !important}.sf-grid .sf-ph{font-size:38px}.sf-grid .sf-body{padding:12px !important}.sf-grid .sp-name{font-size:16px !important}.sf-grid .sp-role{font-size:13px !important}.sf-grid .sp-meta{display:none !important}.sf-form{grid-template-columns:minmax(0,1fr) !important}}'
   + '</style>\n';
@@ -175,7 +176,7 @@ export function page({ title, desc, path, image, ld, body, robots, status = 200,
     + '<link rel="alternate" type="application/rss+xml" title="Speakerfolio articles" href="' + SITE + '/articles/feed.xml">\n'
     + HEAD_BASE + PAGE_CSS
     + (ld && ld.graph ? '<script type="application/ld+json">' + JSON.stringify({ '@context': 'https://schema.org', '@graph': ld.graph }).replace(/</g, '\\u003c') + '</script>\n' : '')
-    + '</head>\n<body>\n' + WRAP_OPEN + HEADER + body + CTA + FOOTER + '</div>\n</body>\n</html>\n';
+    + '</head>\n<body>\n' + WRAP_OPEN + (path.startsWith('/speakers/') ? HEADER.replace('<a href="/speakers/" style="color: rgba(255,255,255,0.72);', '<a href="/speakers/" aria-current="page" style="color: #ffffff;') : HEADER) + body + CTA + FOOTER + '</div>\n</body>\n</html>\n';
   return new Response(html, { status, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': cache } });
 }
 
