@@ -38,5 +38,24 @@ export const SEEDS = [
     links: { linkedin: 'https://www.linkedin.com/in/apostle-sunny-isuekebhor/' },
     bookingEmail: 'booksunny10@gmail.com',
     published: false, featured: false, consent: false, consentNote: ''
+  },
+  {
+    name: 'Scott Stockdale',
+    slug: 'scott-stockdale',
+    headline: 'SEO trainer and instructor helping businesses show up on Google and AI search',
+    speakerType: 'SEO trainer',
+    topics: ['Technology', 'Entrepreneurship'],
+    formats: ['Training', 'Workshop', 'Virtual'],
+    location: 'Harrogate, England, United Kingdom',
+    languages: 'English',
+    shortBio: 'Scott Stockdale is an SEO manager, instructor and the founder of Stockdale Media, based in Harrogate, UK. For more than seven years he has run SEO campaigns for brands including 118 118 Money, Myprotein and Watches of Switzerland, in-house and at agencies. As lead SEO instructor at Zero To Mastery, he has taught thousands of students through his 11-hour SEO bootcamp, courses and workshops.',
+    bio: 'Scott Stockdale helps businesses show up on Google, ChatGPT and other AI search tools. He is an SEO Manager at Avium, where he helps keynote speakers get more bookings, and through Stockdale Media he works with founder-led businesses on SEO.\nHe has worked at THG, Journey Further and WMG Agency, covering technical SEO, content and digital PR across sites in the UK, Germany, Italy, Spain and the US.\nAs lead SEO instructor at Zero To Mastery, a global academy with over a million students, Scott teaches through courses and workshops and answers students\' questions every week. His articles on marketing and SEO on Medium have been read over two million times.\nOutside SEO, he is the matchday commentator for Harrogate Railway Athletic F.C. and a media assistant at Harrogate Town AFC.',
+    talks: [], events: [],
+    quotes: [
+      { quote: 'Within just a few weeks, we were ranking #1 on a key search term we\'ve been trying to rank on for years and saw a 23% increase in our organic traffic. This guy knows his stuff.', name: 'Faith Benson', role: 'Former VP of Marketing, Gun.io' }
+    ],
+    links: { website: 'https://scottstockdale.co.uk', linkedin: 'https://www.linkedin.com/in/scott-stockdale/' },
+    bookingEmail: 'scott_stockdale@live.co.uk',
+    published: false, featured: false, consent: false, consentNote: ''
   }
 ];
