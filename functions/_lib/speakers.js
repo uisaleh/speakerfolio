@@ -180,7 +180,13 @@ export function page({ title, desc, path, image, ld, body, robots, status = 200,
   return new Response(html, { status, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': cache } });
 }
 
-export const ORG = { '@type': 'Organization', '@id': SITE + '/#org', name: 'Speakerfolio', url: SITE + '/', logo: SITE + '/apple-touch-icon.png' };
+export const ORG = {
+  '@type': 'Organization', '@id': SITE + '/#org', name: 'Speakerfolio', url: SITE + '/',
+  logo: { '@type': 'ImageObject', url: SITE + '/apple-touch-icon.png', width: 180, height: 180 },
+  description: 'Speakerfolio is a speaker directory where every speaker has a real website. Event planners search and contact speakers free, with no booking fee.',
+  email: 'projectui.saleh@gmail.com', areaServed: 'Worldwide',
+  founder: { '@type': 'Person', name: 'Saleh Ahmed', url: 'https://www.linkedin.com/in/uisaleh/' }
+};
 export function breadcrumbs(items) {
   const vis = '<nav aria-label="Breadcrumb" style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; color: #55585f;">'
     + items.map(([n, u], k) => k < items.length - 1
