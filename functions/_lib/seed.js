@@ -128,5 +128,41 @@ export const SEEDS = [
     talks: [], events: [], quotes: [],
     links: { linkedin: 'https://www.linkedin.com/in/suja-unnikrishnan-597b76377/', instagram: 'https://www.instagram.com/sujaaspeaks/' },
     published: false, featured: false, consent: true, consentNote: 'Told Saleh she wants to be listed, 5 Nov 2026'
+  },
+  {
+    name: 'Felicia M. L. Davis',
+    slug: 'felicia-ml-davis',
+    photo: '/assets/seed/felicia-ml-davis.webp',
+    headline: 'Keynote speaker on leadership and neurodiversity at work',
+    speakerType: 'Keynote speaker',
+    topics: ['Leadership', 'HR and culture', 'Communication'],
+    formats: ['Keynote'],
+    location: 'Dallas/Fort Worth, Texas, United States',
+    shortBio: 'Felicia M. L. Davis is a keynote speaker, business leader and co-author of Autism, Not Attitude, based in Dallas/Fort Worth, Texas. With more than 15 years of experience in leadership and organizational transformation, she helps organizations unlock the competitive advantage of neurodiverse employees. Her keynotes combine business expertise with lived experience, using humor, storytelling and memorable analogies.',
+    bio: 'Every organization has untapped brilliance, and sometimes it simply thinks differently. Felicia M. L. Davis helps leaders find it, with keynotes on communication, leadership and workplace culture for executive audiences, HR and talent teams, people leaders and employee resource groups.\nShe brings more than 15 years of leadership and organizational transformation experience to the stage, and a late diagnosis of autism and ADHD shaped how she approaches leadership.\nFelicia is the co-author, with Nancy Wainscott, of Autism, Not Attitude: Embracing Neurodivergence at Work and in Relationships. Through Eunoia Thinking she also offers executive coaching and consulting.',
+    talks: [
+      { title: 'Different Minds, Extraordinary Results: The Competitive Advantage Hiding in Plain Sight', format: 'Keynote',
+        summary: 'For executives, leadership conferences and HR teams: the hidden barriers that keep talented people from doing their best work, and how cognitive diversity strengthens innovation, decisions, retention and performance.',
+        takeaways: ['A business case for neurodiversity leadership can act on', 'A framework for turning cognitive difference into innovation'] },
+      { title: 'Autism, Not Attitude: Decoding the Communication Gap That\'s Costing Your Organization', format: 'Keynote',
+        summary: 'For people leaders and manager development: what happens when different communication styles collide, and how to turn misunderstanding into clarity.',
+        takeaways: ['Stronger conflict-resolution skills across communication styles', 'A working vocabulary for neurodivergent communication styles'] },
+      { title: 'Built to Thrive: Responsibility, Resilience, and the Future of Neuroinclusivity', format: 'Keynote',
+        summary: 'For leadership teams, HR, ERGs and culture events: moving beyond accommodation to shared responsibility, with sustainable performance and no lowered expectations.',
+        takeaways: ['Tools to reduce miscommunication and burnout on mixed teams', 'Accommodation strategies that cost little or nothing'] }
+    ],
+    events: [
+      { event: 'Neurodiversity and Conflict Resolution', organizer: 'Edward Jones', format: 'Keynote' },
+      { event: 'Autism, Not Attitude', organizer: 'Mensa', format: 'Talk' },
+      { event: 'Speaker Series', organizer: 'Mensa Foundation', format: 'Talk' }
+    ],
+    quotes: [
+      { quote: 'Felicia was an engaging speaker, sharing her passion about neurodiversity while inviting audience members to participate.', name: 'Attendee', role: 'Neurodiversity and Conflict Resolution, Edward Jones' },
+      { quote: 'This session was great to help think about how others are thinking and reacting to many different things.', name: 'AJ Mazuca', role: 'Attendee, Autism, Not Attitude, Mensa' }
+    ],
+    links: { website: 'https://feliciamldavis.com/', linkedin: 'https://www.linkedin.com/in/feliciamldavis/', youtube: 'https://www.youtube.com/@FeliciaMLDavis', facebook: 'https://www.facebook.com/FeliciaMLDavis' },
+    bookingEmail: 'Felicia@feliciamldavis.com',
+    bookingLink: 'https://feliciamldavis.com/#Contact',
+    published: false, featured: false, consent: true, consentNote: 'Told Saleh she wants to be listed, 5 Nov 2026'
   }
 ];
