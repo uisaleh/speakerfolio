@@ -98,5 +98,20 @@ export const SEEDS = [
     bookingEmail: 'tina@tworksforyou.ca',
     bookingLink: 'https://tworksforyou.ca/contact/',
     published: false, featured: false, consent: false, consentNote: ''
+  },
+  {
+    name: 'Anton Rybakov',
+    slug: 'anton-rybakov',
+    photo: '/assets/seed/anton-rybakov.webp',
+    headline: 'Motivational and mental health speaker on resilience and overcoming adversity',
+    speakerType: 'Motivational keynote speaker',
+    topics: ['Motivation', 'Health and wellbeing', 'Entrepreneurship'],
+    formats: ['Keynote'],
+    location: 'Houston, Texas, United States',
+    shortBio: 'Anton Rybakov is a motivational and mental health speaker, entrepreneur and host of The F\'d Up Mind Podcast, based in Houston, Texas. After losing loved ones and rebuilding his life from scratch, he speaks about mental resilience, discipline and turning pain into purpose. He is the founder of Fun Characters, a multi-city entertainment company bringing positivity to people of all ages.',
+    bio: 'Anton Rybakov inspires people to rise, take control of their lives and build something meaningful. His keynotes focus on resilience, overcoming adversity and the mindset it takes to keep going after setbacks.\nOn The F\'d Up Mind Podcast, he has real conversations about mental resilience, discipline, overcoming adversity and turning pain into purpose.\nSince 2022 he has run Fun Characters, an entertainment company operating in Houston and Miami that creates memorable experiences for people of all ages.',
+    talks: [], events: [], quotes: [],
+    links: { linkedin: 'https://www.linkedin.com/in/anton-rybakov-35bb48191/' },
+    published: false, featured: false, consent: false, consentNote: ''
   }
 ];
