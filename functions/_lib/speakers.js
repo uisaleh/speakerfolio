@@ -184,6 +184,7 @@ export const ORG = {
   '@type': 'Organization', '@id': SITE + '/#org', name: 'Speakerfolio', url: SITE + '/',
   logo: { '@type': 'ImageObject', url: SITE + '/apple-touch-icon.png', width: 180, height: 180 },
   description: 'Speakerfolio is a speaker directory where every speaker has a real website. Event planners search and contact speakers free, with no booking fee.',
+  sameAs: ['https://www.linkedin.com/company/speakerfolio'],
   email: 'projectui.saleh@gmail.com', areaServed: 'Worldwide',
   founder: { '@type': 'Person', name: 'Saleh Ahmed', url: 'https://www.linkedin.com/in/uisaleh/' }
 };

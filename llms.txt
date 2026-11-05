@@ -36,6 +36,10 @@
 - Email: projectui.saleh@gmail.com
 - Based in Sylhet, Bangladesh; works with speakers worldwide
 
+## Contact
+- Email: projectui.saleh@gmail.com
+- LinkedIn: https://www.linkedin.com/company/speakerfolio
+
 ## Full text
 - [llms-full.txt](https://speakerfolio.com/llms-full.txt): every article in full, as Markdown
 - [RSS feed](https://speakerfolio.com/articles/feed.xml)
