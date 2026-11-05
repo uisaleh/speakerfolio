@@ -1,12 +1,34 @@
 // /  the home page: static HTML with the featured speakers and the hero avatars filled in from KV
 import { getIndex, featuredGrid, photoUrl, esc } from './_lib/speakers.js';
 
+// The visitor's country (from Cloudflare) as the names speakers type in their location.
+const ALIASES = {
+  US: ['united states', 'usa', 'u.s.a.', 'us', 'america', 'united states of america'],
+  GB: ['united kingdom', 'uk', 'england', 'scotland', 'wales', 'northern ireland', 'great britain', 'britain'],
+  AE: ['united arab emirates', 'uae', 'dubai', 'abu dhabi'],
+  KR: ['south korea', 'korea'], NL: ['netherlands', 'holland'], CZ: ['czech republic', 'czechia']
+};
+function countryNames(code) {
+  code = String(code || '').toUpperCase();
+  if (!/^[A-Z]{2}$/.test(code) || code === 'XX' || code === 'T1') return [];
+  const names = (ALIASES[code] || []).slice();
+  try { const n = new Intl.DisplayNames(['en'], { type: 'region' }).of(code); if (n) names.push(n.toLowerCase()); } catch (e) { /* no ICU */ }
+  return names;
+}
+function fromCountry(s, names) {
+  if (!names.length) return false;
+  const parts = String(s.location || '').toLowerCase().split(',').map((x) => x.trim()).filter(Boolean);
+  return parts.some((p) => names.includes(p));
+}
+// Speakers from the visitor's country first, then featured, then newest.
+function localFirst(list, names) {
+  return list.slice().sort((a, b) => (fromCountry(b, names) - fromCountry(a, names)) || (b.featured - a.featured) || String(b.createdAt).localeCompare(String(a.createdAt)));
+}
+
 // Put real speaker photos into the three hero avatar slots (pixel faces stay when nobody has a photo yet).
 function heroAvatars(html, list) {
   const people = list.filter((s) => s.published && s.photoVer);
   if (!people.length) return html;
-  // featured speakers first, then the newest
-  people.sort((a, b) => (b.featured - a.featured) || String(b.createdAt).localeCompare(String(a.createdAt)));
   let i = 0;
   html = html.replace(/<a href="\/speakers\/" class="pxav" aria-label="Browse speakers" tabindex="-1" style="([^"]*)">[\s\S]*?<\/a>/g, (m, style) => {
     const s = people[i % people.length];
@@ -30,11 +52,11 @@ export async function onRequestGet({ request, env, next }) {
   if (res.status !== 200 || !(res.headers.get('Content-Type') || '').includes('text/html')) return res;
   let html = await res.text();
   try {
-    const list = await getIndex(env);
+    const list = localFirst(await getIndex(env), countryNames(request.cf && request.cf.country));
     if (list.some((s) => s.published)) {
       html = html.replace(/<!--FEATURED-->[\s\S]*?<!--\/FEATURED-->/, '<!--FEATURED-->' + featuredGrid(list) + '<!--/FEATURED-->');
       html = heroAvatars(html, list);
     }
   } catch (e) { /* keep the static page */ }
-  return new Response(html, { status: 200, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=60' } });
+  return new Response(html, { status: 200, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'private, max-age=60', 'Vary': 'CF-IPCountry' } });
 }
