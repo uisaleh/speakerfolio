@@ -164,5 +164,25 @@ export const SEEDS = [
     bookingEmail: 'Felicia@feliciamldavis.com',
     bookingLink: 'https://feliciamldavis.com/#Contact',
     published: false, featured: false, consent: true, consentNote: 'Told Saleh she wants to be listed, 5 Nov 2026'
+  },
+  {
+    name: 'Zakiyyah Hill',
+    slug: 'zakiyyah-hill',
+    photo: '/assets/seed/zakiyyah-hill.webp',
+    headline: 'Keynote speaker and transformation coach on identity, leadership and resilience',
+    speakerType: 'Keynote speaker and transformation coach',
+    topics: ['Leadership', 'Motivation'],
+    formats: ['Keynote', 'Workshop', 'Training'],
+    location: 'Sacramento, California, United States',
+    shortBio: 'Zakiyyah Hill is an author, keynote speaker, transformation coach and John Maxwell Certified Leader with more than 20 years of leadership and management experience across corporate, nonprofit, public sector and faith environments. She created The Uncovering, a seven-stage framework for leaders who have lost themselves in the process of surviving their organizations, and wrote Descendants of Tamar and Stop Throwing Yourself Away.',
+    bio: 'Many leaders are not struggling because they lack skill, ambition or commitment. Zakiyyah Hill calls the real problem displacement: losing the connection between who they are and how they lead, under the pressure to perform and the weight of everything they have survived.\nShe speaks to corporations, nonprofits, government organizations, faith communities and women\'s leadership platforms, and gives leaders a concrete path back to purpose-driven leadership.\nAs founder and lead transformation coach of EdifyAlwayz since 2020, she delivers coaching, training and leadership development programs built on The Uncovering framework. She is also a pastor, and her message moves between the pulpit, the boardroom and the counseling office.\nHer books are Descendants of Tamar and Stop Throwing Yourself Away: Reclaiming Your Identity Before Life Taught You to Disappear, published in 2026.',
+    talks: [
+      { title: 'The Leader Who Disappeared', format: 'Keynote',
+        summary: 'Delivered to faith communities, women\'s conferences and leadership summits, it names the hidden leadership crisis of displacement and gives leaders a path back to purpose-driven leadership.' }
+    ],
+    events: [], quotes: [],
+    links: { website: 'https://zakiyyahhill.com/', linkedin: 'https://www.linkedin.com/in/zakiyyah-hill/' },
+    bookingEmail: 'booking@zakiyyahhill.com',
+    published: false, featured: false, consent: true, consentNote: 'Told Saleh she wants to be listed, 5 Nov 2026'
   }
 ];
