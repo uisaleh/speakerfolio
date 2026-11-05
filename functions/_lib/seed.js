@@ -57,5 +57,46 @@ export const SEEDS = [
     links: { website: 'https://scottstockdale.co.uk', linkedin: 'https://www.linkedin.com/in/scott-stockdale/' },
     bookingEmail: 'scott_stockdale@live.co.uk',
     published: false, featured: false, consent: false, consentNote: ''
+  },
+  {
+    name: 'Tina Varughese',
+    slug: 'tina-varughese',
+    photo: '/assets/seed/tina-varughese.webp',
+    headline: 'Human connection keynote speaker and author on inclusive workplaces where everyone belongs',
+    speakerType: 'Keynote speaker and trainer',
+    topics: ['HR and culture', 'Leadership', 'Communication', 'Motivation'],
+    formats: ['Keynote', 'Workshop', 'Training', 'Virtual'],
+    location: 'Calgary, Alberta, Canada',
+    languages: 'English',
+    travel: 'Canada and the USA · In person and virtual',
+    shortBio: 'Tina Varughese is a human connection expert, keynote speaker and author of 50 Shades of Beige: Building Bridges While Breaking Bias. Named one of Canada\'s Top 10 Notable Speakers by Ignite Magazine, she helps organizations build psychologically safe workplaces where difficult conversations become possible and everyone feels seen, heard and acknowledged. She has spoken for Pfizer, Hockey Canada, Hyundai, Telus, Travelers Insurance and the Department of Justice Canada. Humor is her secret sauce.',
+    bio: 'Tina Varughese helps organizations increase positivity, profits and purpose by creating workplaces where people feel they belong. Her keynotes and training sessions build a psychologically safe environment where employees can share ideas, ask questions and communicate openly, and help people move from jaded judgment to curious compassion.\nAs an Indo-Canadian daughter with a professional background in immigration, she brings a perspective that spans both worlds. Before founding T Works Inc in 2007, she spent eight years in business development at Alberta Economic Development, specializing in economic immigration, and she has also run her own relocation company.\nShe speaks on cross-cultural communication, inclusion, unconscious bias, resilience and work-life balance, in person and virtually across Canada and the USA. Her clients include BMO, TD, Telus, Pfizer, Hockey Canada, Loblaw, Kraft Heinz, Alberta Health Services and AICPA & CIMA. Media coverage includes the Toronto Star, CBC Radio One, TSN and Ignite Magazine.\nTina holds a Bachelor of Commerce in Marketing from the University of Saskatchewan.',
+    talks: [
+      { title: 'Just Be(longing): Authenticity, Belonging and Connection at Work', format: 'Keynote' },
+      { title: '50 Shades of Beige: Communicate with the Cross-Cultural Advantage', format: 'Keynote' },
+      { title: 'The Human Side of Unconscious Bias', format: 'Keynote' },
+      { title: 'Inclusive Leadership: From Silos to Safety', format: 'Keynote' }
+    ],
+    video: 'https://youtu.be/uQT4jzZ6FEE',
+    events: [
+      { event: 'HR and Leadership Conference', organizer: 'CPHR Manitoba', format: 'Keynote' },
+      { event: 'Anti-racism training for 400 players and staff', organizer: 'Hockey Canada', format: 'Training', year: '2020' },
+      { event: 'Senior management session', organizer: 'Competition Bureau, Government of Canada' },
+      { event: 'Member event keynote', organizer: 'Certified Professional Accountants of Saskatchewan', format: 'Keynote' }
+    ],
+    quotes: [
+      { quote: 'Tina was the highest rated at this year\'s HR and Leadership Conference.', name: 'Ron Gauthier', role: 'CEO, CPHR Manitoba' },
+      { quote: 'Tina\'s keynote presentation was motivating, thought-provoking, funny and from the heart.', name: 'Myrna Buttner Stahl', role: 'Director of Member Events and Communications, CPA Saskatchewan' },
+      { quote: 'Tina\'s energy, humour and knowledge continue to resonate with us.', name: 'Dave Richardson', role: 'Senior VP, Telus' },
+      { quote: 'Tina is an electrifying speaker. Her passion is infectious and highly relevant.', name: 'Warren Wood', role: 'Portfolio Manager, BMO Nesbitt Burns' }
+    ],
+    links: {
+      website: 'https://tworksforyou.ca/', linkedin: 'https://www.linkedin.com/in/tinavarughese/',
+      youtube: 'https://www.youtube.com/channel/UCe46rIVuIo9dUH6IkbV9t0w', instagram: 'https://www.instagram.com/tina_varughese/',
+      x: 'https://twitter.com/TinaVarughese', facebook: 'https://www.facebook.com/TWorks-441054042582920/'
+    },
+    bookingEmail: 'tina@tworksforyou.ca',
+    bookingLink: 'https://tworksforyou.ca/contact/',
+    published: false, featured: false, consent: false, consentNote: ''
   }
 ];

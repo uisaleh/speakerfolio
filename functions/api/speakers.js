@@ -58,6 +58,16 @@ async function addSeeds(env) {
     if (!(await kv.get('spk:' + slug))) {
       const res = cleanSpeaker(d, null);
       if (res.error) continue;
+      // a photo shipped with the site (assets/seed/) goes into storage like an uploaded one
+      if (d.photo && env.ASSETS) {
+        try {
+          const r = await env.ASSETS.fetch(new Request(new URL(d.photo, 'https://speakerfolio.com')));
+          if (r.ok) {
+            res.speaker.photoVer = Date.now().toString(36);
+            await kv.put('photo:' + slug, await r.arrayBuffer(), { metadata: { type: 'image/webp', ver: res.speaker.photoVer } });
+          }
+        } catch (e) { /* draft without a photo */ }
+      }
       await kv.put('spk:' + slug, JSON.stringify(res.speaker));
       added.push(res.speaker);
     }
