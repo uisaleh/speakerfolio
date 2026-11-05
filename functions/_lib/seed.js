@@ -113,5 +113,20 @@ export const SEEDS = [
     talks: [], events: [], quotes: [],
     links: { linkedin: 'https://www.linkedin.com/in/anton-rybakov-35bb48191/' },
     published: false, featured: false, consent: false, consentNote: ''
+  },
+  {
+    name: 'Suja Unnikrishnan',
+    slug: 'suja-unnikrishnan',
+    photo: '/assets/seed/suja-unnikrishnan.webp',
+    headline: 'Communication and voice trainer and media coach helping students and businesses perform with confidence',
+    speakerType: 'Communication trainer',
+    topics: ['Communication', 'Entrepreneurship'],
+    formats: ['Training', 'Workshop'],
+    location: 'Kozhikode, Kerala, India',
+    shortBio: 'Suja Unnikrishnan is a communication and voice trainer, media coach and co-founder of Purple Tree Creatives, based in Kozhikode, Kerala. A radio announcer with All India Radio since 2019, she hosted the live chat show Real FM Show for four years. She has trained more than 100 students and works with schools, colleges and entrepreneurs to help them communicate with clarity, confidence and impact.',
+    bio: 'Suja Unnikrishnan helps students, professionals and organizations communicate with clarity, confidence and impact, and perform well in front of the media. She has collaborated with schools, colleges and coaching centres, and supports entrepreneurs in building their communication presence offline and online.\nAs CEO and co-founder of Purple Tree Creatives, she helps brands, institutions and entrepreneurs with strategic communication, social media strategy, video production and media training.\nShe has worked as an announcer at All India Radio, Kozhikode, since 2019. She was also part of the founding team of Radio CU, the campus radio of the University of Calicut, where she designed programmes and organised events as Program Executive.\nSuja holds a master\'s degree in communication and journalism from the University of Calicut and a BA in English Language and Literature.',
+    talks: [], events: [], quotes: [],
+    links: { linkedin: 'https://www.linkedin.com/in/suja-unnikrishnan-597b76377/', instagram: 'https://www.instagram.com/sujaaspeaks/' },
+    published: false, featured: false, consent: true, consentNote: 'Told Saleh she wants to be listed, 5 Nov 2026'
   }
 ];
