@@ -4,6 +4,132 @@
 
 ---
 
+# Free vs Paid Keynote Speaker Websites: What You Actually Need
+
+URL: https://speakerfolio.com/articles/free-vs-paid-keynote-speaker-websites/
+Published: 2026-11-05 · Author: Saleh, Speakerfolio
+
+Most keynote speakers do not need an expensive website to get booked. They need a fast, professional page that shows their talks, a stage video, proof from past events and a clear way to book. A free speaker website covers that well, and a paid website makes sense once you want your own domain and more pages.
+
+This guide compares free and paid keynote speaker websites side by side. You will see what each option includes, where free website builders hold you back, and the point at which paying for a website starts to earn you more bookings. It ends with a simple rule you can use to decide today.
+
+## The short answer
+
+Start with a free speaker website if you are new to speaking, have up to four talks or need a credible link to send planners this week. Upgrade to a paid website when you have a strong brand, steady bookings and want your own domain. The right choice depends on your stage, not on the price.
+
+Either way, the content matters more than the platform. Planners judge your topic, your video and your proof first, then your design. A clean free site with a clear booking path will outperform an expensive site that hides your talks three clicks deep.
+
+## What a free keynote speaker website gives you
+
+A good free speaker website gives you one well-organised page with your bio, talks, stage video, testimonials and a booking form. It loads on a phone, it looks professional, and it costs nothing to keep online. For a speaker who has nothing yet, it is a big step up from a LinkedIn profile.
+
+The trade-off is control. You usually get a subdomain such as yourname.speakerfolio.com rather than yourname.com, fewer pages, and a small credit in the footer. Many general website builders also add their own branding or ads to free sites, which is the main thing to check before you sign up.
+
+## The hidden costs of free website builders
+
+General builders are free to start but rarely free to finish. Wix, for example, says its free sites use a wixsite.com address and show Wix branding, and sometimes ads. Removing ads and connecting a custom domain starts with its paid Light plan, which Wix lists at $17 per month billed annually.
+
+The bigger cost is your time. A blank builder expects you to write the copy, choose a layout, add a booking form and make it work on mobile yourself. Many speakers spend weeks on a site that still misses what planners look for, which is why a speaker-specific service is often the better free option.
+
+## What a paid keynote speaker website adds
+
+A paid website gives you your own domain, a custom design and as many pages as you need. You can add a page for each talk, a media kit, a blog and booking details for different event types. You also remove any platform credit, so every visitor sees only your brand.
+
+Paid also means more ways to be found. Separate talk pages and articles can rank in Google for searches such as "resilience speaker for healthcare", and full SEO and AI visibility setup helps tools like ChatGPT describe you correctly. These gains matter most once you already have proof and a clear speaking topic.
+
+## Free vs paid speaker websites compared
+
+| Feature | Free speaker website | Paid speaker website |
+|---|---|---|
+| Web address | yourname.speakerfolio.com | yourname.com |
+| Design | Professional template | Custom design for your brand |
+| Pages | One page | As many as you need |
+| Talks, video, testimonials, booking form | Included | Included |
+| Footer credit or builder ads | Small credit on Speakerfolio; ads on some builders | None |
+| SEO and AI visibility | Basic setup | Full setup |
+| Best for | New and growing speakers | Established speakers and brands |
+
+The table shows that the core booking tools are the same on both plans. What you pay for is your own address, more pages, full control of your brand and deeper search setup. If you do not need those yet, paying early adds cost without adding bookings.
+
+## Why your web address matters to event planners
+
+Trust drives bookings, and your address is part of that first impression. Stanford's Web Credibility guidelines advise sites to show that real, trustworthy people stand behind them, make contact easy, look professional and use restraint with promotional content such as ads. A cluttered free site with builder ads breaks several of those rules at once.
+
+A clean subdomain from a speaker platform does not hurt you when the page itself is professional and ad-free. A custom domain becomes more valuable as you grow, because it appears on your one-sheet, slides and email signature. It also stays yours if you ever change platforms, so your links never break.
+
+## Speed and first impressions decide the booking
+
+Planners give your page seconds, not minutes. Research by Jakob Nielsen at Nielsen Norman Group found that users often leave web pages within 10 to 20 seconds, and that a page must communicate its value proposition within about 10 seconds. Your topic and video need to be visible straight away.
+
+Load time matters just as much on a phone. Google's study The Need for Mobile Speed found that 53% of mobile site visits are abandoned if pages take longer than three seconds to load. Whether your site is free or paid, choose a platform that keeps pages fast and light.
+
+## When a free speaker website is enough
+
+A free website is enough when you are building your speaking business, testing a new topic or need a professional link quickly. It works well if you have one to four talks, a short demo reel and a few testimonials. Most new speakers get more value from finishing their content than from paying for design.
+
+It is also the smart choice when your budget is better spent elsewhere. A professional headshot, a two-minute demo reel or a few showcase events will usually win you more bookings than a custom design. You can always move up to a paid site once the bookings justify it.
+
+## When it is time to pay for a speaker website
+
+Upgrade when your speaking business is clearly growing. Signs include regular paid bookings, a book or signature program, media coverage, several distinct talks or bureau interest. At that stage, your own domain and a custom design make you look like the established expert you already are.
+
+Pay when you need features a one-page site cannot hold. That includes separate talk pages for search, a media kit, a speaker blog or several audiences such as corporate events and schools. If you find yourself cutting content to fit one page, it is time for more room.
+
+## How Speakerfolio handles free and paid websites
+
+Speakerfolio was built for speakers, so the free plan already includes what planners look for. You get a one-page portfolio on yourname.speakerfolio.com, six professional templates, your talks, stage video, testimonials, a booking form and a speaker one-sheet. We write and set it up from your LinkedIn profile, with no ads and no card.
+
+Premium moves you to your own domain with a custom design, as many pages as you need, full admin access and no Speakerfolio credit. Hosting with SSL and backups is included, and you can add 20 branded social media posts a month. Every Speakerfolio speaker can also be listed in the directory where planners search.
+
+## How to choose the right website builder
+
+If you are weighing Speakerfolio against Wix, Squarespace, WordPress and other tools, compare them on the features planners need rather than on templates alone. Check booking forms, video embeds, mobile speed and the real cost once ads and branding are removed. A side-by-side review saves you from switching later.
+
+We compared the most popular options in [Best Website Builders for Motivational Speakers Compared: Free and Paid](https://medium.com/@imsaleh/best-website-builders-for-motivational-speakers-compared-free-and-paid-98d71a7453b2). It covers pricing, ease of use and which builders suit new versus established speakers. Read it alongside this guide before you commit to a paid plan anywhere.
+
+## Your bio matters more than your plan
+
+Free or paid, your speaker bio is the text planners read, copy and paste into their programmes. A strong bio states who you help, the result you deliver and the proof behind it, in a length that fits an event page. Without it, even the best design will not get you shortlisted.
+
+Our guide [How to Write a Motivational Speaker Bio That Gets You Booked](https://www.linkedin.com/pulse/how-write-motivational-speaker-bio-gets-you-booked-speakerfolio-s8zvc/) walks you through a simple formula with examples. Use it to write your one-line, short and long bio before you build anything. For a full list of what belongs on your site, read the [motivational speaker website checklist](https://speakerfolio.com/articles/motivational-speaker-website-checklist/) and [what every speaker website needs](https://speakerfolio.com/articles/what-every-speaker-website-needs/).
+
+## Frequently asked questions
+
+### Is a free website good enough for a keynote speaker?
+
+Yes, if it is professional, fast and ad-free. Planners care most about your topic, video, testimonials and an easy way to book. A free speaker website that shows those clearly is enough for new and growing speakers, and you can upgrade to your own domain later without starting again.
+
+### How much does a keynote speaker website cost?
+
+A speaker website can cost nothing on a free plan, around $100 to $300 a year on a builder or managed plan, or several thousand dollars for a custom agency build. Speakerfolio's free plan costs nothing. Premium is $500 a year, currently $100 with the launch offer, including hosting.
+
+### Do I need my own domain as a speaker?
+
+You do not need one to start, but it helps as you grow. A domain such as yourname.com looks established, fits neatly on slides and business cards, and stays yours if you change platforms. Most domains cost $10 to $20 a year from a registrar.
+
+### Do free website builders show ads?
+
+Some do. Wix, for example, says its free sites show Wix branding and sometimes ads, and use a wixsite.com address. Speakerfolio's free speaker websites show no ads, only a small designer credit in the footer, which you can remove by upgrading to Premium.
+
+### Can I move from a free website to a paid one later?
+
+Yes. On Speakerfolio you keep your content, and Premium moves your site to your own domain with a custom design and old links redirected. That means you can start free today, build your proof, and upgrade only when your bookings make the extra cost worthwhile.
+
+## The verdict: start free, upgrade with your bookings
+
+For most keynote speakers, the smartest path is to launch a free, professional website now and upgrade when your speaking business demands it. Spend your early budget on video and proof, not on design. A clear site that planners can trust will win you more bookings than an expensive one.
+
+Speakerfolio gives you a free speaker website, written and built for you from your LinkedIn profile, live in about two days. You see a private preview before anything goes live. [Get your free speaker website](https://speakerfolio.com/contact/#start), or compare plans on our [pricing page](https://speakerfolio.com/pricing/) when you are ready for your own domain.
+
+## Sources
+
+1. Wix, "Is Wix free?", Wix Blog. [wix.com/blog/is-wix-free](https://www.wix.com/blog/is-wix-free)
+2. B.J. Fogg, "Stanford Guidelines for Web Credibility", Stanford Persuasive Technology Lab, 2002. [credibility.stanford.edu/guidelines](https://credibility.stanford.edu/guidelines)
+3. Jakob Nielsen, "How Long Do Users Stay on Web Pages?", Nielsen Norman Group, 2011. [nngroup.com](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/)
+4. Google, "The Need for Mobile Speed" study, announced on the AMP blog, 2016. [blog.amp.dev](https://blog.amp.dev/2016/09/08/new-study-speedmatters-for-mobile-user-engagement-and-revenue/)
+
+---
+
 # What Should a Motivational Speaker Website Include? A Planner's Checklist
 
 URL: https://speakerfolio.com/articles/motivational-speaker-website-checklist/
