@@ -22,28 +22,50 @@ export async function onRequestGet({ request, env }) {
     if (!s) return json({ ok: false, error: 'Speaker not found.' }, 404);
     return json({ ok: true, speaker: s, photo: photoUrl(s), preview: '/speakers/' + s.slug + '/?preview=' + (await previewToken(env, s.slug)) });
   }
-  await addSeeds(env);
-  const list = (await getIndex(env)).map((s) => Object.assign({}, s, { photo: photoUrl(s) }));
+  const added = await addSeeds(env);
+  const list = (await syncIndex(env, added)).map((s) => Object.assign({}, s, { photo: photoUrl(s) }));
   return json({ ok: true, speakers: list, topics: TOPICS, formats: FORMATS });
+}
+
+// Rebuild the speaker list from the stored speaker records, so the list can never lose anyone
+// (KV can serve an old copy of the list for up to a minute after a change).
+async function syncIndex(env, extra = []) {
+  const kv = env.SUBMISSIONS;
+  const keys = [];
+  let cursor;
+  do {
+    const r = await kv.list({ prefix: 'spk:', cursor });
+    r.keys.forEach((k) => keys.push(k.name));
+    cursor = r.list_complete ? null : r.cursor;
+  } while (cursor);
+  const recs = (await Promise.all(keys.map((k) => kv.get(k, 'json').catch(() => null)))).filter((x) => x && x.slug);
+  // records just written may not be listed yet
+  extra.forEach((x) => { if (!recs.some((r) => r.slug === x.slug)) recs.push(x); });
+  const fresh = recs.map(summary);
+  const old = await getIndex(env);
+  const sig = (l) => l.map((x) => x.slug + '@' + x.updatedAt + '@' + x.published + '@' + x.featured + '@' + x.photoVer).sort().join('|');
+  if (sig(fresh) !== sig(old)) await writeIndex(env, fresh);
+  else fresh.sort((a, b) => (b.featured - a.featured) || String(b.createdAt).localeCompare(String(a.createdAt)));
+  return fresh;
 }
 
 async function addSeeds(env) {
   const kv = env.SUBMISSIONS;
-  let index = null;
+  const added = [];
   for (const d of SEEDS) {
     const slug = d.slug;
-    if (await kv.get('seed-done:' + slug)) continue;
+    if (await kv.get('seed-done:' + slug, { cacheTtl: 60 })) continue;
+    if (!(await kv.get('spk:' + slug))) {
+      const res = cleanSpeaker(d, null);
+      if (res.error) continue;
+      await kv.put('spk:' + slug, JSON.stringify(res.speaker));
+      added.push(res.speaker);
+    }
     await kv.put('seed-done:' + slug, '1');
-    if (await kv.get('spk:' + slug)) continue;
-    const res = cleanSpeaker(d, null);
-    if (res.error) continue;
-    await kv.put('spk:' + slug, JSON.stringify(res.speaker));
-    index = index || (await getIndex(env));
-    index = index.filter((x) => x.slug !== slug);
-    index.push(summary(res.speaker));
   }
-  if (index) await writeIndex(env, index);
+  return added;
 }
+
 
 function decodePhoto(dataUrl) {
   const m = String(dataUrl || '').match(/^data:(image\/(?:webp|jpeg|png));base64,([A-Za-z0-9+/=]+)$/);
@@ -61,7 +83,7 @@ export async function onRequestPost({ request, env }) {
   let body;
   try { body = await request.json(); } catch (e) { return json({ ok: false, error: 'Bad request.' }, 400); }
   const kv = env.SUBMISSIONS;
-  let index = await getIndex(env);
+  let index = await syncIndex(env);
 
   if (body.action === 'delete') {
     const slug = String(body.slug || '');
