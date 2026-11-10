@@ -207,5 +207,28 @@ export const SEEDS = [
     events: [{ event: 'How to Make Money in the Egyptian Stock Market', organizer: 'Centre For Talking Arts', format: 'Virtual', year: '2025' }], quotes: [],
     links: { website: 'https://www.mybloogle.com', linkedin: 'https://www.linkedin.com/in/aymannassarcma/' },
     published: true, featured: false, consent: true, consentNote: 'Told Saleh he wants to be listed, 10 Nov 2026'
+  },
+  {
+    name: 'Roberta Bogany',
+    slug: 'roberta-bogany',
+    photo: '/assets/seed/roberta-bogany.webp',
+    headline: 'Speaker, author and workshop facilitator helping people navigate change and life transitions',
+    speakerType: 'Speaker and workshop facilitator',
+    topics: ['Motivation', 'Health and wellbeing', 'HR and culture'],
+    formats: ['Keynote', 'Workshop', 'Training'],
+    location: 'Houston, Texas, United States',
+    shortBio: 'Roberta Bogany, M.Ed, is a speaker, author, certified life coach and workshop facilitator in Houston, Texas, with more than 25 years in learning and development. She helps people grow through life\'s transitions, from an empty nest or career shift to a personal setback, and is the author of Relining the Empty Nest and Life Happens: 10 Steps to Navigating Change and Transition.',
+    bio: 'For more than 25 years, Roberta Bogany has helped people navigate change. Her career began in learning and development, where she designed programs, facilitated workshops, coached learners and led large-scale organizational training. Along the way she found that her greatest passion is helping people grow through life\'s transitions.\nWhether someone is facing an empty nest, a career shift, a personal setback or the uncertainty of a new season of life, Roberta believes every transition holds an opportunity for growth. Through speaking, facilitation and reflective learning experiences, she helps people recognize the season they are in, navigate change with confidence, build resilience and rediscover purpose.\nHer mission is to help people embrace where they are today while preparing for who they are becoming tomorrow.\nRoberta spent more than 14 years at Houston Methodist, most recently as Senior Training Specialist, after learning roles with the City of Houston, Calpine Corporation, Gulf Coast Regional Blood Center and Shell Oil Products. She holds a Master of Education, a graduate certificate in communication and media studies from Walden University, and is a certified life coach. She speaks to organizations, community groups and faith communities.',
+    talks: [
+      { title: 'Standing in Your Season', format: 'Workshop',
+        summary: 'A reflective workshop that helps people recognize the season of life they are in and take intentional steps toward what comes next.' },
+      { title: 'The Me Yet to Be: The Experience', format: 'Workshop',
+        summary: 'A guided experience on personal growth, self-discovery and moving with purpose toward who you are becoming.' },
+      { title: 'Courage in Everyday Clothes', format: 'Keynote',
+        summary: 'On resilience, confidence and reinvention, and the everyday courage it takes to keep growing through life\'s challenges.' }
+    ],
+    events: [], quotes: [],
+    links: { linkedin: 'https://www.linkedin.com/in/robertabogany/' },
+    published: true, featured: false, consent: true, consentNote: 'Told Saleh she wants to be listed, 10 Nov 2026'
   }
 ];
