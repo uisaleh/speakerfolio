@@ -184,5 +184,28 @@ export const SEEDS = [
     links: { website: 'https://zakiyyahhill.com/', linkedin: 'https://www.linkedin.com/in/zakiyyah-hill/' },
     bookingEmail: 'booking@zakiyyahhill.com',
     published: false, featured: false, consent: true, consentNote: 'Told Saleh she wants to be listed, 5 Nov 2026'
+  },
+  {
+    name: 'Ayman Nassar',
+    slug: 'ayman-nassar',
+    photo: '/assets/seed/ayman-nassar.webp',
+    headline: 'Keynote speaker and Marathon des Sables finisher with leadership lessons from the Sahara',
+    speakerType: 'Keynote speaker',
+    topics: ['Leadership', 'Motivation', 'Health and wellbeing'],
+    formats: ['Keynote', 'Virtual'],
+    location: 'Hamilton, Ontario, Canada',
+    shortBio: 'Ayman Nassar is a keynote speaker, Certified Management Accountant (CMA) and Senior Internal Auditor at ArcelorMittal Dofasco in Hamilton, Ontario. A finisher of the Marathon des Sables, the multi-day ultramarathon across the Sahara, he shares the leadership lessons he learned in the desert, drawing on more than 15 years in internal audit, accounting and quality assurance.',
+    bio: 'Did you hear the one about the internal auditor who ran across the Sahara? Ayman Nassar finished the Marathon des Sables, one of the toughest footraces on earth, run over six days through the desert, and turned the experience into leadership lessons for teams and professionals.\nHe sharpens his public speaking on the stand-up comedy stage, so his talks mix real stories with humour. His message is that a person is the balance between their personal and professional lives, and that making time for big personal goals makes people better at their work.\nAyman is a Certified Management Accountant and a Senior Internal Auditor at ArcelorMittal Dofasco, a role he has held since 2023. Before moving to Canada he spent more than a decade in Kuwait in audit and quality roles with the Al Babtain Group, Forward Sports Event Management, United Real Estate Company, Alghanim Industries, United Arab Shipping Company and RSM Albazie.\nHe also speaks about personal investing, including a session for the Centre For Talking Arts on how to make money in the Egyptian stock market.',
+    video: 'https://www.youtube.com/watch?v=zqgNuwevZhs',
+    videoTitle: 'How to Make Money in the Egyptian Stock Market, Centre For Talking Arts',
+    talks: [
+      { title: 'Leadership Lessons from the Sahara', format: 'Keynote',
+        summary: 'What finishing the Marathon des Sables taught him about preparation, resilience and leading under pressure, told with the humour of a stand-up comic.' },
+      { title: 'How to Make Money in the Egyptian Stock Market', format: 'Virtual',
+        summary: 'A practical session on building wealth through investing in the Egyptian stock market, first given for the Centre For Talking Arts in April 2025.' }
+    ],
+    events: [{ event: 'How to Make Money in the Egyptian Stock Market', organizer: 'Centre For Talking Arts', format: 'Virtual', year: '2025' }], quotes: [],
+    links: { website: 'https://www.mybloogle.com', linkedin: 'https://www.linkedin.com/in/aymannassarcma/' },
+    published: true, featured: false, consent: true, consentNote: 'Told Saleh he wants to be listed, 10 Nov 2026'
   }
 ];
