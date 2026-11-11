@@ -1,5 +1,6 @@
 // /speakers/<slug>/  a speaker profile (server-rendered from KV)
-import { getSpeaker, getIndex, previewToken } from '../_lib/speakers.js';
+import { getSpeaker, getIndex, previewToken, applyPatches } from '../_lib/speakers.js';
+import { PATCHES } from '../_lib/seed.js';
 import { profilePage } from '../_lib/pages.js';
 
 function notFound(request, env) {
@@ -11,6 +12,7 @@ export async function onRequestGet({ request, env, params }) {
   const slug = String(params.slug || '').toLowerCase();
   if (!/^[a-z0-9-]+$/.test(slug)) return notFound(request, env);
   if (!url.pathname.endsWith('/')) return Response.redirect(url.origin + url.pathname + '/' + url.search, 301);
+  try { await applyPatches(env, PATCHES); } catch (e) { /* show the stored record */ }
   const s = await getSpeaker(env, slug);
   if (!s) return notFound(request, env);
   let preview = false;

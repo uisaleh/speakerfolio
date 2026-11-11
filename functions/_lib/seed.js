@@ -205,7 +205,7 @@ export const SEEDS = [
         summary: 'A practical session on building wealth through investing in the Egyptian stock market, first given for the Centre For Talking Arts in April 2025.' }
     ],
     events: [{ event: 'How to Make Money in the Egyptian Stock Market', organizer: 'Centre For Talking Arts', format: 'Virtual', year: '2025' }], quotes: [],
-    links: { website: 'https://www.mybloogle.com', linkedin: 'https://www.linkedin.com/in/aymannassarcma/' },
+    links: { website: 'https://aymannassar.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/aymannassarcma/' },
     published: true, featured: false, consent: true, consentNote: 'Told Saleh he wants to be listed, 10 Nov 2026'
   },
   {
@@ -231,4 +231,9 @@ export const SEEDS = [
     links: { linkedin: 'https://www.linkedin.com/in/robertabogany/' },
     published: true, featured: false, consent: true, consentNote: 'Told Saleh she wants to be listed, 10 Nov 2026'
   }
+];
+
+// One-time changes to speakers already in storage (applied once, then remembered).
+export const PATCHES = [
+  { id: 'ayman-website-2026-11-11', slug: 'ayman-nassar', links: { website: 'https://aymannassar.speakerfolio.com/' } }
 ];

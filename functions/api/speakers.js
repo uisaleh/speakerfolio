@@ -4,8 +4,8 @@
 //   GET  ?slug=<slug>         admin: one full record + a preview link
 //   POST { action: 'save', speaker, oldSlug?, photo?: 'data:image/webp;base64,...', removePhoto? }   admin
 //   POST { action: 'delete', slug }                                                                    admin
-import { SEEDS } from '../_lib/seed.js';
-import { json, authorised, getIndex, getSpeaker, writeIndex, cleanSpeaker, summary, photoUrl, previewToken, TOPICS, FORMATS } from '../_lib/speakers.js';
+import { SEEDS, PATCHES } from '../_lib/seed.js';
+import { json, authorised, getIndex, getSpeaker, writeIndex, cleanSpeaker, summary, photoUrl, previewToken, TOPICS, FORMATS, applyPatches } from '../_lib/speakers.js';
 
 export async function onRequestGet({ request, env }) {
   const url = new URL(request.url);
@@ -23,6 +23,7 @@ export async function onRequestGet({ request, env }) {
     return json({ ok: true, speaker: s, photo: photoUrl(s), preview: '/speakers/' + s.slug + '/?preview=' + (await previewToken(env, s.slug)) });
   }
   const added = await addSeeds(env);
+  await applyPatches(env, PATCHES);
   const list = (await syncIndex(env, added)).map((s) => Object.assign({}, s, { photo: photoUrl(s) }));
   return json({ ok: true, speakers: list, topics: TOPICS, formats: FORMATS });
 }

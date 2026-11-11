@@ -225,3 +225,18 @@ export function featuredGrid(list) {
 }
 
 export { W, WD, EB, H2 };
+
+// Apply one-time PATCHES (see seed.js) to stored speakers. Cheap when already applied.
+export async function applyPatches(env, patches) {
+  const kv = env.SUBMISSIONS; if (!kv) return;
+  for (const p of patches) {
+    if (await kv.get('patch-done:' + p.id, { cacheTtl: 300 })) continue;
+    const rec = await kv.get('spk:' + p.slug, 'json');
+    if (rec) {
+      if (p.links) rec.links = Object.assign({}, rec.links || {}, p.links);
+      rec.updatedAt = new Date().toISOString();
+      await kv.put('spk:' + p.slug, JSON.stringify(rec));
+    }
+    await kv.put('patch-done:' + p.id, '1');
+  }
+}
