@@ -5,17 +5,24 @@
 //   POST { action: 'save', speaker, oldSlug?, photo?: 'data:image/webp;base64,...', removePhoto? }   admin
 //   POST { action: 'delete', slug }                                                                    admin
 import { SEEDS, PATCHES } from '../_lib/seed.js';
-import { json, authorised, getIndex, getSpeaker, writeIndex, cleanSpeaker, summary, photoUrl, previewToken, TOPICS, FORMATS, applyPatches } from '../_lib/speakers.js';
+import { json, authorised, getIndex, getSpeaker, writeIndex, cleanSpeaker, summary, photoUrl, previewToken, TOPICS, FORMATS, applyPatches, SELF_FIELDS } from '../_lib/speakers.js';
 
 export async function onRequestGet({ request, env }) {
   const url = new URL(request.url);
-  const admin = url.searchParams.has('admin') || url.searchParams.has('slug');
+  const admin = url.searchParams.has('admin') || url.searchParams.has('slug') || url.searchParams.has('review');
   if (!admin) {
     const list = (await getIndex(env)).filter((s) => s.published).map((s) => Object.assign({}, s, { url: '/speakers/' + s.slug + '/', photo: photoUrl(s) }));
     return new Response(JSON.stringify({ ok: true, speakers: list }), { headers: { 'Content-Type': 'application/json', 'Cache-Control': 'public, max-age=60' } });
   }
   if (!(await authorised(request, env))) return json({ ok: false, error: 'Wrong password.' }, 401);
   if (!env.SUBMISSIONS) return json({ ok: false, error: 'The SUBMISSIONS storage is not connected yet.' }, 500);
+  const review = url.searchParams.get('review');
+  if (review) {
+    const s = await getSpeaker(env, review);
+    const req = await env.SUBMISSIONS.get('edit-req:' + review, 'json');
+    if (!s || !req) return json({ ok: false, error: 'No edits waiting for this speaker.' }, 404);
+    return json({ ok: true, speaker: s, photo: photoUrl(s), request: req, fields: SELF_FIELDS });
+  }
   const slug = url.searchParams.get('slug');
   if (slug) {
     const s = await getSpeaker(env, slug);
@@ -24,7 +31,13 @@ export async function onRequestGet({ request, env }) {
   }
   const added = await addSeeds(env);
   await applyPatches(env, PATCHES);
-  const list = (await syncIndex(env, added)).map((s) => Object.assign({}, s, { photo: photoUrl(s) }));
+  const pending = new Set();
+  const links = new Set();
+  for (const [prefix, set] of [['edit-req:', pending], ['edit-link:', links]]) {
+    let c;
+    do { const r = await env.SUBMISSIONS.list({ prefix, cursor: c }); r.keys.forEach((k) => set.add(k.name.slice(prefix.length))); c = r.list_complete ? null : r.cursor; } while (c);
+  }
+  const list = (await syncIndex(env, added)).map((s) => Object.assign({}, s, { photo: photoUrl(s), pending: pending.has(s.slug), hasLink: links.has(s.slug) }));
   return json({ ok: true, speakers: list, topics: TOPICS, formats: FORMATS });
 }
 
@@ -78,7 +91,7 @@ async function addSeeds(env) {
 }
 
 
-function decodePhoto(dataUrl) {
+export function decodePhoto(dataUrl) {
   const m = String(dataUrl || '').match(/^data:(image\/(?:webp|jpeg|png));base64,([A-Za-z0-9+/=]+)$/);
   if (!m) return null;
   const bin = atob(m[2]);
@@ -100,8 +113,51 @@ export async function onRequestPost({ request, env }) {
     const slug = String(body.slug || '');
     await kv.delete('spk:' + slug);
     await kv.delete('photo:' + slug);
+    const tok = await kv.get('edit-link:' + slug);
+    if (tok) await kv.delete('edit-token:' + tok);
+    await kv.delete('edit-link:' + slug);
+    await kv.delete('edit-req:' + slug);
     await writeIndex(env, index.filter((s) => s.slug !== slug));
     return json({ ok: true });
+  }
+  if (body.action === 'editlink' || body.action === 'newlink') {
+    const slug = String(body.slug || '');
+    if (!(await kv.get('spk:' + slug))) return json({ ok: false, error: 'Speaker not found.' }, 404);
+    let tok = body.action === 'editlink' ? await kv.get('edit-link:' + slug) : null;
+    if (body.action === 'newlink') { const old = await kv.get('edit-link:' + slug); if (old) await kv.delete('edit-token:' + old); }
+    if (!tok) {
+      const b = new Uint8Array(18); crypto.getRandomValues(b);
+      tok = [...b].map((x) => x.toString(16).padStart(2, '0')).join('');
+      await kv.put('edit-token:' + tok, slug);
+      await kv.put('edit-link:' + slug, tok);
+    }
+    return json({ ok: true, url: new URL(request.url).origin + '/update-profile/?t=' + tok });
+  }
+  if (body.action === 'acceptEdit' || body.action === 'rejectEdit') {
+    const slug = String(body.slug || '');
+    const existing = await getSpeaker(env, slug);
+    const req = await kv.get('edit-req:' + slug, 'json');
+    if (!existing || !req) return json({ ok: false, error: 'No edits waiting for this speaker.' }, 404);
+    const note = String(body.note || '').slice(0, 2000);
+    let saved = existing;
+    if (body.action === 'acceptEdit') {
+      const merged = Object.assign({}, existing);
+      SELF_FIELDS.forEach((k) => { if (req.data && k in req.data) merged[k] = req.data[k]; });
+      const res = cleanSpeaker(merged, existing);
+      if (res.error) return json({ ok: false, error: res.error }, 400);
+      saved = res.speaker;
+      if (req.photo) {
+        const p = decodePhoto(req.photo);
+        if (p && !p.error) { saved.photoVer = Date.now().toString(36); await kv.put('photo:' + slug, p.bytes, { metadata: { type: p.type, ver: saved.photoVer } }); }
+      }
+      await kv.put('spk:' + slug, JSON.stringify(saved));
+      index = index.filter((x) => x.slug !== slug); index.push(summary(saved)); await writeIndex(env, index);
+    }
+    const log = (await kv.get('edit-log:' + slug, 'json')) || [];
+    log.unshift({ at: new Date().toISOString(), result: body.action === 'acceptEdit' ? 'accepted' : 'rejected', note, email: req.email });
+    await kv.put('edit-log:' + slug, JSON.stringify(log.slice(0, 20)));
+    await kv.delete('edit-req:' + slug);
+    return json({ ok: true, speaker: saved, email: req.email || saved.bookingEmail || '', name: saved.name });
   }
   if (body.action !== 'save') return json({ ok: false, error: 'Unknown action.' }, 400);
 

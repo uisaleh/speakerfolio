@@ -11,6 +11,9 @@
 - [Articles](https://speakerfolio.com/articles/): short guides for speakers
 - [FAQ](https://speakerfolio.com/faq/)
 - [Contact](https://speakerfolio.com/contact/): request a free website or ask a question
+- [About](https://speakerfolio.com/about/): who runs Speakerfolio and how we work
+- [Speakerfolio vs Wix](https://speakerfolio.com/compare/speakerfolio-vs-wix/): speaker websites compared
+- [Speakerfolio vs Squarespace](https://speakerfolio.com/compare/speakerfolio-vs-squarespace/): speaker websites compared
 - [Terms and privacy](https://speakerfolio.com/terms.html)
 
 ## Articles
@@ -40,6 +43,8 @@
 ## Contact
 - Email: projectui.saleh@gmail.com
 - LinkedIn: https://www.linkedin.com/company/speakerfolio
+- Facebook: https://www.facebook.com/speakerfolio
+- Instagram: https://www.instagram.com/speakerfolio/
 
 ## Full text
 - [llms-full.txt](https://speakerfolio.com/llms-full.txt): every article in full, as Markdown

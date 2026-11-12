@@ -47,7 +47,7 @@ export function json(body, status = 200) {
 }
 
 // ---------- admin check (same password as the admin panel) ----------
-async function sha(text) {
+export async function sha(text) {
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
   return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
 }
@@ -56,8 +56,27 @@ export async function authorised(request, env) {
   const header = request.headers.get('Authorization') || '';
   const given = header.startsWith('Bearer ') ? header.slice(7) : '';
   if (!given) return false;
+  // a signed session from /api/login (valid for 7 days)
+  const m = given.match(/^sess\.(\d{13})\.([0-9a-f]{40})$/);
+  if (m) return Number(m[1]) > Date.now() && m[2] === (await sha(env.ADMIN_PASSWORD + ':sess:' + m[1])).slice(0, 40);
   return (await sha(given)) === (await sha(env.ADMIN_PASSWORD));
 }
+export async function sessionToken(env, days = 7) {
+  const exp = String(Date.now() + days * 864e5);
+  return { token: 'sess.' + exp + '.' + (await sha(env.ADMIN_PASSWORD + ':sess:' + exp)).slice(0, 40), exp: Number(exp) };
+}
+export async function telegram(env, text) {
+  if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return;
+  try {
+    await fetch('https://api.telegram.org/bot' + env.TELEGRAM_BOT_TOKEN + '/sendMessage', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: env.TELEGRAM_CHAT_ID, text: String(text).slice(0, 4000), disable_web_page_preview: true })
+    });
+  } catch (e) { /* best effort */ }
+}
+// fields a speaker may change through their edit link (not name, address, consent or publishing)
+export const SELF_FIELDS = ['headline', 'speakerType', 'location', 'languages', 'travel', 'length', 'audience', 'fee', 'shortBio', 'bio', 'topics', 'formats', 'talks', 'video', 'videoTitle', 'events', 'quotes', 'links', 'bookingEmail', 'bookingLink'];
+
 // a preview link for an unpublished profile: /speakers/<slug>/?preview=<token>
 export async function previewToken(env, slug) {
   return env.ADMIN_PASSWORD ? (await sha(env.ADMIN_PASSWORD + ':preview:' + slug)).slice(0, 24) : '';
@@ -184,7 +203,7 @@ export const ORG = {
   '@type': 'Organization', '@id': SITE + '/#org', name: 'Speakerfolio', url: SITE + '/',
   logo: { '@type': 'ImageObject', url: SITE + '/logo.png', width: 512, height: 512 },
   description: 'Speakerfolio is a speaker directory where every speaker has a real website. Event planners search and contact speakers free, with no booking fee.',
-  sameAs: ['https://www.linkedin.com/company/speakerfolio'],
+  sameAs: ['https://www.linkedin.com/company/speakerfolio', 'https://www.facebook.com/speakerfolio', 'https://www.instagram.com/speakerfolio/'],
   email: 'projectui.saleh@gmail.com', areaServed: 'Worldwide',
   founder: { '@type': 'Person', name: 'Saleh Ahmed', url: 'https://www.linkedin.com/in/uisaleh/' }
 };

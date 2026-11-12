@@ -6,7 +6,19 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Admin | Speakerfolio</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<style>@font-face{font-family:'Plus Jakarta Sans';font-weight:400;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Plus Jakarta Sans';font-weight:700;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-700-normal.woff2) format('woff2')}</style>
+<style>@font-face{font-family:'Plus Jakarta Sans';font-weight:400;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'Plus Jakarta Sans';font-weight:700;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-700-normal.woff2) format('woff2')}.tag.wait { background: #fff4d6; color: #7a4d00; }
+.review { display: flex; flex-direction: column; gap: 16px; }
+.diff { background: #fff; border: 1px solid var(--line); }
+.diff-row { display: grid; grid-template-columns: 170px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 14px 16px; border-top: 1px solid var(--line); font-size: 14px; line-height: 1.5; }
+.diff-row:first-child { border-top: 0; }
+.diff-row .k { font-weight: 700; }
+.diff-row .old { color: var(--muted); text-decoration: line-through; white-space: pre-wrap; word-break: break-word; }
+.diff-row .new { background: #eefaf0; white-space: pre-wrap; word-break: break-word; padding: 2px 6px; }
+.diff-head { display: grid; grid-template-columns: 170px minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 10px 16px; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line); background: #faf9f6; }
+.linkbox { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 12px; background: #faf9f6; border: 1px solid var(--line); grid-column: 1 / -1; }
+.linkbox input { flex: 1 1 320px; height: 38px; padding: 0 10px; border: 1px solid var(--line); font: inherit; font-size: 13px; }
+@media (max-width: 760px) { .diff-row, .diff-head { grid-template-columns: minmax(0, 1fr); gap: 6px; } }
+</style>
 <style>
 :root { --bg: #f6f5f2; --surface: #ffffff; --ink: #14161a; --muted: #5d6068; --line: rgba(20,22,26,0.12); --brand: #e31837; --dark: #0b0c0e; --chip: #f0efeb; }
 * { box-sizing: border-box; }
@@ -43,7 +55,7 @@ dt { color: var(--muted); }
 dd { margin: 0; overflow-wrap: anywhere; }
 dd a { color: var(--ink); }
 .side { display: flex; flex-direction: column; gap: 8px; align-items: stretch; min-width: 170px; }
-select { height: 40px; padding: 0 10px; border: 1px solid var(--line); background: var(--surface); font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); }
+select { height: 40px; padding: 0 38px 0 12px; border: 1px solid var(--line); background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%2314161a' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 14px center / 12px 8px; -webkit-appearance: none; appearance: none; border-radius: 0; font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); cursor: pointer; }
 .small { height: 38px; font-size: 13.5px; padding: 0 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
 .small.del { color: #a30f25; }
 .empty, .login { background: var(--surface); border: 1px solid var(--line); padding: 32px; text-align: center; display: flex; flex-direction: column; gap: 12px; align-items: center; }
@@ -68,6 +80,7 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
 .ed label { display: flex; flex-direction: column; gap: 5px; font-size: 13.5px; font-weight: 700; min-width: 0; }
 .ed label small, .hint { font-weight: 400; color: var(--muted); font-size: 12.5px; }
 .ed .full { grid-column: 1 / -1; }
+.ed select { padding-right: 38px; }
 .ed input[type=text], .ed input[type=email], .ed input[type=url], .ed textarea, .ed select { width: 100%; height: 42px; padding: 0 12px; border: 1px solid rgba(20,22,26,0.22); background: #fff; font: inherit; font-size: 14.5px; color: var(--ink); border-radius: 0; }
 .ed textarea { height: auto; min-height: 92px; padding: 10px 12px; resize: vertical; }
 .checks { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -118,7 +131,7 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
         <button type="button" data-f="book" aria-pressed="false">Booking requests</button>
         <button type="button" data-f="q" aria-pressed="false">Questions</button>
       </div>
-      <input type="search" id="search" placeholder="Search name, email or LinkedIn" aria-label="Search">
+      <span style="display: flex; flex-wrap: wrap; gap: 8px;"><select id="st-filter" aria-label="Filter by status"><option value="">All statuses</option></select><input type="search" id="search" placeholder="Search name, email or LinkedIn" aria-label="Search"></span>
     </div>
     <div class="err" id="panel-err" role="alert"></div>
     <div class="list" id="list"></div>
@@ -127,8 +140,24 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
     <div id="sp-listview" style="display: flex; flex-direction: column; gap: 16px;">
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;"><div><h1>Speakers</h1><span class="muted" id="sp-sum"></span></div><button type="button" class="btn" id="sp-add">Add speaker</button></div>
       <p class="hint" style="margin: 0;">Only list speakers who agreed to it. A speaker shows on the site once you tick Published. Changes can take up to a minute to appear everywhere.</p>
+      <div class="tools"><div class="filters" id="sp-filters" role="group" aria-label="Filter speakers by status">
+        <button type="button" data-sf="all" aria-pressed="true">All</button>
+        <button type="button" data-sf="pub" aria-pressed="false">Published</button>
+        <button type="button" data-sf="draft" aria-pressed="false">Draft</button>
+        <button type="button" data-sf="wait" aria-pressed="false">Edits waiting</button>
+        <button type="button" data-sf="feat" aria-pressed="false">Featured</button>
+      </div><input type="search" id="sp-search" placeholder="Search speakers" aria-label="Search speakers"></div>
       <div class="err" id="sp-err" role="alert"></div>
       <div class="list" id="sp-list"></div>
+    </div>
+    <div class="review" id="sp-review" hidden>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;"><h1 id="rv-title">Review changes</h1><button type="button" class="small" id="rv-back">Back to list</button></div>
+      <p class="muted" id="rv-meta" style="margin: 0;"></p>
+      <div id="rv-msg"></div>
+      <div class="diff" id="rv-diff"></div>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13.5px; font-weight: 700;">Note to the speaker <small class="hint" style="font-weight: 400;">Goes in the email that opens when you accept or reject. Optional for accept, recommended for reject.</small><textarea id="rv-note" rows="4" style="width: 100%; padding: 10px 12px; border: 1px solid rgba(20,22,26,0.22); font: inherit; font-size: 14.5px;"></textarea></label>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;"><button type="button" class="btn" id="rv-accept">Accept and publish changes</button><button type="button" class="small del" id="rv-reject" style="height: 44px;">Reject</button><span class="err" id="rv-err" role="alert"></span></div>
+      <div id="rv-after" hidden class="note"></div>
     </div>
     <form class="ed" id="sp-form" hidden novalidate>
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;"><h1 id="ed-title">Add speaker</h1><button type="button" class="small" id="ed-back">Back to list</button></div>
@@ -183,9 +212,18 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
 <script>
 (function () {
   var $ = function (id) { return document.getElementById(id); };
-  var KEY = 'sf_admin_pw', items = [], statuses = ['New', 'Contacted', 'Building', 'Live', 'Not a fit'], filter = 'all';
-  function pw() { try { return sessionStorage.getItem(KEY) || ''; } catch (e) { return window.__pw || ''; } }
-  function setPw(v) { try { sessionStorage.setItem(KEY, v); } catch (e) { window.__pw = v; } }
+  var KEY = 'sf_admin_session', items = [], statuses = ['New', 'Contacted', 'Building', 'Live', 'Not a fit'], filter = 'all';
+  // signed in for 7 days on this device (a signed session token, never the password itself)
+  function pw() {
+    var v = '';
+    try { v = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) { v = window.__pw || null; }
+    if (!v || !v.token || v.exp < Date.now()) return '';
+    return v.token;
+  }
+  function setPw(token, exp) {
+    var v = token ? { token: token, exp: exp } : null;
+    try { if (v) localStorage.setItem(KEY, JSON.stringify(v)); else localStorage.removeItem(KEY); sessionStorage.removeItem('sf_admin_pw'); } catch (e) { window.__pw = v; }
+  }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function link(v) {
     if (!v || v === '-') return esc(v || '-');
@@ -218,6 +256,7 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
       if (filter === 'req' && i.kind !== 'Website request') return false;
       if (filter === 'book' && i.kind !== 'Booking request') return false;
       if (filter === 'q' && i.kind !== 'Question') return false;
+      if ($('st-filter').value && i.status !== $('st-filter').value) return false;
       if (q && JSON.stringify(i.fields || {}).toLowerCase().indexOf(q) < 0) return false;
       return true;
     });
@@ -243,10 +282,18 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
     return api('GET').then(function (j) { items = j.items || []; statuses = j.statuses || statuses; show(true); render(); $('updated').textContent = 'Updated ' + new Date().toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' }); })
       .catch(function (e) { if (e.status === 401) { show(false); $('login-err').textContent = pw() ? 'Wrong password. Try again.' : ''; } else { show(true); $('panel-err').textContent = e.message; } });
   }
-  $('login-form').addEventListener('submit', function (ev) { ev.preventDefault(); setPw($('pw').value); load(); });
+  $('login-form').addEventListener('submit', function (ev) {
+    ev.preventDefault(); $('login-err').textContent = '';
+    fetch('/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ password: $('pw').value }) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { if (!j.ok) { $('login-err').textContent = j.error || 'Wrong password. Try again.'; return; } setPw(j.token, j.exp); $('pw').value = ''; load(); if (window.SF_SPK && tab === 'speakers') window.SF_SPK.load(); })
+      .catch(function () { $('login-err').textContent = 'Could not reach the server. Try again.'; });
+  });
   $('logout').addEventListener('click', function () { setPw(''); items = []; show(false); $('pw').value = ''; });
   $('refresh').addEventListener('click', function () { if (tab === 'speakers' && window.SF_SPK) window.SF_SPK.load(); else load(); });
   $('search').addEventListener('input', render);
+  $('st-filter').innerHTML = '<option value="">All statuses</option>' + statuses.map(function (x) { return '<option>' + esc(x) + '</option>'; }).join('');
+  $('st-filter').addEventListener('change', render);
   document.querySelectorAll('.filters button').forEach(function (b) { b.addEventListener('click', function () { filter = b.getAttribute('data-f'); document.querySelectorAll('.filters button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); render(); }); });
   $('list').addEventListener('change', function (ev) {
     var s = ev.target; if (!s.matches('select[data-key]')) return;
@@ -276,17 +323,29 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
   }
   function ini(n) { return String(n || '?').split(/\s+/).filter(Boolean).slice(0, 2).map(function (w) { return w[0].toUpperCase(); }).join(''); }
   function slugify(t) { return String(t || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60); }
+  var spFilter = 'all', linkOpen = {};
   function renderList() {
-    var pub = list.filter(function (s) { return s.published; }).length;
-    $('sp-sum').textContent = list.length ? pub + ' published, ' + (list.length - pub) + ' draft' : '';
+    var pub = list.filter(function (s) { return s.published; }).length, wait = list.filter(function (s) { return s.pending; }).length;
+    $('sp-sum').textContent = list.length ? pub + ' published, ' + (list.length - pub) + ' draft' + (wait ? ', ' + wait + ' with edits waiting' : '') : '';
+    var q = ($('sp-search').value || '').toLowerCase();
+    var shown = list.filter(function (s) {
+      if (spFilter === 'pub' && !s.published) return false;
+      if (spFilter === 'draft' && s.published) return false;
+      if (spFilter === 'wait' && !s.pending) return false;
+      if (spFilter === 'feat' && !s.featured) return false;
+      return !q || (s.name + ' ' + s.headline + ' ' + (s.location || '')).toLowerCase().indexOf(q) >= 0;
+    });
     if (!list.length) { $('sp-list').innerHTML = '<div class="empty"><b>No speakers yet.</b><span class="muted">Click Add speaker. Until the first one is published, the site shows a "Founding speakers" invitation.</span></div>'; return; }
-    $('sp-list').innerHTML = list.map(function (s) {
+    if (!shown.length) { $('sp-list').innerHTML = '<div class="empty"><b>No speakers match this filter.</b><span class="muted">Try All, or clear the search.</span></div>'; return; }
+    $('sp-list').innerHTML = shown.map(function (s) {
       return '<article class="sp-row"><div class="sp-av">' + (s.photo ? '<img src="' + esc(s.photo) + '" alt="">' : esc(ini(s.name))) + '</div>'
-        + '<div style="min-width: 0;"><div class="top"><span class="name">' + esc(s.name) + '</span><span class="tag ' + (s.published ? 'pub">Published' : 'draft">Draft') + '</span>' + (s.featured ? '<span class="tag feat">Featured</span>' : '') + '</div>'
+        + '<div style="min-width: 0;"><div class="top"><span class="name">' + esc(s.name) + '</span><span class="tag ' + (s.published ? 'pub">Published' : 'draft">Draft') + '</span>' + (s.featured ? '<span class="tag feat">Featured</span>' : '') + (s.pending ? '<span class="tag wait">Edits waiting</span>' : '') + '</div>'
         + '<div class="muted" style="font-size: 14px;">' + esc(s.headline) + '</div><div class="when">' + esc((s.topics || []).join(', ')) + (s.location ? ' · ' + esc(s.location) : '') + '</div></div>'
-        + '<div class="side" style="flex-direction: row; flex-wrap: wrap; min-width: 0;"><button type="button" class="small" data-edit="' + esc(s.slug) + '">Edit</button>'
+        + '<div class="side" style="flex-direction: row; flex-wrap: wrap; min-width: 0;">' + (s.pending ? '<button type="button" class="small" style="background: #14161a; color: #fff;" data-review="' + esc(s.slug) + '">Review edits</button>' : '') + '<button type="button" class="small" data-edit="' + esc(s.slug) + '">Edit</button><button type="button" class="small" data-link="' + esc(s.slug) + '">' + (s.hasLink ? 'Edit link' : 'Create edit link') + '</button>'
         + (s.published ? '<a class="small" style="display: inline-flex; align-items: center; text-decoration: none;" target="_blank" rel="noopener" href="/speakers/' + esc(s.slug) + '/">View</a>' : '')
-        + '<button type="button" class="small del" data-sdel="' + esc(s.slug) + '">Delete</button></div></article>';
+        + '<button type="button" class="small del" data-sdel="' + esc(s.slug) + '">Delete</button></div>'
+        + (linkOpen[s.slug] ? '<div class="linkbox"><input type="text" readonly value="' + esc(linkOpen[s.slug]) + '" aria-label="Edit link for ' + esc(s.name) + '"><button type="button" class="small" data-copy="' + esc(linkOpen[s.slug]) + '">Copy link</button><a class="small" style="display: inline-flex; align-items: center; text-decoration: none;" href="mailto:' + esc(s.bookingEmail || '') + '?subject=' + encodeURIComponent('Update your Speakerfolio profile') + '&body=' + encodeURIComponent('Hi ' + String(s.name).split(' ')[0] + ',\n\nHere is your private link to update your Speakerfolio profile:\n' + linkOpen[s.slug] + '\n\nChange anything you like and press Send. I check every update before it goes live and will email you when it is published.\n\nThanks,\nSaleh\nSpeakerfolio') + '">Email it</a><button type="button" class="small" data-newlink="' + esc(s.slug) + '">New link</button><span class="hint" style="flex-basis: 100%;">Only this speaker\'s profile can be changed with this link. Changes wait here for you to accept. "New link" turns off the old one.</span></div>' : '')
+        + '</article>';
     }).join('');
   }
   function load() {
@@ -397,7 +456,63 @@ select { height: 40px; padding: 0 10px; border: 1px solid var(--line); backgroun
       .catch(function (er) { b.disabled = false; b.textContent = 'Save speaker'; $('ed-err').style.color = ''; $('ed-err').textContent = er.message; });
   });
   var pend = '';
+  document.querySelectorAll('#sp-filters button').forEach(function (b) { b.addEventListener('click', function () { spFilter = b.getAttribute('data-sf'); document.querySelectorAll('#sp-filters button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); renderList(); }); });
+  $('sp-search').addEventListener('input', renderList);
+  function getLink(slug, fresh) {
+    api('POST', { action: fresh ? 'newlink' : 'editlink', slug: slug }).then(function (j) { linkOpen[slug] = j.url; list = list.map(function (s) { if (s.slug === slug) s.hasLink = true; return s; }); renderList(); }).catch(function (er) { $('sp-err').textContent = er.message; });
+  }
+  // ---------- review a speaker's own changes ----------
+  var LABELS = { headline: 'Headline', speakerType: 'Speaker type', location: 'Location', languages: 'Languages', travel: 'Travel', length: 'Typical length', audience: 'Audience size', fee: 'Fee range', shortBio: 'Short bio', bio: 'Longer bio', topics: 'Topics', formats: 'Formats', talks: 'Talks', video: 'Video', videoTitle: 'Video title', events: 'Past events', quotes: 'Testimonials', links: 'Links', bookingEmail: 'Booking email', bookingLink: 'Booking link' };
+  function fmt(v, k) {
+    if (v == null || v === '') return '';
+    if (k === 'talks') return v.map(function (t) { return t.title + (t.format ? ' (' + t.format + ')' : '') + (t.summary ? '\n' + t.summary : '') + ((t.takeaways || []).length ? '\n· ' + [].concat(t.takeaways).join('\n· ') : ''); }).join('\n\n');
+    if (k === 'events') return v.map(function (x) { return [x.event, x.organizer, x.format, x.year].filter(Boolean).join(' · '); }).join('\n');
+    if (k === 'quotes') return v.map(function (x) { return '"' + x.quote + '" ' + x.name + (x.role ? ', ' + x.role : ''); }).join('\n\n');
+    if (k === 'links') return Object.keys(v).filter(function (x) { return v[x]; }).sort().map(function (x) { return x + ': ' + v[x]; }).join('\n');
+    if (Array.isArray(v)) return v.join(', ');
+    return String(v);
+  }
+  var rv = null;
+  function openReview(slug) {
+    api('GET', null, '?review=' + encodeURIComponent(slug)).then(function (j) {
+      rv = j; var cur = j.speaker, req = j.request, rows = '';
+      j.fields.forEach(function (k) {
+        var a = fmt(cur[k], k), b = fmt(req.data[k], k);
+        if (a !== b) rows += '<div class="diff-row"><span class="k">' + esc(LABELS[k] || k) + '</span><span class="old">' + esc(a || '(empty)') + '</span><span class="new">' + esc(b || '(empty)') + '</span></div>';
+      });
+      if (req.photo) rows += '<div class="diff-row"><span class="k">Photo</span><span>' + (j.photo ? '<img src="' + esc(j.photo) + '" alt="Current photo" style="width: 96px; height: 96px; object-fit: cover;">' : '(none)') + '</span><span><img src="' + esc(req.photo) + '" alt="New photo" style="width: 96px; height: 96px; object-fit: cover;"></span></div>';
+      $('rv-diff').innerHTML = rows ? '<div class="diff-head"><span>Field</span><span>Now</span><span>Their change</span></div>' + rows : '<div class="diff-row"><span class="k">No changes</span><span class="muted">They sent the form without changing anything.</span><span></span></div>';
+      $('rv-title').textContent = 'Changes from ' + cur.name;
+      $('rv-meta').textContent = 'Sent ' + new Date(req.submittedAt).toLocaleString() + ' · reply to ' + req.email;
+      $('rv-msg').innerHTML = req.message ? '<div class="note"><b>Their note:</b> ' + esc(req.message) + '</div>' : '';
+      $('rv-note').value = ''; $('rv-err').textContent = ''; $('rv-after').hidden = true;
+      $('rv-accept').disabled = false; $('rv-reject').disabled = false;
+      $('sp-listview').hidden = true; $('sp-review').hidden = false; window.scrollTo(0, 0);
+    }).catch(function (er) { $('sp-err').textContent = er.message; });
+  }
+  function decide(accept) {
+    if (!rv) return;
+    var slug = rv.speaker.slug, note = $('rv-note').value.trim();
+    if (!accept && !note) { $('rv-err').textContent = 'Add a short note so the speaker knows what to change.'; $('rv-note').focus(); return; }
+    $('rv-accept').disabled = true; $('rv-reject').disabled = true; $('rv-err').textContent = '';
+    api('POST', { action: accept ? 'acceptEdit' : 'rejectEdit', slug: slug, note: note }).then(function (j) {
+      var first = String(j.name || '').split(' ')[0];
+      var subject = accept ? 'Your Speakerfolio profile update is live' : 'About your Speakerfolio profile update';
+      var body = 'Hi ' + first + ',\n\n' + (accept ? 'Thanks for updating your profile. Your changes are now live:\nhttps://speakerfolio.com/speakers/' + slug + '/' : 'Thanks for sending your profile update. I could not publish it as it is.') + (note ? '\n\n' + note : '') + (accept ? '' : '\n\nYou can make the changes with the same link I sent you and send them again.') + '\n\nBest,\nSaleh\nSpeakerfolio';
+      var mail = 'mailto:' + encodeURIComponent(j.email || '') + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      $('rv-after').hidden = false;
+      $('rv-after').innerHTML = '<b>' + (accept ? 'Accepted. The profile is updated.' : 'Rejected. Nothing changed on the profile.') + '</b> Your email app should open with a message to ' + esc(j.email || 'the speaker') + '. <a href="' + mail + '">Open the email again</a>';
+      window.location.href = mail;
+    }).catch(function (er) { $('rv-accept').disabled = false; $('rv-reject').disabled = false; $('rv-err').textContent = er.message; });
+  }
+  $('rv-accept').addEventListener('click', function () { decide(true); });
+  $('rv-reject').addEventListener('click', function () { decide(false); });
+  $('rv-back').addEventListener('click', function () { $('sp-review').hidden = true; $('sp-listview').hidden = false; load(); });
   $('sp-list').addEventListener('click', function (e) {
+    var rvb = e.target.closest('[data-review]'); if (rvb) { openReview(rvb.getAttribute('data-review')); return; }
+    var lk = e.target.closest('[data-link]'); if (lk) { var sl = lk.getAttribute('data-link'); if (linkOpen[sl]) { delete linkOpen[sl]; renderList(); } else getLink(sl, false); return; }
+    var nl = e.target.closest('[data-newlink]'); if (nl) { getLink(nl.getAttribute('data-newlink'), true); return; }
+    var cp = e.target.closest('[data-copy]'); if (cp) { var v = cp.getAttribute('data-copy'); try { navigator.clipboard.writeText(v).then(function () { cp.textContent = 'Copied'; }, function () { cp.previousSibling.select(); }); } catch (er) { cp.previousSibling.select(); } return; }
     var ed = e.target.closest('[data-edit]');
     if (ed) {
       api('GET', null, '?slug=' + encodeURIComponent(ed.getAttribute('data-edit'))).then(function (j) { open(j.speaker, j.photo, j.speaker.published ? '/speakers/' + j.speaker.slug + '/' : j.preview); $('ed-preview').textContent = j.speaker.published ? 'Open profile' : 'Open private preview'; }).catch(function (er) { $('sp-err').textContent = er.message; });

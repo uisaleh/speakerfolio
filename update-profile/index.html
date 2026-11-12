@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Update your profile | Speakerfolio</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:"Plus Jakarta Sans";font-weight:400;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:500;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:700;font-display:swap;src:url(/assets/fonts/plus-jakarta-sans-latin-700-normal.woff2) format("woff2")}
+:root{--ink:#14161a;--muted:#55585f;--line:rgba(20,22,26,0.16);--red:#e31837;--bg:#f6f5f1}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+header{background:#0b0c0e;color:#fff}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header .wrap{height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-size:20px;font-weight:700;letter-spacing:-0.03em}
+.logo span{font-weight:400;color:rgba(255,255,255,.66)}
+h1{margin:0;font-size:clamp(28px,4vw,40px);line-height:1.08;font-weight:500;letter-spacing:-0.035em}
+main .wrap{padding-top:36px;padding-bottom:80px;display:flex;flex-direction:column;gap:22px}
+.intro{display:flex;gap:18px;align-items:center}
+.av{width:84px;height:84px;flex:none;background:#14161a;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;overflow:hidden}
+.av img{width:100%;height:100%;object-fit:cover;display:block}
+.muted{color:var(--muted)}
+.note{background:#fff;border:1px solid var(--line);border-left:4px solid var(--red);padding:14px 16px;font-size:14.5px;line-height:1.55}
+.note.ok{border-left-color:#17602f}
+fieldset{margin:0;border:1px solid var(--line);background:#fff;padding:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+legend{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:0 6px}
+label{display:flex;flex-direction:column;gap:6px;font-size:13.5px;font-weight:700;min-width:0}
+label small,.hint{font-weight:400;color:var(--muted);font-size:12.5px}
+.full{grid-column:1/-1}
+input[type=text],input[type=email],input[type=url],textarea{width:100%;height:44px;padding:0 12px;border:1px solid rgba(20,22,26,.24);background:#fff;font:inherit;font-size:15px;font-weight:400;color:var(--ink);border-radius:0}
+textarea{height:auto;min-height:96px;padding:10px 12px;resize:vertical;line-height:1.5}
+input:focus,textarea:focus{outline:2px solid var(--red);outline-offset:-1px}
+.checks{display:flex;flex-wrap:wrap;gap:8px}
+.checks label{flex-direction:row;align-items:center;gap:8px;font-weight:500;border:1px solid var(--line);padding:8px 12px;cursor:pointer}
+.rep{grid-column:1/-1;display:flex;flex-direction:column;gap:12px}
+.rep-item{border:1px dashed rgba(20,22,26,.24);padding:14px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.rep-item .w2{grid-column:span 2}.rep-item .w4{grid-column:1/-1}
+button,.btn{font:inherit;cursor:pointer}
+.btn{height:52px;padding:0 26px;border:0;background:var(--red);color:#fff;font-size:15px;font-weight:700}
+.btn:disabled{opacity:.6;cursor:wait}
+.small{height:38px;padding:0 14px;border:1px solid rgba(20,22,26,.24);background:#fff;color:var(--ink);font-size:13.5px;font-weight:700;justify-self:start}
+.photo{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.bar{position:sticky;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:14px 0;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.err{color:#b0102a;font-size:14px;font-weight:700}
+@media (max-width:640px){fieldset{grid-template-columns:minmax(0,1fr)}.rep-item{grid-template-columns:minmax(0,1fr)}.rep-item .w2{grid-column:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="/"><svg width="30" height="30" viewBox="0 0 100 98" aria-hidden="true"><path fill="#e31837" d="M16 0H84A16 16 0 0 1 100 16V66A16 16 0 0 1 84 82H0V16A16 16 0 0 1 16 0ZM0 82H18L0 98Z"/><path fill="#fff" d="M21.5 32h9v18h-9zM37.5 21h9v40h-9zM53.5 28h9v26h-9zM69.5 36h9v10h-9z"/></svg>Speaker<span>folio</span></a><span class="muted" style="color:rgba(255,255,255,.7);font-size:14px">Profile update</span></div></header>
+<main><div class="wrap">
+  <div id="loading" class="muted">Loading your profile...</div>
+  <div id="bad" class="note" hidden></div>
+  <div id="done" class="note ok" hidden><b>Thank you. Your changes are with us.</b><br>We review every update before it goes live, usually within a day, and email you at <b id="done-email"></b> when it is published or if anything needs a tweak. You can keep using this link to make more changes.</div>
+  <form id="f" hidden novalidate>
+    <div class="intro"><div class="av" id="av">?</div><div><h1 id="who">Update your profile</h1><div class="muted" style="margin-top:6px">Change anything below and send it. We check updates before they go live on <a id="plink" href="/speakers/" target="_blank" rel="noopener">your Speakerfolio profile</a>.</div></div></div>
+    <div id="waiting" class="note" hidden>You already sent changes that are waiting for review. The form shows them, so you can keep editing and send again.</div>
+    <fieldset><legend>Photo and basics</legend>
+      <div class="photo"><input type="file" id="file" accept="image/*" aria-label="New photo"><span class="hint">Optional. A square headshot works best.</span></div>
+      <label class="full">Headline <small>One line event planners scan, e.g. "Keynote speaker on leading teams through change"</small><input type="text" name="headline" maxlength="140"></label>
+      <div class="full"><span style="font-size:13.5px;font-weight:700">Topics <small class="hint">Up to 4. The first one is your main topic.</small></span><div class="checks" id="topics"></div></div>
+      <div class="full"><span style="font-size:13.5px;font-weight:700">Formats</span><div class="checks" id="formats"></div></div>
+      <label>Speaker type <small>e.g. Keynote speaker</small><input type="text" name="speakerType" maxlength="40"></label>
+      <label>Location <small>City, Country</small><input type="text" name="location" maxlength="80"></label>
+      <label>Languages<input type="text" name="languages" maxlength="80"></label>
+      <label>Travel<input type="text" name="travel" maxlength="80" placeholder="Travels worldwide · Virtual"></label>
+      <label>Typical length<input type="text" name="length" maxlength="40" placeholder="45 to 60 min"></label>
+      <label>Audience size<input type="text" name="audience" maxlength="40" placeholder="50 to 2,000 people"></label>
+      <label class="full">Fee range <small>Optional. Leave empty to keep it private.</small><input type="text" name="fee" maxlength="40"></label>
+    </fieldset>
+    <fieldset><legend>About you</legend>
+      <label class="full">Short bio <small>About 90 words, written in the third person.</small><textarea name="shortBio" maxlength="900" rows="4"></textarea></label>
+      <label class="full">Longer bio <small>Optional. One paragraph per line.</small><textarea name="bio" maxlength="4000" rows="7"></textarea></label>
+    </fieldset>
+    <fieldset><legend>Talks</legend><div class="rep" id="rep-talks"></div><button type="button" class="small" data-add="talks">Add a talk</button></fieldset>
+    <fieldset><legend>Video</legend>
+      <label>YouTube link<input type="url" name="video" placeholder="https://www.youtube.com/watch?v=..."></label>
+      <label>Video title<input type="text" name="videoTitle" maxlength="120"></label>
+    </fieldset>
+    <fieldset><legend>Past events</legend><div class="rep" id="rep-events"></div><button type="button" class="small" data-add="events">Add an event</button></fieldset>
+    <fieldset><legend>Testimonials</legend><div class="rep" id="rep-quotes"></div><button type="button" class="small" data-add="quotes">Add a testimonial</button></fieldset>
+    <fieldset><legend>Links</legend>
+      <label>Website<input type="url" name="l_website"></label>
+      <label>LinkedIn<input type="url" name="l_linkedin"></label>
+      <label>YouTube channel<input type="url" name="l_youtube"></label>
+      <label>Instagram<input type="url" name="l_instagram"></label>
+      <label>X<input type="url" name="l_x"></label>
+      <label>Facebook<input type="url" name="l_facebook"></label>
+    </fieldset>
+    <fieldset><legend>Booking</legend>
+      <label>Booking email <small>Planners' booking requests go to this address.</small><input type="email" name="bookingEmail" maxlength="120"></label>
+      <label>Booking link <small>Optional: Calendly or your own booking page.</small><input type="url" name="bookingLink"></label>
+    </fieldset>
+    <fieldset><legend>Send your changes</legend>
+      <label>Your email <small>We reply here once your update is reviewed.</small><input type="email" name="email" maxlength="120" required></label>
+      <label class="full">Anything we should know? <small>Optional</small><textarea name="message" maxlength="1500" rows="3"></textarea></label>
+    </fieldset>
+    <div class="bar"><span class="err" id="err" role="alert"></span><button class="btn" type="submit">Send changes for review</button></div>
+  </form>
+</div></main>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var t = new URLSearchParams(location.search).get('t') || '', form = $('f'), photo = '', order = [];
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  var REP = {
+    talks: [['title', 'Talk title', 'w4'], ['format', 'Format', ''], ['length', 'Length', ''], ['summary', 'One-sentence summary', 'w2'], ['takeaways', 'Audience takeaways (one per line, up to 4)', 'w4', 'area']],
+    events: [['event', 'Event', 'w2'], ['organizer', 'Organizer', ''], ['format', 'Format', ''], ['year', 'Year', '']],
+    quotes: [['quote', 'Quote', 'w4', 'area'], ['name', 'Name', 'w2'], ['role', 'Role and organization', 'w2']]
+  };
+  function addRep(kind, v) {
+    v = v || {};
+    var d = document.createElement('div'); d.className = 'rep-item';
+    d.innerHTML = REP[kind].map(function (f) {
+      var val = Array.isArray(v[f[0]]) ? v[f[0]].join('\n') : (v[f[0]] || '');
+      return '<label class="' + f[2] + '">' + f[1] + (f[3] ? '<textarea data-f="' + f[0] + '" rows="3">' + esc(val) + '</textarea>' : '<input type="text" data-f="' + f[0] + '" value="' + esc(val) + '">') + '</label>';
+    }).join('') + '<button type="button" class="small" data-rm="1">Remove</button>';
+    $('rep-' + kind).appendChild(d);
+  }
+  form.addEventListener('click', function (e) {
+    var a = e.target.closest('[data-add]'); if (a) { addRep(a.getAttribute('data-add')); return; }
+    var r = e.target.closest('[data-rm]'); if (r) r.parentNode.remove();
+  });
+  function bad(msg) { $('loading').hidden = true; form.hidden = true; $('bad').hidden = false; $('bad').textContent = msg; }
+  if (!t) { bad('This page needs your private link from Speakerfolio.'); return; }
+  fetch('/api/speaker-edit?t=' + encodeURIComponent(t)).then(function (r) { return r.json(); }).then(function (j) {
+    if (!j.ok) { bad(j.error || 'This link is not valid any more.'); return; }
+    var s = j.speaker || {};
+    $('who').textContent = 'Update your profile, ' + String(j.name || '').split(' ')[0];
+    $('av').innerHTML = j.photo ? '<img src="' + esc(j.photo) + '" alt="">' : esc(String(j.name || '?').charAt(0));
+    if (j.published) $('plink').href = '/speakers/' + j.slug + '/'; else $('plink').removeAttribute('href');
+    $('waiting').hidden = !j.waiting;
+    $('topics').innerHTML = j.topics.map(function (x) { return '<label><input type="checkbox" name="topics" value="' + esc(x) + '">' + esc(x) + '</label>'; }).join('');
+    $('formats').innerHTML = j.formats.map(function (x) { return '<label><input type="checkbox" name="formats" value="' + esc(x) + '">' + esc(x) + '</label>'; }).join('');
+    ['headline', 'speakerType', 'location', 'languages', 'travel', 'length', 'audience', 'fee', 'shortBio', 'bio', 'video', 'videoTitle', 'bookingEmail', 'bookingLink'].forEach(function (k) { form[k].value = s[k] || ''; });
+    Object.keys(s.links || {}).forEach(function (k) { if (form['l_' + k]) form['l_' + k].value = s.links[k]; });
+    order = (s.topics || []).slice();
+    form.querySelectorAll('input[name=topics]').forEach(function (c) { c.checked = order.indexOf(c.value) >= 0; });
+    form.querySelectorAll('input[name=formats]').forEach(function (c) { c.checked = (s.formats || []).indexOf(c.value) >= 0; });
+    (s.talks && s.talks.length ? s.talks : [{}]).forEach(function (x) { addRep('talks', x); });
+    (s.events || []).forEach(function (x) { addRep('events', x); });
+    (s.quotes || []).forEach(function (x) { addRep('quotes', x); });
+    form.email.value = j.email || s.bookingEmail || '';
+    $('loading').hidden = true; form.hidden = false;
+  }).catch(function () { bad('We could not load your profile. Check your connection and try again.'); });
+  $('topics').addEventListener('change', function (e) {
+    var v = e.target.value; order = order.filter(function (x) { return x !== v; });
+    if (e.target.checked) { if (order.length >= 4) { e.target.checked = false; return; } order.push(v); }
+  });
+  $('file').addEventListener('change', function () {
+    var f = this.files && this.files[0]; if (!f) return;
+    var img = new Image(), url = URL.createObjectURL(f);
+    img.onload = function () {
+      var side = Math.min(img.naturalWidth, img.naturalHeight), out = Math.min(800, side), c = document.createElement('canvas');
+      c.width = out; c.height = out;
+      var sx = (img.naturalWidth - side) / 2, sy = img.naturalHeight > img.naturalWidth ? (img.naturalHeight - side) * 0.2 : 0;
+      c.getContext('2d').drawImage(img, sx, sy, side, side, 0, 0, out, out);
+      photo = c.toDataURL('image/webp', 0.84); if (photo.indexOf('data:image/webp') !== 0) photo = c.toDataURL('image/jpeg', 0.86);
+      $('av').innerHTML = '<img src="' + photo + '" alt="">'; URL.revokeObjectURL(url);
+    };
+    img.src = url;
+  });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); $('err').textContent = '';
+    var d = {};
+    ['headline', 'speakerType', 'location', 'languages', 'travel', 'length', 'audience', 'fee', 'shortBio', 'bio', 'video', 'videoTitle', 'bookingEmail', 'bookingLink'].forEach(function (k) { d[k] = form[k].value; });
+    d.topics = order.slice();
+    d.formats = [].slice.call(form.querySelectorAll('input[name=formats]:checked')).map(function (c) { return c.value; });
+    d.links = {}; ['website', 'linkedin', 'youtube', 'instagram', 'x', 'facebook'].forEach(function (k) { d.links[k] = form['l_' + k].value; });
+    ['talks', 'events', 'quotes'].forEach(function (k) {
+      d[k] = [].slice.call($('rep-' + k).children).map(function (it) { var o = {}; it.querySelectorAll('[data-f]').forEach(function (f) { o[f.getAttribute('data-f')] = f.getAttribute('data-f') === 'takeaways' ? f.value.split('\n') : f.value; }); return o; });
+    });
+    var b = form.querySelector('button[type=submit]'); b.disabled = true; b.textContent = 'Sending...';
+    fetch('/api/speaker-edit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ t: t, data: d, email: form.email.value, message: form.message.value, photo: photo || undefined }) })
+      .then(function (r) { return r.json(); }).then(function (j) {
+        b.disabled = false; b.textContent = 'Send changes for review';
+        if (!j.ok) { $('err').textContent = j.error || 'Something went wrong.'; return; }
+        $('done-email').textContent = form.email.value; $('done').hidden = false; $('waiting').hidden = true; window.scrollTo(0, 0);
+      }).catch(function () { b.disabled = false; b.textContent = 'Send changes for review'; $('err').textContent = 'Could not send. Check your connection and try again.'; });
+  });
+})();
+</script>
+</body>
+</html>

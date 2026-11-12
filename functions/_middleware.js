@@ -15,6 +15,10 @@ export async function onRequest(context) {
   const host = url.hostname.toLowerCase();
   const labels = host.split('.');
 
+  // one canonical host: www and plain http go to https://speakerfolio.com
+  if (host === 'www.speakerfolio.com' || (url.protocol === 'http:' && host.endsWith('speakerfolio.com'))) {
+    return Response.redirect('https://' + host.replace(/^www\./, '') + url.pathname + url.search, 301);
+  }
   if (labels.length < 3 || host.endsWith('.pages.dev') || SKIP.has(labels[0]) || url.pathname.startsWith('/api/')) {
     const first = url.pathname.split('/')[1] || '';
     if (CLIENTS.has(first) && !/\.(jpe?g|png|webp|svg|ico)$/i.test(url.pathname)) {

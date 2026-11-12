@@ -1,12 +1,207 @@
+# Speakerfolio welcomes search engines and AI assistants.
+
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /api/
+Disallow: /update-profile/
 Disallow: /templates/headliner.html
 Disallow: /templates/ignite.html
 Disallow: /templates/coach.html
 Disallow: /templates/trainer.html
 Disallow: /templates/studio.html
 Disallow: /templates/spotlight.html
+
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Applebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: FacebookBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: CCBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: MistralAI-User
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: YouBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: PhindBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Diffbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: ImagesiftBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Timpibot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: omgili
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Kangaroo Bot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: GoogleOther
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: Google-CloudVertexBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
+
+User-agent: LinkedInBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /update-profile/
 
 Sitemap: https://speakerfolio.com/sitemap.xml

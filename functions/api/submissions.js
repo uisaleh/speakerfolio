@@ -10,18 +10,7 @@ function json(body, status = 200) {
   return new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' } });
 }
 
-async function sha(text) {
-  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
-  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
-}
-
-async function authorised(request, env) {
-  if (!env.ADMIN_PASSWORD) return false;
-  const header = request.headers.get('Authorization') || '';
-  const given = header.startsWith('Bearer ') ? header.slice(7) : '';
-  if (!given) return false;
-  return (await sha(given)) === (await sha(env.ADMIN_PASSWORD));
-}
+import { authorised } from '../_lib/speakers.js';
 
 async function allKeys(kv) {
   const keys = [];
