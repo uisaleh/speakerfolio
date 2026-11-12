@@ -328,10 +328,10 @@ textarea.in{height:132px;padding:12px 14px;resize:vertical;line-height:1.5}
 
 <!-- OFFER BAR -->
 <sc-if value="{{barOn}}" hint-placeholder-val="{{true}}">
-<div role="region" aria-label="Launch offer" style="position: relative; background: #e31837; color: #ffffff;">
+<div role="region" aria-label="{{offerName}}" style="position: relative; background: {{offerBg}}; color: #ffffff;">
 <div class="ob-wrap" style="max-width: 1280px; margin: 0 auto; padding: 8px 56px 8px clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 18px; min-height: 48px; font-size: 14px; line-height: 1.35;">
-<a href="/pricing/" style="color: #ffffff; text-decoration: none;"><strong style="font-weight: 700;">Launch offer:</strong> Premium website <strong style="font-weight: 700;">$100/yr</strong><span class="ob-hide-sm"> instead of <s style="color: rgba(255,255,255,0.78);">$500</s>, first month of social posts included</span></a>
-<span role="timer" aria-label="{{offerAria}}" style="display: inline-flex; align-items: center; gap: 4px;"><span class="ob-hide-sm" aria-hidden="true" style="margin-right: 4px; color: rgba(255,255,255,0.86);">Ends in</span><sc-for list="{{offerParts}}" as="o" hint-placeholder-count="4"><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #0b0c0e; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">{{o.v}}<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">{{o.s}}</span></span></sc-for></span>
+<a href="/pricing/" style="color: #ffffff; text-decoration: none;"><strong style="font-weight: 700; color: {{offerLabelColor}};">{{offerLabel}}</strong> Premium website <strong style="font-weight: 700;">$100/yr</strong><span class="ob-hide-sm"> instead of <s style="color: rgba(255,255,255,0.78);">$500</s>, first month of social posts included</span></a>
+<span role="timer" aria-label="{{offerAria}}" style="display: inline-flex; align-items: center; gap: 4px;"><span class="ob-hide-sm" aria-hidden="true" style="margin-right: 4px; color: rgba(255,255,255,0.86);">{{offerEnds}}</span><sc-for list="{{offerParts}}" as="o" hint-placeholder-count="4"><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: {{o.b}}; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">{{o.v}}<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">{{o.s}}</span></span></sc-for></span>
 </div>
 <button type="button" onClick="{{closeBar}}" aria-label="Hide the offer bar" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; padding: 0; border: 0; background: transparent; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
 </div>
@@ -510,15 +510,23 @@ function offerStart() {
   }
 }
 function offerVals(start, now) {
-  var left = Math.max(0, start + OFFER_MS - now), on = left > 0;
+  // launch offer: 7 days from the first visit; then the Black Friday offer until the end of Black Friday (27 Nov 2026), and for everyone on the day itself
+  var BF_START = new Date(2026, 10, 27).getTime(), BF_END = new Date(2026, 10, 28).getTime();
+  var end = start + OFFER_MS, bf = false;
+  if (now >= BF_START && now < BF_END) { bf = true; end = BF_END; }
+  else if (now >= end && now < BF_END) { bf = true; end = BF_END; }
+  var left = Math.max(0, end - now), on = left > 0;
   var s = Math.floor(left / 1000), d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60), sec = s % 60;
   var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  var box = bf ? '#e31837' : '#0b0c0e';
   return {
-    offerOn: on, offerOff: !on,
+    offerOn: on, offerOff: !on, offerBf: bf,
     offerPrice: on ? '$100' : '$500',
-    offerBadge: on ? 'Launch offer: 80% off' : 'Own domain',
-    offerAria: 'Offer ends in ' + d + ' days, ' + h + ' hours and ' + m + ' minutes',
-    offerParts: [{ v: pad(d), s: 'd' }, { v: pad(h), s: 'h' }, { v: pad(m), s: 'm' }, { v: pad(sec), s: 's' }]
+    offerBadge: on ? (bf ? 'Black Friday: 80% off' : 'Launch offer: 80% off') : 'Own domain',
+    offerName: bf ? 'Black Friday offer' : 'Launch offer', offerLabel: bf ? 'Black Friday offer:' : 'Launch offer:',
+    offerLabelColor: bf ? '#ff5a6e' : '#ffffff', offerBg: bf ? '#0b0c0e' : '#e31837', offerEnds: bf ? 'Black Friday ends in' : 'Ends in',
+    offerAria: (bf ? 'Black Friday offer' : 'Offer') + ' ends in ' + d + ' days, ' + h + ' hours and ' + m + ' minutes',
+    offerParts: [{ v: pad(d), s: 'd', b: box }, { v: pad(h), s: 'h', b: box }, { v: pad(m), s: 'm', b: box }, { v: pad(sec), s: 's', b: box }]
   };
 }
 var TPLS = [

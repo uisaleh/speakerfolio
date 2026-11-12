@@ -99,6 +99,7 @@
       onBeforeElUpdated: function (from, to) {
         if (from.isEqualNode(to)) { return false; }
         var t = from.tagName;
+        if (t === 'DETAILS') { if (from.open) { to.setAttribute('open', ''); } else { to.removeAttribute('open'); } if (from.isEqualNode(to)) { return false; } }
         if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') {
           // keep what the visitor typed; only sync class and style
           ['class', 'style', 'placeholder', 'aria-invalid', 'disabled'].forEach(function (a) {
