@@ -220,20 +220,42 @@ export const SEEDS = [
     shortBio: 'Roberta Bogany, M.Ed, is a speaker, author, certified life coach and workshop facilitator in Houston, Texas, with more than 25 years in learning and development. She helps people grow through life\'s transitions, from an empty nest or career shift to a personal setback, and is the author of Relining the Empty Nest and Life Happens: 10 Steps to Navigating Change and Transition.',
     bio: 'For more than 25 years, Roberta Bogany has helped people navigate change. Her career began in learning and development, where she designed programs, facilitated workshops, coached learners and led large-scale organizational training. Along the way she found that her greatest passion is helping people grow through life\'s transitions.\nWhether someone is facing an empty nest, a career shift, a personal setback or the uncertainty of a new season of life, Roberta believes every transition holds an opportunity for growth. Through speaking, facilitation and reflective learning experiences, she helps people recognize the season they are in, navigate change with confidence, build resilience and rediscover purpose.\nHer mission is to help people embrace where they are today while preparing for who they are becoming tomorrow.\nRoberta spent more than 14 years at Houston Methodist, most recently as Senior Training Specialist, after learning roles with the City of Houston, Calpine Corporation, Gulf Coast Regional Blood Center and Shell Oil Products. She holds a Master of Education, a graduate certificate in communication and media studies from Walden University, and is a certified life coach. She speaks to organizations, community groups and faith communities.',
     talks: [
-      { title: 'Standing in Your Season', format: 'Workshop',
-        summary: 'A reflective workshop that helps people recognize the season of life they are in and take intentional steps toward what comes next.' },
-      { title: 'The Me Yet to Be: The Experience', format: 'Workshop',
-        summary: 'A guided experience on personal growth, self-discovery and moving with purpose toward who you are becoming.' },
-      { title: 'Courage in Everyday Clothes', format: 'Keynote',
-        summary: 'On resilience, confidence and reinvention, and the everyday courage it takes to keep growing through life\'s challenges.' }
+      { title: 'Standing in Your Season', format: 'Workshop', length: '',
+        summary: 'A reflective workshop that helps people recognize the season of life they are in, make peace with where they are and take intentional steps toward what comes next.',
+        takeaways: ['Recognize the season you are in', 'Navigate change with confidence', 'Take intentional next steps'] },
+      { title: 'The Me Yet to Be: The Experience', format: 'Workshop', length: '',
+        summary: 'A guided experience in self-discovery that helps people rediscover purpose and possibility, and move intentionally toward who they are becoming.',
+        takeaways: ['Personal growth and self-discovery', 'Rediscover purpose and possibility', 'Move toward who you are becoming'] },
+      { title: 'Courage in Everyday Clothes', format: 'Keynote', length: '',
+        summary: 'On the everyday courage it takes to keep growing: resilience through challenges, confidence through reinvention and a habit of lifelong learning.',
+        takeaways: ['Resilience through challenges', 'Confidence and reinvention', 'Lifelong learning'] },
+      { title: 'Life Happens: 10 Steps to Navigating Change', format: 'Keynote', length: '',
+        summary: 'Based on her book Life Happens, ten practical steps for finding your footing when life shifts, from an empty nest or a career change to a personal setback.',
+        takeaways: ['Ten practical steps through change', 'Build resilience in a new season', 'Rediscover purpose and possibility'] }
     ],
     events: [], quotes: [],
-    links: { linkedin: 'https://www.linkedin.com/in/robertabogany/' },
+    links: { website: 'https://robertabogany.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/robertabogany/', instagram: 'https://www.instagram.com/justroberta6295/', facebook: 'https://www.facebook.com/robertaboganyauthor/' },
+    bookingEmail: 'imrobertabogany@gmail.com', languages: 'English',
     published: true, featured: false, consent: true, consentNote: 'Told Saleh she wants to be listed, 10 Nov 2026'
   }
 ];
 
 // One-time changes to speakers already in storage (applied once, then remembered).
 export const PATCHES = [
-  { id: 'ayman-website-2026-11-11', slug: 'ayman-nassar', links: { website: 'https://aymannassar.speakerfolio.com/' } }
+  { id: 'ayman-website-2026-11-11', slug: 'ayman-nassar', links: { website: 'https://aymannassar.speakerfolio.com/' } },
+  { id: 'roberta-details-2026-11-12', slug: 'roberta-bogany', links: { website: 'https://robertabogany.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/robertabogany/', instagram: 'https://www.instagram.com/justroberta6295/', facebook: 'https://www.facebook.com/robertaboganyauthor/' },
+    set: { bookingEmail: 'imrobertabogany@gmail.com', languages: 'English', talks: [
+      { title: 'Standing in Your Season', format: 'Workshop', length: '',
+        summary: 'A reflective workshop that helps people recognize the season of life they are in, make peace with where they are and take intentional steps toward what comes next.',
+        takeaways: ['Recognize the season you are in', 'Navigate change with confidence', 'Take intentional next steps'] },
+      { title: 'The Me Yet to Be: The Experience', format: 'Workshop', length: '',
+        summary: 'A guided experience in self-discovery that helps people rediscover purpose and possibility, and move intentionally toward who they are becoming.',
+        takeaways: ['Personal growth and self-discovery', 'Rediscover purpose and possibility', 'Move toward who you are becoming'] },
+      { title: 'Courage in Everyday Clothes', format: 'Keynote', length: '',
+        summary: 'On the everyday courage it takes to keep growing: resilience through challenges, confidence through reinvention and a habit of lifelong learning.',
+        takeaways: ['Resilience through challenges', 'Confidence and reinvention', 'Lifelong learning'] },
+      { title: 'Life Happens: 10 Steps to Navigating Change', format: 'Keynote', length: '',
+        summary: 'Based on her book Life Happens, ten practical steps for finding your footing when life shifts, from an empty nest or a career change to a personal setback.',
+        takeaways: ['Ten practical steps through change', 'Build resilience in a new season', 'Rediscover purpose and possibility'] }
+    ] } }
 ];

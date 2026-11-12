@@ -234,6 +234,7 @@ export async function applyPatches(env, patches) {
     const rec = await kv.get('spk:' + p.slug, 'json');
     if (rec) {
       if (p.links) rec.links = Object.assign({}, rec.links || {}, p.links);
+      if (p.set) Object.assign(rec, p.set);
       rec.updatedAt = new Date().toISOString();
       await kv.put('spk:' + p.slug, JSON.stringify(rec));
     }
