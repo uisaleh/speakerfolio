@@ -302,6 +302,43 @@ export const SEEDS = [
     links: { website: 'https://sinkyourworry.com/', linkedin: 'https://www.linkedin.com/in/jimkukral/', instagram: 'https://www.instagram.com/jimkukral/' },
     bookingEmail: 'admiraljim@clevelandfloaters.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a free website and listing on speakerfolio.com (SF-1809), 13 Nov 2026'
+  },
+  {
+    name: 'Anthony Baptiste',
+    slug: 'anthony-baptiste',
+    photo: '/assets/seed/anthony-baptiste.webp',
+    headline: 'Motivational Speaker | Certified Paralegal | Transformational Coach',
+    speakerType: 'Motivational speaker',
+    topics: ['Motivation', 'Health and wellbeing', 'Communication'],
+    formats: ['Keynote', 'Panel', 'Virtual'],
+    location: 'Queens, New York, United States',
+    languages: 'English',
+    audience: 'Schools, colleges, nonprofits',
+    fee: 'Universities from $2,000',
+    shortBio: 'Anthony Baptiste doesn\'t speak from theory. He speaks from experience. Sentenced to 51 years to life as a first-time, non-violent offender, he learned the law while incarcerated, became a certified paralegal, proved his sentence was illegal and filed the motion on his own that led to his release on February 18, 2026. Today he speaks on resilience, transformation and second chances. "Your past doesn\'t get the final say."',
+    bio: 'Anthony Baptiste doesn\'t speak from theory. He speaks from experience. Sentenced to 51 years to life as a first-time, non-violent offender, he was incarcerated on February 24, 2016. From his first day inside, he started learning the law, became a certified paralegal while incarcerated, and after his appeals were denied, he proved his sentence was illegal and filed a motion on his own that led to his release on February 18, 2026.\nBefore incarceration, he worked as a concert promoter known for A-list celebrity events drawing upwards of 5,000 people. While incarcerated he also changed in mind, body, and spirit: from over 300 pounds, losing over 100 pounds, and became a certified personal trainer.\nToday he speaks on resilience, transformation, and second chances. "Your past doesn\'t get the final say."\nHe speaks to schools, colleges and universities, youth programs, nonprofits, conferences, corporate events, justice reform panels, podcasts and media. Fees: schools, youth programs and nonprofits at a beginner rate, negotiable per event; universities and conferences starting at $2,000, to discuss.\nPhone: (929) 344-1964. Acting and modeling: @anthonybmodel (actor reel: https://youtu.be/y08rni-wdaU).',
+    talks: [
+      { title: 'Wrongful Conviction & Justice', format: 'Keynote', length: '',
+        summary: 'What a 51-years-to-life sentence for a first-time, non-violent offence looks like from the inside, and how he proved it was illegal.',
+        takeaways: ['A first-hand view of the justice system', 'How he learned the law from day one', 'Why self-advocacy matters'] },
+      { title: 'Resilience After Incarceration', format: 'Keynote', length: '',
+        summary: 'Ten years inside, a release won on his own motion, and what it takes to rebuild a life after prison.',
+        takeaways: ['Resilience when the odds say no', 'Rebuilding after a setback', 'Keeping hope through a long fight'] },
+      { title: 'Self-Advocacy & Personal Transformation', format: 'Keynote', length: '',
+        summary: 'Becoming a certified paralegal and a certified personal trainer while incarcerated, and losing more than 100 pounds along the way.',
+        takeaways: ['Advocate for yourself', 'Change in mind, body and spirit', 'Build skills wherever you are'] },
+      { title: 'Second Chances, Purpose & Reinvention', format: 'Keynote', length: '',
+        summary: 'From concert promoter to incarcerated to free: how to find purpose again and reinvent yourself after the hardest chapter.',
+        takeaways: ['Your past does not get the final say', 'Finding purpose after a fall', 'Reinvention, one step at a time'] }
+    ],
+    video: 'https://www.youtube.com/watch?v=UQ0XYKvcNms', videoTitle: 'Guest Speaker at John Jay College: Resilience, Self-Advocacy & Second Chances',
+    events: [
+      { event: 'Guest speaker: Resilience, Self-Advocacy & Second Chances', organizer: 'John Jay College', format: 'Talk', year: '2026' }
+    ],
+    quotes: [],
+    links: { website: 'https://abaptistestory.com/', instagram: 'https://www.instagram.com/tonelegacy/' },
+    bookingEmail: 'info@abaptistestory.com',
+    published: true, featured: false, consent: true, consentNote: 'Requested a free website and listing on speakerfolio.com (SF-1795), 13 Nov 2026'
   }
 ];
 
