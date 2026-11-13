@@ -269,6 +269,39 @@ export const SEEDS = [
     links: { website: 'https://offrepeat.app', linkedin: 'https://www.linkedin.com/in/christopher-potter-h-phd-8752b873/', facebook: 'https://www.facebook.com/drpotterbeatz' },
     bookingEmail: 'Chris@drpotter.info',
     published: false, featured: false, consent: false, consentNote: ''
+  },
+  {
+    name: 'Jim Kukral',
+    slug: 'jim-kukral',
+    photo: '/assets/seed/jim-kukral.webp',
+    headline: 'Admiral Jim: the interactive Sink Your Worry keynote on worry, overthinking and actually enjoying your life',
+    speakerType: 'Keynote speaker and author',
+    topics: ['Motivation', 'Health and wellbeing', 'HR and culture', 'Entrepreneurship'],
+    formats: ['Keynote', 'Workshop'],
+    location: 'Cleveland, Ohio, United States',
+    languages: 'English',
+    length: '45 to 120 minutes',
+    audience: 'Teams, associations, schools',
+    shortBio: 'Jim Kukral, performing as Admiral Jim, is a Cleveland entrepreneur and author. Sink Your Worry is his hilarious, heartfelt, interactive keynote about worry, overthinking and actually enjoying your life: audiences write a worry on dissolving paper, drop it in a cup of water and watch it disappear, then the whole room reads a pledge together and sinks their worries on a countdown from 10 to 1. Funny, human, hopeful, never corporate. Now booking 2027.',
+    bio: 'Sink Your Worry is a hilarious, heartfelt, interactive keynote about worry, overthinking and actually enjoying your life. Admiral Jim has audiences write a worry on dissolving paper, drop it in a cup of water and watch it disappear. Then the whole room reads a pledge together and sinks their worries on a countdown from 10 to 1. Funny, human, hopeful, never corporate.\nIt suits corporate teams, associations, chambers, nonprofits, conferences, schools, and healthcare and wellness events. Jim brings a cup and dissolving paper for every attendee; your team provides the water. Taking part is optional and nobody has to share what they wrote.\nBehind the character is Jim Kukral, who has spent 26 years in attention-getting marketing. He built and sold two online marketing agencies, consulted for FedEx, Sherwin-Williams and Fortune 500 companies, and taught internet marketing for more than ten years as an adjunct professor at the University of San Francisco. He has spent more than 20 years on stages and given over 200 talks.\nHe is the founder of the Cleveland Floaters and LET\'S GO CLE, the author of Attention! This Book Will Make You Money and Unskippable, co-author of The Misny Method, and author of the free ebook Float Above It. He is based in Cleveland, Ohio, and is now booking 2027. Phone: 216-272-4383.',
+    talks: [
+      { title: 'Sink Your Worry: Float Above It', format: 'Keynote', length: '45 to 60 minutes',
+        summary: 'A hilarious, heartfelt, interactive keynote about worry, overthinking and actually enjoying your life, ending with the Sink Your Worry ceremony and a countdown from 10 to 1.',
+        takeaways: ['Name the worries people carry into work', 'Laugh at the overthinking', 'Sink them together on a countdown from 10 to 1'] },
+      { title: 'Sink Your Worry: Take Back the Helm', format: 'Workshop', length: '90 to 120 minutes',
+        summary: 'An interactive workshop with humor, reflection, guided activities and conversation for teams and leaders, ending with the Sink Your Worry ceremony.',
+        takeaways: ['Humor, reflection and guided activities', 'Conversation for teams and leaders', 'Ends with the Sink Your Worry ceremony'] }
+    ],
+    video: 'https://www.youtube.com/watch?v=3Nb7Xg4q6TY', videoTitle: 'Admiral Jim',
+    events: [
+      { event: 'Sink Your Worry ceremony cruises', organizer: 'Cleveland Floaters, Cuyahoga River and Lake Erie', format: 'Live event', year: '2026' }
+    ],
+    quotes: [
+      { quote: 'Admiral Jim may not be a real admiral like I am, but he sure puts on a great show. All in good fun.', name: 'Admiral June Ryan', role: 'United States Coast Guard (Retired)' }
+    ],
+    links: { website: 'https://sinkyourworry.com/', linkedin: 'https://www.linkedin.com/in/jimkukral/', instagram: 'https://www.instagram.com/jimkukral/' },
+    bookingEmail: 'admiraljim@clevelandfloaters.com',
+    published: true, featured: false, consent: true, consentNote: 'Requested a free website and listing on speakerfolio.com (SF-1809), 13 Nov 2026'
   }
 ];
 
