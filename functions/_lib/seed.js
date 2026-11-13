@@ -237,6 +237,38 @@ export const SEEDS = [
     links: { website: 'https://robertabogany.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/robertabogany/', instagram: 'https://www.instagram.com/justroberta6295/', facebook: 'https://www.facebook.com/robertaboganyauthor/' },
     bookingEmail: 'imrobertabogany@gmail.com', languages: 'English',
     published: true, featured: false, consent: true, consentNote: 'Told Saleh she wants to be listed, 10 Nov 2026'
+  },
+  {
+    name: 'Christopher Potter',
+    slug: 'christopher-potter',
+    photo: '/assets/seed/christopher-potter.webp',
+    headline: 'Youth mental health speaker, music producer and founder of Off Repeat',
+    speakerType: 'Youth speaker and mentor',
+    topics: ['Health and wellbeing', 'Motivation', 'Entrepreneurship', 'Technology'],
+    formats: ['Keynote', 'Workshop', 'Virtual'],
+    location: 'Oconto Falls, Wisconsin, United States',
+    languages: 'English',
+    shortBio: 'Christopher Potter, h.PhD, is a youth mental health speaker, mentor and music producer with more than 20 years in music, including production work for Grammy-winning artists. He speaks to students and youth groups about mindset, resilience and bouncing back, drawing on his own lived experience, and is the founder of Off Repeat, an app that turns negative thought loops into personal music.',
+    bio: 'As a kid, Christopher Potter was misdiagnosed and put through electroshock therapy, with someone else\'s voice and instructions imposed in his head. Today he builds the opposite.\nHe speaks at student assemblies and youth-group sessions, including "Lead Yourself First" with Damien Doran, sharing lived-experience talks on mindset, resilience and bouncing back. He also mentors young people through Youth Empowerment Summit (YES) programs and sits on the YES board. His speaking and mentoring are not a clinical service.\nChristopher has spent more than 20 years as a music producer, including production work for Grammy-winning artists, and has released 62 songs. He founded Off Repeat, an app that turns what is looping in your mind into personal music: your own words, set to a sound you love. It is built on QLL (Quantum Linguistic Layering), his listening protocol, and is a wellness tool that complements care rather than replacing it.\nOn 19 December 2026 he is staging Off Script at the Tarlton Theatre in Green Bay, a free public event on innovative alternatives in mental health. He is open to speaking and podcast invitations.',
+    talks: [
+      { title: 'Lead Yourself First', format: 'Keynote', length: '',
+        summary: 'A lived-experience talk for student assemblies and youth groups, with Damien Doran, on mindset, resilience and bouncing back.',
+        takeaways: ['Build a stronger mindset', 'Bounce back from setbacks', 'Lead yourself before you lead others'] },
+      { title: 'Turning Thought Loops into Personal Music', format: 'Keynote', length: '',
+        summary: 'How a music producer who was misdiagnosed as a child built Off Repeat, and how personal music can help a preferred thought replace a negative loop.',
+        takeaways: ['Notice the thoughts on repeat', 'Use music you love on purpose', 'Wellness tools that complement care'] },
+      { title: 'Making Music Matter in Schools', format: 'Workshop', length: '',
+        summary: 'Why traditional music class is losing young people, and how to modernize music in schools so students want to take part.',
+        takeaways: ['Why students drift away from music class', 'Modern ways to bring music back', 'Music as a sense of direction'] }
+    ],
+    events: [
+      { event: 'Off Script: innovative alternatives in mental health', organizer: 'Tarlton Theatre, Green Bay', format: 'Public event', year: '2026' },
+      { event: 'Lead Yourself First student assemblies', organizer: 'With Damien Doran', format: 'Assembly', year: '2025' }
+    ],
+    quotes: [],
+    links: { website: 'https://offrepeat.app', linkedin: 'https://www.linkedin.com/in/christopher-potter-h-phd-8752b873/', facebook: 'https://www.facebook.com/drpotterbeatz' },
+    bookingEmail: 'Chris@drpotter.info',
+    published: false, featured: false, consent: false, consentNote: ''
   }
 ];
 
