@@ -1,6 +1,6 @@
 // POST /api/submit
 // Saves a website request or question from the landing page and sends a Telegram notification.
-// Accepts JSON, or multipart with a "data" JSON part and up to 3 "files" (10 MB each), stored in KV as att:<id>:<n>.
+// Accepts JSON, or multipart with a "data" JSON part and up to 10 "files" (10 MB each), stored in KV as att:<id>:<n>.
 //
 // Cloudflare Pages settings needed:
 //   KV binding         SUBMISSIONS          (Settings > Bindings > KV namespace)
@@ -18,7 +18,7 @@ function json(body, status = 200) {
 }
 
 // Optional attachments (multipart form: a "data" JSON part plus "files").
-const MAX_FILES = 3;
+const MAX_FILES = 10;
 const MAX_FILE = 10 * 1024 * 1024;
 const FILE_EXT = /\.(pdf|docx?|pptx?|key|pages|txt|rtf|odt|jpe?g|png|webp|gif|heic)$/i;
 
@@ -35,6 +35,7 @@ export async function onRequestPost({ request, env }) {
       if (f.size > MAX_FILE) return json({ ok: false, error: f.name + ' is larger than 10 MB.' }, 400);
       if (!FILE_EXT.test(f.name || '')) return json({ ok: false, error: f.name + ' is not a supported file type.' }, 400);
     }
+    if (files.reduce((t, f) => t + f.size, 0) > 90 * 1024 * 1024) return json({ ok: false, error: 'All files together can be up to 90 MB.' }, 400);
   } else {
     try { data = await request.json(); } catch (e) { return json({ ok: false, error: 'Send the form as JSON.' }, 400); }
   }
