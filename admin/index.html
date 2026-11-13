@@ -18,6 +18,7 @@
 .linkbox { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 12px; background: #faf9f6; border: 1px solid var(--line); grid-column: 1 / -1; }
 .linkbox input { flex: 1 1 320px; height: 38px; padding: 0 10px; border: 1px solid var(--line); font: inherit; font-size: 13px; }
 @media (max-width: 760px) { .diff-row, .diff-head { grid-template-columns: minmax(0, 1fr); gap: 6px; } }
+dd.files{display:flex;flex-wrap:wrap;gap:6px}dd.files .att{display:inline-flex;gap:6px;align-items:center;max-width:100%;overflow:hidden;text-overflow:ellipsis}
 </style>
 <style>
 :root { --bg: #f6f5f2; --surface: #ffffff; --ink: #14161a; --muted: #5d6068; --line: rgba(20,22,26,0.12); --brand: #e31837; --dark: #0b0c0e; --chip: #f0efeb; }
@@ -268,6 +269,7 @@ select { height: 40px; padding: 0 38px 0 12px; border: 1px solid var(--line); ba
       var f = i.fields || {};
       var rows = Object.keys(f).filter(function (k) { return k !== 'Name'; }).map(function (k) { return '<dt>' + esc(k) + '</dt><dd>' + link(f[k]) + '</dd>'; }).join('');
       if (i.country) rows += '<dt>Country</dt><dd>' + esc(i.country) + '</dd>';
+      if (i.files && i.files.length) rows += '<dt>Files</dt><dd class="files">' + i.files.map(function (x) { return '<button type="button" class="small att" data-att="' + esc(x.key) + '" data-name="' + esc(x.name) + '">' + esc(x.name) + ' <span class="muted">' + esc(x.size >= 1048576 ? (x.size / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(x.size / 1024)) + ' KB') + '</span></button>'; }).join('') + '</dd>';
       var opts = statuses.map(function (s) { return '<option' + (s === i.status ? ' selected' : '') + '>' + esc(s) + '</option>'; }).join('');
       return '<article class="item' + (i.status === 'New' ? ' is-new' : '') + '"><div><div class="top"><span class="name">' + esc(f.Name || 'No name') + '</span>'
         + '<span class="tag' + (i.kind === 'Question' ? '' : i.kind === 'Booking request' ? ' book' : ' req') + '">' + esc(i.kind) + '</span><span class="when">' + esc(when(i.createdAt)) + '</span></div><dl>' + rows + '</dl></div>'
@@ -298,6 +300,14 @@ select { height: 40px; padding: 0 38px 0 12px; border: 1px solid var(--line); ba
   $('list').addEventListener('change', function (ev) {
     var s = ev.target; if (!s.matches('select[data-key]')) return;
     api('POST', { key: s.getAttribute('data-key'), status: s.value }).then(function (j) { items = items.map(function (i) { return i.key === j.item.key ? j.item : i; }); render(); }).catch(function (e) { $('panel-err').textContent = e.message; });
+  });
+  $('list').addEventListener('click', function (ev) {
+    var b = ev.target.closest('[data-att]'); if (!b) return;
+    var label = b.innerHTML; b.textContent = 'Downloading...';
+    fetch('/api/attachment?key=' + encodeURIComponent(b.getAttribute('data-att')), { headers: { 'Authorization': 'Bearer ' + pw() } })
+      .then(function (r) { if (!r.ok) throw new Error('Could not download the file.'); return r.blob(); })
+      .then(function (blob) { var u = URL.createObjectURL(blob), a = document.createElement('a'); a.href = u; a.download = b.getAttribute('data-name') || 'attachment'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(u); }, 4000); b.innerHTML = label; })
+      .catch(function (e) { b.innerHTML = label; $('panel-err').textContent = e.message; });
   });
   var pendingDelete = '';
   $('list').addEventListener('click', function (ev) {

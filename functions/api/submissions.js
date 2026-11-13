@@ -42,7 +42,10 @@ export async function onRequestPost({ request, env }) {
   try { body = await request.json(); } catch (e) { return json({ ok: false, error: 'Bad request.' }, 400); }
   const key = String(body.key || '');
   if (!key.startsWith('sub:')) return json({ ok: false, error: 'Unknown submission.' }, 400);
-  if (body.delete) { await env.SUBMISSIONS.delete(key); return json({ ok: true }); }
+  if (body.delete) {
+    try { const rec = JSON.parse((await env.SUBMISSIONS.get(key)) || '{}'); for (const f of rec.files || []) { if (/^att:/.test(f.key)) await env.SUBMISSIONS.delete(f.key); } } catch (e) { /* still delete the request */ }
+    await env.SUBMISSIONS.delete(key); return json({ ok: true });
+  }
   const current = await env.SUBMISSIONS.get(key);
   if (!current) return json({ ok: false, error: 'Submission not found.' }, 404);
   const record = JSON.parse(current);

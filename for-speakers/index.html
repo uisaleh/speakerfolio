@@ -1045,6 +1045,8 @@ textarea.in{height:132px;padding:12px 14px;resize:vertical;line-height:1.5}
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px;"><label class="lbl" for="v-li">LinkedIn profile</label><input id="v-li" class="{{cls.li}}" type="text" inputmode="url" autocomplete="off" placeholder="https://linkedin.com/in/yourname"><sc-if value="{{er.li}}" hint-placeholder-val="{{false}}"><span class="err">{{msg.li}}</span></sc-if><span style="font-size: 13px; color: #55585f;">We write your bio and talks from it, so you do not have to.</span></div>
 <div style="display: flex; flex-direction: column; gap: 8px;"><label class="lbl" for="v-yt">Talk video <em>(optional, YouTube)</em></label><input id="v-yt" class="{{cls.yt}}" type="text" inputmode="url" autocomplete="off" placeholder="https://youtube.com/watch?v=..."><sc-if value="{{er.yt}}" hint-placeholder-val="{{false}}"><span class="err">{{msg.yt}}</span></sc-if></div>
+<div style="display: flex; flex-direction: column; gap: 8px;"><label class="lbl" for="v-note">Note for us <em>(optional)</em></label><textarea id="v-note" class="in" rows="3" placeholder="Anything we should know: your topics, colours you like, a website you admire or a deadline."></textarea></div>
+<div style="display: flex; flex-direction: column; gap: 8px;"><span class="lbl">Files <em>(optional)</em></span><label for="v-files" style="cursor: pointer; display: flex; align-items: center; gap: 12px; padding: 14px; border: 1px dashed rgba(20,22,26,0.32); background: #f8f7f4;"><span aria-hidden="true" style="flex: none; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: #14161a; color: #ffffff;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5l-8.6 8.6a5.5 5.5 0 01-7.8-7.8l8.6-8.6a3.7 3.7 0 015.2 5.2l-8.6 8.6a1.8 1.8 0 01-2.6-2.6l7.9-7.9"/></svg></span><span style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 15px; font-weight: 700;">Attach files</span><span style="font-size: 13px; line-height: 1.4; color: #55585f;">Headshot, one-sheet, bio or logo. Up to 3 files, 10 MB each.</span></span></label><input id="v-files" type="file" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,.key,.pages,.txt,.rtf,.odt,.jpg,.jpeg,.png,.webp,.gif,.heic" onChange="{{pickV}}" style="position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden;"><sc-if value="{{hasVFiles}}" hint-placeholder-val="{{false}}"><div style="display: flex; flex-direction: column; gap: 6px;"><sc-for list="{{vFiles}}" as="f" hint-placeholder-count="1"><span style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 10px; border: 1px solid rgba(20,22,26,0.14); background: #ffffff; font-size: 14px;"><span style="min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{f.name}} <span style="color: #55585f;">{{f.size}}</span></span><button type="button" onClick="{{f.remove}}" aria-label="{{f.label}}" style="all: unset; cursor: pointer; flex: none; font-size: 13px; font-weight: 700; color: #e31837;">Remove</button></span></sc-for></div></sc-if><sc-if value="{{hasVFileErr}}" hint-placeholder-val="{{false}}"><span class="err">{{vFileErr}}</span></sc-if></div>
 
 <div style="display: flex; flex-direction: column; gap: 10px;">
 <span class="lbl">Plan</span>
@@ -1075,6 +1077,7 @@ textarea.in{height:132px;padding:12px 14px;resize:vertical;line-height:1.5}
 <div style="display: flex; flex-direction: column; gap: 8px;"><label class="lbl" for="q-email">Email</label><input id="q-email" class="{{cls.qemail}}" type="email" autocomplete="email" placeholder="So we can reply"><sc-if value="{{er.qemail}}" hint-placeholder-val="{{false}}"><span class="err">{{msg.qemail}}</span></sc-if></div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px;"><label class="lbl" for="q-msg">Your question</label><textarea id="q-msg" class="{{cls.qmsg}}" placeholder="For example: can you move my current site's content over to Premium?"></textarea><sc-if value="{{er.qmsg}}" hint-placeholder-val="{{false}}"><span class="err">{{msg.qmsg}}</span></sc-if></div>
+<div style="display: flex; flex-direction: column; gap: 8px;"><span class="lbl">Files <em>(optional)</em></span><label for="q-files" style="cursor: pointer; display: flex; align-items: center; gap: 12px; padding: 14px; border: 1px dashed rgba(20,22,26,0.32); background: #f8f7f4;"><span aria-hidden="true" style="flex: none; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: #14161a; color: #ffffff;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5l-8.6 8.6a5.5 5.5 0 01-7.8-7.8l8.6-8.6a3.7 3.7 0 015.2 5.2l-8.6 8.6a1.8 1.8 0 01-2.6-2.6l7.9-7.9"/></svg></span><span style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 15px; font-weight: 700;">Attach files</span><span style="font-size: 13px; line-height: 1.4; color: #55585f;">A screenshot or document that helps us answer. Up to 3 files, 10 MB each.</span></span></label><input id="q-files" type="file" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,.key,.pages,.txt,.rtf,.odt,.jpg,.jpeg,.png,.webp,.gif,.heic" onChange="{{pickQ}}" style="position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden;"><sc-if value="{{hasQFiles}}" hint-placeholder-val="{{false}}"><div style="display: flex; flex-direction: column; gap: 6px;"><sc-for list="{{qFiles}}" as="f" hint-placeholder-count="1"><span style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 10px; border: 1px solid rgba(20,22,26,0.14); background: #ffffff; font-size: 14px;"><span style="min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{f.name}} <span style="color: #55585f;">{{f.size}}</span></span><button type="button" onClick="{{f.remove}}" aria-label="{{f.label}}" style="all: unset; cursor: pointer; flex: none; font-size: 13px; font-weight: 700; color: #e31837;">Remove</button></span></sc-for></div></sc-if><sc-if value="{{hasQFileErr}}" hint-placeholder-val="{{false}}"><span class="err">{{qFileErr}}</span></sc-if></div>
 <button type="button" class="btn" onClick="{{submitAsk}}" style="width: 100%;">Send my question</button>
 <span style="font-size: 13px; color: #55585f; text-align: center;">Or email us directly at projectui.saleh@gmail.com</span>
 </div>
@@ -1084,7 +1087,7 @@ textarea.in{height:132px;padding:12px 14px;resize:vertical;line-height:1.5}
 <div role="status" style="padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 20px;">
 <span style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #e31837;"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square"><path d="M4 12l5 5L20 6"/></svg></span>
 <h3 style="margin: 0; font-size: clamp(26px, 2.6vw, 34px); line-height: 1.08; font-weight: 500; letter-spacing: -0.026em;">{{thanksTitle}}</h3>
-<p style="margin: 0; font-size: 16.5px; line-height: 1.55; color: #55585f;">{{thanksText}}</p>
+<p style="margin: 0; font-size: 16.5px; line-height: 1.55; color: #55585f;">{{thanksText}}</p><sc-if value="{{hasUp}}" hint-placeholder-val="{{false}}"><p style="margin: 0; font-size: 15px; line-height: 1.5; font-weight: 700; color: {{upColor}};">{{upLine}}</p></sc-if>
 <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid rgba(20,22,26,0.14);">
 <sc-for list="{{nextSteps}}" as="s" hint-placeholder-count="3"><li style="display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; gap: 12px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid rgba(20,22,26,0.14); font-size: 15px;"><span style="font-weight: 700; color: #e31837;">{{s.n}}</span><span>{{s.t}}</span><span style="font-size: 13px; font-weight: 700; color: #55585f;">{{s.when}}</span></li></sc-for>
 </ol>
@@ -1097,7 +1100,7 @@ textarea.in{height:132px;padding:12px 14px;resize:vertical;line-height:1.5}
 <div role="status" style="padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 20px;">
 <span style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #14161a;"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square"><path d="M4 12l5 5L20 6"/></svg></span>
 <h3 style="margin: 0; font-size: clamp(26px, 2.6vw, 34px); line-height: 1.08; font-weight: 500; letter-spacing: -0.026em;">{{askTitle}}</h3>
-<p style="margin: 0; font-size: 16.5px; line-height: 1.55; color: #55585f;">{{askText}}</p>
+<p style="margin: 0; font-size: 16.5px; line-height: 1.55; color: #55585f;">{{askText}}</p><sc-if value="{{hasUp}}" hint-placeholder-val="{{false}}"><p style="margin: 0; font-size: 15px; line-height: 1.5; font-weight: 700; color: {{upColor}};">{{upLine}}</p></sc-if>
 <div style="display: flex; flex-wrap: wrap; gap: 8px;"><button type="button" class="btn-k" onClick="{{startFreeAfter}}">Get my free website</button><button type="button" class="btn-l" onClick="{{resetForm}}">Ask something else</button></div>
 </div>
 </sc-if>
@@ -1221,6 +1224,32 @@ function goTo(id, delay) {
 function val(id) { var el = document.getElementById(id); return el ? String(el.value || '').trim() : ''; }
 function store(key, item) {
   try { var list = JSON.parse(window.localStorage.getItem(key) || '[]'); list.unshift(item); window.localStorage.setItem(key, JSON.stringify(list.slice(0, 50))); } catch (e) {}
+}
+
+var SF_FILE_EXT = /\.(pdf|docx?|pptx?|key|pages|txt|rtf|odt|jpe?g|png|webp|gif|heic)$/i, SF_FILE_MAX = 10 * 1024 * 1024;
+function sfFileSize(n) { return n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(n / 1024)) + ' KB'; }
+function sfAddFiles(self, w, e) {
+  var inp = (e && (e.currentTarget || e.target)) || document.getElementById(w + '-files'), list = (self['_' + w + 'f'] || []).slice(), err = '';
+  Array.prototype.forEach.call((inp && inp.files) || [], function (f) {
+    if (list.length >= 3) { err = 'You can attach up to 3 files.'; return; }
+    if (!SF_FILE_EXT.test(f.name)) { err = f.name + ' is not a supported type. Use PDF, Word, PowerPoint or an image.'; return; }
+    if (f.size > SF_FILE_MAX) { err = f.name + ' is larger than 10 MB.'; return; }
+    if (list.some(function (x) { return x.name === f.name && x.size === f.size; })) { return; }
+    list.push(f);
+  });
+  try { inp.value = ''; } catch (x) {}
+  self['_' + w + 'f'] = list;
+  var st = {}; st[w + 'FileErr'] = err; st.fileTick = Date.now(); self.setState(st);
+}
+function sfFileRows(self, w) {
+  return (self['_' + w + 'f'] || []).map(function (f, i) {
+    return { name: f.name, size: sfFileSize(f.size), label: 'Remove ' + f.name, remove: function () { var l = (self['_' + w + 'f'] || []).slice(); l.splice(i, 1); self['_' + w + 'f'] = l; var st = {}; st[w + 'FileErr'] = ''; st.fileTick = Date.now(); self.setState(st); } };
+  });
+}
+function sfUpload(self, pr, n) {
+  if (!n || !pr || !pr.then) { return; }
+  self.setState({ up: 'sending', upN: n });
+  pr.then(function (ok) { self.setState({ up: ok ? 'done' : 'fail' }); });
 }
 class Component extends DCLogic {
   constructor(props) {
@@ -1374,6 +1403,14 @@ class Component extends DCLogic {
           pick: function () { self.setState({ tpl: c.i }); } };
       }),
 
+      vFiles: sfFileRows(self, 'v'), qFiles: sfFileRows(self, 'q'),
+      hasVFiles: (self._vf || []).length > 0, hasQFiles: (self._qf || []).length > 0,
+      vFileErr: st.vFileErr || '', qFileErr: st.qFileErr || '', hasVFileErr: !!st.vFileErr, hasQFileErr: !!st.qFileErr,
+      pickV: function (e) { sfAddFiles(self, 'v', e); }, pickQ: function (e) { sfAddFiles(self, 'q', e); },
+      hasUp: !!st.up, upColor: st.up === 'fail' ? '#e31837' : '#14161a',
+      upLine: st.up === 'sending' ? 'Uploading your ' + (st.upN === 1 ? 'file' : st.upN + ' files') + '... keep this page open for a moment.'
+        : st.up === 'done' ? 'Your ' + (st.upN === 1 ? 'file has' : st.upN + ' files have') + ' arrived.'
+        : st.up === 'fail' ? 'Your files did not upload. Please email them to projectui.saleh@gmail.com.' : '',
       submitSite: function () {
         var f = { name: val('v-name'), email: val('v-email'), li: val('v-li'), yt: val('v-yt') }, e = {};
         if (f.name.length < 2) { e.name = 'Add your full name.'; }
@@ -1385,7 +1422,9 @@ class Component extends DCLogic {
         store('speakerfolio_applications', { id: ref, submitted: now, quick: true, source: 'v2', name: f.name, email: f.email, city: '', positioning: '', topics: [], formats: [],
           plan: premium ? 'Premium' : 'Free', socialPosts: st.social, template: st.tpl >= 0 ? TPLS[st.tpl].name : 'We pick for them', talks: [], shortBio: '',
           links: { linkedin: f.li, youtube: '', video: f.yt, website: '', instagram: '', x: '', bookingLink: '' }, bookingEmail: f.email, hasPhoto: false, status: 'new' });
-        if (window.sfSend) { window.sfSend('Website request', { Name: f.name, Email: f.email, LinkedIn: f.li, YouTube: f.yt || '-', Plan: premium ? 'Premium' : 'Free', 'Social media design': st.social ? 'Yes' : 'No', Template: st.tpl >= 0 ? TPLS[st.tpl].name : 'Pick for me', Reference: ref }); }
+        var vf = self._vf || [], note = val('v-note');
+        if (window.sfSend) { sfUpload(self, window.sfSend('Website request', { Name: f.name, Email: f.email, LinkedIn: f.li, YouTube: f.yt || '-', Plan: premium ? 'Premium' : 'Free', 'Social media design': st.social ? 'Yes' : 'No', Template: st.tpl >= 0 ? TPLS[st.tpl].name : 'Pick for me', Note: note || '-', Reference: ref }, vf), vf.length); }
+        self._vf = [];
         self.setState({ done: 'site', err: {}, who: f.name, mail: f.email, ref: ref, by: fmtDay(addWorkingDays(now, 2)), live: fmtDay(addWorkingDays(now, 3)) });
         goTo('start', 60);
       },
@@ -1396,11 +1435,13 @@ class Component extends DCLogic {
         if (f.msg.length < 10) { e.qmsg = 'Write your question in a sentence or two.'; }
         if (Object.keys(e).length) { showErr(e, [['qname', 'q-name'], ['qemail', 'q-email'], ['qmsg', 'q-msg']]); return; }
         store('speakerfolio_messages', { at: Date.now(), name: f.name, email: f.email, message: f.msg });
-        if (window.sfSend) { window.sfSend('Question', { Name: f.name, Email: f.email, Question: f.msg }); }
+        var qf = self._qf || [];
+        if (window.sfSend) { sfUpload(self, window.sfSend('Question', { Name: f.name, Email: f.email, Question: f.msg }, qf), qf.length); }
+        self._qf = [];
         self.setState({ done: 'ask', err: {}, who: f.name, mail: f.email });
         goTo('start', 60);
       },
-      resetForm: function () { self.setState({ done: '', err: {} }); },
+      resetForm: function () { self.setState({ done: '', err: {}, up: '' }); },
       thanksTitle: 'Thank you, ' + first + '. Your request is in.',
       thanksText: 'We will email a private preview of your ' + (premium ? 'Premium website' : 'free website') + ' to ' + (st.mail || 'your inbox') + ' by ' + (st.by || 'two working days from now') + '.' + (st.social ? ' We will also send your first social media posts once your site is approved.' : ''),
       nextSteps: [
