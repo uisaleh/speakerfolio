@@ -759,7 +759,7 @@ class Component extends DCLogic {
 </script>
 <script src="/assets/js/morphdom.min.js"></script>
 <script src="/assets/js/dc-mini.js"></script>
-<script src="/assets/js/form-v2.js"></script>
+<script src="/assets/js/form-v2.js?v=2"></script>
 <script>(function(){var done=false;function sfBoot(){if(done){return;}done=true;['pointerdown','keydown','touchstart','scroll','mousemove','focusin'].forEach(function(e){window.removeEventListener(e,sfBoot);});window.SF_APP = DCMini.mount(document.getElementById('app'), document.getElementById('dc-tpl').innerHTML, document.getElementById('dc-script').textContent, {});}['pointerdown','keydown','touchstart','scroll','mousemove','focusin'].forEach(function(e){window.addEventListener(e,sfBoot,{passive:true});});if(window.location.hash||window.sessionStorage&&(function(){try{return window.sessionStorage.getItem('sf_start');}catch(e){return null;}})()){sfBoot();}else{setTimeout(sfBoot,7000);}})();</script>
 </body>
 </html>
