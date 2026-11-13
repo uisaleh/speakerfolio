@@ -4,7 +4,7 @@
 
 const SKIP = new Set(['www']);
 // Client sites that live only on their subdomain: the folder address on the main domain or pages.dev redirects there.
-const CLIENTS = new Set(['aymannassar', 'robertabogany', 'admiraljim']);
+const CLIENTS = new Set(['aymannassar', 'robertabogany', 'admiraljim', 'anthonybaptiste']);
 // Client sites taken down at the client's request: answer 410 Gone so search engines drop them quickly.
 const REMOVED = new Set(['emilyadams']);
 const GONE_PAGE = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Page removed</title><style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0b0c0e;color:#fff;font-family:system-ui,sans-serif;padding:24px;box-sizing:border-box;text-align:center}</style></head><body><p>This page has been removed.</p></body></html>';
