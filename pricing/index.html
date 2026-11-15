@@ -655,7 +655,7 @@ class Component extends DCLogic {
       startFreeAfter: function () { start('free'); },
       askQ: function () { try { window.sessionStorage.setItem('sf_start', JSON.stringify({ tab: 'ask', done: '' })); } catch (e) {} self.setState({ tab: 'ask', done: '', err: {} }); goTo('start', 80); },
 
-      heroT: TPLS[st.hero].t, heroThumbD: '/assets/thumbs/' + TPLS[st.hero].slug + '-desktop.webp', heroThumbM: '/assets/thumbs/' + TPLS[st.hero].slug + '-phone.webp',
+      heroT: TPLS[st.hero].t, heroThumbD: '/assets/thumbs/v2/' + TPLS[st.hero].slug + '-desktop.webp', heroThumbM: '/assets/thumbs/v2/' + TPLS[st.hero].slug + '-phone.webp',
       heroAltD: 'The ' + TPLS[st.hero].name + ' template on a laptop', heroAltM: 'The ' + TPLS[st.hero].name + ' template on a phone',
       heroChips: TPLS.map(function (x, i) {
         var on = i === st.hero;
@@ -664,7 +664,7 @@ class Component extends DCLogic {
       }),
 
       tpls: TPLS.map(function (x, i) {
-        return { name: x.name, brief: x.brief, t: x.t, thumbD: '/assets/thumbs/' + x.slug + '-desktop.webp', thumbM: '/assets/thumbs/' + x.slug + '-phone.webp',
+        return { name: x.name, brief: x.brief, t: x.t, thumbD: '/assets/thumbs/v2/' + x.slug + '-desktop.webp', thumbM: '/assets/thumbs/v2/' + x.slug + '-phone.webp',
           altD: 'The ' + x.name + ' template on a laptop', altM: 'The ' + x.name + ' template on a phone', numLabel: 'Template 0' + (i + 1), pvLabel: 'Preview the ' + x.name + ' template',
           goPreview: function () { openPv(i); }, goUse: function () { useTpl(i); } };
       }),
