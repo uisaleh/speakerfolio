@@ -14,7 +14,7 @@
 - [About](https://speakerfolio.com/about/): who runs Speakerfolio and how we work
 - [Speakerfolio vs Wix](https://speakerfolio.com/compare/speakerfolio-vs-wix/): speaker websites compared
 - [Speakerfolio vs Squarespace](https://speakerfolio.com/compare/speakerfolio-vs-squarespace/): speaker websites compared
-- [Terms and privacy](https://speakerfolio.com/terms.html)
+- [Terms and privacy](https://speakerfolio.com/terms)
 
 ## Articles
 - [What Event Planners Look for on a Leadership Speaker's Website](https://speakerfolio.com/articles/what-event-planners-look-for-on-a-leadership-speaker-website/): What event planners look for on a leadership speaker's website: clear positioning, keynote topics, a demo video, testimonials, a one-sheet and an easy booking form.

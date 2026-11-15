@@ -214,7 +214,7 @@ select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(
 <div style="display: flex; flex-wrap: wrap; gap: 56px;">
 <div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Planners</span><a href="/speakers/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Find a speaker</a><a href="/articles/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Articles</a></div>
 <div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Speakers</span><a href="/for-speakers/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">For speakers</a><a href="/templates/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Templates</a><a href="/pricing/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Pricing</a></div>
-<div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Company</span><a href="/about/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">About</a><a href="/faq/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">FAQ</a><a href="/contact/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Contact</a><a href="/terms.html" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Terms and privacy</a></div><div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Compare</span><a href="/compare/speakerfolio-vs-wix/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Speakerfolio vs Wix</a><a href="/compare/speakerfolio-vs-squarespace/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Speakerfolio vs Squarespace</a><a href="/compare/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">All comparisons</a></div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Company</span><a href="/about/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">About</a><a href="/faq/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">FAQ</a><a href="/contact/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Contact</a><a href="/terms" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Terms and privacy</a></div><div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Compare</span><a href="/compare/speakerfolio-vs-wix/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Speakerfolio vs Wix</a><a href="/compare/speakerfolio-vs-squarespace/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Speakerfolio vs Squarespace</a><a href="/compare/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">All comparisons</a></div>
 </div>
 </div>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 24px; border-top: 1px dotted rgba(255,255,255,0.26); font-size: 13px;">
@@ -225,7 +225,7 @@ select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(
 </footer>
 
 </div></div>
-<template id="dc-tpl"><div style="font-family: 'Satoshi', 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; color: #14161a; background: #ffffff; -webkit-font-smoothing: antialiased;">
+<script type="text/x-dc-tpl" id="dc-tpl"><div style="font-family: 'Satoshi', 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; color: #14161a; background: #ffffff; -webkit-font-smoothing: antialiased;">
 
 <header style="position: relative; background: #0b0c0e; border-bottom: 1px solid rgba(255,255,255,0.12);">
 <nav aria-label="Main" style="max-width: 1280px; margin: 0 auto; padding: 18px clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; border-left: 1px dotted rgba(255,255,255,0.26); border-right: 1px dotted rgba(255,255,255,0.26);">
@@ -258,11 +258,11 @@ select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(
 <nav class="sticky-side" aria-label="On this page" style="position: sticky; top: 24px; align-self: flex-start; max-height: calc(100vh - 48px); overflow-y: auto; flex: 1 1 240px; max-width: 290px; display: flex; flex-direction: column; gap: 2px; border-top: 1px solid rgba(20,22,26,0.32); padding-top: 16px;">
 <span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #55585f; padding-bottom: 8px;">Terms of service</span>
 <sc-for list="{{termsToc}}" as="t" hint-placeholder-count="11">
-<a href="{{t.href}}" style="padding: 6px 0 6px 12px; border-left: 2px solid rgba(20,22,26,0.14); text-decoration: none; color: #55585f; font-size: 14px;">{{t.label}}</a>
+<a sf-href="{{t.href}}" style="padding: 6px 0 6px 12px; border-left: 2px solid rgba(20,22,26,0.14); text-decoration: none; color: #55585f; font-size: 14px;">{{t.label}}</a>
 </sc-for>
 <span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #55585f; padding: 20px 0 8px;">Privacy policy</span>
 <sc-for list="{{privToc}}" as="t" hint-placeholder-count="6">
-<a href="{{t.href}}" style="padding: 6px 0 6px 12px; border-left: 2px solid rgba(20,22,26,0.14); text-decoration: none; color: #55585f; font-size: 14px;">{{t.label}}</a>
+<a sf-href="{{t.href}}" style="padding: 6px 0 6px 12px; border-left: 2px solid rgba(20,22,26,0.14); text-decoration: none; color: #55585f; font-size: 14px;">{{t.label}}</a>
 </sc-for>
 </nav>
 
@@ -339,7 +339,7 @@ select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(
 <div style="display: flex; flex-wrap: wrap; gap: 56px;">
 <div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Planners</span><a href="/speakers/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Find a speaker</a><a href="/articles/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Articles</a></div>
 <div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Speakers</span><a href="/for-speakers/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">For speakers</a><a href="/templates/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Templates</a><a href="/pricing/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Pricing</a></div>
-<div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Company</span><a href="/about/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">About</a><a href="/faq/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">FAQ</a><a href="/contact/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Contact</a><a href="/terms.html" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Terms and privacy</a></div><div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Compare</span><a href="/compare/speakerfolio-vs-wix/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Speakerfolio vs Wix</a><a href="/compare/speakerfolio-vs-squarespace/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Speakerfolio vs Squarespace</a><a href="/compare/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">All comparisons</a></div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Company</span><a href="/about/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">About</a><a href="/faq/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">FAQ</a><a href="/contact/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Contact</a><a href="/terms" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Terms and privacy</a></div><div style="display: flex; flex-direction: column; gap: 12px;"><span style="font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #ffffff;">Compare</span><a href="/compare/speakerfolio-vs-wix/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Speakerfolio vs Wix</a><a href="/compare/speakerfolio-vs-squarespace/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">Speakerfolio vs Squarespace</a><a href="/compare/" style="color: rgba(255,255,255,0.72); text-decoration: none; font-size: 15px;">All comparisons</a></div>
 </div>
 </div>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 24px; border-top: 1px dotted rgba(255,255,255,0.26); font-size: 13px;">
@@ -349,7 +349,7 @@ select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(
 </div>
 </footer>
 
-</div></template>
+</div></script>
 <script id="dc-script" type="text/x-dc">
 class Component extends DCLogic {
   renderVals() {
@@ -363,8 +363,8 @@ class Component extends DCLogic {
 }
 </script>
 <script src="/assets/js/morphdom.min.js"></script>
-<script src="/assets/js/dc-mini.js"></script>
-<script src="/assets/js/form-v2.js"></script>
+<script src="/assets/js/dc-mini.js?v=4"></script>
+<script src="/assets/js/form-v2.js?v=4"></script>
 <script>(function(){var done=false;function sfBoot(){if(done){return;}done=true;['pointerdown','keydown','touchstart','scroll','mousemove','focusin'].forEach(function(e){window.removeEventListener(e,sfBoot);});window.SF_APP = DCMini.mount(document.getElementById('app'), document.getElementById('dc-tpl').innerHTML, document.getElementById('dc-script').textContent, {});}['pointerdown','keydown','touchstart','scroll','mousemove','focusin'].forEach(function(e){window.addEventListener(e,sfBoot,{passive:true});});if(window.location.hash||window.sessionStorage&&(function(){try{return window.sessionStorage.getItem('sf_start');}catch(e){return null;}})()){sfBoot();}else{setTimeout(sfBoot,7000);}})();</script>
 </body>
 </html>
