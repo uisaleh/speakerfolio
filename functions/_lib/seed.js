@@ -299,7 +299,7 @@ export const SEEDS = [
     quotes: [
       { quote: 'Admiral Jim may not be a real admiral like I am, but he sure puts on a great show. All in good fun.', name: 'Admiral June Ryan', role: 'United States Coast Guard (Retired)' }
     ],
-    links: { website: 'https://sinkyourworry.com/', linkedin: 'https://www.linkedin.com/in/jimkukral/', instagram: 'https://www.instagram.com/jimkukral/' },
+    links: { website: 'https://admiraljim.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/jimkukral/', instagram: 'https://www.instagram.com/jimkukral/' },
     bookingEmail: 'admiraljim@clevelandfloaters.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a free website and listing on speakerfolio.com (SF-1809), 13 Nov 2026'
   },
@@ -336,7 +336,7 @@ export const SEEDS = [
       { event: 'Guest speaker: Resilience, Self-Advocacy & Second Chances', organizer: 'John Jay College', format: 'Talk', year: '2026' }
     ],
     quotes: [],
-    links: { website: 'https://abaptistestory.com/', instagram: 'https://www.instagram.com/tonelegacy/' },
+    links: { website: 'https://anthonybaptiste.speakerfolio.com/', instagram: 'https://www.instagram.com/tonelegacy/' },
     bookingEmail: 'info@abaptistestory.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a free website and listing on speakerfolio.com (SF-1795), 13 Nov 2026'
   },
@@ -370,7 +370,7 @@ export const SEEDS = [
     video: '', videoTitle: '',
     events: [],
     quotes: [],
-    links: { linkedin: 'https://www.linkedin.com/in/kudra-mohammed/' },
+    links: { website: 'https://kudramohammed.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/kudra-mohammed/', instagram: 'https://www.instagram.com/nizars_kingdom/' },
     bookingEmail: 'Kudramohammedm@gmail.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a website and listing on speakerfolio.com, 15 Nov 2026'
   }
@@ -380,6 +380,9 @@ export const SEEDS = [
 export const PATCHES = [
   { id: 'ayman-website-2026-11-11', slug: 'ayman-nassar', links: { website: 'https://aymannassar.speakerfolio.com/' } },
   { id: 'jim-books-2026-11-13', slug: 'jim-kukral', set: { bio: "Sink Your Worry is a hilarious, heartfelt, interactive keynote about worry, overthinking and actually enjoying your life. Admiral Jim has audiences write a worry on dissolving paper, drop it in a cup of water and watch it disappear. Then the whole room reads a pledge together and sinks their worries on a countdown from 10 to 1. Funny, human, hopeful, never corporate.\nIt suits corporate teams, associations, chambers, nonprofits, conferences, schools, and healthcare and wellness events. Jim brings a cup and dissolving paper for every attendee; your team provides the water. Taking part is optional and nobody has to share what they wrote.\nBehind the character is Jim Kukral, who has spent 26 years in attention-getting marketing. He built and sold two online marketing agencies, consulted for FedEx, Sherwin-Williams and Fortune 500 companies, and taught internet marketing for more than ten years as an adjunct professor at the University of San Francisco. He has spent more than 20 years on stages and given over 200 talks.\nHe is the founder of the Cleveland Floaters and LET'S GO CLE, the author of The Emerald Standard, Unskippable, Attention! This Book Will Make You Money and Write a F*$%'ing Book Already, co-author of The Misny Method, and author of the free ebook Float Above It. He is based in Cleveland, Ohio, and is now booking 2027. Phone: 216-272-4383." } },
+  { id: 'subdomain-websites-2026-11-15a', slug: 'jim-kukral', links: { website: 'https://admiraljim.speakerfolio.com/' } },
+  { id: 'subdomain-websites-2026-11-15b', slug: 'anthony-baptiste', links: { website: 'https://anthonybaptiste.speakerfolio.com/' } },
+  { id: 'subdomain-websites-2026-11-15c', slug: 'kudra-mohammed', links: { website: 'https://kudramohammed.speakerfolio.com/', instagram: 'https://www.instagram.com/nizars_kingdom/' } },
   { id: 'roberta-details-2026-11-12', slug: 'roberta-bogany', links: { website: 'https://robertabogany.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/robertabogany/', instagram: 'https://www.instagram.com/justroberta6295/', facebook: 'https://www.facebook.com/robertaboganyauthor/' },
     set: { bookingEmail: 'imrobertabogany@gmail.com', languages: 'English', talks: [
       { title: 'Standing in Your Season', format: 'Workshop', length: '',
