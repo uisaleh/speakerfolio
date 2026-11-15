@@ -339,6 +339,40 @@ export const SEEDS = [
     links: { website: 'https://abaptistestory.com/', instagram: 'https://www.instagram.com/tonelegacy/' },
     bookingEmail: 'info@abaptistestory.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a free website and listing on speakerfolio.com (SF-1795), 13 Nov 2026'
+  },
+  {
+    name: 'Kudra Mohammed',
+    slug: 'kudra-mohammed',
+    photo: '/assets/seed/kudra-mohammed.webp',
+    headline: 'Founder & CEO | Business Strategist | Brand Leader | Corporate Trainer | Speaker & Mentor',
+    speakerType: 'Business strategist and corporate trainer',
+    topics: ['Sales', 'Leadership', 'Entrepreneurship', 'Communication'],
+    formats: ['Keynote', 'Workshop', 'Training', 'Panel'],
+    location: 'St. Louis, Missouri, United States',
+    languages: 'English',
+    audience: 'Corporations, luxury brands, retail',
+    shortBio: 'Kudra Mohammed is the Founder and CEO of NIZARLINE, Kenya\'s first hijab and scarf company, and a former OMEGA boutique director. With almost a decade across luxury brand management, retail leadership, sales performance and entrepreneurship, she helps companies grow revenue, sharpen their brand and deliver a luxury-level customer experience through keynotes, workshops, training and consulting.',
+    bio: 'Kudra Mohammed is a business strategist, corporate trainer and the Founder and CEO of NIZARLINE, Kenya\'s first hijab and scarf company, which she built into a luxury modest fashion house with operations across Africa and North America. At NIZARLINE she grew revenue by 55% over two years and introduced Africa\'s first suede scarf line.\nHer luxury experience includes OMEGA under the Swatch Group, where as interim store director in St. Louis she led the boutique through renovation and relocation, mentored associates in clienteling and luxury service, and helped lift its Google rating from 2.0 to 4.9 stars. She has also led campaigns and VIP customer experiences with Lancome, and built and trained a team of more than 20 financial professionals at World Financial Group.\nShe speaks and trains on sales performance, luxury sales and clienteling, brand strategy and market positioning, customer service excellence, leadership and team development, business growth, entrepreneurship and women in leadership. She works with corporations, luxury brands, retail companies, hospitality businesses, entrepreneurs, universities and professional organizations, offering keynote speaking, corporate workshops, employee and sales training, and business strategy consulting.\nShe is the founder of The Nizar Foundation, which expands access to clean water and supports youth mentorship and health awareness, and mentors young leaders through Junior Achievement of Greater St. Louis. She studied International Business Administration and Finance at USIU-Africa and completed Harvard Business School Online in 2024.',
+    talks: [
+      { title: 'Luxury Sales & Clienteling', format: 'Keynote', length: '',
+        summary: 'The clienteling and sales habits behind a luxury boutique: turning first visits into loyal, high-value clients.',
+        takeaways: ['Sales performance that lasts', 'Clienteling and VIP relationships', 'Coaching teams to sell with confidence'] },
+      { title: 'Brand Strategy & Market Positioning', format: 'Keynote', length: '',
+        summary: 'How NIZARLINE grew from one idea into a luxury modest fashion house, and how to position any brand to stand apart.',
+        takeaways: ['Clear, ownable positioning', 'Brand building across markets', 'Growth strategy and execution'] },
+      { title: 'Customer Experience & Service Excellence', format: 'Workshop', length: '',
+        summary: 'The service standards that took an OMEGA boutique from a 2.0 to a 4.9 Google rating, adapted for your team.',
+        takeaways: ['World-class service standards', 'Client relationship management', 'Turning reviews into revenue'] },
+      { title: 'Leadership, Entrepreneurship & Women in Business', format: 'Keynote', length: '',
+        summary: 'Building teams, building businesses and leading as a woman in luxury, retail and entrepreneurship.',
+        takeaways: ['Leadership and team development', 'Building sustainable businesses', 'Women in leadership'] }
+    ],
+    video: '', videoTitle: '',
+    events: [],
+    quotes: [],
+    links: { linkedin: 'https://www.linkedin.com/in/kudra-mohammed/' },
+    bookingEmail: 'Kudramohammedm@gmail.com',
+    published: true, featured: false, consent: true, consentNote: 'Requested a website and listing on speakerfolio.com, 15 Nov 2026'
   }
 ];
 
