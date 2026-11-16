@@ -21,63 +21,112 @@
 dd.files{display:flex;flex-wrap:wrap;gap:6px}dd.files .att{display:inline-flex;gap:6px;align-items:center;max-width:100%;overflow:hidden;text-overflow:ellipsis}
 </style>
 <style>
-:root { --bg: #f6f5f2; --surface: #ffffff; --ink: #14161a; --muted: #5d6068; --line: rgba(20,22,26,0.12); --brand: #e31837; --dark: #0b0c0e; --chip: #f0efeb; }
+:root { --bg: #f8f7f4; --surface: #ffffff; --ink: #14161a; --muted: #55585f; --line: rgba(20,22,26,0.14); --brand: #e31837; --dark: #0b0c0e; --chip: #f0efeb; }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
-header { background: var(--dark); color: #fff; }
-.bar { max-width: 1180px; margin: 0 auto; padding: 16px max(16px, env(safe-area-inset-left, 0px)); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-.logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 19px; letter-spacing: -0.02em; color: #fff; text-decoration: none; }
-.logo span { font-weight: 400; color: rgba(255,255,255,0.7); }
-.wrap { max-width: 1180px; margin: 0 auto; padding: 28px max(16px, env(safe-area-inset-left, 0px)) 64px; display: flex; flex-direction: column; gap: 20px; }
-h1 { margin: 0; font-size: 28px; letter-spacing: -0.03em; }
+a { color: var(--ink); }
+header { background: var(--dark); color: #fff; position: sticky; top: 0; z-index: 20; }
+.bar { max-width: 1280px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px); min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 19px; letter-spacing: -0.02em; color: #fff; text-decoration: none; }
+.logo .wm { font-weight: 700; }
+.logo .wm span { font-weight: 400; color: rgba(255,255,255,0.72); }
+.logo em { font-style: normal; margin-left: 4px; background: var(--brand); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; padding: 3px 7px; }
+.tabs { display: flex; align-self: stretch; gap: 4px; }
+.tabs button { border: 0; border-bottom: 3px solid transparent; background: none; font: inherit; font-size: 15px; font-weight: 700; padding: 0 16px; color: rgba(255,255,255,0.62); cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+.tabs button:hover { color: #fff; }
+.tabs button[aria-selected="true"] { color: #fff; border-bottom-color: var(--brand); }
+.cnt { min-width: 20px; height: 20px; padding: 0 5px; background: var(--brand); color: #fff; font-size: 11.5px; display: inline-flex; align-items: center; justify-content: center; }
+.hd-act { display: flex; gap: 8px; align-items: center; }
+.wrap { max-width: 1280px; margin: 0 auto; padding: 32px clamp(16px, 4vw, 48px) 72px; display: flex; flex-direction: column; gap: 22px; }
+h1 { margin: 0; font-size: 30px; font-weight: 500; letter-spacing: -0.03em; line-height: 1.1; }
 .muted { color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
-.stat { background: var(--surface); border: 1px solid var(--line); padding: 16px; display: flex; flex-direction: column; gap: 2px; }
-.stat b { font-size: 26px; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
-.stat span { font-size: 13px; color: var(--muted); }
+.date { font-size: 13.5px; color: var(--muted); }
+.pn-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; }
+.pn-head p { margin: 4px 0 0; font-size: 16px; color: var(--muted); }
+.pn-tools { display: flex; flex-wrap: wrap; gap: 8px; }
 .tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
 .filters { display: flex; flex-wrap: wrap; gap: 6px; }
-.filters button { border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; font-size: 13.5px; font-weight: 700; padding: 8px 14px; cursor: pointer; }
+.filters button { border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; font-size: 14px; font-weight: 700; height: 38px; padding: 0 14px; cursor: pointer; }
+.filters button:hover { border-color: var(--ink); }
 .filters button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
-input[type="search"], input[type="password"] { height: 44px; padding: 0 14px; border: 1px solid var(--line); background: var(--surface); font: inherit; font-size: 14.5px; color: var(--ink); min-width: 0; }
-.btn { height: 44px; padding: 0 18px; border: 0; background: var(--brand); color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
-.btn.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.3); }
+input[type="search"], input[type="password"] { height: 44px; padding: 0 14px; border: 1px solid var(--line); background: var(--surface); font: inherit; font-size: 14.5px; color: var(--ink); min-width: 0; border-radius: 0; }
+input[type="search"] { width: 260px; max-width: 100%; }
+.btn { height: 44px; padding: 0 18px; border: 0; background: var(--brand); color: #fff; font: inherit; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+.btn.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.3); height: 40px; font-size: 14px; }
+.btn.ghost:hover { border-color: #fff; }
+.btn.dark { background: var(--ink); }
+.btn.line { background: #fff; color: var(--ink); border: 1px solid var(--ink); }
+.btn.line.del { color: #a30f25; border-color: rgba(163,15,37,0.4); }
 .list { display: flex; flex-direction: column; gap: 10px; }
-.item { background: var(--surface); border: 1px solid var(--line); padding: 18px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px 20px; }
-.item.is-new { border-left: 4px solid var(--brand); }
-.top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
-.name { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
-.tag { font-size: 12px; font-weight: 700; padding: 3px 9px; background: var(--chip); }
-.tag.req { background: #ffe3e6; color: #a30f25; }
-.when { font-size: 13px; color: var(--muted); }
-dl { margin: 10px 0 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 14px; font-size: 14px; }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.82fr); gap: 16px; align-items: start; }
+.rq-list { gap: 0; background: var(--surface); border: 1px solid var(--line); }
+.rq { all: unset; box-sizing: border-box; cursor: pointer; display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 16px 18px; border-bottom: 1px solid var(--line); border-left: 3px solid transparent; }
+.rq:last-child { border-bottom: 0; }
+.rq:hover { background: #faf9f6; }
+.rq[aria-current="true"] { background: #fdf3f4; border-left-color: var(--brand); }
+.rq:focus-visible { outline: 2px solid var(--brand); outline-offset: -2px; }
+.av { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px; font-weight: 700; flex: none; }
+.rq-n { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rq-m { font-size: 13.5px; color: var(--muted); display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rq-r { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.due { font-size: 12.5px; font-weight: 700; color: var(--muted); white-space: nowrap; }
+.due.hot { color: var(--brand); }
+.tag { font-size: 12px; font-weight: 700; padding: 3px 9px; background: var(--chip); white-space: nowrap; }
+.st-New { background: var(--brand); color: #fff; }
+.st-Contacted { background: #14161a; color: #fff; }
+.st-Building { background: #fff1d6; color: #7a4b00; }
+.st-Live { background: #dff3e6; color: #17602f; }
+.st-Not-a-fit { background: var(--chip); color: var(--muted); }
+.detail { background: var(--surface); border: 1px solid var(--line); padding: 24px; display: flex; flex-direction: column; gap: 20px; position: sticky; top: 88px; max-height: calc(100vh - 110px); overflow: auto; }
+.dt-h { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 14px; align-items: start; }
+.dt-h .av { width: 56px; height: 56px; font-size: 19px; }
+.dt-n { font-size: 24px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.15; overflow-wrap: anywhere; }
+.dt-s { font-size: 14.5px; color: var(--muted); margin-top: 2px; }
+.kicker { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+dl { margin: 0; display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 7px 14px; font-size: 14.5px; }
 dt { color: var(--muted); }
-dd { margin: 0; overflow-wrap: anywhere; }
+dd { margin: 0; overflow-wrap: anywhere; font-weight: 600; white-space: pre-wrap; }
 dd a { color: var(--ink); }
+.ok-box { background: #eefaf0; border: 1px solid #b9e2c4; color: #17602f; font-weight: 700; font-size: 14.5px; padding: 12px 16px; }
+.dt-act { display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--line); padding-top: 18px; }
+.dt-act .btn { width: 100%; height: 48px; font-size: 15.5px; }
+.dt-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.dt-row .btn { height: 44px; font-size: 14.5px; }
+.dt-st { display: flex; align-items: center; gap: 10px; }
+.dt-st label { font-size: 13.5px; font-weight: 700; }
+.dt-st select { flex: 1; }
+.hist { font-size: 14px; color: var(--muted); }
+.hist b { color: var(--ink); font-weight: 600; }
+.upd { font-size: 13px; }
 .side { display: flex; flex-direction: column; gap: 8px; align-items: stretch; min-width: 170px; }
+.top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.name { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+.when { font-size: 13px; color: var(--muted); }
 select { height: 40px; padding: 0 38px 0 12px; border: 1px solid var(--line); background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%2314161a' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 14px center / 12px 8px; -webkit-appearance: none; appearance: none; border-radius: 0; font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); cursor: pointer; }
+.pn-tools select { height: 44px; }
 .small { height: 38px; font-size: 13.5px; padding: 0 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
+.small:hover { border-color: var(--ink); }
 .small.del { color: #a30f25; }
-.empty, .login { background: var(--surface); border: 1px solid var(--line); padding: 32px; text-align: center; display: flex; flex-direction: column; gap: 12px; align-items: center; }
-.login form { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 420px; }
+.empty { background: var(--surface); border: 1px solid var(--line); padding: 40px 24px; text-align: center; display: flex; flex-direction: column; gap: 8px; align-items: center; }
+.rq-list .empty { border: 0; }
+.login { background: var(--surface); border: 1px solid var(--line); padding: 40px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start; max-width: 520px; margin: 40px auto 0; width: 100%; }
+.login form { display: flex; gap: 8px; flex-wrap: wrap; width: 100%; }
 .login input { flex: 1 1 220px; }
 .err { color: #a30f25; font-weight: 700; font-size: 14px; min-height: 20px; }
+.err:empty { min-height: 0; }
 :focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
-
-.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
-.tabs button { border: 0; border-bottom: 3px solid transparent; background: none; font: inherit; font-size: 15px; font-weight: 700; padding: 10px 14px; color: var(--muted); cursor: pointer; margin-bottom: -1px; }
-.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--brand); }
+.tag.req { background: #ffe3e6; color: #a30f25; }
 .tag.book { background: #e7f0ff; color: #163e8a; }
-.sp-row { background: var(--surface); border: 1px solid var(--line); padding: 14px; display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 16px; align-items: center; }
-.sp-av { width: 64px; height: 64px; background: var(--ink); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; overflow: hidden; }
+.sp-row { background: var(--surface); border: 1px solid var(--line); padding: 16px 18px; display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 16px; align-items: center; }
+.sp-av { width: 56px; height: 56px; background: var(--ink); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; overflow: hidden; }
 .sp-av img { width: 100%; height: 100%; object-fit: cover; }
 .tag.pub { background: #dff3e6; color: #17602f; }
 .tag.draft { background: var(--chip); color: var(--muted); }
 .tag.feat { background: #fff1d6; color: #7a4b00; }
-.ed { background: var(--surface); border: 1px solid var(--line); padding: 24px; display: flex; flex-direction: column; gap: 22px; }
+.ed { background: var(--surface); border: 1px solid var(--line); padding: 28px; display: flex; flex-direction: column; gap: 22px; }
 .ed fieldset { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 18px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-.ed legend { font-size: 13px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 0 0 6px; }
+.ed legend { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); padding: 0 0 6px; }
 .ed label { display: flex; flex-direction: column; gap: 5px; font-size: 13.5px; font-weight: 700; min-width: 0; }
 .ed label small, .hint { font-weight: 400; color: var(--muted); font-size: 12.5px; }
 .ed .full { grid-column: 1 / -1; }
@@ -96,46 +145,48 @@ select { height: 40px; padding: 0 38px 0 12px; border: 1px solid var(--line); ba
 .consent { grid-column: 1 / -1; background: #fff7f8; border: 1px solid #f5c2ca; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
 .consent label.inline, .ed label.inline { flex-direction: row; align-items: center; gap: 8px; font-weight: 700; }
 .ed-bar { position: sticky; bottom: 0; background: var(--surface); border-top: 1px solid var(--line); padding: 14px 0 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
-@media (max-width: 760px) { .ed fieldset { grid-template-columns: minmax(0, 1fr); } .rep-item { grid-template-columns: minmax(0, 1fr); } .rep-item label.w2 { grid-column: auto; } .sp-row { grid-template-columns: 52px minmax(0, 1fr); } .sp-row .side { grid-column: 1 / -1; } }
-
-@media (max-width: 760px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .item { grid-template-columns: minmax(0, 1fr); } .side { min-width: 0; flex-direction: row; flex-wrap: wrap; } .side select { flex: 1 1 160px; } }
+@media (max-width: 980px) {
+  .split { grid-template-columns: minmax(0, 1fr); }
+  .detail { position: static; max-height: none; }
+  .bar { padding-top: 10px; padding-bottom: 0; }
+  .tabs { order: 3; width: 100%; height: 48px; }
+  .tabs button { padding: 0 12px 0 0; margin-right: 14px; }
+}
+@media (max-width: 760px) {
+  .ed fieldset { grid-template-columns: minmax(0, 1fr); } .rep-item { grid-template-columns: minmax(0, 1fr); } .rep-item label.w2 { grid-column: auto; }
+  .sp-row { grid-template-columns: 48px minmax(0, 1fr); } .sp-av { width: 48px; height: 48px; } .sp-row .side { grid-column: 1 / -1; }
+  .rq { grid-template-columns: 36px minmax(0, 1fr); } .rq .av { width: 36px; height: 36px; font-size: 13px; } .rq-r { grid-column: 2; flex-direction: row; align-items: center; justify-content: flex-start; gap: 10px; }
+  dl { grid-template-columns: minmax(0, 1fr); gap: 2px; } dd { margin-bottom: 8px; }
+  .hd-act .btn.ghost { padding: 0 12px; } .hd-act a.btn.ghost { display: none; }
+  input[type="search"] { width: 100%; } .pn-tools { width: 100%; } .pn-tools select { flex: 1 1 160px; } .pn-tools input { flex: 1 1 200px; }
+  .dt-row { grid-template-columns: minmax(0, 1fr); }
+  h1 { font-size: 26px; }
+}
 </style>
 </head>
 <body>
 <header><div class="bar">
-  <a class="logo" href="/"><svg aria-hidden="true" width="26" height="24" viewBox="0 0 100 98"><path fill="#e31837" d="M16 0H84A16 16 0 0 1 100 16V66A16 16 0 0 1 84 82H0V16A16 16 0 0 1 16 0ZM0 82H18L0 98Z"/><path fill="#ffffff" d="M21.5 32h9v18h-9zM37.5 21h9v40h-9zM53.5 28h9v26h-9zM69.5 36h9v10h-9z"/></svg>Speaker<span>folio</span>&nbsp;admin</a>
-  <div style="display: flex; gap: 8px;"><button class="btn ghost" id="refresh" type="button" hidden>Refresh</button><button class="btn ghost" id="logout" type="button" hidden>Sign out</button></div>
+  <a class="logo" href="/admin/"><svg aria-hidden="true" width="26" height="24" viewBox="0 0 100 98"><path fill="#e31837" d="M16 0H84A16 16 0 0 1 100 16V66A16 16 0 0 1 84 82H0V16A16 16 0 0 1 16 0ZM0 82H18L0 98Z"/><path fill="#ffffff" d="M21.5 32h9v18h-9zM37.5 21h9v40h-9zM53.5 28h9v26h-9zM69.5 36h9v10h-9z"/></svg><b class="wm">Speaker<span>folio</span></b><em>ADMIN</em></a>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Admin sections" hidden><button type="button" role="tab" data-tab="panel" aria-selected="true">Requests<b class="cnt" id="c-req" hidden>0</b></button><button type="button" role="tab" data-tab="speakers" aria-selected="false">Speakers<b class="cnt" id="c-spk" hidden>0</b></button></nav>
+  <div class="hd-act"><button class="btn ghost" id="refresh" type="button" hidden>Refresh</button><a class="btn ghost" href="/" target="_blank" rel="noopener">View site</a><button class="btn ghost" id="logout" type="button" hidden>Sign out</button></div>
 </div></header>
 
 <main class="wrap">
   <section class="login" id="login">
+    <span class="kicker" style="margin: 0;">Speakerfolio admin</span>
     <h1>Sign in</h1>
     <p class="muted" style="margin: 0;">Enter the admin password you set in Cloudflare.</p>
     <form id="login-form"><input type="password" id="pw" autocomplete="current-password" placeholder="Admin password" aria-label="Admin password" required><button class="btn" type="submit">Sign in</button></form>
     <div class="err" id="login-err" role="alert"></div>
   </section>
 
-  <div class="tabs" id="tabs" role="tablist" hidden><button type="button" role="tab" data-tab="panel" aria-selected="true">Requests</button><button type="button" role="tab" data-tab="speakers" aria-selected="false">Speakers</button></div>
   <section id="panel" hidden style="display: flex; flex-direction: column; gap: 20px;">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px;"><h1>Requests</h1><span class="muted" id="updated"></span></div>
-    <div class="stats">
-      <div class="stat"><b id="s-new">0</b><span>New, not answered</span></div>
-      <div class="stat"><b id="s-req">0</b><span>Website requests</span></div>
-      <div class="stat"><b id="s-book">0</b><span>Booking requests</span></div>
-      <div class="stat"><b id="s-q">0</b><span>Questions</span></div>
-    </div>
-    <div class="tools">
-      <div class="filters" role="group" aria-label="Filter">
-        <button type="button" data-f="all" aria-pressed="true">All</button>
-        <button type="button" data-f="New" aria-pressed="false">New</button>
-        <button type="button" data-f="req" aria-pressed="false">Website requests</button>
-        <button type="button" data-f="book" aria-pressed="false">Booking requests</button>
-        <button type="button" data-f="q" aria-pressed="false">Questions</button>
-      </div>
-      <span style="display: flex; flex-wrap: wrap; gap: 8px;"><select id="st-filter" aria-label="Filter by status"><option value="">All statuses</option></select><input type="search" id="search" placeholder="Search name, email or LinkedIn" aria-label="Search"></span>
-    </div>
+    <div class="pn-head"><div><span class="date" id="today"></span><h1>Requests</h1><p id="pn-sub"></p></div>
+      <div class="pn-tools"><select id="kind-filter" aria-label="Filter by type"><option value="">All types</option><option value="Website request">Website requests</option><option value="Booking request">Booking requests</option><option value="Question">Questions</option></select><input type="search" id="search" placeholder="Search name, email or LinkedIn" aria-label="Search"></div></div>
+    <div class="filters" id="st-chips" role="group" aria-label="Filter by status"></div>
     <div class="err" id="panel-err" role="alert"></div>
-    <div class="list" id="list"></div>
+    <div class="split"><div class="list rq-list" id="list"></div><aside class="detail" id="detail" aria-live="polite" hidden></aside></div>
+    <span class="muted upd" id="updated"></span>
   </section>
   <section id="speakers" hidden style="display: flex; flex-direction: column; gap: 20px;">
     <div id="sp-listview" style="display: flex; flex-direction: column; gap: 16px;">
@@ -242,66 +293,105 @@ select { height: 40px; padding: 0 38px 0 12px; border: 1px solid var(--line); ba
     return fetch('/api/submissions', { method: method, headers: { 'Authorization': 'Bearer ' + pw(), 'Content-Type': 'application/json' }, body: body ? JSON.stringify(body) : undefined })
       .then(function (r) { return r.json().then(function (j) { if (!r.ok) { var e = new Error(j.error || 'Something went wrong.'); e.status = r.status; throw e; } return j; }); });
   }
-  var tab = 'panel';
+  var tab = 'panel', stFilter = 'New', sel = '';
   function show(signedIn) { $('login').hidden = signedIn; $('tabs').hidden = !signedIn; $('panel').hidden = !signedIn || tab !== 'panel'; $('speakers').hidden = !signedIn || tab !== 'speakers'; $('refresh').hidden = !signedIn; $('logout').hidden = !signedIn; }
   window.SF_ADMIN = { pw: pw, esc: esc, show: show };
   document.querySelectorAll('#tabs button').forEach(function (b) { b.addEventListener('click', function () { tab = b.getAttribute('data-tab'); document.querySelectorAll('#tabs button').forEach(function (x) { x.setAttribute('aria-selected', String(x === b)); }); show(true); if (tab === 'speakers' && window.SF_SPK) window.SF_SPK.load(); }); });
-  function render() {
-    var q = $('search').value.trim().toLowerCase();
-    $('s-new').textContent = items.filter(function (i) { return i.status === 'New'; }).length;
-    $('s-req').textContent = items.filter(function (i) { return i.kind === 'Website request'; }).length;
-    $('s-book').textContent = items.filter(function (i) { return i.kind === 'Booking request'; }).length;
-    $('s-q').textContent = items.filter(function (i) { return i.kind === 'Question'; }).length;
-    var shown = items.filter(function (i) {
-      if (filter === 'New' && i.status !== 'New') return false;
-      if (filter === 'req' && i.kind !== 'Website request') return false;
-      if (filter === 'book' && i.kind !== 'Booking request') return false;
-      if (filter === 'q' && i.kind !== 'Question') return false;
-      if ($('st-filter').value && i.status !== $('st-filter').value) return false;
+  $('today').textContent = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short', year: 'numeric' }).replace(',', ',');
+  var AV = { 'Website request': '#e31837', 'Booking request': '#14161a', 'Question': '#8f1426' };
+  function ini(n) { var p = String(n || '?').trim().split(/\s+/); return ((p[0] || '?')[0] + (p.length > 1 ? p[p.length - 1][0] : '')).toUpperCase(); }
+  function stCls(st) { return 'tag st-' + String(st || '').replace(/\s+/g, '-'); }
+  function due(i) {
+    if (i.status !== 'New') return '';
+    var d = new Date(i.createdAt), left = 2;
+    while (left > 0) { d.setDate(d.getDate() + 1); if (d.getDay() !== 0 && d.getDay() !== 6) left--; }
+    var h = (d.getTime() - Date.now()) / 3600000;
+    if (h <= 0) return '<span class="due hot">Overdue</span>';
+    if (h < 24) return '<span class="due hot">Reply today</span>';
+    var n = Math.ceil(h / 24); return '<span class="due">Reply in ' + n + ' day' + (n === 1 ? '' : 's') + '</span>';
+  }
+  function rel(iso) { var diff = (Date.now() - new Date(iso).getTime()) / 60000; return diff < 60 ? Math.max(1, Math.round(diff)) + ' min ago' : diff < 1440 ? Math.round(diff / 60) + ' h ago' : Math.round(diff / 1440) + ' day' + (Math.round(diff / 1440) === 1 ? '' : 's') + ' ago'; }
+  function sub(i) { var f = i.fields || {}; var bits = [i.kind]; var extra = f.Topic || f.Topics || f.Event || f.Plan || f.Email; if (extra) bits.push(extra); bits.push('sent ' + rel(i.createdAt)); return bits.join(' · '); }
+  function shownItems() {
+    var q = $('search').value.trim().toLowerCase(), k = $('kind-filter').value;
+    return items.filter(function (i) {
+      if (stFilter !== 'all' && i.status !== stFilter) return false;
+      if (k && i.kind !== k) return false;
       if (q && JSON.stringify(i.fields || {}).toLowerCase().indexOf(q) < 0) return false;
       return true;
     });
+  }
+  function chips() {
+    var c = { all: items.length }; statuses.forEach(function (x) { c[x] = 0; }); items.forEach(function (i) { c[i.status] = (c[i.status] || 0) + 1; });
+    $('st-chips').innerHTML = statuses.concat(['all']).map(function (x) { return '<button type="button" data-st="' + esc(x) + '" aria-pressed="' + (stFilter === x) + '">' + esc(x === 'all' ? 'All' : x === 'New' ? 'To reply' : x) + ' · ' + (c[x] || 0) + '</button>'; }).join('');
+    var n = c.New || 0;
+    $('pn-sub').textContent = n ? n + ' waiting for your reply. Answer each within 2 working days.' : 'All caught up. Nothing is waiting for a reply.';
+    $('c-req').textContent = n; $('c-req').hidden = !n;
+  }
+  function detail(i) {
+    var d = $('detail');
+    if (!i) { d.hidden = true; d.innerHTML = ''; return; }
+    d.hidden = false;
+    var f = i.fields || {};
+    var rows = Object.keys(f).filter(function (k) { return k !== 'Name'; }).map(function (k) { return '<dt>' + esc(k) + '</dt><dd>' + link(f[k]) + '</dd>'; }).join('');
+    if (i.country) rows += '<dt>Country</dt><dd>' + esc(i.country) + '</dd>';
+    var files = (i.files || []).map(function (x) { return '<button type="button" class="small att" data-att="' + esc(x.key) + '" data-name="' + esc(x.name) + '">' + esc(x.name) + ' <span class="muted">' + esc(x.size >= 1048576 ? (x.size / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(x.size / 1024)) + ' KB') + '</span></button>'; }).join('');
+    var opts = statuses.map(function (x) { return '<option' + (x === i.status ? ' selected' : '') + '>' + esc(x) + '</option>'; }).join('');
+    var first = String(f.Name || '').split(/\s+/)[0] || 'them';
+    var reply = f.Email ? 'mailto:' + esc(f.Email) + '?subject=' + encodeURIComponent(i.kind === 'Question' ? 'Re: your question to Speakerfolio' : i.kind === 'Booking request' ? 'Your booking request on Speakerfolio' : 'Your free speaker website') : '';
+    var fwd = f['Forward to'] ? 'mailto:' + esc(f['Forward to']) + '?subject=' + encodeURIComponent('Booking request: ' + (f.Event || 'new event') + ' via Speakerfolio') + '&body=' + encodeURIComponent(Object.keys(f).filter(function (k) { return ['Forward to', 'Speaker profile'].indexOf(k) < 0; }).map(function (k) { return k + ': ' + f[k]; }).join('\n')) : '';
+    d.innerHTML = '<div class="dt-h"><span class="av" style="background: ' + (AV[i.kind] || '#14161a') + ';">' + esc(ini(f.Name)) + '</span><div style="min-width: 0;"><div class="dt-n">' + esc(f.Name || 'No name') + '</div><div class="dt-s">' + esc(i.kind) + ' · ' + esc(when(i.createdAt)) + '</div></div><span class="' + stCls(i.status) + '">' + esc(i.status === 'New' ? 'To reply' : i.status) + '</span></div>'
+      + '<dl>' + rows + '</dl>'
+      + (files ? '<div><div class="kicker">Files</div><div style="display: flex; flex-wrap: wrap; gap: 6px;">' + files + '</div></div>' : '')
+      + '<div class="dt-act">'
+      + (reply ? '<a class="btn" href="' + reply + '">Reply to ' + esc(first) + ' by email</a>' : '')
+      + '<div class="dt-st"><label for="st-' + esc(i.id) + '">Status</label><select id="st-' + esc(i.id) + '" data-key="' + esc(i.key) + '">' + opts + '</select></div>'
+      + '<div class="dt-row">' + (fwd ? '<a class="btn dark" href="' + fwd + '">Forward to speaker</a>' : '') + '<button type="button" class="btn line del" data-del="' + esc(i.key) + '">Delete</button></div>'
+      + '</div><div><div class="kicker">History</div><div class="hist">Received <b>' + esc(rel(i.createdAt)) + '</b>' + (i.updatedAt ? ' · last changed ' + esc(rel(i.updatedAt)) : '') + '. Status: <b>' + esc(i.status) + '</b>.</div></div>';
+  }
+  function render() {
+    chips();
+    var shown = shownItems();
     if (!shown.length) {
       $('list').innerHTML = '<div class="empty"><b>' + (items.length ? 'Nothing matches this filter.' : 'No requests yet.') + '</b><span class="muted">' + (items.length ? 'Try All, or clear the search.' : 'When someone sends the form on your site, it shows up here and in Telegram.') + '</span></div>';
-      return;
+      detail(null); return;
     }
+    if (!shown.some(function (i) { return i.key === sel; })) sel = shown[0].key;
     $('list').innerHTML = shown.map(function (i) {
       var f = i.fields || {};
-      var rows = Object.keys(f).filter(function (k) { return k !== 'Name'; }).map(function (k) { return '<dt>' + esc(k) + '</dt><dd>' + link(f[k]) + '</dd>'; }).join('');
-      if (i.country) rows += '<dt>Country</dt><dd>' + esc(i.country) + '</dd>';
-      if (i.files && i.files.length) rows += '<dt>Files</dt><dd class="files">' + i.files.map(function (x) { return '<button type="button" class="small att" data-att="' + esc(x.key) + '" data-name="' + esc(x.name) + '">' + esc(x.name) + ' <span class="muted">' + esc(x.size >= 1048576 ? (x.size / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(x.size / 1024)) + ' KB') + '</span></button>'; }).join('') + '</dd>';
-      var opts = statuses.map(function (s) { return '<option' + (s === i.status ? ' selected' : '') + '>' + esc(s) + '</option>'; }).join('');
-      return '<article class="item' + (i.status === 'New' ? ' is-new' : '') + '"><div><div class="top"><span class="name">' + esc(f.Name || 'No name') + '</span>'
-        + '<span class="tag' + (i.kind === 'Question' ? '' : i.kind === 'Booking request' ? ' book' : ' req') + '">' + esc(i.kind) + '</span><span class="when">' + esc(when(i.createdAt)) + '</span></div><dl>' + rows + '</dl></div>'
-        + '<div class="side"><label class="muted" style="font-size: 12.5px; font-weight: 700;" for="st-' + esc(i.id) + '">Status</label><select id="st-' + esc(i.id) + '" data-key="' + esc(i.key) + '">' + opts + '</select>'
-        + (f['Forward to'] ? '<a class="small" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; background: #14161a; color: #fff;" href="mailto:' + esc(f['Forward to']) + '?subject=' + encodeURIComponent('Booking request: ' + (f.Event || 'new event') + ' via Speakerfolio') + '&body=' + encodeURIComponent(Object.keys(f).filter(function (k) { return ['Forward to', 'Speaker profile'].indexOf(k) < 0; }).map(function (k) { return k + ': ' + f[k]; }).join('\n')) + '">Forward to speaker</a>' : '')
-        + (f.Email ? '<a class="small" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none;" href="mailto:' + esc(f.Email) + '?subject=' + encodeURIComponent(i.kind === 'Question' ? 'Re: your question to Speakerfolio' : 'Your free speaker website') + '">Reply by email</a>' : '')
-        + '<button type="button" class="small del" data-del="' + esc(i.key) + '">Delete</button></div></article>';
+      return '<button type="button" class="rq" data-sel="' + esc(i.key) + '" aria-current="' + (i.key === sel) + '"><span class="av" style="background: ' + (AV[i.kind] || '#14161a') + ';">' + esc(ini(f.Name)) + '</span>'
+        + '<span style="min-width: 0;"><span class="rq-n">' + esc(f.Name || 'No name') + '</span><span class="rq-m">' + esc(sub(i)) + '</span></span>'
+        + '<span class="rq-r"><span class="' + stCls(i.status) + '">' + esc(i.status === 'New' ? 'To reply' : i.status) + '</span>' + due(i) + '</span></button>';
     }).join('');
+    detail(shown.filter(function (i) { return i.key === sel; })[0]);
   }
   function load() {
     $('panel-err').textContent = '';
-    return api('GET').then(function (j) { items = j.items || []; statuses = j.statuses || statuses; show(true); render(); $('updated').textContent = 'Updated ' + new Date().toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' }); })
+    return api('GET').then(function (j) { items = j.items || []; statuses = j.statuses || statuses; if (!items.some(function (i) { return i.status === stFilter; }) && stFilter !== 'all' && !items.some(function (i) { return i.status === 'New'; })) stFilter = 'all'; show(true); render(); $('updated').textContent = 'Updated ' + new Date().toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' }) + '. Refreshes every minute.'; if (window.SF_SPK && !window.__spkLoaded) { window.__spkLoaded = true; window.SF_SPK.load(); } })
       .catch(function (e) { if (e.status === 401) { show(false); $('login-err').textContent = pw() ? 'Wrong password. Try again.' : ''; } else { show(true); $('panel-err').textContent = e.message; } });
   }
   $('login-form').addEventListener('submit', function (ev) {
     ev.preventDefault(); $('login-err').textContent = '';
     fetch('/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ password: $('pw').value }) })
       .then(function (r) { return r.json(); })
-      .then(function (j) { if (!j.ok) { $('login-err').textContent = j.error || 'Wrong password. Try again.'; return; } setPw(j.token, j.exp); $('pw').value = ''; load(); if (window.SF_SPK && tab === 'speakers') window.SF_SPK.load(); })
+      .then(function (j) { if (!j.ok) { $('login-err').textContent = j.error || 'Wrong password. Try again.'; return; } setPw(j.token, j.exp); $('pw').value = ''; window.__spkLoaded = false; load(); })
       .catch(function () { $('login-err').textContent = 'Could not reach the server. Try again.'; });
   });
-  $('logout').addEventListener('click', function () { setPw(''); items = []; show(false); $('pw').value = ''; });
+  $('logout').addEventListener('click', function () { setPw(''); items = []; sel = ''; show(false); $('pw').value = ''; });
   $('refresh').addEventListener('click', function () { if (tab === 'speakers' && window.SF_SPK) window.SF_SPK.load(); else load(); });
   $('search').addEventListener('input', render);
-  $('st-filter').innerHTML = '<option value="">All statuses</option>' + statuses.map(function (x) { return '<option>' + esc(x) + '</option>'; }).join('');
-  $('st-filter').addEventListener('change', render);
-  document.querySelectorAll('.filters button').forEach(function (b) { b.addEventListener('click', function () { filter = b.getAttribute('data-f'); document.querySelectorAll('.filters button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); render(); }); });
-  $('list').addEventListener('change', function (ev) {
+  $('kind-filter').addEventListener('change', render);
+  $('st-chips').addEventListener('click', function (ev) { var b = ev.target.closest('[data-st]'); if (!b) return; stFilter = b.getAttribute('data-st'); render(); });
+  $('list').addEventListener('click', function (ev) {
+    var b = ev.target.closest('[data-sel]'); if (!b) return;
+    sel = b.getAttribute('data-sel'); pendingDelete = ''; render();
+    if (window.matchMedia('(max-width: 980px)').matches) $('detail').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  $('detail').addEventListener('change', function (ev) {
     var s = ev.target; if (!s.matches('select[data-key]')) return;
     api('POST', { key: s.getAttribute('data-key'), status: s.value }).then(function (j) { items = items.map(function (i) { return i.key === j.item.key ? j.item : i; }); render(); }).catch(function (e) { $('panel-err').textContent = e.message; });
   });
-  $('list').addEventListener('click', function (ev) {
+  $('detail').addEventListener('click', function (ev) {
     var b = ev.target.closest('[data-att]'); if (!b) return;
     var label = b.innerHTML; b.textContent = 'Downloading...';
     fetch('/api/attachment?key=' + encodeURIComponent(b.getAttribute('data-att')), { headers: { 'Authorization': 'Bearer ' + pw() } })
@@ -310,11 +400,11 @@ select { height: 40px; padding: 0 38px 0 12px; border: 1px solid var(--line); ba
       .catch(function (e) { b.innerHTML = label; $('panel-err').textContent = e.message; });
   });
   var pendingDelete = '';
-  $('list').addEventListener('click', function (ev) {
+  $('detail').addEventListener('click', function (ev) {
     var b = ev.target.closest('[data-del]'); if (!b) return;
     var key = b.getAttribute('data-del');
     if (pendingDelete !== key) { pendingDelete = key; b.textContent = 'Click again to delete'; return; }
-    api('POST', { key: key, delete: true }).then(function () { items = items.filter(function (i) { return i.key !== key; }); pendingDelete = ''; render(); }).catch(function (e) { $('panel-err').textContent = e.message; });
+    api('POST', { key: key, delete: true }).then(function () { items = items.filter(function (i) { return i.key !== key; }); pendingDelete = ''; sel = ''; render(); }).catch(function (e) { $('panel-err').textContent = e.message; });
   });
   setInterval(function () { if (!$('panel').hidden && document.visibilityState === 'visible') load(); }, 60000);
   if (pw()) load(); else show(false);
@@ -336,6 +426,7 @@ select { height: 40px; padding: 0 38px 0 12px; border: 1px solid var(--line); ba
   var spFilter = 'all', linkOpen = {};
   function renderList() {
     var pub = list.filter(function (s) { return s.published; }).length, wait = list.filter(function (s) { return s.pending; }).length;
+    var cs = document.getElementById('c-spk'); if (cs) { cs.textContent = wait; cs.hidden = !wait; }
     $('sp-sum').textContent = list.length ? pub + ' published, ' + (list.length - pub) + ' draft' + (wait ? ', ' + wait + ' with edits waiting' : '') : '';
     var q = ($('sp-search').value || '').toLowerCase();
     var shown = list.filter(function (s) {
