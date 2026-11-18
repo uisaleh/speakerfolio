@@ -406,7 +406,7 @@ export const SEEDS = [
     video: 'https://www.youtube.com/watch?v=GkCy9FnqDGY', videoTitle: 'Rudolph Valentino Mills III speaking',
     events: [],
     quotes: [],
-    links: { website: 'https://rudolphmills.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/rudolph-valentino-mills-iii-9068013a0/', youtube: 'https://www.youtube.com/@RVMills-gh1cr' },
+    links: { website: 'https://rudolphmills.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/rudolph-valentino-mills-iii-9068013a0/', youtube: 'https://www.youtube.com/@RVMills-gh1cr', instagram: 'https://www.instagram.com/r.v.mills3rd/' },
     bookingEmail: 'rudolph3@rvmills.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a website and listing on speakerfolio.com (Spotlight template), 18 Nov 2026'
   }
@@ -415,6 +415,7 @@ export const SEEDS = [
 // One-time changes to speakers already in storage (applied once, then remembered).
 export const PATCHES = [
   { id: 'subdomain-websites-2026-11-18a', slug: 'rudolph-mills', links: { website: 'https://rudolphmills.speakerfolio.com/' } },
+  { id: 'rudolph-instagram-2026-11-18', slug: 'rudolph-mills', links: { instagram: 'https://www.instagram.com/r.v.mills3rd/' } },
   { id: 'ayman-website-2026-11-11', slug: 'ayman-nassar', links: { website: 'https://aymannassar.speakerfolio.com/' } },
   { id: 'jim-books-2026-11-13', slug: 'jim-kukral', set: { bio: "Sink Your Worry is a hilarious, heartfelt, interactive keynote about worry, overthinking and actually enjoying your life. Admiral Jim has audiences write a worry on dissolving paper, drop it in a cup of water and watch it disappear. Then the whole room reads a pledge together and sinks their worries on a countdown from 10 to 1. Funny, human, hopeful, never corporate.\nIt suits corporate teams, associations, chambers, nonprofits, conferences, schools, and healthcare and wellness events. Jim brings a cup and dissolving paper for every attendee; your team provides the water. Taking part is optional and nobody has to share what they wrote.\nBehind the character is Jim Kukral, who has spent 26 years in attention-getting marketing. He built and sold two online marketing agencies, consulted for FedEx, Sherwin-Williams and Fortune 500 companies, and taught internet marketing for more than ten years as an adjunct professor at the University of San Francisco. He has spent more than 20 years on stages and given over 200 talks.\nHe is the founder of the Cleveland Floaters and LET'S GO CLE, the author of The Emerald Standard, Unskippable, Attention! This Book Will Make You Money and Write a F*$%'ing Book Already, co-author of The Misny Method, and author of the free ebook Float Above It. He is based in Cleveland, Ohio, and is now booking 2027. Phone: 216-272-4383." } },
   { id: 'subdomain-websites-2026-11-15a', slug: 'jim-kukral', links: { website: 'https://admiraljim.speakerfolio.com/' } },
