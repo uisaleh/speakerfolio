@@ -373,6 +373,42 @@ export const SEEDS = [
     links: { website: 'https://kudramohammed.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/kudra-mohammed/', instagram: 'https://www.instagram.com/nizars_kingdom/' },
     bookingEmail: 'Kudramohammedm@gmail.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a website and listing on speakerfolio.com, 15 Nov 2026'
+  },
+  {
+    name: 'Rudolph Valentino Mills III',
+    slug: 'rudolph-mills',
+    photo: '/assets/seed/rudolph-mills.webp',
+    headline: 'Founder, Push to Build. Helping people turn pain into purpose',
+    speakerType: 'Keynote speaker and trainer',
+    topics: ['Motivation', 'Leadership', 'Health and wellbeing'],
+    formats: ['Keynote', 'Workshop', 'Training', 'Virtual'],
+    location: 'Rochester, New York, United States',
+    languages: 'English',
+    travel: 'Available to travel; local travel included in Rochester',
+    audience: 'Faith, fatherhood, schools, reentry',
+    fee: 'Keynotes from $1,500',
+    shortBio: 'Rudolph Valentino Mills III is the founder of Push to Build, a purpose-first consulting practice built on biblical principles. He is Fatherhood Program Manager at Healthy Baby Network in Rochester, NY, founder and leader of Worship Experience Ministries, and CEO of the WE C.A.R.E. Family Initiative. A retired Christian clean comedian and father of seven, he speaks on turning pain into purpose through the H.U.R.T. Framework.',
+    bio: 'Rudolph Valentino Mills III is the founder of Push to Build, a purpose-first consulting practice built on biblical principles. He is Fatherhood Program Manager at Healthy Baby Network in Rochester, NY, founder and leader of Worship Experience Ministries, and CEO of the WE C.A.R.E. Family Initiative.\nHe is the author of The Preacher\'s Corner, Volume One, and co-author of Same Destination, Different Journey. A retired Christian clean comedian and father of seven, he speaks on turning pain into purpose through the H.U.R.T. Framework: Hurt Happens, Understand the Process, Reframe the Pain, Trust the Purpose.\nHis signature message, "Your Pain Is Not Your Problem: It\'s Proof of Your Purpose," teaches people to use their excuses, hardships and past experiences as motivation and tools, not as reasons to stay stuck. He speaks on purpose, healing and resilience, fatherhood and family, leadership, faith-based motivation, and reentry and second chances.\nHe serves faith-based organizations, leadership conferences, fatherhood and family events, youth and young adult gatherings, recovery and reentry programs, schools and universities, and corporate and community events, through keynotes, workshops, half-day and full-day training, virtual keynotes and coaching.\nFees: local nonprofit keynote from $1,500; corporate keynote from $2,500; workshop $2,500 to $3,500; half-day training $3,500 to $5,000; full-day training $5,000 to $7,500; virtual keynote $750 to $1,000. A 50% deposit holds a date. Based in Rochester, New York, and available to travel; local travel is included in the Rochester area. Phone: 585-448-7356.',
+    talks: [
+      { title: 'Your Pain Is Not Your Problem: It\'s Proof of Your Purpose', format: 'Keynote', length: '',
+        summary: 'His signature message, built on the H.U.R.T. Framework: using excuses, hardships and past experiences as motivation and tools, not reasons to stay stuck.',
+        takeaways: ['Hurt Happens', 'Understand the Process', 'Reframe the Pain', 'Trust the Purpose'] },
+      { title: 'Fatherhood and Family', format: 'Keynote', length: '',
+        summary: 'From his work leading fatherhood programming at Healthy Baby Network and raising seven children: how fathers show up, heal and build a legacy.',
+        takeaways: ['Present, engaged fathers', 'Healing family wounds', 'Building a legacy'] },
+      { title: 'Purpose-First Leadership', format: 'Training', length: 'Half or full day',
+        summary: 'Leadership training on biblical principles for organizations that want to grow by building around their people.',
+        takeaways: ['Leading with purpose', 'Building around people', 'Organizational growth'] },
+      { title: 'Second Chances: Reentry and Rebuilding', format: 'Keynote', length: '',
+        summary: 'For recovery and reentry programs, youth and young adults: resilience and healing that turn the hardest chapters into a new start.',
+        takeaways: ['Healing and resilience', 'Owning your story', 'Rebuilding with purpose'] }
+    ],
+    video: 'https://www.youtube.com/watch?v=GkCy9FnqDGY', videoTitle: 'Rudolph Valentino Mills III speaking',
+    events: [],
+    quotes: [],
+    links: { website: 'https://speakerfolio.com/rudolphmills/', linkedin: 'https://www.linkedin.com/in/rudolph-valentino-mills-iii-9068013a0/', youtube: 'https://www.youtube.com/@RVMills-gh1cr' },
+    bookingEmail: 'rudolph3@rvmills.com',
+    published: true, featured: false, consent: true, consentNote: 'Requested a website and listing on speakerfolio.com (Spotlight template), 18 Nov 2026'
   }
 ];
 

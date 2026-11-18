@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rudolphmills.speakerfolio.com/sitemap.xml
