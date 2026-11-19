@@ -136,9 +136,9 @@ a{color:inherit}
 .book b{display:block;font-size:16px;line-height:1.3}
 .book span{font-size:13px;color:var(--mute)}
 /* gallery */
-.gal{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:260px 260px;gap:12px}
+.gal{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:300px 300px;gap:12px}.gal .g1{grid-column:1/3;grid-row:1}.gal .g2{grid-column:3;grid-row:1/3}.gal .g3{grid-column:1;grid-row:2}.gal .g4{grid-column:2;grid-row:2}
 .gal img{width:100%;height:100%;object-fit:cover;background:#26262a}
-.gal .a{grid-row:1/3}.gal .w2{grid-column:2/4}.gal .a img{object-position:center 25%}
+
 .gal figure{margin:0;position:relative;overflow:hidden}
 .gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.72));font-size:12.5px;font-weight:600;color:#fff}
 /* faq */
@@ -214,8 +214,8 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--orange);outline-
   .fmt{grid-template-columns:minmax(0,1fr);gap:6px}
   .vid{aspect-ratio:4/5}
   .quote .q{font-size:30px}
-  .gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:300px 200px 200px}
-  .gal .a{grid-column:1/-1;grid-row:auto}.gal .w2{grid-column:1/-1}
+  .gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:240px 260px 220px}.gal .g1{grid-column:1/-1;grid-row:1}.gal .g2{grid-column:1;grid-row:2}.gal .g4{grid-column:2;grid-row:2}.gal .g3{grid-column:1/-1;grid-row:3}
+  
   form{grid-template-columns:minmax(0,1fr);padding:24px}
   .qa button{font-size:21px}
 }
@@ -327,10 +327,10 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--orange);outline-
 
 <section class="sec" style="background:var(--panel);padding-top:80px;padding-bottom:80px" aria-label="Photos"><div class="wrap">
   <div class="gal">
-    <figure class="a"><img src="/rudolphmills/img/rm-stage.jpg" alt="Rudolph Valentino Mills III speaking with a microphone at an evening event" width="1152" height="1275" loading="lazy"><figcaption>On stage</figcaption></figure>
-    <figure><img src="/rudolphmills/img/rm-award.jpg" alt="Rudolph Valentino Mills III holding an award at a Healthy Baby Network event" width="800" height="1200" loading="lazy" style="object-position:center 20%"><figcaption>Healthy Baby Network</figcaption></figure>
-    <figure><img src="/rudolphmills/img/rm-gala.jpg" alt="Rudolph Valentino Mills III at the Let’s Talk Diabetes Kicks and Conversations Gala" width="741" height="1536" loading="lazy" style="object-position:center 30%"><figcaption>Kicks and Conversations Gala</figcaption></figure>
-    <figure class="w2"><img src="/rudolphmills/img/rm-dinner.jpg" alt="Rudolph Valentino Mills III addressing guests at a formal dinner" width="1170" height="657" loading="lazy" style="object-position:center 40%"><figcaption>Speaking at a gala dinner</figcaption></figure>
+    <figure class="g1"><img src="/rudolphmills/img/rm-fatherhood-connection.jpg" alt="Rudolph Valentino Mills III with fathers and mentors at a Fatherhood Connection gathering in a community gym" width="1600" height="1200" loading="lazy" style="object-position:center 48%"><figcaption>Fatherhood Connection</figcaption></figure>
+    <figure class="g2"><img src="/rudolphmills/img/rm-award.jpg" alt="Rudolph Valentino Mills III holding an award at a Healthy Baby Network event" width="800" height="1200" loading="lazy" style="object-position:center 20%"><figcaption>Healthy Baby Network</figcaption></figure>
+    <figure class="g3"><img src="/rudolphmills/img/rm-whole-father.jpg" alt="Rudolph Valentino Mills III with Whole Father program participants holding their certificates" width="1170" height="849" loading="lazy" style="object-position:center 45%"><figcaption>The Whole Father</figcaption></figure>
+    <figure class="g4"><img src="/rudolphmills/img/rm-podium.jpg" alt="Rudolph Valentino Mills III speaking at a podium in a pink shirt" width="960" height="957" loading="lazy" style="object-position:center 30%"><figcaption>At the podium</figcaption></figure>
   </div>
 </div></section>
 
