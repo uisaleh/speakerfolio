@@ -206,7 +206,7 @@ textarea.in{height:132px;padding:12px 14px;resize:vertical;line-height:1.5}
 <div role="region" aria-label="Black Friday offer" style="position: relative; background: #0b0c0e; color: #ffffff;">
 <div class="ob-wrap" style="max-width: 1280px; margin: 0 auto; padding: 8px 56px 8px clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 18px; min-height: 48px; font-size: 14px; line-height: 1.35;">
 <a href="/pricing/" style="color: #ffffff; text-decoration: none;"><strong style="font-weight: 700; color: #ff5a6e;">Black Friday offer:</strong> Premium website <strong style="font-weight: 700;">$80/yr</strong><span class="ob-hide-sm"> instead of <s style="color: rgba(255,255,255,0.78);">$100</s>, first month of social posts included</span></a>
-<span role="timer" aria-label="Black Friday offer ends in 8 days, 12 hours and 39 minutes" style="display: inline-flex; align-items: center; gap: 4px;"><span class="ob-hide-sm" aria-hidden="true" style="margin-right: 4px; color: rgba(255,255,255,0.86);">Black Friday ends in</span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">08<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">d</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">12<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">h</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">39<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">m</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">00<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">s</span></span></span>
+<span role="timer" aria-label="Black Friday offer ends in 8 days, 12 hours and 28 minutes" style="display: inline-flex; align-items: center; gap: 4px;"><span class="ob-hide-sm" aria-hidden="true" style="margin-right: 4px; color: rgba(255,255,255,0.86);">Black Friday ends in</span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">08<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">d</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">12<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">h</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">28<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">m</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">00<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">s</span></span></span>
 </div>
 <button type="button" data-dc-click="h0" aria-label="Hide the offer bar" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; padding: 0; border: 0; background: transparent; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
 </div>
@@ -520,7 +520,7 @@ var TPLS = [
   { name: 'Coach', brief: 'Warm and elegant, in deep burgundy and cream, with programs, a free guide and a podcast. For life and personal development coaches.', t: { id: 'coach' }, slug: 'coach' },
   { name: 'Trainer', brief: 'Clean, editorial layout in violet and lime, with programs, client results, case studies and a booking form. For corporate trainers and workshop leaders.', t: { id: 'trainer' }, slug: 'trainer' },
   { name: 'Studio', brief: 'Charcoal and lilac with a cinematic hero, speaking reel, keynote topics and press. For creative and culture speakers.', t: { id: 'studio' }, slug: 'studio' },
-  { name: 'Spotlight', brief: 'Dark and cinematic, with a full-screen hero, upcoming events and an FAQ. For motivational and stage speakers.', t: { id: 'spotlight' }, slug: 'spotlight' }
+  { name: 'Spotlight', brief: 'Bold condensed type in black, cream and orange, with messages, upcoming gatherings and invite options. For faith and community speakers.', t: { id: 'spotlight' }, slug: 'spotlight' }
 ];
 var TIPS = [
   { kicker: 'Website', mins: 7, title: "What Every Speaker Website Needs: 5 Sections Planners Look For", dek: "The five sections event planners look for, in the order they look, with examples you can copy.", blocks: [
@@ -682,7 +682,7 @@ class Component extends DCLogic {
       startFreeAfter: function () { start('free'); },
       askQ: function () { try { window.sessionStorage.setItem('sf_start', JSON.stringify({ tab: 'ask', done: '' })); } catch (e) {} self.setState({ tab: 'ask', done: '', err: {} }); goTo('start', 80); },
 
-      heroT: TPLS[st.hero].t, heroThumbD: '/assets/thumbs/v3/' + TPLS[st.hero].slug + '-desktop.webp', heroThumbM: '/assets/thumbs/v3/' + TPLS[st.hero].slug + '-phone.webp',
+      heroT: TPLS[st.hero].t, heroThumbD: '/assets/thumbs/v4/' + TPLS[st.hero].slug + '-desktop.webp', heroThumbM: '/assets/thumbs/v4/' + TPLS[st.hero].slug + '-phone.webp',
       heroAltD: 'The ' + TPLS[st.hero].name + ' template on a laptop', heroAltM: 'The ' + TPLS[st.hero].name + ' template on a phone',
       heroChips: TPLS.map(function (x, i) {
         var on = i === st.hero;
@@ -691,7 +691,7 @@ class Component extends DCLogic {
       }),
 
       tpls: TPLS.map(function (x, i) {
-        return { name: x.name, brief: x.brief, t: x.t, thumbD: '/assets/thumbs/v3/' + x.slug + '-desktop.webp', thumbM: '/assets/thumbs/v3/' + x.slug + '-phone.webp',
+        return { name: x.name, brief: x.brief, t: x.t, thumbD: '/assets/thumbs/v4/' + x.slug + '-desktop.webp', thumbM: '/assets/thumbs/v4/' + x.slug + '-phone.webp',
           altD: 'The ' + x.name + ' template on a laptop', altM: 'The ' + x.name + ' template on a phone', numLabel: 'Template 0' + (i + 1), pvLabel: 'Preview the ' + x.name + ' template',
           goPreview: function () { openPv(i); }, goUse: function () { useTpl(i); } };
       }),
@@ -752,7 +752,7 @@ class Component extends DCLogic {
       tplPicked: st.tpl >= 0, tplBanner: st.tpl >= 0 ? 'Template selected: ' + TPLS[st.tpl].name : '', clearTpl: function () { self.setState({ tpl: -1 }); },
       tplChips: [{ name: 'Pick for me', i: -1 }].concat(TPLS.map(function (x, i) { return { name: x.name, i: i }; })).map(function (c) {
         var on = st.tpl === c.i;
-        return { name: c.name, hasThumb: c.i >= 0, thumb: c.i >= 0 ? '/assets/thumbs/v3/' + TPLS[c.i].slug + '-desktop.webp' : '', on: on ? 'true' : 'false', bg: on ? '#14161a' : '#ffffff', fg: on ? '#ffffff' : '#14161a', bd: on ? '#14161a' : 'rgba(20,22,26,0.24)',
+        return { name: c.name, hasThumb: c.i >= 0, thumb: c.i >= 0 ? '/assets/thumbs/v4/' + TPLS[c.i].slug + '-desktop.webp' : '', on: on ? 'true' : 'false', bg: on ? '#14161a' : '#ffffff', fg: on ? '#ffffff' : '#14161a', bd: on ? '#14161a' : 'rgba(20,22,26,0.24)',
           pick: function () { self.setState({ tpl: c.i }); } };
       }),
 
