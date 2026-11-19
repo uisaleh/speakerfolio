@@ -406,7 +406,7 @@ export const SEEDS = [
     video: 'https://www.youtube.com/watch?v=GkCy9FnqDGY', videoTitle: 'Rudolph Valentino Mills III speaking',
     events: [],
     quotes: [],
-    links: { website: 'https://rudolphmills.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/rudolph-valentino-mills-iii-9068013a0/', youtube: 'https://www.youtube.com/@RVMills-gh1cr', instagram: 'https://www.instagram.com/r.v.mills3rd/' },
+    links: { website: 'https://rudolphmills.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/rudolph-valentino-mills-iii-9068013a0/', youtube: 'https://www.youtube.com/@RudolphVMillsIIIPushToBuild', instagram: 'https://www.instagram.com/r.v.mills3rd/' },
     bookingEmail: 'rudolph3@rvmills.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a website and listing on speakerfolio.com (Spotlight template), 18 Nov 2026'
   },
@@ -450,6 +450,12 @@ export const SEEDS = [
 
 // One-time changes to speakers already in storage (applied once, then remembered).
 export const PATCHES = [
+  { id: 'rudolph-videos-2026-11-19', slug: 'rudolph-mills', links: { youtube: 'https://www.youtube.com/@RudolphVMillsIIIPushToBuild' },
+    set: { videoTitle: 'State of the Black Child, Part 1', videos: [
+      { url: 'https://www.youtube.com/watch?v=TTywI9uGd70', title: 'Faith Over Fear', note: 'Daily Devotion' },
+      { url: 'https://www.youtube.com/shorts/YfLmVUEO6ZE', title: 'S.U.P.P.O.R.T.: A Word for Fathers', note: 'Fathers & Men Symposium' },
+      { url: 'https://www.youtube.com/shorts/e17zOw9UULc', title: 'Your You Season', note: "The Preacher's Corner" }
+    ] } },
   { id: 'subdomain-websites-2026-11-18a', slug: 'rudolph-mills', links: { website: 'https://rudolphmills.speakerfolio.com/' } },
   { id: 'rudolph-instagram-2026-11-18', slug: 'rudolph-mills', links: { instagram: 'https://www.instagram.com/r.v.mills3rd/' } },
   { id: 'ayman-website-2026-11-11', slug: 'ayman-nassar', links: { website: 'https://aymannassar.speakerfolio.com/' } },
