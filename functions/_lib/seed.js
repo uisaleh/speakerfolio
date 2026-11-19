@@ -409,6 +409,42 @@ export const SEEDS = [
     links: { website: 'https://rudolphmills.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/rudolph-valentino-mills-iii-9068013a0/', youtube: 'https://www.youtube.com/@RVMills-gh1cr', instagram: 'https://www.instagram.com/r.v.mills3rd/' },
     bookingEmail: 'rudolph3@rvmills.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a website and listing on speakerfolio.com (Spotlight template), 18 Nov 2026'
+  },
+  {
+    name: 'Josh McCartney',
+    slug: 'josh-mccartney',
+    photo: '/assets/seed/josh-mccartney.webp',
+    headline: 'Public speaking coach and 2x TEDx speaker. Founder, THRIVE by Josh McCartney',
+    speakerType: 'Keynote speaker, trainer and MC',
+    topics: ['Communication', 'Sales', 'Leadership'],
+    formats: ['Keynote', 'Training', 'Workshop', 'Emcee'],
+    location: 'Dubai, United Arab Emirates',
+    languages: 'English',
+    travel: '',
+    audience: 'Corporate teams, leaders, founders, business owners',
+    fee: '',
+    shortBio: 'Josh McCartney is a Dubai-based public speaking coach and two-time TEDx speaker. He trains teams and leaders at companies including Nokia, Adidas and Forbes Global Properties to present, pitch and communicate with confidence. He also teaches business owners to sell from the stage, and has over 700,000 TikTok followers.',
+    bio: 'Josh McCartney is a Dubai-based public speaking coach and two-time TEDx speaker. He trains teams and leaders at companies including Nokia, Adidas and Forbes Global Properties to present, pitch and communicate with confidence. He also teaches business owners to sell from the stage, and has over 700,000 TikTok followers.\nIn 2019 he founded THRIVE by Josh McCartney, a training and development company offering public speaking and presentation skills training, executive coaching and leadership development, sales training and mindset coaching. He also coaches industry experts, founders and thought leaders to find their message, structure a talk that lands, deliver it with confidence and get on the right stages.\nHe has spoken at TEDxAlQuoz (Memory Techniques, 2021) and TEDxDGPS Youth (How Communication Shapes Your Reality, 2025), and works as an MC and host for corporate events, conferences and awards nights.\nBefore coaching, Josh was a professional musician, with a Bachelor of Music from Queensland University of Technology and a residency at Anantara Dubai Palm Jumeirah, and then General Manager of Event Central, supplying entertainment to five-star hotels and corporate clients. Phone: +971 58 563 6679.',
+    talks: [
+      { title: 'How Communication Shapes Your Reality', format: 'Keynote', length: '',
+        summary: 'From his TEDxDGPS Youth talk: how the way we communicate influences how we think, feel and act, and how leaders can use it.',
+        takeaways: ['Communication and mindset', 'Leadership communication', 'Influence how people think and act'] },
+      { title: 'Public Speaking and Presentation Skills', format: 'Training', length: '3 days',
+        summary: 'Training for teams and professionals to present, pitch and communicate with confidence and clarity.',
+        takeaways: ['Confident delivery', 'Presenting and pitching', 'Speaking on stage and online'] },
+      { title: 'Selling From the Stage', format: 'Workshop', length: '',
+        summary: 'For business owners and founders who want their talks to win clients.',
+        takeaways: ['Talks that convert', 'Sales from the stage', 'Getting on the right stages'] },
+      { title: 'Memory Techniques', format: 'Keynote', length: '15 min TEDx talk',
+        summary: 'From his TEDxAlQuoz talk: tried and tested techniques to learn and memorise anything at lightning speed.',
+        takeaways: ['Learn faster', 'Memorise talks and information', 'Practical memory methods'] }
+    ],
+    video: 'https://www.youtube.com/watch?v=vYhfWH2Vh8g', videoTitle: 'How Communication Shapes Your Reality | Josh McCartney | TEDxDGPS Youth',
+    events: [],
+    quotes: [],
+    links: { website: 'https://joshmccartney.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/joshmccartneyofficial', instagram: 'https://www.instagram.com/joshmccartneyofficial/', youtube: 'https://www.youtube.com/watch?v=vYhfWH2Vh8g' },
+    bookingEmail: 'joshmccartneyofficial@gmail.com',
+    published: true, featured: false, consent: true, consentNote: 'Requested a free website and listing on speakerfolio.com (SF-1159), 19 Nov 2026'
   }
 ];
 
