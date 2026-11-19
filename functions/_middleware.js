@@ -7,6 +7,8 @@ const SKIP = new Set(['www']);
 const CLIENTS = new Set(['aymannassar', 'robertabogany', 'admiraljim', 'anthonybaptiste', 'kudramohammed', 'rudolphmills', 'joshmccartney']);
 // Client sites taken down at the client's request: answer 410 Gone so search engines drop them quickly.
 const REMOVED = new Set(['emilyadams']);
+// Google Analytics: every client page carries the tag in its file; this adds it to any page that is missing it.
+const GA_TAG = "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-FW50KBR0Y7');window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-FW50KBR0Y7';document.head.appendChild(s);},1200);});</script>";
 const GONE_PAGE = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Page removed</title><style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0b0c0e;color:#fff;font-family:system-ui,sans-serif;padding:24px;box-sizing:border-box;text-align:center}</style></head><body><p>This page has been removed.</p></body></html>';
 
 export async function onRequest(context) {
@@ -44,5 +46,14 @@ export async function onRequest(context) {
   target.pathname = '/' + sub + (url.pathname === '/' ? '/' : url.pathname);
   const res = await env.ASSETS.fetch(new Request(target.toString(), request));
   if (res.status === 404) return next();
+  if (res.status === 200 && (res.headers.get('Content-Type') || '').includes('text/html')) {
+    const html = await res.text();
+    if (!html.includes('G-FW50KBR0Y7')) {
+      const out = html.replace(/<head[^>]*>/i, (m) => m + GA_TAG);
+      const h = new Headers(res.headers); h.delete('Content-Length'); h.delete('ETag');
+      return new Response(out, { status: 200, headers: h });
+    }
+    return new Response(html, { status: 200, headers: res.headers });
+  }
   return res;
 }
