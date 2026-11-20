@@ -5,6 +5,7 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 Disallow: /templates/headliner.html
 Disallow: /templates/ignite.html
 Disallow: /templates/coach.html
@@ -17,191 +18,223 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: OAI-SearchBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: ChatGPT-User
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: ClaudeBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Claude-User
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Claude-SearchBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: anthropic-ai
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Google-Extended
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Googlebot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Bingbot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: PerplexityBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Perplexity-User
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Applebot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Applebot-Extended
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Amazonbot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: meta-externalagent
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: FacebookBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: CCBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Bytespider
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: cohere-ai
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: DuckAssistBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: MistralAI-User
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: YouBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: PhindBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Diffbot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: ImagesiftBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Timpibot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: omgili
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Kangaroo Bot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: GoogleOther
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: Google-CloudVertexBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 User-agent: LinkedInBot
 Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /update-profile/
+Disallow: /cdn-cgi/
 
 Sitemap: https://speakerfolio.com/sitemap.xml

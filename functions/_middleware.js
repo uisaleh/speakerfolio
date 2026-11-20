@@ -17,6 +17,11 @@ export async function onRequest(context) {
   const host = url.hostname.toLowerCase();
   const labels = host.split('.');
 
+  // Old crawls picked up unrendered template links such as /{{m.href}}: answer 410 Gone so search engines drop them.
+  if (url.pathname.includes('{{') || /%7b%7b|%7d%7d/i.test(url.pathname)) {
+    return new Response(GONE_PAGE, { status: 410, headers: { 'Content-Type': 'text/html; charset=utf-8', 'X-Robots-Tag': 'noindex', 'Cache-Control': 'public, max-age=86400' } });
+  }
+
   // one canonical host: www and plain http go to https://speakerfolio.com
   if (host === 'www.speakerfolio.com' || (url.protocol === 'http:' && host.endsWith('speakerfolio.com'))) {
     return Response.redirect('https://' + host.replace(/^www\./, '') + url.pathname + url.search, 301);
