@@ -12,8 +12,7 @@
 - [FAQ](https://speakerfolio.com/faq/)
 - [Contact](https://speakerfolio.com/contact/): request a free website or ask a question
 - [About](https://speakerfolio.com/about/): who runs Speakerfolio and how we work
-- [Speakerfolio vs Wix](https://speakerfolio.com/compare/speakerfolio-vs-wix/): speaker websites compared
-- [Speakerfolio vs Squarespace](https://speakerfolio.com/compare/speakerfolio-vs-squarespace/): speaker websites compared
+- [Compare](https://speakerfolio.com/compare/): Speakerfolio vs eSpeakers, SpeakerHub, SpeakerMatch, GigSalad, speakers bureaus (BigSpeak, AAE, Keppler), Talkadot, Wix and Squarespace
 - [Terms and privacy](https://speakerfolio.com/terms)
 
 ## Articles

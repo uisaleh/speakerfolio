@@ -22,6 +22,11 @@ export async function onRequest(context) {
     return new Response(GONE_PAGE, { status: 410, headers: { 'Content-Type': 'text/html; charset=utf-8', 'X-Robots-Tag': 'noindex', 'Cache-Control': 'public, max-age=86400' } });
   }
 
+  // The separate comparison pages were merged into /compare/ (Nov 2026).
+  const MERGED = { '/compare/speakerfolio-vs-wix/': '/compare/#builders', '/compare/speakerfolio-vs-squarespace/': '/compare/#builders' };
+  const mp = url.pathname.endsWith('/') ? url.pathname : url.pathname + '/';
+  if (MERGED[mp]) return Response.redirect('https://speakerfolio.com' + MERGED[mp], 301);
+
   // one canonical host: www and plain http go to https://speakerfolio.com
   if (host === 'www.speakerfolio.com' || (url.protocol === 'http:' && host.endsWith('speakerfolio.com'))) {
     return Response.redirect('https://' + host.replace(/^www\./, '') + url.pathname + url.search, 301);
