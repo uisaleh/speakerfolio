@@ -106,7 +106,8 @@ export function profilePage({ s, related, preview }) {
   const L = s.links || {};
   const bookEmail = s.bookingEmail || '', bookLink = s.bookingLink || '';
   const linkNames = { linkedin: 'LinkedIn', youtube: 'YouTube', instagram: 'Instagram', x: 'X', facebook: 'Facebook' };
-  const social = Object.keys(linkNames).filter((k) => L[k]).map((k) => '<a href="' + esc(L[k]) + '" rel="noopener me" target="_blank" style="font-size: 14px; font-weight: 700; color: #14161a; text-underline-offset: 4px;">' + linkNames[k] + ARROW + '</a>').join('');
+  const LL = {}; Object.keys(linkNames).forEach((k) => { if (L[k]) LL[k] = L[k]; if (k === 'instagram' && bookLink) { LL.booking = bookLink; linkNames.booking = 'Book a call'; } });
+  const social = Object.keys(LL).map((k) => '<a href="' + esc(LL[k]) + '" rel="' + (k === 'booking' ? 'noopener' : 'noopener me') + '" target="_blank" style="font-size: 14px; font-weight: 700; color: #14161a; text-underline-offset: 4px;">' + linkNames[k] + ARROW + '</a>').join('');
   const chips = [[ICON.pin, s.location], [ICON.lang, s.languages], [ICON.plane, s.travel]].filter((c) => c[1]).map((c) => '<span class="sf-chip">' + c[0] + esc(c[1]) + '</span>').join('');
   const eyebrow = [topic, s.speakerType || (s.formats || [])[0] ? (s.speakerType || ((s.formats || [])[0] + ' speaker')) : ''].filter(Boolean).join(' · ');
 
