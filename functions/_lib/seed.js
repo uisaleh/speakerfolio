@@ -462,18 +462,18 @@ export const SEEDS = [
     shortBio: 'Pete A. Kennedy is a keynote speaker, talent and life coach and executive facilitator with more than 25 years of experience across corporate, education, faith based, government and nonprofit settings. He is the founder of Your Talents Matters and creator of the T.A.L.E.N.T. Framework, and has developed 500+ professionals, with 95% rating their experience positive.',
     bio: 'Pete A. Kennedy partners with organizations, executives and teams to strengthen leadership capability, unlock natural talent, elevate workplace culture and translate professional development into measurable performance and sustainable results.\nHe is the founder of Your Talents Matters, creator of the T.A.L.E.N.T. Framework and author of the international best seller When a Man Loves. With 25+ years across corporate, education, faith based, government and nonprofit settings, Pete has developed 500+ professionals and trained 150+ leaders, with 95% rating their experience positive and 20% faster time to proficiency.\nHis recent work includes Leadership Journey 101 at VISTA, with 81% participation and 95% of participants rating it relevant and effective, 150+ leaders trained at Seminole Hard Rock Support Services, and 15+ internal leaders promoted at Spirit Airlines within 12 months.\nPete holds an M.S. in Educational Leadership and Administration from DeVry University and is a certified CliftonStrengths and DISC coach. Phone: (954) 997-4694.',
     talks: [
-      { title: 'Your Talents Matter', format: 'Keynote', length: '',
-        summary: 'How the T.A.L.E.N.T. Framework helps people discover their natural talents and put them to work for their team.',
-        takeaways: ['Discover your natural talents', 'Lead from your strengths', 'Turn talent into results'] },
-      { title: 'The Leadership Journey', format: 'Training', length: '',
-        summary: 'Structured development for new and emerging leaders, like Leadership Journey 101 at VISTA, rated relevant and effective by 95% of participants.',
-        takeaways: ['Build leadership capability', 'Faster time to proficiency', 'Grow leaders from within'] },
-      { title: 'Executive Alignment', format: 'Workshop', length: '',
-        summary: 'Facilitated sessions that align executives and teams around culture, goals and performance.',
-        takeaways: ['One direction for the leadership team', 'A stronger workplace culture', 'Sustainable performance'] },
-      { title: 'Talent and Life Coaching', format: 'Training', length: '',
-        summary: 'One-to-one coaching with CliftonStrengths and DISC to help leaders grow with confidence and purpose, at work and in life.',
-        takeaways: ['CliftonStrengths and DISC insights', 'Confident, purpose-driven leadership', 'Growth at work and in life'] }
+      { title: 'Your Talent Is Not Just a Gift. It Is an Assignment.', format: 'Keynote', length: '',
+        summary: 'Stop fixing weaknesses, start leading from strength, and let purpose turn talent into impact. Ideal for leadership conferences and corporate kickoffs.',
+        takeaways: ['Stop fixing weaknesses', 'Start leading from strength', 'Let purpose turn talent into impact'] },
+      { title: 'Turning Talent Into Impact', format: 'Keynote', length: '',
+        summary: 'The T.A.L.E.N.T. Framework in action: a practical map for aligning strengths with purpose. Ideal for HR and L&D leaders and team offsites.',
+        takeaways: ['The T.A.L.E.N.T. Framework in action', 'A practical map for your strengths', 'Align strengths with purpose'] },
+      { title: 'From Gift to Goal', format: 'Keynote', length: '',
+        summary: 'Based on his upcoming book: from discovering what you do best to building a life and a career around it. Ideal for graduations and community events.',
+        takeaways: ['Discover what you do best', 'Build a career around it', 'Build a life around it'] },
+      { title: 'You Cannot Love What You Do Not Know', format: 'Keynote', length: '',
+        summary: 'Until you know your own strengths, you cannot love your work, your team, or your calling. Ideal for faith based gatherings and retreats.',
+        takeaways: ['Know your own strengths', 'Love your work and your team', 'Answer your calling'] }
     ],
     video: 'https://www.youtube.com/watch?v=GMq6KDZsd-E', videoTitle: 'Pete A. Kennedy speaker reel',
     events: [],
@@ -487,6 +487,20 @@ export const SEEDS = [
 
 // One-time changes to speakers already in storage (applied once, then remembered).
 export const PATCHES = [
+  { id: 'pete-talks-2026-11-21', slug: 'pete-a-kennedy', set: { talks: [
+    { title: 'Your Talent Is Not Just a Gift. It Is an Assignment.', format: 'Keynote', length: '',
+      summary: 'Stop fixing weaknesses, start leading from strength, and let purpose turn talent into impact. Ideal for leadership conferences and corporate kickoffs.',
+      takeaways: ['Stop fixing weaknesses', 'Start leading from strength', 'Let purpose turn talent into impact'] },
+    { title: 'Turning Talent Into Impact', format: 'Keynote', length: '',
+      summary: 'The T.A.L.E.N.T. Framework in action: a practical map for aligning strengths with purpose. Ideal for HR and L&D leaders and team offsites.',
+      takeaways: ['The T.A.L.E.N.T. Framework in action', 'A practical map for your strengths', 'Align strengths with purpose'] },
+    { title: 'From Gift to Goal', format: 'Keynote', length: '',
+      summary: 'Based on his upcoming book: from discovering what you do best to building a life and a career around it. Ideal for graduations and community events.',
+      takeaways: ['Discover what you do best', 'Build a career around it', 'Build a life around it'] },
+    { title: 'You Cannot Love What You Do Not Know', format: 'Keynote', length: '',
+      summary: 'Until you know your own strengths, you cannot love your work, your team, or your calling. Ideal for faith based gatherings and retreats.',
+      takeaways: ['Know your own strengths', 'Love your work and your team', 'Answer your calling'] }
+    ] } },
   { id: 'pete-links-2026-11-21', slug: 'pete-a-kennedy', links: { website: 'https://peteakennedy.speakerfolio.com/' },
     set: { bookingLink: 'https://calendly.com/peteakennedy/executive-alignment-call', bio: 'Pete A. Kennedy partners with organizations, executives and teams to strengthen leadership capability, unlock natural talent, elevate workplace culture and translate professional development into measurable performance and sustainable results.\nHe is the founder of Your Talents Matters, creator of the T.A.L.E.N.T. Framework and author of the international best seller When a Man Loves. With 25+ years across corporate, education, faith based, government and nonprofit settings, Pete has developed 500+ professionals and trained 150+ leaders, with 95% rating their experience positive and 20% faster time to proficiency.\nHis recent work includes Leadership Journey 101 at VISTA, with 81% participation and 95% of participants rating it relevant and effective, 150+ leaders trained at Seminole Hard Rock Support Services, and 15+ internal leaders promoted at Spirit Airlines within 12 months.\nPete holds an M.S. in Educational Leadership and Administration from DeVry University and is a certified CliftonStrengths and DISC coach. Phone: (954) 997-4694.' } },
   { id: 'rudolph-videos-2026-11-19', slug: 'rudolph-mills', links: { youtube: 'https://www.youtube.com/@RudolphVMillsIIIPushToBuild' },
