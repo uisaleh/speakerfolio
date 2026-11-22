@@ -168,7 +168,7 @@ select { height: 40px; padding: 0 38px 0 12px; border: 1px solid var(--line); ba
 <header><div class="bar">
   <a class="logo" href="/admin/"><svg aria-hidden="true" width="26" height="24" viewBox="0 0 100 98"><path fill="#e31837" d="M16 0H84A16 16 0 0 1 100 16V66A16 16 0 0 1 84 82H0V16A16 16 0 0 1 16 0ZM0 82H18L0 98Z"/><path fill="#ffffff" d="M21.5 32h9v18h-9zM37.5 21h9v40h-9zM53.5 28h9v26h-9zM69.5 36h9v10h-9z"/></svg><b class="wm">Speaker<span>folio</span></b><em>ADMIN</em></a>
   <nav class="tabs" id="tabs" role="tablist" aria-label="Admin sections" hidden><button type="button" role="tab" data-tab="panel" aria-selected="true">Requests<b class="cnt" id="c-req" hidden>0</b></button><button type="button" role="tab" data-tab="speakers" aria-selected="false">Speakers<b class="cnt" id="c-spk" hidden>0</b></button></nav>
-  <div class="hd-act"><button class="btn ghost" id="refresh" type="button" hidden>Refresh</button><a class="btn ghost" href="/" target="_blank" rel="noopener">View site</a><button class="btn ghost" id="indexnow" type="button" hidden title="Send every page in the sitemap to Bing through IndexNow">Send to Bing</button><button class="btn ghost" id="logout" type="button" hidden>Sign out</button></div>
+  <div class="hd-act"><button class="btn ghost" id="refresh" type="button" hidden>Refresh</button><a class="btn ghost" href="/" target="_blank" rel="noopener">View site</a><button class="btn ghost" id="logout" type="button" hidden>Sign out</button></div>
 </div></header>
 
 <main class="wrap">
@@ -629,11 +629,5 @@ select { height: 40px; padding: 0 38px 0 12px; border: 1px solid var(--line); ba
   window.SF_SPK = { load: load };
 })();
 </script>
-<script>(function(){var b=document.getElementById('indexnow');if(!b)return;var lo=document.getElementById('logout');
-var sync=function(){b.hidden=lo?lo.hidden:false;};sync();if(lo)new MutationObserver(sync).observe(lo,{attributes:true,attributeFilter:['hidden']});
-b.addEventListener('click',function(){var t=b.textContent;b.disabled=true;b.textContent='Sending…';
-fetch('/api/indexnow',{method:'POST',headers:{'Authorization':'Bearer '+window.SF_ADMIN.pw()}}).then(function(r){return r.json();}).then(function(j){
-b.textContent=j.ok?('Sent '+j.submitted+' pages'):('Failed: '+(j.error||(j.results||[]).map(function(x){return x.host+' '+x.status;}).join(', ')));
-}).catch(function(){b.textContent='Failed, try again';}).finally(function(){b.disabled=false;setTimeout(function(){b.textContent=t;},6000);});});})();</script>
 </body>
 </html>

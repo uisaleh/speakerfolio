@@ -1,0 +1,35 @@
+# Tells Bing (through IndexNow) about every page after each deploy, and once a day for new speaker profiles.
+name: IndexNow
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for the Cloudflare deploy
+        if: github.event_name == 'push'
+        run: sleep 240
+      - name: Submit sitemap URLs and client sites
+        run: |
+          set -e
+          KEY=22e8e9a3fea1aba3233484e9965a4d69
+          curl -fsSL https://speakerfolio.com/sitemap.xml | grep -o '<loc>[^<]*</loc>' | sed 's/<\/\?loc>//g' | grep '^https://speakerfolio.com' | sort -u > urls.txt
+          echo "$(wc -l < urls.txt) URLs"
+          python3 - "$KEY" <<'PY'
+          import json, sys, urllib.request
+          key = sys.argv[1]
+          def send(host, urls):
+              body = json.dumps({"host": host, "key": key, "keyLocation": f"https://{host}/{key}.txt", "urlList": urls}).encode()
+              req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, headers={"Content-Type": "application/json; charset=utf-8"})
+              try:
+                  print(host, len(urls), urllib.request.urlopen(req, timeout=30).status)
+              except Exception as e:
+                  print(host, "failed:", e)
+          send("speakerfolio.com", open("urls.txt").read().split())
+          for c in ["aymannassar", "robertabogany", "admiraljim", "anthonybaptiste", "kudramohammed", "rudolphmills", "joshmccartney", "peteakennedy"]:
+              send(f"{c}.speakerfolio.com", [f"https://{c}.speakerfolio.com/"])
+          PY

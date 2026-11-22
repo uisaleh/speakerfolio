@@ -5,6 +5,8 @@
 //   POST { action: 'save', speaker, oldSlug?, photo?: 'data:image/webp;base64,...', removePhoto? }   admin
 //   POST { action: 'delete', slug }                                                                    admin
 import { SEEDS, PATCHES } from '../_lib/seed.js';
+import { pingIndexNow, speakerUrls } from '../_lib/indexnow.js';
+import { topicSlug } from '../_lib/speakers.js';
 import { json, authorised, getIndex, getSpeaker, writeIndex, cleanSpeaker, summary, photoUrl, previewToken, TOPICS, FORMATS, applyPatches, SELF_FIELDS } from '../_lib/speakers.js';
 
 export async function onRequestGet({ request, env }) {
@@ -101,7 +103,7 @@ export function decodePhoto(dataUrl) {
   return { type: m[1], bytes };
 }
 
-export async function onRequestPost({ request, env }) {
+export async function onRequestPost({ request, env, waitUntil }) {
   if (!(await authorised(request, env))) return json({ ok: false, error: 'Wrong password.' }, 401);
   if (!env.SUBMISSIONS) return json({ ok: false, error: 'The SUBMISSIONS storage is not connected yet.' }, 500);
   let body;
@@ -157,6 +159,7 @@ export async function onRequestPost({ request, env }) {
     log.unshift({ at: new Date().toISOString(), result: body.action === 'acceptEdit' ? 'accepted' : 'rejected', note, email: req.email });
     await kv.put('edit-log:' + slug, JSON.stringify(log.slice(0, 20)));
     await kv.delete('edit-req:' + slug);
+    if (saved && saved.published && waitUntil) waitUntil(pingIndexNow(speakerUrls(saved, topicSlug)));
     return json({ ok: true, speaker: saved, email: req.email || saved.bookingEmail || '', name: saved.name });
   }
   if (body.action !== 'save') return json({ ok: false, error: 'Unknown action.' }, 400);
@@ -188,6 +191,7 @@ export async function onRequestPost({ request, env }) {
   index = index.filter((x) => x.slug !== oldSlug && x.slug !== s.slug);
   index.push(summary(s));
   await writeIndex(env, index);
+  if (s.published && waitUntil) waitUntil(pingIndexNow(speakerUrls(s, topicSlug)));
   return json({ ok: true, speaker: s, photo: photoUrl(s), preview: '/speakers/' + s.slug + '/?preview=' + (await previewToken(env, s.slug)) });
 }
 
