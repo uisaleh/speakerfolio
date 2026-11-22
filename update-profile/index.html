@@ -254,7 +254,7 @@ button{font-family:inherit;cursor:pointer}
     var s = j.speaker || {};
     $('who').textContent = 'Update your profile, ' + String(j.name || '').split(' ')[0];
     hasPhoto = !!j.photo;
-    var face = j.photo ? '<img src="' + esc(j.photo) + '" alt="">' : esc(String(j.name || '?').charAt(0));
+    var face = j.photo ? '<img src="' + esc(j.photo) + '" alt="Speaker profile photo">' : esc(String(j.name || '?').charAt(0));
     $('av').innerHTML = face; $('av-top').innerHTML = face;
     if (j.published) $('plink').href = '/speakers/' + j.slug + '/'; else $('plink').removeAttribute('href');
     $('waiting').hidden = !j.waiting;
@@ -285,7 +285,7 @@ button{font-family:inherit;cursor:pointer}
       var sx = (img.naturalWidth - side) / 2, sy = img.naturalHeight > img.naturalWidth ? (img.naturalHeight - side) * 0.2 : 0;
       c.getContext('2d').drawImage(img, sx, sy, side, side, 0, 0, out, out);
       photo = c.toDataURL('image/webp', 0.84); if (photo.indexOf('data:image/webp') !== 0) photo = c.toDataURL('image/jpeg', 0.86);
-      $('av').innerHTML = '<img src="' + photo + '" alt="">'; $('av-top').innerHTML = '<img src="' + photo + '" alt="">'; URL.revokeObjectURL(url); score();
+      $('av').innerHTML = '<img src="' + photo + '" alt="Speaker profile photo">'; $('av-top').innerHTML = '<img src="' + photo + '" alt="Speaker profile photo">'; URL.revokeObjectURL(url); score();
     };
     img.src = url;
   });

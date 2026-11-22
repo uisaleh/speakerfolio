@@ -36,7 +36,7 @@ function shortlistAvatars(html, list) {
   return html.replace(/<span style="width: 34px; height: 34px; background: (#[0-9a-f]{6}); color: #fff8ef; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700;">[A-Z]{2}<\/span>/g, (m, bg) => {
     const s = people[i++];
     if (!s) return '';
-    if (s.photoVer) return '<img src="' + photoUrl(s) + '" alt="" width="34" height="34" loading="lazy" decoding="async" style="width: 34px; height: 34px; object-fit: cover; display: block;">';
+    if (s.photoVer) return '<img src="' + photoUrl(s) + '" alt="' + esc(s.name + ', speaker on Speakerfolio') + '" width="34" height="34" loading="lazy" decoding="async" style="width: 34px; height: 34px; object-fit: cover; display: block;">';
     const ini = String(s.name || '').split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0].toUpperCase()).join('');
     return '<span style="width: 34px; height: 34px; background: ' + bg + '; color: #fff8ef; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700;">' + esc(ini) + '</span>';
   }).replace('>3 on your shortlist<', '>' + people.length + ' on your shortlist<');
@@ -57,14 +57,14 @@ function heroAvatars(html, list) {
     const slot = i++;
     if (slot >= people.length) return m; // fewer speakers than slots: keep the pixel face
     return '<a href="/speakers/' + s.slug + '/" class="pxav pxreal" data-slot="' + slot + '" aria-label="' + esc(s.name + ', ' + ((s.topics || [])[0] || 'speaker') + ' speaker') + '" style="' + style.replace('pointer-events: auto;', '') + ' pointer-events: auto; display: block;">'
-      + '<img src="' + photoUrl(s) + '" alt="" width="200" height="200" decoding="async" style="display: block; width: 100%; height: 100%; object-fit: cover;">'
+      + '<img src="' + photoUrl(s) + '" alt="' + esc(s.name + ', ' + ((s.topics || [])[0] || 'keynote') + ' speaker') + '" width="200" height="200" decoding="async" style="display: block; width: 100%; height: 100%; object-fit: cover;">'
       + '<span class="pxname">' + esc(s.name) + '</span></a>';
   });
   // more speakers than slots: rotate through them
   if (people.length > 5) {
     const data = people.map((s) => ({ u: '/speakers/' + s.slug + '/', p: photoUrl(s), n: s.name, t: ((s.topics || [])[0] || 'speaker') + ' speaker' }));
     html = html.replace('</body>', '<script>(function(){var P=' + JSON.stringify(data).replace(/</g, '\\u003c') + ',next=5;var slots=[].slice.call(document.querySelectorAll(".pxreal"));if(slots.length<5||window.matchMedia("(prefers-reduced-motion: reduce)").matches){return;}'
-      + 'var k=0;setInterval(function(){var a=slots[k%slots.length],s=P[next%P.length];next++;k++;a.style.opacity="0";setTimeout(function(){a.href=s.u;a.setAttribute("aria-label",s.n+", "+s.t);a.querySelector("img").src=s.p;a.querySelector(".pxname").textContent=s.n;a.style.opacity="1";},500);},3500);})();</script></body>');
+      + 'var k=0;setInterval(function(){var a=slots[k%slots.length],s=P[next%P.length];next++;k++;a.style.opacity="0";setTimeout(function(){a.href=s.u;a.setAttribute("aria-label",s.n+", "+s.t);var im=a.querySelector("img");im.src=s.p;im.alt=s.n+", "+s.t;a.querySelector(".pxname").textContent=s.n;a.style.opacity="1";},500);},3500);})();</script></body>');
   }
   return html;
 }
