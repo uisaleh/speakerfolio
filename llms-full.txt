@@ -4,6 +4,298 @@
 
 ---
 
+# 10 Secrets of Great Public Speakers: Lessons from TED Talks and Famous Keynote Speakers
+
+URL: https://speakerfolio.com/articles/secrets-of-great-public-speakers/
+Published: 2026-11-22 · Author: Saleh, Speakerfolio
+
+**The secrets of great public speakers are mostly habits you can learn: one clear idea per talk, a strong opening, real stories, simple visuals, deliberate pauses and far more rehearsal than the audience ever sees.** The best TED Talks and keynote speeches, from Ken Robinson and Brené Brown to Steve Jobs and Martin Luther King Jr., use the same handful of techniques. Below are 10 secrets of great public speakers, the famous talks that show each one, and a short exercise for each so you can use it in your next talk. Once you're ready to get booked, a speaker website and a profile in the Speakerfolio [speaker directory](https://speakerfolio.com/speakers/) help event planners find you.
+
+> **Key takeaways**
+>
+> - **Great public speakers are made, not born.** Almost every secret below comes down to preparation and practice.
+> - **One idea beats ten.** TED calls it a throughline: the single idea that connects everything in your talk.
+> - **Stories and specifics move people**; slides full of bullet points don't.
+> - **The delivery tools are simple**: pauses, eye contact, a varied voice, and rehearsal until the talk feels natural.
+
+## What makes a great public speaker?
+
+A great public speaker leaves the audience with one idea they understand, remember and want to act on. That's the test. It isn't about having a deep voice, never saying "um" or owning the stage like a rock star.
+
+Look at the most-watched TED Talks and you'll see very different people. Ken Robinson stood still and told jokes like a favourite uncle. Brené Brown admitted she'd had a breakdown. Hans Rosling ran around the stage with a pointer, shouting about statistics. Simon Sinek drew three circles on a flip chart. Their styles have almost nothing in common. Their habits do.
+
+Here's what the research and the best speakers agree on:
+
+| Great public speakers... | Average speakers... |
+|---|---|
+| Build the talk around one idea | Try to cover everything they know |
+| Open with a story, question or surprise | Open with thanks and an agenda |
+| Use real stories and specific details | Use general statements and jargon |
+| Use slides as pictures that back them up | Read bullet points off the screen |
+| Pause, slow down and vary their voice | Rush through at one speed |
+| Rehearse until it sounds unrehearsed | Rehearse once, or "wing it" |
+| End with a clear call to action | End with "So, yeah... any questions?" |
+
+The good news is that every item in the left column is a skill. Here are the 10 secrets, one at a time.
+
+## Secret 1: Great public speakers build the whole talk around one idea
+
+Chris Anderson, who runs TED, says every great talk has a **throughline**: a single connecting idea that ties every story and point together. In his book *TED Talks: The Official TED Guide to Public Speaking*, he suggests a test: can you sum up your talk's idea in 15 words or fewer? If you can't, you aren't ready to write the talk yet.
+
+Simon Sinek's "How Great Leaders Inspire Action" (TEDxPugetSound, 2009) is a clear example. Its whole message is "people don't buy what you do, they buy why you do it." Every story in the talk, from Apple to the Wright brothers to Martin Luther King Jr., supports that one idea. It's one of the most-watched TED Talks of all time, and most people who've seen it can still tell you what it was about. That's what a throughline does.
+
+Most speakers do the opposite. They know a lot, they've been given 30 minutes, and they want to prove they're worth the fee. So they cover seven points, and the audience remembers none.
+
+**Try this:** Write your talk's message in one sentence. Then go through your outline and cut every section that doesn't support that sentence, even the parts you love.
+
+## Secret 2: They open with a hook, not a thank-you
+
+The first 30 seconds decide whether the audience leans in or picks up their phones. Great speakers use that time to grab attention, not to thank the organisers, explain their agenda or apologise for their slides.
+
+Some openings from famous talks:
+
+- **Ken Robinson** ("Do Schools Kill Creativity?", 2006) opened with a joke about how the conference had been "blown away" by everything so far, so he was leaving. The laugh bought him the room's goodwill in seconds. It's still the most-watched TED Talk ever.
+- **Jill Bolte Taylor** ("My Stroke of Insight", 2008) started with the story of the morning she, a brain scientist, watched her own brain shut down during a stroke.
+- **Bill Gates** (TED 2009), talking about malaria, opened a jar of mosquitoes in the auditorium and joked that there was no reason only poor people should have the experience.
+
+You don't need mosquitoes. A strong opening usually takes one of these forms:
+
+| Opening | What it does | Example |
+|---|---|---|
+| A story | Puts the audience inside a moment | "At 6:40 on a Tuesday morning, my phone rang." |
+| A surprising fact | Breaks their assumptions | A real number from your field that most of the room would get wrong |
+| A question | Gets them thinking about their own life | "When did you last change your mind about something important?" |
+| A bold statement | Sets up tension your talk will resolve | "Everything you were taught about goal setting is backwards." |
+
+Thank the organisers after your opening, or at the end, if you thank them at all.
+
+If you want to work on the basics alongside these openings, our guide on how to [improve public speaking](https://speakerfolio.com/articles/how-to-improve-public-speaking/) covers them step by step.
+
+**Try this:** Write three different openings for your next talk: a story, a fact and a question. Say each one out loud to a friend and keep the one that makes them ask "and then what?"
+
+## Secret 3: Great public speakers tell stories, not facts
+
+Facts inform. Stories make people care. A story has a person, a problem and a turning point, and our brains follow that shape almost automatically.
+
+Brené Brown's "The Power of Vulnerability" (TEDxHouston, 2010) is built on her own story. She's a researcher who set out to measure and control vulnerability, and the data showed her that the people who lived the most wholehearted lives were the ones who embraced it. She tells the audience about her "breakdown" (she quickly adds that her therapist called it a "spiritual awakening"). The research matters, but it's the story of a researcher being proven wrong by her own data that people remember and share.
+
+Steve Jobs did the same at his 2005 Stanford commencement speech. He told the audience up front: "Today I want to tell you three stories from my life. That's it. No big deal. Just three stories." Connecting the dots, love and loss, and death. No slides, no framework, just three personal stories, each ending in a lesson.
+
+What makes a story work on stage:
+
+1. **A specific moment.** "In March 2019, in a hotel room in Denver" beats "once, when I was travelling."
+2. **A real problem.** Something was at stake: a job, a relationship, a belief.
+3. **Honest detail.** What you thought, felt or got wrong.
+4. **A turning point.** What changed, and what you learned.
+5. **A link to the audience.** Why this story matters to them, today.
+
+**Try this:** Pick one moment from your own life that shows your talk's message in action. Tell it in under two minutes, with one specific detail about the place, the time or what someone said.
+
+## Secret 4: They make complex ideas simple and visual
+
+Hans Rosling was a professor of global health with a lot of data. In "The Best Stats You've Ever Seen" (TED, 2006), he turned 200 years of global health and income figures into animated bubbles racing across a chart, while he narrated it like a sports commentator. Years of statistics became something a whole auditorium could follow and enjoy. (In a later TED talk he finished by swallowing a sword, to show that the seemingly impossible is possible. Maybe skip that one.)
+
+Great public speakers translate. They take what's complicated and find the picture, comparison or demonstration that makes it click:
+
+- **An analogy:** "Your brain's working memory is like a desk, not a filing cabinet."
+- **A demonstration:** Jill Bolte Taylor brought a real human brain on stage to show the two hemispheres.
+- **A single number, made human:** "That's one person in every row of this room."
+
+Their slides follow the same rule. Many famous talks, including Simon Sinek's and Steve Jobs's Stanford speech, used no slides at all. When great speakers do use slides, it's one idea per slide, a big picture and a handful of words. The audience can either read or listen, not both, so a slide full of text competes with you.
+
+**Try this:** Find the most complicated idea in your talk and explain it to a 12-year-old. Whatever comparison or picture you reach for, use that on stage.
+
+## Secret 5: Great public speakers rehearse far more than you'd think
+
+The most natural-looking speakers are usually the most rehearsed. Steve Jobs was known for rehearsing his product launches for days, going over every demo and transition again and again. On stage it looked effortless. That was the point.
+
+Chris Anderson writes that most TED speakers rehearse many times, often with an audience of friends or colleagues. The goal isn't to memorise every word and recite it like a robot. It's to know your material so well that you can stop thinking about what comes next and start paying attention to the room.
+
+A rehearsal plan that works:
+
+| When | What to do |
+|---|---|
+| 2 weeks before | Talk through your outline out loud, alone. Fix the order. |
+| 10 days before | Run the full talk with a timer. Cut until you're under time. |
+| 1 week before | Record yourself on video. Watch it once with sound off and once with sound on. |
+| 5 days before | Run it for one or two people. Ask what they remember. |
+| 2 days before | Full run-through, standing, with slides and clicker. |
+| On the day | Run only your opening and closing. Then stop. |
+
+The video step is the one most speakers skip, and it's the one that teaches you the most. You'll spot the filler words, the swaying and the slide you keep apologising for.
+
+If nerves are what hold you back, rehearsal is also the best cure. Our guide on how to [build confidence in public speaking](https://speakerfolio.com/articles/how-to-build-confidence-in-public-speaking/) covers that side in more detail.
+
+**Try this:** Record your next talk on your phone before you give it. Watch it once, and write down the three things you'd change.
+
+## Secret 6: They use the pause
+
+The pause is the most underused tool in public speaking. Nervous speakers rush, because silence feels like failure. Great public speakers use silence on purpose.
+
+Watch Barack Obama's keynote at the 2004 Democratic National Convention, the speech that made him a national figure. He lets lines land. He pauses before the important ones, so the audience knows something is coming, and after them, so it has time to sink in. Martin Luther King Jr. did the same in "I Have a Dream", letting the crowd's response rise and fall before going on.
+
+A pause does several jobs at once:
+
+- **It signals importance.** The audience pays more attention to whatever comes after it.
+- **It gives people time to think.** Especially after a question or a surprising number.
+- **It replaces filler words.** A silent beat sounds confident; "um" doesn't.
+- **It calms you down.** You get a breath, and your next sentence comes out slower.
+
+A pause that feels like five seconds to you usually feels like one or two to the audience.
+
+**Try this:** Mark your three most important lines in your notes. Pause for two full seconds before and after each one, even when it feels too long.
+
+## Secret 7: Great public speakers use their voice like an instrument
+
+In "How to Speak So That People Want to Listen" (TED, 2013), sound expert Julian Treasure describes a toolbox everyone already has: register, timbre, prosody, pace, pitch and volume. Most of us use one setting for the whole talk. Great speakers use the full range.
+
+Here's what that looks like in practice:
+
+| Tool | What it means | When to use it |
+|---|---|---|
+| Pace | How fast you speak | Speed up for excitement, slow down for important points |
+| Volume | How loud you speak | Go quieter to draw people in, louder for a call to action |
+| Pitch | How high or low | Drop your pitch at the end of a statement to sound sure |
+| Prosody | The melody of your speech | Avoid a flat monotone, and avoid ending every sentence like a question |
+| Emphasis | Which words you stress | Stress the one word that carries the meaning |
+
+Treasure also lists habits that make people stop listening, including gossip, judging, negativity, complaining, excuses, exaggeration and dogmatism. It's a useful checklist for your script, not just your voice.
+
+Martin Luther King Jr.'s voice in "I Have a Dream" rises and falls like music, and his repetition of "I have a dream" builds intensity each time. You don't have to preach like King to learn from it. Even a business keynote gets better when the speaker changes pace and volume to match the content.
+
+**Try this:** Read one paragraph of your talk three ways: very slowly, very fast, and very quietly. Notice which version makes the most important word stand out, and use that.
+
+## Secret 8: They connect with the audience, not the slides
+
+Great public speakers talk to people, not at them. The audience can tell the difference within a minute.
+
+Connection comes from small, deliberate habits:
+
+- **Eye contact with one person at a time.** Hold it for a full sentence, then move to someone else in another part of the room. Scanning the room like a lighthouse doesn't feel like contact to anyone.
+- **Their words, their world.** Use the audience's job titles, problems and examples. A talk on leadership to nurses should sound different from the same talk to software engineers.
+- **Questions and participation.** A show of hands, a quick question to the room or a 30-second task turns listeners into participants.
+- **Honesty.** Brené Brown connected with millions because she was open about her own struggles, not because she was polished.
+- **Humour that fits.** Ken Robinson's humour worked because it was gentle and grew out of his stories. You don't need jokes; you need a light moment or two that feels like you.
+
+Before any talk, ask the organiser: who will be in the room, what do they already know, and what do they need from this session? Then rewrite your examples to match.
+
+**Try this:** Replace one generic example in your talk with one from your audience's industry. Ask the organiser for a real problem their people face and build a story or example around it.
+
+## Secret 9: Great public speakers own the stage
+
+Body language tells the audience how confident you are before you say a word. Great speakers stand still when it matters and move with purpose when it helps.
+
+Some practical rules:
+
+1. **Plant your feet.** Swaying and pacing back and forth distract the audience. Stand with your weight even and your feet about hip-width apart.
+2. **Move on transitions.** Walk to a new spot when you move to a new point, then stand still again. Your movement becomes a signal.
+3. **Free your hands.** Let them rest at your sides or gesture naturally. Avoid pockets, crossed arms and gripping the lectern.
+4. **Face the audience.** If you use slides, glance at them, then turn back. Never read them with your back to the room.
+5. **Smile when it fits.** It relaxes you and the audience.
+
+Steve Jobs's iPhone launch in 2007 is a good one to study. He moves across the stage between ideas, stops to deliver the important lines, and uses his hands to count off "an iPod, a phone and an internet communicator" before revealing that they're one device. His staging was planned as carefully as his slides.
+
+**Try this:** Watch the first five minutes of your rehearsal video with the sound off. Count how many times you move without a reason, and decide where you'll stand for each section instead.
+
+## Secret 10: They end with a clear call to action
+
+The last thing you say is what people remember. Too many talks fade out with "So, that's about it... any questions?" Great public speakers plan their close as carefully as their opening.
+
+Steve Jobs ended his Stanford speech with a line from the back cover of the Whole Earth Catalog: "Stay hungry. Stay foolish." He repeated it three times. Simon Sinek ended by bringing the audience back to his one idea: those who start with why inspire others to follow. Martin Luther King Jr. ended "I Have a Dream" with "Free at last! Free at last! Thank God almighty, we are free at last!", one of the most famous closing lines in history.
+
+A strong close does three things:
+
+- **Brings back your one idea**, in a sentence or two.
+- **Calls the audience to act**: something specific they can do this week.
+- **Ends on purpose**: a final line, then "thank you", then stop talking.
+
+If there's Q&A, take it before your close. Answer the questions, then say "Let me leave you with one last thought" and deliver your planned ending. That way the talk ends on your message, not on the last question someone happened to ask.
+
+**Try this:** Write your final 30 seconds word for word. Memorise them. Whatever happens during the talk, you'll always land the ending.
+
+## TED Talks to watch for each secret
+
+Watching great speakers is one of the fastest ways to improve. Here's a short viewing list, with what to look for in each.
+
+| Talk | Speaker | Watch it for |
+|---|---|---|
+| Do Schools Kill Creativity? (2006) | Ken Robinson | Humour, warmth and a conversational opening |
+| How Great Leaders Inspire Action (2009) | Simon Sinek | One clear idea, no slides, a simple drawing |
+| The Power of Vulnerability (2010) | Brené Brown | Personal story and honesty |
+| The Best Stats You've Ever Seen (2006) | Hans Rosling | Making data visual and exciting |
+| My Stroke of Insight (2008) | Jill Bolte Taylor | A gripping opening story and a real demonstration |
+| How to Speak So That People Want to Listen (2013) | Julian Treasure | Voice, pace and the habits that lose listeners |
+| Stanford commencement speech (2005) | Steve Jobs | Three-story structure and a memorable close |
+| I Have a Dream (1963) | Martin Luther King Jr. | Rhythm, repetition and pauses |
+
+Watch each one twice: once as an audience member, and once with a notebook, writing down every technique you spot.
+
+## Common mistakes even experienced speakers make
+
+Even people who speak often fall into these traps:
+
+- **Too much content.** Trying to fit a 60-minute talk into 20 minutes by talking faster.
+- **Reading slides.** If your slides say everything, the audience doesn't need you.
+- **Skipping the rehearsal.** "I know this material" isn't the same as "I've practised this talk."
+- **Ignoring the room.** Giving the same talk to every audience, with the same examples.
+- **Apologising.** "Sorry, this slide is a bit busy" or "I'm not a great speaker" lowers expectations you then have to fight.
+- **Running over time.** Nothing loses an organiser's goodwill faster. Great speakers finish a minute or two early.
+
+## How to practise the secrets of great public speakers this month
+
+You won't use all 10 secrets at once. Pick two or three for your next talk and build from there.
+
+| Week | Focus | Practice |
+|---|---|---|
+| Week 1 | One idea and a strong opening | Write your one-sentence message and three openings |
+| Week 2 | Stories and simple visuals | Add one personal story; cut your slides to one idea each |
+| Week 3 | Voice and pauses | Record yourself; mark three lines to pause around |
+| Week 4 | Stage presence and close | Plan where you'll stand; write and memorise your last 30 seconds |
+
+Look for low-risk places to practise too: a team meeting, a local Toastmasters club, a community group or a short online talk. If you're thinking about speaking as a career, our guide on how to become a [motivational speaker](https://speakerfolio.com/articles/how-to-become-a-motivational-speaker/) walks through the first steps.
+
+## How Speakerfolio helps speakers get booked
+
+Using the secrets of great public speakers gets you remembered. Getting booked again takes something else: a place where event planners can see what you speak about, watch you on stage and contact you.
+
+Speakerfolio builds speakers a [free speaker website](https://speakerfolio.com/contact/#start) from their LinkedIn profile, with their story, talks, speaker reel, testimonials and a booking form, on yourname.speakerfolio.com. Every speaker also gets a profile in the Speakerfolio speaker directory, where event planners search by topic and format. Booking requests go straight to you, with no commission. If you want your own domain and a custom design, Premium is $100 a year.
+
+## Frequently asked questions
+
+### What are the secrets of great public speakers?
+
+The main secrets of great public speakers are building the talk around one idea, opening with a hook, telling real stories, keeping visuals simple, rehearsing a lot, using pauses, varying your voice, connecting with the audience, using the stage with purpose and ending with a clear call to action.
+
+### What can you learn from TED Talks about public speaking?
+
+TED Talks show that the best talks focus on one idea, are short and well-rehearsed, use personal stories and avoid slides full of text. TED's guidance also stresses rehearsing many times and keeping talks under 18 minutes.
+
+### Who is considered the best public speaker?
+
+There's no single answer, but Martin Luther King Jr., Steve Jobs, Barack Obama, Ken Robinson, Brené Brown and Simon Sinek are often named among the best public speakers, each for different strengths: rhythm, staging, pauses, humour, honesty and clarity.
+
+### How do great public speakers handle nerves?
+
+Most great speakers still feel nervous. They manage it by rehearsing thoroughly, knowing their opening by heart, breathing slowly before they start and focusing on the audience instead of themselves.
+
+### How long does it take to become a great public speaker?
+
+Most people see clear progress within a few months of regular practice. Speaking often, recording yourself and getting honest feedback after each talk speeds it up.
+
+### Should I memorise my speech?
+
+Memorise your opening and closing, and know the order of your main points. For the rest, rehearse until you know the material well, but don't recite it word for word. A memorised script tends to sound stiff, and one forgotten line can throw you.
+
+### How many times should you rehearse a talk?
+
+For an important talk, rehearse the full talk at least five or six times out loud, including once on video and once in front of a small audience. Many TED speakers rehearse far more than that.
+
+## Great public speakers aren't born. They practise.
+
+The secrets of great public speakers aren't really secrets. Ken Robinson, Brené Brown, Hans Rosling and Steve Jobs used the same tools you can use: one clear idea, a strong opening, real stories, simple visuals, pauses, a varied voice, real connection and a planned close. They just practised them more than most people do. Pick two of these secrets for your next talk, rehearse them on video, and keep building. And when planners start asking where they can see more of you, get your [free speaker website](https://speakerfolio.com/contact/#start) from Speakerfolio.
+
+---
+
 # Best Motivational Speech Quotes: 75 Powerful Words to Inspire Any Audience
 
 URL: https://speakerfolio.com/articles/best-motivational-speech-quotes/
