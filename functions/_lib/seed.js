@@ -482,6 +482,44 @@ export const SEEDS = [
     bookingEmail: 'yourtalentmatter@gmail.com',
     bookingLink: 'https://calendly.com/peteakennedy/executive-alignment-call',
     published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-3410, Free plan, Headliner template), 21 Nov 2026'
+  },
+  {
+    name: 'Sadiq Zahir',
+    slug: 'sadiq-zahir',
+    photo: '/assets/seed/sadiq-zahir.webp',
+    headline: 'Author, speaker and peer support advocate. Founder of Sadiq Zahir Speaks and author of The Strength of the Surviving Twin',
+    speakerType: 'Author and speaker',
+    topics: ['Motivation', 'Health and wellbeing'],
+    formats: ['Keynote', 'Workshop'],
+    location: 'Norfolk, Virginia',
+    languages: 'English',
+    travel: '',
+    audience: 'Schools, hospitals, reentry programs and community organizations',
+    fee: '',
+    shortBio: 'Sadiq Zahir is an author, speaker and peer support advocate based in Norfolk, Virginia, and the founder of Sadiq Zahir Speaks. He speaks in schools, hospitals, reentry programs and community settings on rebuilding after incarceration, grief and the recovery of purpose.',
+    bio: 'Sadiq Zahir is an author, speaker and peer support advocate based in Norfolk, Virginia, and the founder of Sadiq Zahir Speaks. He speaks in schools, hospitals, reentry programs and community settings on rebuilding after incarceration, grief and the recovery of purpose.\nHe is the author of the memoir The Strength of the Surviving Twin (2026). Sadiq mentors young people with the Bridge The Gap Youth Program and leads a men\u2019s accountability group in Hampton Roads.\nHe is a Certified Life Skills Coach and CBT Certified Practitioner, with training in Motivational Interviewing. Phone: (919) 330-7473.',
+    talks: [
+      { title: 'Reentry and Second Chances', format: 'Keynote', length: '',
+        summary: 'Rebuilding after incarceration: how people coming home, and the programs and families who support them, can rebuild a life with purpose.',
+        takeaways: ['Owning your story', 'Rebuilding with purpose', 'Support that makes a difference'] },
+      { title: 'Peer Support', format: 'Workshop', length: '',
+        summary: 'What it means to walk alongside someone: how peer support helps people through recovery, reentry and the hardest seasons of life.',
+        takeaways: ['Listening without judgment', 'Building trust', 'Walking alongside, not ahead'] },
+      { title: 'Grief and Loss: The Surviving Twin', format: 'Keynote', length: '',
+        summary: 'Drawn from his memoir The Strength of the Surviving Twin: carrying loss, honouring the people we lose and finding purpose again.',
+        takeaways: ['Naming grief honestly', 'Carrying loss forward', 'Recovering purpose'] },
+      { title: 'Men\u2019s Accountability and Fatherhood', format: 'Keynote', length: '',
+        summary: 'From the men\u2019s accountability group he leads in Hampton Roads: how men show up for each other, their families and their communities.',
+        takeaways: ['Accountability among men', 'Showing up as a father', 'Brotherhood and support'] },
+      { title: 'Youth Mentorship', format: 'Keynote', length: '',
+        summary: 'From his work as a mentor with the Bridge The Gap Youth Program: what young people need from the adults around them, and how to give it.',
+        takeaways: ['Showing up consistently', 'Listening to young people', 'Hope and direction'] }
+    ],
+    events: [],
+    quotes: [],
+    links: { website: 'https://sadiqzahir.speakerfolio.com/', instagram: 'https://www.instagram.com/sadiqzahirspeaks/' },
+    bookingEmail: 'sadiqzahirspeaks@gmail.com',
+    published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website by email (no LinkedIn), Free plan only, 23 Nov 2026'
   }
 ];
 
