@@ -4,6 +4,319 @@
 
 ---
 
+# Keynote Speaker Website Examples: 8 Layouts That Get Booked
+
+URL: https://speakerfolio.com/articles/keynote-speaker-website-examples/
+Published: 2026-11-23 · Author: Saleh, Speakerfolio
+
+**The best keynote speaker website examples share one goal: they help an event planner decide in a few minutes that you're right for their stage, then make booking easy.** Below are 8 layouts that do that, from a cinematic stage-photo hero to a talks menu, a reel-first page, a story timeline, a proof wall, an author page, an events calendar and a programs ladder. Each keynote speaker website example comes with a screenshot from a free Speakerfolio template, who it suits, why it gets booked and how to copy it. Click any screenshot to open the live template.
+
+> **Key takeaways**
+>
+> - **Planners decide fast.** A keynote speaker website has to show who you speak to, what you speak about and what you look like on stage within one scroll.
+> - **Pick a layout that matches how you sell**: your stage energy, your talks, your video, your story, your results, your book, your calendar or your programs.
+> - **Every layout needs the same basics**: a speaker reel, testimonials with names, clear topics and a short booking form.
+> - **You don't have to build it yourself.** Speakerfolio builds any of these layouts for free on yourname.speakerfolio.com.
+
+## What makes a keynote speaker website get booked?
+
+An event planner looking at your keynote speaker website usually has three questions: Will this person fit my audience? Can they hold a room? How do I book them? A good website answers all three before the planner has to look for anything.
+
+Here's what planners look for, and where it should sit on the page:
+
+| What the planner wants to know | What your website should show | Where it belongs |
+|---|---|---|
+| Who is this and what do they speak about? | Your name, a one-line promise and your main topics | The first screen |
+| Can they hold a room? | A stage photo and a 2 to 3 minute speaker reel | First or second screen |
+| Will they fit my audience? | Talk titles, formats, industries you've spoken to | The talks section |
+| Have others booked them? | Logos, numbers and named testimonials | Right after the talks |
+| How do I book them? | A short booking form and an email address | Top menu button and the end of the page |
+
+The 8 keynote speaker website examples below all answer those questions. They just lead with a different strength. Pick the one that matches yours.
+
+## 1. The stage-photo hero: lead with energy
+
+[![Keynote speaker website example with a full-screen stage photo hero, from the Ignite template](https://speakerfolio.com/assets/img/layouts/ignite-hero.webp)](https://speakerfolio.com/templates/ignite.html)
+
+*The Ignite template's hero: a full-screen photo of the demo speaker, a two-line headline, a booking button and a row of stage numbers.*
+
+This layout puts you on stage from the first second. A full-width photo fills the screen, with a short, bold headline over it and four numbers along the bottom: stages, people reached, countries and TEDx views. There's one button, and it says "Book" followed by your name.
+
+**Who it suits:** motivational and high-energy keynote speakers whose biggest selling point is the feeling in the room. If people tell you "you were the best part of the conference", this is your layout.
+
+**Why it gets booked:** planners want to picture you on their stage. A real stage photo does that faster than any paragraph. The headline tells them what changes for their audience, and the numbers give quick proof before they've scrolled at all.
+
+**How to copy it:**
+
+1. Use a photo of you speaking to a real audience, ideally with stage lights. A studio portrait doesn't do the same job.
+2. Write a headline about the audience, not about you. "Your team is about to start" works better than "Award-winning motivational speaker."
+3. Add three or four numbers you can stand behind, such as talks given or people reached.
+4. Keep one button in the hero, and make it the booking button.
+
+**Watch out for:** small text over a busy photo. Add a dark gradient behind the words, or place them where the photo is plain.
+
+## 2. The talks menu: lead with what you deliver
+
+[![Keynote speaker website example with a talks menu of keynote titles, formats and takeaways, from the Headliner template](https://speakerfolio.com/assets/img/layouts/headliner-talks.webp)](https://speakerfolio.com/templates/headliner.html)
+
+*The Headliner template's talks section: each keynote gets a number, a photo, its format and length, a short description and three takeaways.*
+
+Some planners arrive with a topic already in mind: leadership, change, sales, AI. For them, the talks section is the whole website. This layout gives each keynote its own block, with a title, the format and length, a two-line description, a photo and the three things the audience will take away.
+
+**Who it suits:** business and leadership keynote speakers with two to four clear talks, and speakers who are often booked by HR, learning and development, or conference programme teams who compare options side by side.
+
+**Why it gets booked:** it reads like a menu. A planner can see in seconds whether you have a talk that fits their theme, how long it runs and what their people will leave with. The takeaways are the part they copy into their internal email, so make them sharp.
+
+**How to copy it:**
+
+1. Limit it to three or four talks. More than that looks unfocused.
+2. Give each talk a title people would repeat, not a label. "Say It So It Sticks" beats "Communication Skills Keynote."
+3. List the format and length: "Keynote, 45 to 60 minutes" or "Workshop, half day."
+4. Write three takeaways per talk, each starting with a verb.
+5. Use a different stage photo for each talk if you have them.
+
+**Watch out for:** talk descriptions that all sound the same. If your three talks share most of their words, merge them or rewrite them so each one solves a different problem.
+
+## 3. The reel-first layout: lead with video
+
+[![Keynote speaker website example with a full-width speaker reel near the top, from the Studio template](https://speakerfolio.com/assets/img/layouts/studio-reel.webp)](https://speakerfolio.com/templates/studio.html)
+
+*The Studio template's reel section: a full-width stage photo with a round play button, placed right after the hero.*
+
+For many planners, the speaker reel is the deciding moment. It's how they find out whether you can actually hold a room. The reel-first layout puts a large video right under the hero, before your bio or your talks, so the most persuasive thing on your website is also the easiest to find.
+
+**Who it suits:** speakers with strong footage: a good reel, a TEDx talk or a full keynote filmed with a proper camera. It also suits creative, culture and media speakers whose style is hard to describe in words.
+
+**Why it gets booked:** a planner who watches two minutes of you on stage is much closer to a yes than one who has only read your bio. Putting the reel early means more planners actually watch it, and the play button invites the click.
+
+**How to copy it:**
+
+1. Put the reel directly after the hero, full width.
+2. Use a still from the reel that shows you mid-talk, with the audience in view, as the cover image.
+3. Label it with the event name, such as "Culture Forward Summit, Lisbon", so planners know it's real.
+4. Keep the reel to two or three minutes, and link to a full talk underneath for planners who want more.
+
+If you don't have a reel yet, our guide on how to make a [speaker reel](https://speakerfolio.com/articles/make-a-two-minute-speaker-reel-from-footage-you-already-have/) from footage you already have walks you through it.
+
+**Watch out for:** autoplaying video with sound, and reels longer than four minutes. Both make planners close the tab.
+
+## 4. The story timeline: lead with your journey
+
+[![Keynote speaker website example with a story timeline from first job to 600 stages, from the Ignite template](https://speakerfolio.com/assets/img/layouts/ignite-timeline.webp)](https://speakerfolio.com/templates/ignite.html)
+
+*The Ignite template's story section: a short headline on the left, a photo, and six dated milestones on the right.*
+
+A lot of keynote speakers are booked because of their story: a comeback, a career change, a big failure, a rare experience. The story timeline turns that story into something a planner can scan in ten seconds. Each row has a year, a short title and one line of detail.
+
+**Who it suits:** motivational, resilience and inspirational speakers whose keynote is built on their own journey. It also works for speakers who've grown from local events to big stages and want to show that progress.
+
+**Why it gets booked:** planners don't have time to read a long bio, but they'll read six short lines. A timeline shows your story, your credibility and your growth at the same time. "2018: The TEDx talk" and "2026: The 600th stage" do a lot of work in very few words.
+
+**How to copy it:**
+
+1. Pick five or six moments, from the turning point that started your story to where you are now.
+2. Give each a year, a title of two to four words and one sentence of detail.
+3. Highlight the latest milestone in your accent colour.
+4. Add a headline that sums up the journey, like "From laid off to 600 stages."
+
+**Watch out for:** a timeline that reads like a CV. Keep the moments that tell a story, and leave out job titles that don't add to it.
+
+## 5. The proof wall: lead with results
+
+[![Keynote speaker website example with a results section showing adoption rates, session ratings and a client testimonial, from the Trainer template](https://speakerfolio.com/assets/img/layouts/trainer-results.webp)](https://speakerfolio.com/templates/trainer.html)
+
+*The Trainer template's results section: two result cards with numbers and a small chart, plus a testimonial from a named HR director.*
+
+Corporate buyers, especially HR and learning teams, have to justify the spend. The proof wall gives them the numbers and quotes they need to do that. It combines a few hard results, such as how many attendees used what they learned, average session ratings and repeat bookings, with a testimonial from a named client.
+
+**Who it suits:** corporate keynote speakers, trainers and workshop leaders who sell to companies, and anyone whose audience is measured on results after the event.
+
+**Why it gets booked:** "Rated 4.9 out of 5 across 60 keynotes" is easier to forward to a manager than "inspiring and engaging." Results turn your keynote from a nice extra into something with a return. A named testimonial ("Owen Clarke, HR Director") is far more convincing than an anonymous one.
+
+**How to copy it:**
+
+1. Collect two or three numbers you can back up: session ratings, repeat bookings, or a follow-up survey result.
+2. Show each number big, with a one-line label explaining what it means.
+3. Add one or two testimonials with a full name, role and organisation.
+4. Put the proof wall right after your talks, when the planner is deciding.
+
+Need better testimonials? Our guide on how to [ask for testimonials](https://speakerfolio.com/articles/ask-for-testimonials-the-right-way-right-after-the-event/) right after an event shows what to send and when.
+
+**Watch out for:** numbers you can't explain. If a planner asks where "87%" comes from, you need an answer.
+
+## 6. The author keynote: lead with your book
+
+[![Keynote speaker website example with a book section, cover and buy links, from the Headliner template](https://speakerfolio.com/assets/img/layouts/headliner-book.webp)](https://speakerfolio.com/templates/headliner.html)
+
+*The Headliner template's book section: the book cover on a bold blue background, the release date, a short description, a pre-order bonus and buttons for each store.*
+
+If you've written a book, it's one of your strongest credentials. The author keynote layout gives the book its own full-width section, with the cover, a short description of what's inside, a release date and buttons for each bookstore. Many author-speakers also add an offer for bulk orders, which planners often use to give copies to attendees.
+
+**Who it suits:** keynote speakers with a published or upcoming book, and speakers whose talk is based on a method or framework from the book.
+
+**Why it gets booked:** a book shows depth. It tells planners you've thought about your topic long enough to write 200 pages on it. It also gives them an easy add-on: a signed copy for every attendee, or a book club before the event.
+
+**How to copy it:**
+
+1. Use a clean image of the cover, large enough to read the title.
+2. Write two or three lines on what the reader learns, linked to your keynote.
+3. Add buttons for the main stores, and a link for bulk or event orders.
+4. Connect the book to a talk: "The keynote is based on the book."
+
+**Watch out for:** a book section that takes over the whole site. Planners are booking a speaker, not buying a book, so keep your talks and reel above it.
+
+## 7. The events calendar: lead with where you'll be
+
+[![Keynote speaker website example with an upcoming events calendar showing dates, venues and talk titles, from the Spotlight template](https://speakerfolio.com/assets/img/layouts/spotlight-gatherings.webp)](https://speakerfolio.com/templates/spotlight.html)
+
+*The Spotlight template's events section: "Where to hear Marco next", with four upcoming dates, venues, cities and the talk at each one.*
+
+A calendar of upcoming events does two jobs. It shows planners you're in demand, and it lets people who want to hear you find a date nearby. Each entry lists the date, the event, the city and what you'll speak about. Some planners even use it to see you live before booking.
+
+**Who it suits:** faith, youth and community speakers who speak most weekends, speakers who tour, and anyone with a steady stream of public events.
+
+**Why it gets booked:** an active calendar is quiet social proof. Four dates in four cities over the next few months says "other organisers already trust this speaker" without you having to say it. It also tells planners when you're likely to be in their area.
+
+**How to copy it:**
+
+1. List the next three to six events, with date, event name, city and talk title.
+2. Add one line describing each event, such as the audience or format.
+3. Include a button like "Check open dates" that goes to your booking form.
+4. Update it monthly. Remove past events, or move them to a "Recent stages" list.
+
+**Watch out for:** an empty or out-of-date calendar. A list of events from last year is worse than no list. If your calendar changes often, use a "Recent stages" list instead.
+
+## 8. The programs ladder: lead with what comes after the keynote
+
+[![Keynote speaker website example with three coaching programs and prices side by side, from the Coach template](https://speakerfolio.com/assets/img/layouts/coach-programs.webp)](https://speakerfolio.com/templates/coach.html)
+
+*The Coach template's programs section: three programs side by side, from one-to-one coaching to a group circle and a one-day intensive, each with a price and what's included.*
+
+Many keynote speakers earn as much from what happens after the talk as from the talk itself: coaching, workshops, group programs or a course. The programs ladder lays these out side by side, from the smallest commitment to the biggest, with what's included in each. A "Most chosen" label on one option helps people decide.
+
+**Who it suits:** speakers who also coach or run programs, and keynote speakers who sell follow-up workshops or longer engagements to the same company.
+
+**Why it gets booked:** it shows planners and attendees that the keynote can be the start of something bigger. An HR team booking a keynote may also book the workshop series if they can see it laid out clearly. Individuals who heard you speak know exactly where to go next.
+
+**How to copy it:**
+
+1. Offer three options at most, from smallest to largest.
+2. For each, give the format, length, what's included and a starting price or "from" price.
+3. Mark the option most people choose.
+4. Link each card to a booking or enquiry form.
+
+Prices are optional. If you'd rather discuss fees per engagement, replace them with "Ask about this program" and keep the rest.
+
+**Watch out for:** mixing keynote topics and coaching programs in one list. Keep your talks in one section and your programs in another, so planners can find each quickly.
+
+## The one section every keynote speaker website needs: the booking form
+
+[![Keynote speaker website booking form asking for name, work email, company, program, date, number of managers and event details, from the Trainer template](https://speakerfolio.com/assets/img/layouts/trainer-book.webp)](https://speakerfolio.com/templates/trainer.html)
+
+*The Trainer template's booking section: a short promise on the left, contact details, and a form that asks only for what the speaker needs to reply.*
+
+Whichever layout you choose, it should end the same way: with a short, clear booking form. All the layouts above exist to get a planner to this point. If the form is long, confusing or missing, all that work is wasted.
+
+A good booking form asks for:
+
+- **Name and work email**, so you know who you're dealing with
+- **Organisation**
+- **Event date** (or "flexible")
+- **Audience size**
+- **Which talk or program** they're interested in
+- **A short message** about the event
+
+It also says how fast you'll reply, for example "replies within 2 working days." Add your email address and phone number beside it for planners who'd rather write directly. And put a booking button in the top menu, so planners can reach the form from anywhere on the page.
+
+## Which keynote speaker website layout fits you?
+
+| If your biggest strength is... | Lead with | Speakerfolio template |
+|---|---|---|
+| Energy on stage | 1. The stage-photo hero | Ignite |
+| Clear, specific talks | 2. The talks menu | Headliner |
+| Great video | 3. The reel-first layout | Studio |
+| A powerful personal story | 4. The story timeline | Ignite |
+| Measurable results for companies | 5. The proof wall | Trainer |
+| A published book | 6. The author keynote | Headliner |
+| A busy speaking calendar | 7. The events calendar | Spotlight |
+| Coaching or programs after the talk | 8. The programs ladder | Coach |
+
+You don't have to pick only one. Most strong keynote speaker websites lead with one layout and include two or three of the others further down. Ignite, for example, combines the stage-photo hero, the story timeline, a reel and an events list on one page. What matters is that your strongest selling point comes first.
+
+## How to put a keynote speaker website together, section by section
+
+Here's an order that works for most keynote speakers, whichever layout you lead with:
+
+1. **Hero:** your name, a one-line promise to the audience, a stage photo and a booking button.
+2. **Logos or numbers:** organisations you've spoken for, or three stage numbers.
+3. **Your lead layout:** talks, reel, story, results, book, calendar or programs.
+4. **Talks:** if you didn't lead with them, add them here.
+5. **Speaker reel:** if you didn't lead with it.
+6. **Testimonials:** two or three, with full names and roles.
+7. **About:** a short bio, written for planners. Our guide on how to [write a speaker bio](https://speakerfolio.com/articles/how-to-write-a-speaker-bio-planners-can-actually-use/) planners can use covers this.
+8. **FAQ:** travel, formats, virtual options, how fees work.
+9. **Booking form:** short, with a reply time.
+
+For a full checklist of what to include, see [what every speaker website needs](https://speakerfolio.com/articles/what-every-speaker-website-needs/).
+
+## Common mistakes in keynote speaker websites
+
+Most keynote speaker websites that don't get booked fail in the same few ways:
+
+- **No stage photos.** Studio portraits only, so planners can't picture you on stage.
+- **No video, or video hidden on a separate page.** Planners won't go looking for it.
+- **Vague topics.** "Leadership, motivation and personal growth" fits every speaker. Name your actual talks.
+- **Anonymous testimonials.** "Amazing speaker!" from "a happy client" doesn't convince anyone.
+- **A long or missing booking form.** Every extra field loses some planners.
+- **Too much about you, not enough about the audience.** Planners care about what changes for their people.
+- **Slow pages and broken phone layouts.** Many planners first look you up on their phone, often between meetings.
+
+## Get any of these keynote speaker website layouts free with Speakerfolio
+
+Every screenshot in this article comes from a Speakerfolio template, and all six templates are free. You don't download a template and fill it in yourself. You send your LinkedIn profile, pick a layout (or let us choose), and Speakerfolio writes and builds your one-page keynote speaker website on yourname.speakerfolio.com, usually within two working days.
+
+- **Free:** any of the six templates, with your story, talks, reel, testimonials and booking form, plus a profile in the Speakerfolio [speaker directory](https://speakerfolio.com/speakers/), where event planners search by topic and format
+- **No commission:** booking requests go straight to your inbox
+- **Premium ($100 a year):** your own domain, a custom design, more pages and full control, with hosting and updates included
+
+Browse the live [speaker website templates](https://speakerfolio.com/templates/) or see which one fits motivational speakers in our [motivational speaker website template](https://speakerfolio.com/articles/motivational-speaker-website-template/) guide.
+
+## Frequently asked questions
+
+### What should a keynote speaker website include?
+
+A keynote speaker website should include a hero with your name, promise and stage photo, your talks with takeaways, a speaker reel, logos or numbers, named testimonials, a short bio, an FAQ and a booking form.
+
+### What is the best layout for a keynote speaker website?
+
+The best layout leads with your strongest selling point. Lead with a stage photo if your energy sells you, a talks menu if your topics do, a reel if your video is strong, a timeline if your story is, results if you sell to companies, a book section if you're an author, a calendar if you speak often, or programs if you coach.
+
+### Where can I see keynote speaker website examples?
+
+All 8 keynote speaker website examples in this article come from Speakerfolio's free templates. Each screenshot links to the live template, so you can see the full page on desktop and phone.
+
+### How long should a keynote speaker website be?
+
+One page is enough for most keynote speakers. A single, well-ordered page with eight to ten sections answers everything a planner needs. Add more pages only for things like a blog, a full media kit or separate pages for each talk.
+
+### Should I show my speaking fee on my website?
+
+It's your choice. Showing a starting fee filters out planners without a budget. Leaving it off and saying "fees depend on the event" invites more enquiries. Many speakers put "Fees from..." in their FAQ rather than in the hero.
+
+### Do I need a speaker reel on my website?
+
+Yes, if you can. A two to three minute reel is often what convinces a planner. If you don't have one yet, use a short clip of a full talk or a filmed segment from a recent event.
+
+### How much does a keynote speaker website cost?
+
+A custom-designed site from an agency often costs thousands. Website builders cost a monthly fee plus your time. Speakerfolio builds a one-page keynote speaker website for free on yourname.speakerfolio.com, with Premium at $100 a year for your own domain and a custom design.
+
+## Pick your layout and get booked
+
+The keynote speaker website examples that get booked aren't the flashiest. They lead with the speaker's biggest strength, answer a planner's questions in order, and make booking easy. Pick the layout that matches how you sell, fill it with real stage photos, a reel and named proof, and finish with a short booking form. Then get your [free speaker website](https://speakerfolio.com/contact/#start) built on any of these layouts by Speakerfolio.
+
+---
+
 # 10 Secrets of Great Public Speakers: Lessons from TED Talks and Famous Keynote Speakers
 
 URL: https://speakerfolio.com/articles/secrets-of-great-public-speakers/
