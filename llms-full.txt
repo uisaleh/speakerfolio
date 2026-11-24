@@ -4,6 +4,453 @@
 
 ---
 
+# Corporate Trainer Fees in 2026: Day Rates and Half-Day Rates
+
+URL: https://speakerfolio.com/articles/corporate-trainer-fees/
+Published: 2026-11-24 · Author: Saleh, Speakerfolio
+
+**In 2026, independent corporate trainers in the US typically charge about $1,500 to $5,000 for a full training day, with high-demand and well-known facilitators charging $7,500 to $15,000 or more. A half day usually costs 55% to 75% of the day rate, not half, because preparation and travel don't shrink with the session.** In the UK, agency trainer contracts have a median of £450 a day, while independent specialists who sell directly to companies usually charge more. Below you'll find the data behind those numbers, rates by experience, topic and format, what a day rate should include, a formula to set your own rate, and how to present your fees so buyers say yes.
+
+> **Key takeaways**
+>
+> - **Standard corporate training days run about $1,500 to $5,000** in the US, according to published facilitator fee ranges. High-demand facilitators go well above that.
+> - **Half-day rates are usually 55% to 75% of a full day.** Prep, customization and travel cost the same either way.
+> - **Topic and audience move the price more than hours.** Executive leadership, sales and technical training command higher rates than general soft skills.
+> - **Your day rate isn't your income.** Most independent trainers bill far fewer than 200 days a year, so the rate has to cover the days you don't deliver.
+
+## Corporate trainer fees in 2026 at a glance
+
+Here's a quick summary. Each figure is explained, with its source, further down.
+
+| What | Typical 2026 range | Basis |
+|---|---|---|
+| US standard corporate training day | $1,500 – $5,000 per day | Published facilitator fee ranges |
+| US high-demand or keynote-level facilitator | $7,500 – $15,000+ per day | Published facilitator fee ranges |
+| US public-sector facilitation (example) | About $2,000 – $2,300 per day | A university public-sector program's published rates |
+| US hourly facilitation | $150 – $300 per hour | Published facilitator fee ranges |
+| UK trainer contracts (mostly through agencies) | Median £450 per day (10th–90th percentile £208–£625) | IT Jobs Watch, six months to November 2026 |
+| Half day | Usually 55% – 75% of the day rate | Common pricing practice (explained below) |
+| Employed US training specialist, cost per working day | About $335 – $375 | BLS median salary, loaded for employment costs |
+
+Two things to keep in mind:
+
+1. **There's no single official price list.** Trainer fees are set privately between trainers and clients, so published figures come from industry guides, job boards and a few public organisations that share their rates. Treat ranges as a guide, not a rule.
+2. **Ranges overlap a lot.** A new trainer with a niche technical skill can charge more than a generalist with ten years' experience. What you teach, who you teach and how you package it matter as much as how long you've been doing it.
+
+## What the data says about corporate trainer fees
+
+### US: external facilitators and trainers
+
+The most widely quoted ranges for independent facilitators come from Futurist Speakers, summarised in a 2026 guide from Online Facilitation Skills. According to [that summary](https://onlinefacilitationskills.com/insights/how-much-does-a-corporate-facilitator-cost/):
+
+- **Standard corporate programs** typically cost **$1,500 to $5,000 per day**.
+- **High-demand or keynote-level facilitators** charge **$7,500 to $15,000 or more** per day.
+- **Name-brand facilitators** can reach **$5,000 to $35,000** per day.
+- **Hourly facilitation** runs **$150 to $300 per hour**, with specialised moderators at **$300 to $500 or more**.
+
+The same guide cites the University of North Carolina School of Government, which publishes daily facilitation rates for local government retreats of about **$2,000 to $2,300**, on a sliding scale by municipal population. That's a useful real-world reference, because public-sector buyers often pay at the lower end of the market.
+
+Another 2026 guide, from course platform [Ruzuku](https://www.ruzuku.com/learn/articles/how-to-price-training-courses), gives a working range of roughly **$1,500 to $3,500 per day** for independent trainers delivering live virtual workshops. The author is clear that this is a working estimate rather than survey data, but it lines up with the ranges above.
+
+### US: what employers pay in-house trainers
+
+It helps to know what companies pay their own trainers, because that's what an external trainer is quietly compared against.
+
+According to the US Bureau of Labor Statistics, the median pay for [training and development specialists](https://www.bls.gov/ooh/business-and-financial/training-and-development-specialists.htm) was **$69,280 a year ($33.31 an hour)** in May 2025, and the median for [training and development managers](https://www.bls.gov/ooh/management/training-and-development-managers.htm) was **$133,000 a year ($63.94 an hour)**. BLS projects employment of training and development specialists to grow 11% from 2025 to 2035, much faster than average.
+
+Pricing site TrainingCost.com turns those salaries into a cost per working day by adding typical employment costs (benefits, payroll taxes and so on) and spreading the total over about 260 working days. Its [estimate](https://trainingcost.com/facilitator-rates) is about **$335 to $375 per working day** for an employed specialist and **$640 to $715** for a manager.
+
+That gap, between a few hundred dollars a day for an employee and a few thousand for an external trainer, is normal. An external trainer brings specialist expertise, a tested program, no long-term commitment and no management overhead. The buyer is paying for the result, not for a day of someone's time. But it does mean your website and proposal need to show why you're worth more than an in-house session.
+
+### UK: day rates
+
+UK data is harder to find, because few organisations publish what they pay. The most transparent source is [IT Jobs Watch](https://www.itjobswatch.co.uk/contracts/uk/trainer.do), which tracks advertised contract rates. For trainer contracts in the six months to 23 November 2026:
+
+- **Median daily rate: £450**
+- **10th percentile: £208**
+- **90th percentile: £625**
+
+These are mostly contracts advertised through agencies and training providers, often for IT and systems training. Independent trainers who sell directly to companies, especially in leadership, management and specialist topics, usually charge above these figures, because they set their own prices and take on the sales and design work themselves.
+
+## Day rate vs half-day rate: how they work
+
+Most corporate trainers price in days and half days, because that's how companies schedule training. A full day is usually six to seven hours of training with breaks. A half day is usually three to four hours, either a morning or an afternoon.
+
+The mistake many new trainers make is charging half the day rate for a half day. Here's why that doesn't work:
+
+| Cost | Full day | Half day |
+|---|---|---|
+| Discovery call and scoping | Same | Same |
+| Customising content and materials | Same, or slightly more | Almost the same |
+| Travel to the venue | Same | Same |
+| Setting up the room | Same | Same |
+| Delivery time | 6–7 hours | 3–4 hours |
+| Follow-up and reporting | Same | Same |
+| Can you sell the other half of the day? | No | Rarely |
+
+Only one line actually halves: delivery time. Everything else stays roughly the same. And in practice, it's hard to sell the other half of the day to another client, especially if you've travelled.
+
+That's why many trainers set their half-day rate at **55% to 75% of the day rate**. Where you land in that range depends on how much preparation and travel the session needs.
+
+| Day rate | Half day at 60% | Half day at 70% |
+|---|---|---|
+| $1,500 | $900 | $1,050 |
+| $2,500 | $1,500 | $1,750 |
+| $3,500 | $2,100 | $2,450 |
+| $5,000 | $3,000 | $3,500 |
+| £600 | £360 | £420 |
+| £900 | £540 | £630 |
+
+**A simple rule:** if a half day needs the same customisation and travel as a full day, price it closer to 75%. If it's a standard session you've run many times, close to home or online, 55% to 60% is fair.
+
+### What about hourly rates?
+
+Hourly rates work for short sessions such as a 90-minute webinar or a lunch-and-learn, but they can undersell you. A one-hour session still needs preparation, rehearsal, setup and follow-up. If you quote hourly, set a minimum (for example, a two-hour minimum) or price short sessions as a fixed "session fee" instead.
+
+## Corporate trainer fees by experience level
+
+Experience matters, but it's not just years. What buyers really pay for is **proof**: client names, results, case studies and a reputation for a specific topic. Here's how fees typically move as a trainer builds that proof. The bands combine the published ranges above with common market practice; they're a guide, not survey data.
+
+| Level | What it looks like | Typical US day rate | Typical half day |
+|---|---|---|---|
+| Starting out | First independent clients, often through referrals or associate work | Below $1,500 | 55%–75% of day rate |
+| Established | Steady repeat clients, clear programs, testimonials | $1,500 – $3,000 | $900 – $2,200 |
+| Specialist | Known for a niche (sales, compliance, a technical field, an industry), case studies with results | $3,000 – $5,000 | $1,800 – $3,750 |
+| In demand | Books, keynotes, waiting list, large clients | $5,000 – $15,000+ | Often sold as a keynote or session fee |
+
+### Associate work: why the rate is lower
+
+Many trainers start by delivering programs for larger training companies as associates. The training company finds the client, owns the program and handles admin, so the associate's day rate is lower than what the client pays. That's a fair trade when you're building experience, but it's worth knowing the difference: the rate a client pays a training company and the rate the associate receives can be very different numbers.
+
+## Corporate trainer fees by topic
+
+Topic is one of the biggest drivers of price. Training that's closely tied to revenue, risk or senior leaders usually commands higher fees than general professional skills.
+
+The Ruzuku guide gives these author's estimates for live daily workshop rates by domain:
+
+| Training domain | Estimated live day rate (US) |
+|---|---|
+| Executive leadership and sales | $3,500 – $8,000 |
+| Technical and cloud engineering | $3,500 – $6,500 |
+| Regulatory compliance and safety | $2,500 – $4,500 |
+| Clinical and healthcare continuing education | $2,000 – $3,800 |
+| Professional skills and communication | $1,500 – $3,000 |
+
+Why the difference?
+
+- **Revenue and risk.** Sales training is tied to income. Compliance training is tied to legal risk. Buyers can justify bigger budgets when the stakes are clear.
+- **Seniority of the audience.** A program for executives often comes with a bigger budget than one for new starters.
+- **Scarcity.** Fewer trainers can teach advanced technical or regulated topics well.
+- **Measurability.** If the result can be measured, it's easier to sell at a higher price.
+
+If you teach general topics like communication or time management, you can still charge more by specialising: "communication for engineering teams" or "time management for clinical managers" is more valuable to the right buyer than a general version.
+
+## Corporate trainer fees by format
+
+The same trainer may charge differently depending on the format. Here's how common formats are usually priced.
+
+| Format | How it's usually priced | Notes |
+|---|---|---|
+| Full-day workshop | Day rate | The standard unit for in-house training |
+| Half-day workshop | 55%–75% of day rate | See the section above |
+| Keynote (30–60 minutes) | Fixed session fee | Often priced near or above a day rate, because of preparation and the size of the audience |
+| Virtual session (60–120 minutes) | Fixed session fee | No travel, but preparation is the same; many trainers set a minimum |
+| Multi-day program | Package price | Often a small discount per day in return for the larger booking |
+| Blended program (workshops + coaching + follow-up) | Package price | Priced on the outcome, not just days |
+| One-to-one coaching | Per session or monthly | Usually sold as a package of sessions |
+| Train-the-trainer | Day rate plus licence | The client gets the right to run your program internally |
+| Program licensing | Annual or per-user licence | Materials and rights to deliver; can include certification |
+| Custom program design | Design fee or design days | Charged on top of delivery when the content is built from scratch |
+
+### Virtual vs in-person
+
+Virtual training removes travel, so some trainers charge a little less for it. Others charge the same, because preparation, design and expertise are the same and virtual facilitation takes its own skill. A common middle ground is to keep the same rate but drop travel costs, and to offer shorter virtual sessions spread over several weeks, priced as a package.
+
+## Quick reference: how to price common client requests
+
+Clients rarely ask for "one day of training." They ask for a lunch-and-learn, a kickoff session or a series. Here's a simple way to turn common requests into a price based on your own day rate.
+
+| Client request | A simple way to price it |
+|---|---|
+| 60-minute lunch-and-learn (on site) | A fixed session fee of about 40% to 50% of your day rate, because travel and setup are the same as a half day |
+| 90-minute virtual session | A fixed session fee of about 30% to 40% of your day rate, with a minimum |
+| Half-day workshop | 55% to 75% of your day rate |
+| Two-day program | Two day rates, sometimes with a small discount on the second day |
+| Keynote plus a workshop on the same day | A day rate plus a keynote supplement, since the keynote needs its own preparation |
+| Series of six 90-minute virtual sessions | A package price, usually less than six separate session fees, plus a design fee if it's new |
+| The same workshop for several teams | A first-session price plus a lower repeat-session price, because the design is already done |
+| A brand-new program on a topic you haven't taught | Your delivery fee plus a design fee or design days |
+
+These percentages are rules of thumb, not market data. Adjust them for your topic, travel and how much tailoring each request needs.
+
+## What should a corporate trainer's day rate include?
+
+Unclear scope is one of the most common causes of awkward conversations with clients. Spell out what's included in your rate and what costs extra.
+
+| Usually included | Often charged separately |
+|---|---|
+| A discovery call | Custom program design from scratch |
+| Light tailoring of an existing program | Pre-session interviews or surveys of many participants |
+| Delivery on the day | Travel, accommodation and meals |
+| Standard digital materials | Printed workbooks, licensed assessments (such as psychometric tools) |
+| A short follow-up email or call | Post-program reports, impact measurement, follow-up sessions |
+| Basic preparation and rehearsal | Recording rights or permission to reuse content internally |
+
+**Travel:** most trainers either add travel at cost, add a flat travel fee, or include local travel and charge for anything further. Say which in your proposal and on your website.
+
+**Licensed tools:** if you use assessments that cost you money per participant, pass that cost on as a per-participant fee rather than absorbing it into your day rate.
+
+**Design time:** if a client wants a brand-new program, charge for the design work. A common approach is to price design in days (for example, one or two design days for a new one-day workshop) or as a fixed design fee.
+
+## How to calculate your corporate trainer day rate
+
+Market ranges tell you what's normal. Your own costs tell you what's sustainable. Here's a simple way to work out a floor for your day rate.
+
+### Step 1: Decide your target income
+
+Start with the amount you want to earn before tax in a year. Include what you'd need for savings and retirement, since no employer is contributing.
+
+### Step 2: Add your business costs
+
+Include everything your business pays for: insurance, software, equipment, professional memberships, accreditations, marketing, accounting, your website, travel that clients don't cover, and continuing development.
+
+### Step 3: Estimate your billable days
+
+This is where most new trainers get it wrong. You won't deliver training five days a week. You need time for sales, proposals, design, admin, learning and holidays. Many independent trainers deliver somewhere between 60 and 120 paid days a year, depending on their market and how established they are.
+
+### Step 4: Divide
+
+**Day rate floor = (target income + business costs) ÷ billable days**
+
+Here's a worked example with clearly made-up numbers:
+
+| Item | Example |
+|---|---|
+| Target income before tax | $110,000 |
+| Business costs | $20,000 |
+| Total needed | $130,000 |
+| Billable days per year | 80 |
+| **Day rate floor** | **$1,625** |
+| Half day at 65% | About $1,055 |
+
+If your floor comes out higher than what your market will pay, you have three options: add more billable days, reduce costs, or move into a niche or format that commands a higher rate. If it comes out well below the market range, you may be undercharging.
+
+### Step 5: Check against the market
+
+Compare your floor with the ranges above for your experience level, topic and region. Set your actual rate somewhere between your floor and what similar trainers charge. Then test it. If every proposal is accepted immediately, your rate is probably too low.
+
+## Pricing models beyond the day rate
+
+Day rates are simple and familiar, but they cap your income at the number of days you can deliver. Many established trainers add other models.
+
+| Model | How it works | Best for | Watch out for |
+|---|---|---|---|
+| Day rate | A fixed price per day or half day | Most in-house training | Ties income to time |
+| Per participant | A price per person, often with a minimum | Open workshops, larger groups | Small groups can be unprofitable without a minimum |
+| Program package | One price for a defined program (workshops, coaching, follow-up) | Outcome-focused engagements | Needs a clear scope |
+| Retainer | A monthly fee for an agreed amount of training or support | Long-term client relationships | Scope creep without clear limits |
+| Licensing | Clients pay to run your program internally | Trainers with a proven, well-documented program | Requires solid materials and support |
+| Value-based | Price linked to the value of the outcome | Sales, retention and other measurable results | Needs trust and good data |
+
+**Packages often win.** Buyers find it easier to approve "a 3-month leadership program for 20 new managers, including two workshops, group coaching and a 30-day impact report" than a list of separate days. You also get paid for the whole outcome, not just the hours on stage.
+
+## Three example rate cards
+
+Here's how trainers at different stages might put this together. The trainers are fictional, and the numbers are examples built from the ranges above, not quotes from real people.
+
+### Example 1: an established communication skills trainer
+
+Jordan runs communication and presentation skills workshops for mid-sized companies in one region. Most work comes from repeat clients and referrals.
+
+| Offer | Price |
+|---|---|
+| Full-day workshop (up to 16 people) | $2,000 |
+| Half-day workshop | $1,300 |
+| 90-minute virtual session | $750 |
+| Tailoring for a new client | Included (light) |
+| Travel beyond 50 miles | At cost |
+
+Jordan's half day is 65% of the day rate, and the virtual session has a fixed fee rather than an hourly rate.
+
+### Example 2: a specialist sales trainer
+
+Priya trains B2B sales teams and can show results from past clients, such as shorter sales cycles. She sells mostly packages.
+
+| Offer | Price |
+|---|---|
+| Full-day sales workshop | $4,500 |
+| Half-day workshop | $3,000 |
+| 3-month sales program (2 workshops, 6 group coaching calls, 30-day report) | $16,000 |
+| Program design for a new client | $3,000 design fee |
+| Licensed assessment | $85 per participant |
+
+Most of Priya's income comes from the three-month program, which buyers approve as one outcome-focused investment.
+
+### Example 3: a leadership trainer working in the UK
+
+Sam delivers leadership programs directly to UK organisations, plus occasional associate work for a larger provider.
+
+| Offer | Price |
+|---|---|
+| Direct full day | £950 |
+| Direct half day | £650 |
+| Associate day for a training company | £450 |
+| Keynote at a leadership conference | £1,500 |
+| Travel and accommodation | At cost |
+
+Sam's associate rate sits around the market median for UK trainer contracts, while direct work, where Sam does the sales and design, is priced higher.
+
+## Payment terms and cancellation policies
+
+Clear terms protect both you and the client, and they make you look established. Most corporate trainers cover:
+
+- **Deposit:** many ask for part of the fee upfront to hold the date, with the balance due after delivery.
+- **Payment timing:** large companies often pay 30 or more days after an invoice, so agree on terms in writing before the session.
+- **Cancellation:** a sliding scale is common, where cancelling closer to the date means a larger share of the fee is due, because it's hard to fill a date at short notice.
+- **Rescheduling:** many trainers allow one free reschedule if there's enough notice.
+- **Purchase orders:** ask whether the client needs a purchase order number on the invoice, and get it before you deliver.
+
+Put the key points in your proposal and your FAQ, so nobody is surprised.
+
+## How to present your fees on your website and in proposals
+
+Whether you publish prices or not, your website should help buyers understand what working with you costs, so the right buyers get in touch and the wrong ones don't waste your time.
+
+### Option 1: Publish "from" prices
+
+Show a starting price for each program: "Half-day workshop, from $1,800." This filters out buyers with very small budgets and makes the conversation easier. It works best for standard programs you deliver often.
+
+### Option 2: Explain how fees work
+
+Many corporate trainers don't publish prices, because every program is tailored. Instead, explain what affects the price: "Fees depend on the format, number of participants and amount of tailoring. Most clients start with a 30-minute discovery call, and I send a proposal within two working days."
+
+### Option 3: Show tiers
+
+If you offer a few standard options, show them side by side: a keynote, a half-day workshop and a three-month program, each with what's included and a "from" price or "ask for a quote."
+
+Whichever option you choose, put fee information in your FAQ and near your booking form, where buyers look for it. Our guide on [what to include on a corporate trainer website](https://speakerfolio.com/articles/what-to-include-on-a-corporate-trainer-website/) shows where pricing fits alongside programs, case studies and results.
+
+### In proposals
+
+A clear proposal makes your rate easier to accept:
+
+1. **Restate the client's goal** in their own words.
+2. **Describe the program** with format, length and outcomes.
+3. **Show the investment** as one figure for the whole program, with what's included.
+4. **List what's extra**, such as travel or printed materials.
+5. **Add proof**: a short case study or result from a similar client.
+6. **Give a deadline** for holding the dates.
+
+## How to negotiate trainer fees without undercutting yourself
+
+Buyers often ask for a lower price. It's normal, and it doesn't mean they won't book you. Here are ways to respond that protect your rate:
+
+- **Change the scope, not the rate.** Offer a half day instead of a full day, a smaller group, or digital instead of printed materials.
+- **Trade for something valuable.** A lower rate in return for a multi-session booking, a case study, a video testimonial or an introduction to another department.
+- **Offer payment terms.** Some buyers can't approve a big amount in one go but can split it across two budget periods.
+- **Have a clear policy for nonprofits and education.** A set discount you apply consistently is easier to defend than ad-hoc deals.
+- **Know your walk-away number.** Your floor from the calculation above.
+
+What to avoid: dropping your rate in the first email, offering discounts nobody asked for, and agreeing to "just a few extra things" without changing the price.
+
+## When and how to raise your rates
+
+Signs you should raise your rates:
+
+- Most proposals are accepted without any discussion of price
+- Your calendar is full months ahead
+- You're turning work away
+- You've added significant proof: a big client, a book, a strong case study
+- You haven't changed your rates in over a year
+
+How to do it:
+
+1. **Raise rates for new clients first.** Quote the new rate on every new proposal.
+2. **Give existing clients notice.** A few months' notice, with the new rate applying to bookings after a set date, is usually enough.
+3. **Raise in steps.** Moderate, regular increases are easier for clients to accept than one big jump.
+4. **Add value as you raise.** A follow-up session, a new tool or an impact report makes the new rate feel fair.
+
+## What buyers should know when hiring a corporate trainer
+
+If you're on the other side, buying training for your team, here's how to compare quotes fairly.
+
+| Question to ask | Why it matters |
+|---|---|
+| What exactly is included in the fee? | One trainer's "day rate" may include tailoring and follow-up; another's may not |
+| How much will the program be tailored? | Generic training is cheaper but often less effective |
+| What happens after the session? | Follow-up and reinforcement are where behaviour change happens |
+| How will you measure impact? | Helps you justify the spend internally |
+| Can we see case studies from similar organisations? | The best predictor of results |
+| What are the travel and materials costs? | Avoids surprises on the invoice |
+| What's your cancellation policy? | Dates matter for both sides |
+
+A useful habit is to compare the cost per participant rather than the day rate. A $4,000 day for 25 managers is $160 per person, which often compares well with sending people to an open course.
+
+## Common pricing mistakes corporate trainers make
+
+- **Charging half the day rate for a half day.** You'll end up working for much less per hour than you think.
+- **Forgetting non-billable days.** Your day rate has to cover sales, design and admin time too.
+- **Not charging for design.** Building a new program from scratch is real work.
+- **Absorbing travel and materials.** These add up quickly.
+- **Pricing like an employee.** Comparing your rate to a salary ignores benefits, gaps between clients and business costs.
+- **No minimums.** Very short sessions or very small groups can lose you money.
+- **Hiding all pricing information.** Buyers may assume you're too expensive and never ask.
+- **Never raising rates.** Costs rise every year, and so should your fees.
+
+## How Speakerfolio helps trainers justify higher fees
+
+Buyers pay higher rates when they can see why you're worth it. That comes down to proof: clear programs, client names, case studies, results and named testimonials, all in one place they can forward to a budget holder.
+
+Speakerfolio builds speakers and trainers a professional website that does exactly that:
+
+- **Free website:** a one-page site on yourname.speakerfolio.com, written and built for you from your LinkedIn profile, with your programs, process, case studies, results, FAQ and a booking form. It includes a profile in the Speakerfolio [speaker directory](https://speakerfolio.com/speakers/), where event planners search by topic and format. Our Trainer template was designed for corporate trainers.
+- **Premium ($100 a year):** a custom design on your own domain, with as many pages as you need, such as a page for each program and its pricing, hosting and updates included.
+- **No commission:** enquiries and bookings go straight to you, so you keep your full fee.
+
+For more on what makes a trainer's website persuasive, see how [corporate trainers win more clients](https://speakerfolio.com/articles/corporate-trainer-website/) with a simple website, or browse our live [speaker website templates](https://speakerfolio.com/templates/).
+
+## Frequently asked questions
+
+### How much do corporate trainers charge per day in 2026?
+
+Independent corporate trainers in the US typically charge about $1,500 to $5,000 per day for standard programs, according to published facilitator fee ranges. High-demand facilitators charge $7,500 to $15,000 or more. In the UK, advertised trainer contracts had a median of £450 per day in the six months to November 2026.
+
+### What is a typical half-day rate for a corporate trainer?
+
+A half day is usually priced at 55% to 75% of the trainer's day rate. Preparation, tailoring and travel take about the same time as for a full day, so half the day rate would undercharge.
+
+### How much do corporate trainers charge per hour?
+
+Published ranges put standard corporate facilitation at about $150 to $300 per hour in the US. Many trainers prefer fixed session fees with a minimum, because short sessions still need full preparation.
+
+### Why are external trainers more expensive than in-house trainers?
+
+An employed training specialist costs a company a few hundred dollars per working day, based on BLS salary data. External trainers charge more because they bring specialist expertise, a tested program and no long-term cost, and because their rate has to cover non-billable time and business expenses.
+
+### Should corporate trainers publish their fees online?
+
+It's optional. Publishing "from" prices filters out small budgets and speeds up decisions. If every program is tailored, explaining how fees work is a good alternative.
+
+### How do I set my day rate as a new corporate trainer?
+
+Add your target income and business costs, divide by a realistic number of billable days (often 60 to 120 a year for independent trainers), and compare the result with market ranges for your topic and region.
+
+### Do corporate trainers charge extra for travel?
+
+Usually, yes. Most add travel at cost or as a flat fee, or include local travel and charge for longer trips. It should be stated clearly in the proposal.
+
+### How often should I raise my training fees?
+
+Review your rates at least once a year. Raise them when you're consistently busy, when most proposals are accepted without negotiation, or when you've added major proof like a big client or a book.
+
+## Set your rate, then show why you're worth it
+
+Corporate trainer fees in 2026 cover a wide range: from below $1,500 a day for trainers starting out to well over $5,000 for specialists and in-demand facilitators, with half days usually priced at 55% to 75% of the day rate. Use the market ranges as a guide, calculate your own floor, and choose a pricing model that pays you for results, not just hours. Then make your value easy to see. Get your [free speaker website](https://speakerfolio.com/contact/#start) from Speakerfolio, and give buyers the programs, proof and booking form they need to say yes at your rate.
+
+*Sources: [US Bureau of Labor Statistics, Training and Development Specialists](https://www.bls.gov/ooh/business-and-financial/training-and-development-specialists.htm); [US Bureau of Labor Statistics, Training and Development Managers](https://www.bls.gov/ooh/management/training-and-development-managers.htm); [TrainingCost.com, Facilitator and Trainer Day Rates 2026](https://trainingcost.com/facilitator-rates); [Online Facilitation Skills, How Much Does a Corporate Workshop Facilitator Cost?](https://onlinefacilitationskills.com/insights/how-much-does-a-corporate-facilitator-cost/); [Ruzuku, How to Price Training Courses (2026)](https://www.ruzuku.com/learn/articles/how-to-price-training-courses); [IT Jobs Watch, Trainer Contracts in the UK](https://www.itjobswatch.co.uk/contracts/uk/trainer.do). Figures checked on 24 November 2026.*
+
+---
+
 # What to Include on a Corporate Trainer Website (with Examples)
 
 URL: https://speakerfolio.com/articles/what-to-include-on-a-corporate-trainer-website/
