@@ -4,6 +4,282 @@
 
 ---
 
+# What AI Conference Organisers Check Before Booking a Speaker
+
+URL: https://speakerfolio.com/articles/what-ai-conference-organisers-check-before-booking-a-speaker/
+Published: 2026-11-24 · Author: Saleh, Speakerfolio
+
+**Before booking a speaker, AI conference organisers check eight things: real hands-on AI experience, a talk that fits their audience's level, how current the content is, video of the speaker on stage, proof from past events, honesty about AI risks and limits, any ties to AI vendors, and how easy the speaker is to work with.** AI is the most requested conference topic right now, so organisers get far more pitches than slots and screen hard for hype. Below is each check explained from the organiser's side, with what passes and what fails, the red flags that get speakers dropped, and how to make every answer easy to find on your speaker website.
+
+> **Key takeaways**
+>
+> - **Experience beats enthusiasm.** Organisers want speakers who have built, shipped, led or studied real AI work.
+> - **Fit matters as much as expertise.** A brilliant technical talk fails in front of executives, and the reverse.
+> - **Freshness is checked.** Old examples and dated predictions are an instant red flag on AI topics.
+> - **Make vetting easy.** Speakers who put talks, video, proof and disclosures on one page get shortlisted faster.
+
+## Why AI conference organisers screen speakers so carefully
+
+AI is the topic everyone wants on their agenda. In Speakers Spotlight's 2026 client survey, [AI and emerging technology came first, chosen by 67% of respondents](https://www.speakers.ca/2026/04/survey-says-trending-topics-in-2026/), ahead of leadership and change management at 50%. BigSpeak's list of [most-booked meeting topics](https://www.bigspeak.com/?p=158478) for Q3 2026 also put artificial intelligence at number one.
+
+High demand brings a flood of speakers. Many people now describe themselves as AI experts, and organisers know their audiences can tell the difference fast. An AI audience often includes engineers, data scientists, product leaders and executives who use these tools every day. A shallow or outdated talk doesn't just disappoint; it can damage the event's reputation and next year's ticket sales.
+
+So AI conference organisers screen harder than they do for most topics. Knowing what they check helps you get through that screen.
+
+## Check 1: Real, hands-on AI experience
+
+The first question is simple: has this person actually done the thing they're talking about?
+
+Organisers look for evidence like:
+
+- AI products, models or features the speaker has built or shipped
+- AI rollouts they've led inside an organisation
+- Published research, patents or open-source work
+- Advisory or leadership roles in AI projects
+- Years in the industry their talk covers
+
+| Passes | Fails |
+|---|---|
+| "Led the rollout of an AI triage tool across 14 emergency departments" | "AI thought leader and futurist" |
+| "Built the recommendation system used by 2 million customers" | "Passionate about the transformative power of AI" |
+| "Researches bias in hiring algorithms at a university lab" | "Completed several AI certifications" |
+
+**What this means for you:** put your real AI work near the top of your speaker page, in specific terms. Projects, roles, numbers and organisations (where you're allowed to name them) do more than titles.
+
+## Check 2: A talk that fits the audience's level
+
+AI conferences vary a lot. A machine learning research event, an AI-for-marketers summit and a board-level AI strategy forum need very different talks. Organisers check whether your talk matches their audience.
+
+| Audience | What they want | What loses them |
+|---|---|---|
+| Engineers and data scientists | Depth, real architecture, trade-offs, lessons from production | Basics, buzzwords, slides with no substance |
+| Business and product leaders | Practical use cases, ROI, implementation, risks | Heavy maths, or pure hype with no plan |
+| Executives and boards | Strategy, governance, competition, investment decisions | Tool demos with no business context |
+| Industry practitioners (healthcare, legal, finance) | Examples from their field, rules and risks they face | Generic examples from other industries |
+| Mixed or general audiences | Clear explanations, stories, what it means for them | Jargon and acronyms |
+
+Organisers often look at your talk descriptions to judge this. A title like "The Future of AI" tells them nothing about level. "Deploying LLMs in Regulated Industries: What Broke and What Worked" or "AI for Finance Teams: Five Uses Worth Doing This Quarter" tells them exactly who it's for.
+
+**What this means for you:** write a short "best for" line under each talk on your website, such as "Best for: CIOs and IT leaders" or "Best for: marketing teams new to AI." And offer to tailor examples to each audience.
+
+## Check 3: How current the content is
+
+In most topics, a good talk lasts years. In AI, examples can feel dated within months. Organisers check freshness closely, especially if they watch an older video of you.
+
+What they look for:
+
+- **Recent examples**, tools and cases, not ones the audience saw a year ago
+- **A clear update habit**: does the speaker refresh the talk for each event?
+- **No dated predictions** that have already been proven wrong
+- **Recent writing or posts** that show the speaker is following the field
+
+| Passes | Fails |
+|---|---|
+| "Updated for every event; examples drawn from the past few months" | The same talk and slides as two years ago |
+| Recent articles, newsletter issues or LinkedIn posts on the topic | Last post on the subject over a year ago |
+| Principles and practices that hold up as tools change | Bold, dated predictions that didn't happen |
+
+**What this means for you:** say on your website that each talk is updated for the event. Keep your most recent video at the top. Link to recent writing.
+
+## Check 4: Video of you on stage
+
+Almost every organiser wants to see you speak before booking. For AI talks, they're watching for two things at once: do you know the subject, and can you hold a room?
+
+They usually look for:
+
+- **A two- to three-minute speaker reel**, to judge energy, clarity and presence
+- **A full-length recent talk**, to judge depth and structure
+- **A clip of a demo or Q&A**, to see how you handle live questions and technology
+
+AI audiences ask hard questions. Organisers like to see a speaker answer a tough question calmly, admit uncertainty when needed, and keep control of the room.
+
+**What this means for you:** put your reel near the top of your speaker page and a full talk one click away. Our guide on how to make a [speaker reel](https://speakerfolio.com/articles/make-a-two-minute-speaker-reel-from-footage-you-already-have/) from footage you already have walks you through it.
+
+## Check 5: Proof from past events
+
+Organisers want to know that other organisers booked you and were glad they did. They check:
+
+- **Events and organisations** you've spoken for
+- **Testimonials from named organisers**, with role and organisation
+- **Audience ratings**, if the event collected them
+- **Repeat bookings**: did anyone invite you back?
+- **References**: some organisers will contact a past client directly
+
+| Passes | Fails |
+|---|---|
+| "Rated 4.8/5 by 600 attendees at the Northern AI Summit" – Priya Shah, Programme Director | "Amazing speaker!" – Anonymous |
+| A list of five or six recent events, with dates | A wall of logos with no context |
+| "Invited back for the 2026 edition" | No mention of past events at all |
+
+If you're early in your speaking career, use what you have honestly: meetups, internal events, podcasts, webinars and university talks all count. Our guide on how to [ask for testimonials](https://speakerfolio.com/articles/ask-for-testimonials-the-right-way-right-after-the-event/) shows how to collect them right after each talk.
+
+## Check 6: Honesty about AI risks and limits
+
+Organisers have seen enough hype. Many now look specifically for speakers who are balanced: clear about the opportunities, and just as clear about the risks.
+
+They look for signals like:
+
+- The speaker discusses bias, privacy, security, accuracy and jobs, not just benefits
+- Claims are backed by sources, and numbers are cited
+- The speaker says "we don't know yet" when that's the honest answer
+- No promises of guaranteed results or "AI will solve everything"
+
+This matters because the organiser's reputation is on the line. A speaker who overpromises, gets facts wrong or dismisses real concerns can cause a backlash on social media and in post-event surveys.
+
+**What this means for you:** include risks and guardrails in your talk descriptions. A line like "covers what to watch out for: data privacy, accuracy and how to keep humans in the loop" reassures organisers.
+
+## Check 7: Ties to AI vendors and products
+
+Many AI speakers work for, invest in, advise or are paid by AI companies. That's not a problem in itself. Hiding it is.
+
+Organisers check:
+
+- **Who the speaker works for** and whether the company sells AI products
+- **Paid partnerships** or sponsorships with AI tools
+- **Whether the talk is educational or a sales pitch**
+- **Whether the event's sponsors** compete with the speaker's company
+
+Most conferences don't want a keynote that turns into a product demo, unless it's a sponsored session clearly labelled as one. Many have rules about this.
+
+**What this means for you:** disclose your relationships upfront, on your website and in your pitch. State clearly that your keynote is educational and vendor-neutral, if it is. If you'll mention your own product, say so and explain how.
+
+## Check 8: How easy you are to work with
+
+Organisers also check practical things, because a great speaker who's hard to work with makes their job harder.
+
+- **Responsiveness:** do you reply quickly and clearly?
+- **Clear formats:** keynote, workshop, panel, fireside chat, virtual
+- **Logistics:** where you're based, travel, tech needs, time zones
+- **Materials ready to go:** short and long bios, headshots, talk descriptions, a one-sheet
+- **Flexibility:** willing to tailor the talk, join a panel, record a promo video
+- **Fees and terms:** clear, or at least an easy way to ask
+
+| Easy to book | Hard to book |
+|---|---|
+| A speaker page with talks, video, bios, headshots and a booking form | A LinkedIn profile and an old PDF |
+| "Replies within 2 working days" | Weeks of silence |
+| A short bio ready to paste into the programme | "I'll send something soon" |
+| Clear tech requirements for demos | Surprise requests on the day |
+
+Our guide on how to create a [speaker one-sheet](https://speakerfolio.com/articles/how-to-create-a-speaker-one-sheet/) shows how to put the essentials on one page organisers can forward.
+
+## Red flags that get AI speakers dropped
+
+Organisers often share these when asked why a speaker didn't make the shortlist:
+
+- **Vague expertise.** Titles like "AI visionary" with no real projects behind them.
+- **Recycled content.** A talk that's clearly been given unchanged for years.
+- **No video**, or only very old video.
+- **Hype over substance.** Big claims, no examples, no mention of risks.
+- **Hidden sales agenda.** A keynote that turns into a pitch for the speaker's product.
+- **Copied or unattributed material.** Slides or stories borrowed from other speakers.
+- **Wrong level for the audience.** Too basic for experts, too technical for executives.
+- **Unreliable logistics.** Slow replies, missing materials, unclear demo needs.
+- **Live demos with no backup.** A failed demo with no recovery plan reflects on the event.
+
+## How AI conference organisers actually find speakers
+
+It helps to know where organisers look, so you can be there:
+
+| Where organisers look | What helps you show up |
+|---|---|
+| Their own network and past speakers | Speak well, stay in touch, ask for referrals |
+| Calls for speakers | Apply early with a specific, audience-focused proposal |
+| Speaker directories | A complete profile with topics, formats and video |
+| Search engines and AI assistants | A speaker website with clear topics and named talks |
+| LinkedIn | Regular posts on your AI niche; a link to your speaker page |
+| Podcasts and articles | Being quoted or interviewed on your topic |
+| Speaker bureaus | Strong video, proof and demand |
+
+Most of these lead back to one place: your speaker page. Wherever an organiser first hears your name, they'll look you up before deciding.
+
+## How to make every check easy to pass on your speaker website
+
+Here's how to answer all eight checks on one page:
+
+| Organiser's check | What to put on your speaker page |
+|---|---|
+| 1. Real experience | A short, specific "AI work" section: projects, roles, results |
+| 2. Audience fit | Each talk with a "best for" line and format |
+| 3. Freshness | "Updated for every event," recent video first, links to recent writing |
+| 4. Video | A reel near the top, a full talk one click away |
+| 5. Proof | Named testimonials, recent events, ratings |
+| 6. Balance | Risks and guardrails mentioned in talk descriptions |
+| 7. Disclosure | A short line on company ties and whether talks are vendor-neutral |
+| 8. Easy to work with | Formats, location, bios, headshots, one-sheet and a booking form |
+
+For layout ideas, see our [keynote speaker website examples](https://speakerfolio.com/articles/keynote-speaker-website-examples/), and our guide to [what event planners look for on a speaker landing page](https://speakerfolio.com/articles/what-event-planners-look-for-on-a-speaker-landing-page/) in the first 10 seconds. If you're still building your AI speaking career, start with how to [become a paid AI keynote speaker](https://speakerfolio.com/articles/how-to-become-a-paid-ai-keynote-speaker/).
+
+## A pitch email that answers the checks upfront
+
+When you pitch an AI conference, answer their questions before they ask. Here's an example you can adapt:
+
+> Subject: Speaker proposal: AI in clinical operations, for Health AI Forum 2027
+>
+> Hi Daniel,
+>
+> I'd like to propose a session for Health AI Forum: "What Broke When We Put AI in 14 Emergency Departments," for clinical and operations leaders.
+>
+> I led the rollout of an AI triage tool across 14 emergency departments over the past two years. The talk covers what worked, what failed, and the guardrails we added for safety and staff trust. It's vendor-neutral, and I update the examples for every event.
+>
+> Here's my speaker page with a two-minute reel, a full talk from the Northern AI Summit and testimonials: [link].
+>
+> Happy to adapt it to a keynote, breakout or panel.
+>
+> Best,
+> Dr. Leila Morgan
+
+In under 150 words, it covers experience, audience fit, freshness, video, proof, balance, disclosure and formats.
+
+## How Speakerfolio helps AI speakers pass the organiser's checks
+
+Speakerfolio builds speakers a professional speaker page that answers organisers' questions in one place, and lists them where planners search.
+
+- **Free speaker website:** written and built for you from your LinkedIn profile, on yourname.speakerfolio.com, usually within two working days. It includes your talks, reel, testimonials, experience and a booking form.
+- **A profile in the Speakerfolio [speaker directory](https://speakerfolio.com/speakers/)**, where event planners search for speakers by topic and format, including technology and AI.
+- **No commission:** booking requests go straight to you.
+- **Premium ($100 a year):** a custom design on your own domain, with as many pages as you need, such as a page for each talk.
+
+Browse our [speaker website templates](https://speakerfolio.com/templates/) to see how each one is laid out.
+
+## Frequently asked questions
+
+### What do AI conference organisers check before booking a speaker?
+
+Real hands-on AI experience, a talk that fits the audience's level, how current the content is, video of the speaker on stage, proof from past events, a balanced view of AI risks, any ties to AI vendors, and how easy the speaker is to work with.
+
+### How do I prove my AI expertise to a conference organiser?
+
+Describe specific projects, rollouts, products or research you've done, with results where you can share them. Add recent writing, a reel and testimonials from people who booked you.
+
+### Do AI conference organisers want technical speakers?
+
+It depends on the audience. Technical conferences want depth and real engineering lessons. Business and industry events want practical uses, strategy and risks explained clearly. Make your talk's level obvious.
+
+### Should I disclose my company or AI product when pitching a talk?
+
+Yes. Organisers check for vendor ties, and hiding them damages trust. Say who you work with and whether your talk is educational and vendor-neutral.
+
+### How recent should my speaker video be?
+
+As recent as possible, ideally from the past year. For AI topics, older video can make your content look outdated even if you've updated it.
+
+### What gets AI speakers rejected?
+
+Vague expertise, recycled content, no recent video, hype without substance, hidden sales pitches, the wrong level for the audience and unreliable communication.
+
+### How do AI conference organisers find speakers?
+
+Through their own networks, calls for speakers, speaker directories, search engines, LinkedIn, podcasts and speaker bureaus. Wherever they find you, they'll usually check your speaker page before deciding.
+
+## Pass the check before they ask
+
+AI conference organisers aren't looking for the loudest voice on AI. They're looking for speakers with real experience, a talk that fits their audience, current content, honest views on risk and an easy booking process. Answer those questions upfront, on your speaker page and in your pitch, and you'll stand out from a crowded field. When you're ready, get your [free speaker website](https://speakerfolio.com/contact/#start) from Speakerfolio, built to put all of it in one place.
+
+*Sources: [Speakers Spotlight, Survey Says: Trending Topics in 2026](https://www.speakers.ca/2026/04/survey-says-trending-topics-in-2026/); [BigSpeak, Most-Booked Meeting Topics](https://www.bigspeak.com/?p=158478).*
+
+---
+
 # What Event Planners Actually Look for on a Speaker’s Landing Page (in the First 10 Seconds)
 
 URL: https://speakerfolio.com/articles/what-event-planners-look-for-on-a-speaker-landing-page/
