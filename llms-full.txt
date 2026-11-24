@@ -4,6 +4,272 @@
 
 ---
 
+# What Event Planners Actually Look for on a Speaker’s Landing Page (in the First 10 Seconds)
+
+URL: https://speakerfolio.com/articles/what-event-planners-look-for-on-a-speaker-landing-page/
+Published: 2026-11-24 · Author: Saleh, Speakerfolio
+
+**In the first 10 seconds on a speaker's landing page, event planners look for seven things: who you are, what you look like on stage, what changes for their audience, who you speak to, proof that others have booked you, a way to see you speak and an obvious way to book you.** If those answers sit on the first screen, planners keep scrolling. If they have to hunt, many leave and check the next name on their shortlist. Below, each of the seven is shown on a real speaker landing page from Speakerfolio's templates, with weak and strong examples, a 10-second test you can run on your own page and the fixes that matter most.
+
+> **Key takeaways**
+>
+> - **The first screen does most of the work.** Usability research shows people often leave pages within 10 to 20 seconds and spend most of their viewing time above the fold.
+> - **Planners are checking fit, not reading your story.** Audience, topic, proof and price signals come first. Your biography can wait.
+> - **One clear button beats five links.** "Book Adrian" or "Check availability" tells a planner exactly what to do.
+> - **Test it on a phone.** Many planners look you up between meetings, so the first screen on mobile matters just as much.
+
+## Why the first 10 seconds matter so much
+
+The "10 seconds" isn't a marketing slogan. It comes from usability research.
+
+The Nielsen Norman Group, one of the best-known usability research firms, found that [users often leave web pages in 10 to 20 seconds](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/). Pages that keep people longer have something in common: a clear value proposition. Their advice is direct: to earn several minutes of attention, a page has to communicate its value within 10 seconds. The research also found that once someone stays past the first 30 seconds or so, they're much more likely to keep reading.
+
+A second Nielsen Norman Group study looked at where attention goes on a page. People spent [about 57% of their viewing time above the fold](https://www.nngroup.com/articles/scrolling-and-attention/), the part of the page visible before scrolling, and 74% within the first two screens. They do scroll, but the top of the page gets the most attention by far.
+
+Now think about how an event planner uses your page. They're usually not browsing for fun. They're comparing three to ten speakers for one slot, often with a deadline and a committee waiting. They open your page, check a few things fast, and either keep going or close the tab. Your first screen is your pitch.
+
+## How event planners actually look at a speaker landing page
+
+Planners rarely read a speaker page from top to bottom. They scan for answers to a short list of questions, roughly in this order:
+
+| Second | The planner's question | What answers it |
+|---|---|---|
+| 0–2 | Is this the right person, and do they look the part? | Name, photo on stage, overall look |
+| 2–5 | Will this speaker fit my audience and theme? | Headline promise, topic, who you speak to |
+| 5–8 | Are they credible? Have others booked them? | Numbers, client logos, a short testimonial |
+| 8–10 | Can I see them speak, and how do I get in touch? | Video link, booking button |
+
+Speakers often fill the first screen with things planners don't need yet: a long quote, a full biography, a slideshow, or a list of every title they've held. Those can go further down. The first screen has one job: to make the planner think, "this could work, let me look closer."
+
+## The 7 things planners look for, shown on a real landing page
+
+Here's the first screen of the Ignite template, built for motivational keynote speakers. Adrian Cole is the demo speaker. The numbers mark the seven things planners look for.
+
+[![Speaker landing page first screen from the Speakerfolio Ignite template, with seven numbered markers: name, stage photo, headline promise, who and what line, booking buttons, navigation to talks and video, and proof numbers](https://speakerfolio.com/assets/img/layouts/speaker-landing-page-first-screen.webp)](https://speakerfolio.com/templates/ignite.html)
+
+*The first screen of the Ignite template: everything a planner needs in the first 10 seconds, before they scroll. Click to open the live template.*
+
+| # | What planners look for | Where it is on this page |
+|---|---|---|
+| 1 | Your name, clearly | Top left, large |
+| 2 | A real photo of you | The full-screen image behind the headline |
+| 3 | What changes for their audience | The headline |
+| 4 | Who you speak to and what you deliver | The one-line description under it |
+| 5 | An obvious way to book | "Book Adrian" in the menu and beside the headline |
+| 6 | A quick route to talks and video | The menu: Story, Talks, Video, Events, Book |
+| 7 | Proof that others have booked you | Stages, people reached, countries, TEDx views |
+
+The sections below look at each one.
+
+### 1. Your name, clearly
+
+It sounds obvious, but planners often arrive from a recommendation, a speaker directory or a search result. The first thing they need is confirmation they're on the right page. Put your name large in the header, in plain text, not just in a stylised logo.
+
+If you have a brand name for your speaking business, keep your personal name more prominent. Planners book people.
+
+### 2. A real photo of you, ideally on stage
+
+The photo is usually the first thing the eye lands on. It tells a planner what you look like, how you'll come across to their audience and whether you look experienced.
+
+| Weak | Strong |
+|---|---|
+| A cropped passport-style headshot | You on stage, with a microphone or an audience in view |
+| A stock photo or illustration | A recent, well-lit photo that looks like you today |
+| A group photo where you're hard to spot | You clearly in focus, with room for text beside you |
+
+A studio portrait can work if it's warm and professional, but a stage photo does something a portrait can't: it lets planners picture you at their event.
+
+### 3. A headline about the audience, not about you
+
+This is the most important line on your page. Planners are looking for a speaker who will do something for their audience. Your headline should say what that is.
+
+| Weak | Strong |
+|---|---|
+| "Award-winning international keynote speaker" | "Your team is about to start. Keynotes that get people moving the same day." |
+| "Inspiring audiences worldwide" | "I train managers to lead through change" |
+| "Speaker, author, coach, consultant" | "AI for hospital leaders: what's working now" |
+| "Welcome to my website" | "Your hardest chapter can become your strength" |
+
+A useful test: could another speaker put your headline on their page? If yes, it's too generic. The strongest headlines name the audience, the change, or both.
+
+### 4. Who you speak to and what you deliver
+
+Right under the headline, add one or two short lines that make the fit obvious: the format (keynotes, workshops, training), the audience (sales teams, school leaders, nurses) and the outcome.
+
+For example: "Motivational keynotes that get teams and students moving, the same day." In one line, a planner knows the format (keynotes), the audience (teams and students) and the promise (they'll get moving).
+
+Planners often have a brief that lists their audience and theme. The closer your one-liner matches their brief, the faster they shortlist you.
+
+### 5. One obvious way to book
+
+Planners who like what they see want to check your availability. Make that easy:
+
+- **Use one main button** in a contrasting colour, with clear words: "Book Adrian," "Check availability" or "Book a discovery call."
+- **Repeat it** in the top menu so it stays visible as they scroll.
+- **Don't compete with yourself.** Five buttons on the first screen ("Watch," "Subscribe," "Buy my book," "Follow me," "Contact") mean none of them stands out.
+- **Lead to a short form.** Name, organisation, date, audience size and a message is enough.
+
+"Contact" is weaker than a button that names the action. Planners want to know what happens when they click.
+
+### 6. A quick route to your talks and video
+
+Most planners won't book without seeing two things: what you speak about and what you're like on stage. They may not find those on the first screen, but they should be one click away.
+
+A simple menu does this: Talks, Video, Events, Book. Short labels that match what planners are looking for work far better than creative ones like "My Journey" or "The Experience."
+
+If your speaker reel is strong, consider putting a "Watch Adrian speak" link right in the hero. Our guide on how to make a [speaker reel](https://speakerfolio.com/articles/make-a-two-minute-speaker-reel-from-footage-you-already-have/) shows how to make one from footage you already have.
+
+### 7. Proof that others have booked you
+
+The last thing planners check in those first seconds is whether you're a safe choice. A row of numbers or client names does that quickly:
+
+- Stages or events you've spoken at
+- People or audiences reached
+- Countries or cities
+- Organisations you've worked with
+- Video views or a strong rating
+
+| Weak | Strong |
+|---|---|
+| "Highly experienced speaker" | "600+ stages · 1.2M people reached · 38 countries" |
+| "Worked with leading organisations" | "Trusted by 35 companies · 4.9/5 average session rating" |
+| No proof until halfway down the page | A short row of proof directly under the hero |
+
+Only use numbers you can stand behind. If you're newer, use what you have honestly: "40 talks for schools and nonprofits," "Featured on the Health Leaders podcast," or a short quote from a named organiser.
+
+## On a phone, the first screen is even smaller
+
+Many planners first look a speaker up on their phone, between meetings or on the way to a site visit. A layout that works on a big screen can push your name, headline and button off the first mobile screen.
+
+[![Two speaker landing pages on phone screens: the Ignite template with photo, headline, booking button and proof numbers, and the Trainer template with headline, description, discovery call button and a trust line](https://speakerfolio.com/assets/img/layouts/speaker-landing-page-mobile.webp)](https://speakerfolio.com/templates/trainer.html)
+
+*The Ignite and Trainer templates on a phone. Both keep the headline, a booking button and a line of proof within the first screen or a short scroll.*
+
+Check your own page on a phone and ask:
+
+- Can I see your name and headline without scrolling?
+- Is the booking button visible within one short scroll?
+- Is the text big enough to read without zooming?
+- Does the photo still show your face, or is it cropped awkwardly?
+- Does the page load quickly on mobile data?
+
+If the answer to any of those is no, fix it before anything else. A page that works on a phone almost always works on a laptop too.
+
+## What planners don't need in the first 10 seconds
+
+Some things belong on your page, just not at the top:
+
+| Move it further down | Why |
+|---|---|
+| Your full biography | Planners check fit first, then read about you if they're interested |
+| Long quotes from famous people | They take space and say nothing about you |
+| Auto-playing video with sound | It annoys people, especially in an office |
+| Pop-ups asking for an email | They block the page before the planner has seen anything |
+| A long list of titles and certifications | One or two that matter are enough near the top |
+| Your newsletter, podcast and shop | Useful, but they compete with the booking button |
+| Slideshows that rotate messages | Planners only see one slide, often the weakest |
+
+## The 10-second test: check your own landing page
+
+Try this today. It takes five minutes.
+
+1. **Find someone who doesn't know your work.** A friend, colleague or family member.
+2. **Show them your landing page on a phone for 10 seconds.** Then take it away.
+3. **Ask them five questions:**
+   - What's this person's name?
+   - What do they speak about?
+   - Who would book them?
+   - Do they seem experienced? Why?
+   - How would you book them?
+4. **Write down their answers.** Anything they can't answer is missing or hidden on your first screen.
+
+Then repeat it on a laptop. Most speakers find at least one gap. The most common: a headline that doesn't say what the speaker talks about, and a booking button that's hard to find.
+
+### A quick checklist
+
+| On my first screen... | Yes / No |
+|---|---|
+| My name is clear and large | |
+| There's a recent photo of me, ideally on stage | |
+| The headline says what changes for the audience | |
+| A short line says who I speak to and what I deliver | |
+| There's one clear booking button, with a specific label | |
+| My talks and video are one click away | |
+| There's at least one line of proof | |
+| It all works on a phone | |
+| The page loads in a couple of seconds | |
+
+## What happens after the first 10 seconds
+
+The first screen earns attention. The rest of the page turns it into a booking request. Once a planner scrolls, they're looking for detail in roughly this order:
+
+1. **Your talks:** titles, formats, lengths and takeaways
+2. **Your speaker reel:** two or three minutes of you on stage
+3. **Testimonials:** named organisers saying what happened at their event
+4. **Your story:** why you're credible on this topic
+5. **Logistics:** where you're based, travel, virtual options, how fees work
+6. **The booking form:** short and easy
+
+Our [keynote speaker website examples](https://speakerfolio.com/articles/keynote-speaker-website-examples/) show eight layouts for the full page, and our checklist of [what every speaker website needs](https://speakerfolio.com/articles/what-every-speaker-website-needs/) covers each section in more detail.
+
+## Common first-screen mistakes on speaker landing pages
+
+- **A clever headline that doesn't say anything.** "Ignite your potential" could be a gym, a coach or a bank.
+- **No photo of you, or a photo that's years old.**
+- **Too many buttons.** Planners can't tell which one matters.
+- **A vague "Contact" link instead of a booking button.**
+- **No proof until halfway down the page.**
+- **Slow loading** because of huge images or video in the hero.
+- **A layout that breaks on mobile**, with the headline hidden behind a menu or the button below several screens of photo.
+- **Writing about yourself instead of the audience.** Count the "I"s and "you"s in your first screen.
+
+## How Speakerfolio builds landing pages planners can scan in 10 seconds
+
+Every Speakerfolio template is built around the way planners look at a speaker page: your name, a strong photo, a headline about the audience, proof and a booking button on the first screen, with talks, video, testimonials and a booking form below.
+
+- **Free speaker website:** Speakerfolio writes and builds your one-page landing page from your LinkedIn profile, on yourname.speakerfolio.com, usually within two working days. Choose from six [speaker website templates](https://speakerfolio.com/templates/), including Ignite for motivational speakers and Trainer for corporate trainers.
+- **A profile in the Speakerfolio [speaker directory](https://speakerfolio.com/speakers/)**, where event planners search by topic and format.
+- **No commission:** booking requests go straight to you.
+- **Premium ($100 a year):** a custom design on your own domain, with more pages, hosting and updates included.
+
+## Frequently asked questions
+
+### What do event planners look for on a speaker's website?
+
+In the first few seconds: your name, a photo of you, a headline that says what changes for their audience, who you speak to, proof that others have booked you, a way to see you speak and a clear booking button. After that, they look at your talks, reel, testimonials and logistics.
+
+### How long do event planners spend on a speaker's landing page?
+
+There's no planner-specific study, but usability research shows people often leave web pages within 10 to 20 seconds unless the value is clear. Planners comparing several speakers tend to scan quickly, so the first screen matters most.
+
+### What should be above the fold on a speaker landing page?
+
+Your name, a recent photo, a headline about the audience, a one-line description of what you deliver, one booking button and a short line of proof, such as numbers or client names.
+
+### Should I put my speaker reel on the first screen?
+
+If your reel is strong, a "Watch me speak" link in the hero helps. Avoid auto-playing video with sound. Many speakers put the full reel in the section right after the hero.
+
+### What's the best headline for a speaker landing page?
+
+One that names the audience, the change or both, such as "I train managers to lead through change." Avoid generic titles like "International keynote speaker" that any speaker could use.
+
+### Should my speaker landing page show my fees?
+
+Not on the first screen. Fee information fits better in your FAQ or near your booking form, where planners look for it once they're interested.
+
+### How do I test whether my landing page works?
+
+Run the 10-second test: show the page to someone who doesn't know you for 10 seconds, then ask your name, topic, audience, why you're credible and how to book you. Anything they can't answer needs fixing.
+
+## Win the first 10 seconds
+
+Event planners don't read speaker pages. They scan them, fast, looking for fit, proof and a way to book. Put your name, a real photo, an audience-focused headline, a one-line description, one clear button and a line of proof on your first screen, make sure it works on a phone, and move everything else further down. Then run the 10-second test and fix what's missing. When you're ready, get your [free speaker website](https://speakerfolio.com/contact/#start) from Speakerfolio, built to pass that test from day one.
+
+*Sources: [Nielsen Norman Group, How Long Do Users Stay on Web Pages?](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/); [Nielsen Norman Group, Scrolling and Attention](https://www.nngroup.com/articles/scrolling-and-attention/).*
+
+---
+
 # How to Become a Paid AI Keynote Speaker in 2026
 
 URL: https://speakerfolio.com/articles/how-to-become-a-paid-ai-keynote-speaker/
