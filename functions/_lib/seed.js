@@ -547,6 +547,13 @@ export const PATCHES = [
       { url: 'https://www.youtube.com/shorts/YfLmVUEO6ZE', title: 'S.U.P.P.O.R.T.: A Word for Fathers', note: 'Fathers & Men Symposium' },
       { url: 'https://www.youtube.com/shorts/e17zOw9UULc', title: 'Your You Season', note: "The Preacher's Corner" }
     ] } },
+  { id: 'rudolph-pivot-video-2026-11-24', slug: 'rudolph-mills',
+    set: { videos: [
+      { url: 'https://www.youtube.com/watch?v=L690UGr2CdI', title: 'The Pivot', note: 'Training \u00b7 Healthy Baby Network 30th Anniversary Gala' },
+      { url: 'https://www.youtube.com/watch?v=TTywI9uGd70', title: 'Faith Over Fear', note: 'Daily Devotion' },
+      { url: 'https://www.youtube.com/shorts/YfLmVUEO6ZE', title: 'S.U.P.P.O.R.T.: A Word for Fathers', note: 'Fathers & Men Symposium' },
+      { url: 'https://www.youtube.com/shorts/e17zOw9UULc', title: 'Your You Season', note: "The Preacher's Corner" }
+    ] } },
   { id: 'subdomain-websites-2026-11-18a', slug: 'rudolph-mills', links: { website: 'https://rudolphmills.speakerfolio.com/' } },
   { id: 'rudolph-instagram-2026-11-18', slug: 'rudolph-mills', links: { instagram: 'https://www.instagram.com/r.v.mills3rd/' } },
   { id: 'ayman-website-2026-11-11', slug: 'ayman-nassar', links: { website: 'https://aymannassar.speakerfolio.com/' } },
