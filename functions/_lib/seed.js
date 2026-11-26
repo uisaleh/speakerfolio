@@ -520,6 +520,41 @@ export const SEEDS = [
     links: { website: 'https://sadiqzahir.speakerfolio.com/', instagram: 'https://www.instagram.com/sadiqzahirspeaks/' },
     bookingEmail: 'sadiqzahirspeaks@gmail.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website by email (no LinkedIn), Free plan only, 23 Nov 2026'
+  },
+  {
+    name: 'Atul Jagga',
+    slug: 'atul-jagga',
+    photo: '/assets/seed/atul-jagga.webp',
+    headline: 'Speaker, author, CPA (Ontario) and RCIC-IRB. Founder of The Biz Plans and author of Business Plan Essentials',
+    speakerType: 'Author and speaker',
+    topics: ['Entrepreneurship', 'Finance', 'Business'],
+    formats: ['Keynote', 'Workshop', 'Panel', 'Virtual'],
+    location: 'Toronto, Ontario',
+    languages: 'English, Hindi, Punjabi',
+    travel: '',
+    audience: 'Entrepreneurs, startups and accelerators, small and mid-sized businesses, lenders and investors, immigration professionals, business associations',
+    fee: '',
+    shortBio: 'Atul Jagga is a CPA (Ontario) and licensed RCIC-IRB, and the founder of The Biz Plans in Toronto. He speaks on business plans, financial models and pitch decks that lenders, investors and immigration officers can rely on.',
+    bio: 'Atul Jagga is a CPA (Ontario) and licensed RCIC-IRB, and the founder of The Biz Plans in Toronto. He works at the intersection of business strategy, finance and Canadian immigration, advising entrepreneurs, businesses and professional firms on business planning, financial modelling and corporate finance.\nHis background includes senior finance roles at Moneris, Payfirma and Idea Cellular, where he managed a revenue portfolio of about $150 million and worked on projects involving RBC, BMO and CIBC.\nAtul holds an MBA in Finance and Strategy from UBC and an MBA in Marketing and Operations from Panjab University, has completed CFA Level I and CBV Level II, and is the author of Business Plan Essentials. He also created TheBizPlanAI, a free AI business plan generator, and mentors entrepreneurs with Futurpreneur.',
+    talks: [
+      { title: 'Funding-Ready Business Plans', format: 'Keynote', length: '',
+        summary: 'What lenders and investors look for in a business plan, and how to build one that gets a yes.',
+        takeaways: ['What lenders check first', 'Assumptions you can defend', 'One clear story, start to finish'] },
+      { title: 'Financial Models That Hold Up', format: 'Workshop', length: '',
+        summary: 'Multi-year projections, cash flow, scenarios and break-even analysis, explained step by step.',
+        takeaways: ['Realistic projections', 'Cash flow and scenario planning', 'Know your break-even point'] },
+      { title: 'Pitch Decks That Get Meetings', format: 'Keynote', length: '',
+        summary: 'How to turn your business plan into a short, credible deck for investors and lenders.',
+        takeaways: ['The story investors expect', 'Your numbers on one slide', 'Answers to the hard questions'] },
+      { title: 'Business Plans for Canadian Immigration', format: 'Keynote', length: '',
+        summary: 'What makes an immigration business plan credible for C11 Significant Benefit, PNP Entrepreneur, Start-Up Visa and Intra-Company Transfer applications.',
+        takeaways: ['What officers look for', 'Why plans fall short', 'Evidence that supports the plan'] }
+    ],
+    events: [],
+    quotes: [],
+    links: { website: 'https://atuljagga.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/atul-jagga-68208827' },
+    bookingEmail: 'akshi.gakhar@gmail.com',
+    published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-5234), 26 Nov 2026'
   }
 ];
 
