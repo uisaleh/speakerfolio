@@ -632,7 +632,7 @@ export const SEEDS = [
     photo: '/assets/seed/matthew-harless.webp',
     headline: 'Registered nurse, writer and speaker on moral injury in nursing. Author of How Healthcare Dies and host of The Moral Injury Hour',
     speakerType: 'Author and speaker',
-    topics: ['Healthcare', 'Health and wellbeing', 'Leadership'],
+    topics: ['Health and wellbeing', 'Leadership', 'HR and culture'],
     formats: ['Keynote', 'Workshop'],
     location: 'Covington, Indiana',
     languages: 'English',
