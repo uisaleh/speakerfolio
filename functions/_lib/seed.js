@@ -555,6 +555,44 @@ export const SEEDS = [
     links: { website: 'https://atuljagga.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/atul-jagga-68208827' },
     bookingEmail: 'akshi.gakhar@gmail.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-5234), 26 Nov 2026'
+  },
+  {
+    name: 'Nick Jonsson',
+    slug: 'nick-jonsson',
+    photo: '/assets/seed/nick-jonsson.webp',
+    headline: 'Global keynote speaker, executive coach, counsellor and psychotherapist. #1 bestselling author of Executive Loneliness',
+    speakerType: 'Keynote speaker and executive coach',
+    topics: ['Leadership', 'Health and wellbeing', 'Motivation'],
+    formats: ['Keynote', 'Workshop', 'Panel'],
+    location: 'Singapore',
+    languages: 'English, Swedish',
+    travel: 'Available for international engagements',
+    audience: 'Executives, founders, leadership teams, HR leaders and corporate conferences',
+    fee: '',
+    shortBio: 'Nick Jonsson is a TEDx speaker, executive coach, counsellor and psychotherapist based in Singapore, and the international bestselling author of Executive Loneliness. He speaks on executive loneliness, psychological safety, holistic leadership and resilience.',
+    bio: 'Nick Jonsson is a TEDx speaker, executive coach, counsellor and psychotherapist based in Singapore, and the international bestselling author of Executive Loneliness. Ranked #28 among the Global Gurus Top 30 Coaching Professionals in 2026, he works with executives, founders and leadership teams around the world.\nAfter more than two decades in senior international leadership, including ten years as co-founder and managing director of EGN Singapore, Nick rebuilt his life after burnout, addiction and loneliness. That experience is the foundation of his work today. He is the creator of the 5 Steps to Holistic Leadership (Surrender, Purpose, Connection, Goals, Discipline) and host of The Limitless Podcast, with more than 300 episodes.\nNick is a Professional Certified Coach (PCC) with the ICF, a Certified Master Coach (CMC), faculty with Duke Corporate Education, an educator with Emeritus and an HRD Corp registered trainer in Malaysia. He is signed with A-Speakers and is a top 2% IRONMAN All-World Athlete.',
+    talks: [
+      { title: 'Executive Loneliness: Successful but Lonely at the Top', format: 'Keynote', length: '',
+        summary: 'His signature keynote, from his #1 bestselling book: why so many high achievers feel isolated, what it costs them and their teams, and the pathways back to connection.',
+        takeaways: ['Why leaders feel alone', 'The cost to wellbeing and performance', 'Pathways back to connection'] },
+      { title: 'Burnout to Breakthrough: The Power of Starting Over', format: 'Keynote', length: '',
+        summary: 'His own story of burnout, recovery and rebuilding, and what it teaches leaders about starting over with purpose.',
+        takeaways: ['Seeing burnout early', 'Rebuilding through purpose', 'The courage to start over'] },
+      { title: 'The 5 Steps to Holistic Leadership', format: 'Keynote', length: '',
+        summary: 'His framework for performing at your best without sacrificing your wellbeing: Surrender, Purpose, Connection, Goals and Discipline.',
+        takeaways: ['Surrender and purpose', 'Connection and goals', 'Discipline, one step at a time'] },
+      { title: 'Psychological Safety and High-Performing Teams in the AI Era', format: 'Workshop', length: '',
+        summary: 'How leaders build the trust that lets people speak up, and why it matters more as teams change with AI.',
+        takeaways: ['Trust and speaking up', 'Leading high-performing teams', 'Wellbeing in the AI era'] },
+      { title: 'Resilience: Lessons from an IRONMAN', format: 'Keynote', length: '',
+        summary: 'What endurance racing taught a former executive about discipline, mental toughness and bouncing back.',
+        takeaways: ['Discipline and consistency', 'Physical and mental strength', 'Bouncing back'] }
+    ],
+    events: [],
+    quotes: [],
+    links: { website: 'https://nickjonsson.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/nick-jonsson/', youtube: 'https://youtu.be/iVQEv4fxSb0' },
+    bookingEmail: 'nick@nickjonsson.com',
+    published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-9252, Free plan, Spotlight template), 24 Nov 2026'
   }
 ];
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nickjonsson.speakerfolio.com/sitemap.xml
