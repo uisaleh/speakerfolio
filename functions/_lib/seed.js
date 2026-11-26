@@ -625,6 +625,41 @@ export const SEEDS = [
     links: { website: 'https://meredithbaker.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/meredithbaker07', youtube: 'https://www.youtube.com/@MeredithBaker', instagram: 'https://www.instagram.com/themeredithbaker/', facebook: 'https://www.facebook.com/meredithbaker07' },
     bookingEmail: 'me@themeredithbaker.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-3270, Free plan), 25 Nov 2026'
+  },
+  {
+    name: 'Matthew Harless',
+    slug: 'matthew-harless',
+    photo: '/assets/seed/matthew-harless.webp',
+    headline: 'Registered nurse, writer and speaker on moral injury in nursing. Author of How Healthcare Dies and host of The Moral Injury Hour',
+    speakerType: 'Author and speaker',
+    topics: ['Healthcare', 'Health and wellbeing', 'Leadership'],
+    formats: ['Keynote', 'Workshop'],
+    location: 'Covington, Indiana',
+    languages: 'English',
+    travel: '',
+    audience: 'Nursing schools, hospital leaders, faith communities and nursing coalitions',
+    fee: '',
+    shortBio: 'Matthew Harless is a writer and working registered nurse with nearly twenty years at the bedside. He speaks on moral injury in nursing, hope-informed care and the systemic roots of the nursing workforce crisis.',
+    bio: 'Matthew Harless is a writer and working registered nurse in Covington, Indiana. For nearly twenty years he has cared for patients in psychiatric units, emergency departments, med-surg floors and hospital resource teams across Indiana, and learned that much of what we call burnout is really moral injury: the slow wound of being forced, shift after shift, to act against the values that called you to care.\nHe is the author of How Healthcare Dies: And How Hope Brings It Back to Life and Transition to Care: A Guide for New Nurses, host of The Moral Injury Hour, co-founder of The Business of Hope with Ashley Chancellor and creator of The Harless Method. He publishes a weekly letter for nurses and the people who lead them on Substack.\nMatthew speaks to nursing schools, hospital leaders, faith communities and coalitions about moral injury, hope-informed care and the systemic roots of the nursing workforce crisis.',
+    talks: [
+      { title: 'Moral Injury Is Not Burnout', format: 'Keynote', length: '',
+        summary: 'Why so much of what we call burnout is really moral injury, and how nurses and leaders can start to heal it.',
+        takeaways: ['Burnout versus moral injury', 'What it costs nurses and patients', 'Where healing starts'] },
+      { title: 'How Healthcare Dies, and How Hope Brings It Back', format: 'Keynote', length: '',
+        summary: 'From his book: unsafe staffing, decisions made far from the bedside, and the practical work of rebuilding hope.',
+        takeaways: ['The systemic roots of the crisis', 'What unsafe staffing does', 'Rebuilding hope'] },
+      { title: 'Hope-Informed Care', format: 'Workshop', length: '',
+        summary: 'Practical tools for leaders and teams, using The Harless Method and the free Hope Assessment.',
+        takeaways: ['Measuring hope', 'The Harless Method', 'Tools for teams'] },
+      { title: 'Transition to Care', format: 'Keynote', length: '',
+        summary: 'For nursing students and new graduates: what new nurses need that most orientations skip.',
+        takeaways: ['The first years of practice', 'Staying in the profession', 'Honest, practical advice'] }
+    ],
+    events: [],
+    quotes: [],
+    links: { website: 'https://matthewharless.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/matthew-harless-71a270a1/', youtube: 'https://youtube.com/shorts/qns7KMx0ntA', facebook: 'https://www.facebook.com/p/Matthew-Harless-100076467751968/' },
+    bookingEmail: 'matthew.harless@gmail.com',
+    published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-7111, Free plan, Studio template), 25 Nov 2026'
   }
 ];
 
