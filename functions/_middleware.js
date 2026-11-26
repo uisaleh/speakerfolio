@@ -4,7 +4,7 @@
 
 const SKIP = new Set(['www']);
 // Client sites that live only on their subdomain: the folder address on the main domain or pages.dev redirects there.
-const CLIENTS = new Set(['aymannassar', 'robertabogany', 'admiraljim', 'anthonybaptiste', 'kudramohammed', 'rudolphmills', 'joshmccartney', 'peteakennedy', 'sadiqzahir', 'atuljagga', 'nickjonsson']);
+const CLIENTS = new Set(['aymannassar', 'robertabogany', 'admiraljim', 'anthonybaptiste', 'kudramohammed', 'rudolphmills', 'joshmccartney', 'peteakennedy', 'sadiqzahir', 'atuljagga', 'nickjonsson', 'meredithbaker']);
 // Client sites taken down at the client's request: answer 410 Gone so search engines drop them quickly.
 const REMOVED = new Set(['emilyadams']);
 // Google Analytics: every client page carries the tag in its file; this adds it to any page that is missing it.

@@ -593,6 +593,38 @@ export const SEEDS = [
     links: { website: 'https://nickjonsson.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/nick-jonsson/', youtube: 'https://youtu.be/iVQEv4fxSb0' },
     bookingEmail: 'nick@nickjonsson.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-9252, Free plan, Spotlight template), 24 Nov 2026'
+  },
+  {
+    name: 'Meredith Baker',
+    slug: 'meredith-baker',
+    photo: '/assets/seed/meredith-baker.webp',
+    headline: 'Leadership coach and keynote speaker helping leaders connect to themselves so they can inspire others. 10,000+ coaching hours',
+    speakerType: 'Keynote speaker and leadership coach',
+    topics: ['Leadership', 'Health and wellbeing', 'Motivation'],
+    formats: ['Keynote', 'Workshop'],
+    location: 'Los Angeles, California',
+    languages: 'English, Spanish, Portuguese',
+    travel: '',
+    audience: 'Leaders, leadership teams, companies, conferences and team offsites',
+    fee: '',
+    shortBio: 'Meredith Baker is a Los Angeles leadership coach and keynote speaker on self-trust, inner confidence and authentic connection. A Master Certified Life Coach accredited through the ICF, she has more than 10,000 coaching hours.',
+    bio: 'Meredith Baker is a leadership coach, keynote speaker and facilitator in Los Angeles who helps leaders connect to themselves so they can inspire others. She is a Master Certified Life Coach accredited through the ICF, an NLP practitioner, a certified breathwork facilitator and a 500-hour yoga, meditation and breathwork instructor, with more than 10,000 coaching hours.\nShe studied at Harvard College and holds an MSc from the University of Oxford. Raised by an astronaut, she has completed an Ironman, run more than 25 marathons and travelled to 54 countries, experiences that taught her it is not what we do, but why we do it, that connects us to ourselves and others.\nMeredith runs Meredith Baker Coaching, offering executive coaching and team facilitation, and co-founded More Of That, which has led thousands of people through connective experiences in Los Angeles and San Francisco. Earlier, she wrote and reported for BBC Worldwide, the Houston Chronicle and KHOU-TV.',
+    talks: [
+      { title: 'It’s Not What You Do, It’s Why You Do It', format: 'Keynote', length: '',
+        summary: 'Lessons from Harvard, Oxford, an Ironman, 25+ marathons and 54 countries on leading from purpose instead of pressure.',
+        takeaways: ['Lead from your internal compass', 'Let go of people-pleasing', 'Find meaning in the why'] },
+      { title: 'Authentic Connection for Teams', format: 'Workshop', length: '',
+        summary: 'An interactive, joyful team experience that helps people know each other, and themselves, better.',
+        takeaways: ['Playful, hands-on activities', 'Breathwork and mindfulness', 'Real conversations, not small talk'] },
+      { title: 'Inner Confidence and Self-Trust', format: 'Workshop', length: '',
+        summary: 'A practical leadership workshop on building the self-trust behind confident decisions and honest leadership.',
+        takeaways: ['Tools to use the same day', 'Confidence under pressure', 'Honest, human leadership'] }
+    ],
+    events: [],
+    quotes: [],
+    links: { website: 'https://meredithbaker.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/meredithbaker07', youtube: 'https://www.youtube.com/@MeredithBaker', instagram: 'https://www.instagram.com/themeredithbaker/', facebook: 'https://www.facebook.com/meredithbaker07' },
+    bookingEmail: 'me@themeredithbaker.com',
+    published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-3270, Free plan), 25 Nov 2026'
   }
 ];
 
