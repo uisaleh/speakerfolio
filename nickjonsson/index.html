@@ -64,6 +64,7 @@ a{color:inherit}
 .beam{position:absolute;left:58%;top:-10%;width:34%;height:110%;background:linear-gradient(180deg,rgba(255,217,184,.22),rgba(255,217,184,0) 85%);clip-path:polygon(40% 0,60% 0,100% 100%,0 100%);filter:blur(2px)}
 .hero-ph{position:absolute;right:9%;bottom:0;height:92%;max-width:52%;object-fit:contain;object-position:right bottom}
 @media (min-width:1001px) and (max-width:1240px){.hero-ph{right:0}}
+.hero h1{font-size:72px!important}@media (max-width:1240px){.hero h1{font-size:58px!important}}@media (max-width:700px){.hero h1{font-size:clamp(28px,9vw,40px)!important}}
 .hero-sh{position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,13,14,.95) 0%,rgba(13,13,14,.6) 45%,rgba(13,13,14,0) 75%)}
 .hero-c{position:relative;padding:190px 0 112px;max-width:700px;display:flex;flex-direction:column;gap:22px}
 .hero h1{margin:0;font-size:84px;line-height:.98}
@@ -239,7 +240,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--orange);outline-
   <div class="hero-sh"></div>
   <div class="wrap"><div class="hero-c">
     <span class="kick">Global keynote speaker · Singapore</span>
-    <h1 class="serif">Successful, but lonely<br><i>at the top?</i></h1>
+    <h1 class="serif"><span style="white-space:nowrap">Successful, but lonely</span><br><i>at the top?</i></h1>
     <p>Executive coach, psychotherapist and author of the #1 bestseller <i>Executive Loneliness</i>. Nick helps leaders move from isolation to connection, resilience and high performance that lasts.</p>
     <div class="row"><a class="btn" href="#book">Check availability</a><a class="btn ghost" href="#video"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg>Watch him speak</a></div>
   </div></div>
