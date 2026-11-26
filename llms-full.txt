@@ -4,6 +4,378 @@
 
 ---
 
+# Most Requested AI Talk Topics for Corporate Events
+
+URL: https://speakerfolio.com/articles/most-requested-ai-talk-topics-for-corporate-events/
+Published: 2026-11-26 · Author: Saleh, Speakerfolio
+
+**The most requested AI talk topics for corporate events in 2026 are practical: AI strategy and ROI for leaders, AI agents and automation, getting teams to actually use AI, AI and the future of jobs, AI governance and risk, AI for specific functions like sales, marketing and HR, leading people through AI change, and AI ethics and trust.** AI is the top topic overall: it ranked first in Speakers Spotlight's 2026 client survey (67% of respondents) and was BigSpeak's most-booked meeting topic in Q3 2026. What companies want has shifted from "what is AI?" to "how do we get value from it, safely, with our people on board?" Below are the 10 AI talk topics companies book most, why each is in demand, sample talk titles, which events they suit and how speakers can position themselves for each.
+
+> **Key takeaways**
+>
+> - **Companies want AI talks that lead to action**, not general overviews or big predictions.
+> - **ROI, agents and adoption are the hottest themes**, matching what McKinsey's 2026 State of AI survey says leaders are focused on.
+> - **People topics are rising**: jobs, skills, change and trust are often requested alongside the technology.
+> - **Function-specific talks win bookings.** "AI for sales teams" is easier to book than "AI for business."
+
+## Why AI is the top corporate event topic in 2026
+
+Two speaker bureau data points show how dominant AI has become:
+
+- In Speakers Spotlight's 2026 client survey, [AI and emerging technology was the most relevant topic, chosen by 67% of respondents](https://www.speakers.ca/2026/04/survey-says-trending-topics-in-2026/), ahead of leadership and change management at 50%.
+- BigSpeak's list of [most-booked meeting topics](https://www.bigspeak.com/?p=158478) for the third quarter of 2026 put artificial intelligence at number one.
+
+The reason is clear from inside companies. McKinsey's [State of AI in 2026](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) survey of 1,719 respondents found that:
+
+- **Nearly 90%** use AI regularly in at least one business function
+- **44%** say AI is scaling across their enterprise, up from 38%
+- **40% of large organisations** are scaling AI agents, up from 27%
+- But only **37%** attribute any EBIT impact to AI, roughly the same as the year before
+- **39%** expect AI to reduce headcount in the next year
+
+In short: almost everyone is using AI, fewer are getting real financial value from it, agents are spreading fast, and people are worried about their jobs. That's exactly what companies want their events to address, and it's why the topics below are in such demand.
+
+A note on the list: there's no public ranking of AI subtopics booked at corporate events. The ten topics below are based on what bureaus report as the top booking theme (AI), what the McKinsey data shows leaders are focused on, and the talk themes companies most often ask speakers for.
+
+## The most requested AI talk topics at a glance
+
+| # | AI talk topic | Typical audience | Best-fit events |
+|---|---|---|---|
+| 1 | AI strategy and ROI | Executives, senior leaders | Leadership summits, board retreats, strategy days |
+| 2 | AI agents and automation | Leaders, operations, IT | Tech summits, operations conferences, all-hands |
+| 3 | AI adoption: getting teams to use it | Managers, all staff | Kickoffs, all-hands, L&D events |
+| 4 | AI and the future of work and jobs | All staff, HR, leaders | All-hands, HR conferences, town halls |
+| 5 | AI governance, risk and security | Executives, legal, risk, IT | Leadership offsites, compliance and risk events |
+| 6 | AI for sales and customer teams | Sales, customer success | Sales kickoffs, customer conferences |
+| 7 | AI for marketing and content | Marketing, communications | Marketing summits, brand events |
+| 8 | AI for HR and people teams | HR, L&D, people leaders | HR conferences, people summits |
+| 9 | Leading people through AI change | Managers, leaders | Leadership programs, manager conferences |
+| 10 | AI ethics, trust and responsible use | Leaders, all staff, customers | Conferences, values days, customer events |
+
+## 1. AI strategy and ROI: turning pilots into results
+
+**Why it's requested:** most companies have tried AI. Far fewer can show results. With only 37% of organisations in McKinsey's survey attributing any EBIT impact to AI, leaders want to know how to move from experiments to measurable value, and where to invest next. McKinsey also found 60% expect to increase AI investment next year, so the pressure to spend wisely is real.
+
+**What audiences want to hear:**
+
+- How to pick AI use cases that pay off
+- How to measure AI value beyond "we saved some time"
+- Why pilots stall, and how to scale the ones that work
+- Build vs. buy decisions
+- What high performers do differently
+
+**Sample talk titles:**
+
+- "From Pilots to Profit: Making AI Pay Off in 2027"
+- "The AI Investment Playbook for Leadership Teams"
+- "Where AI Actually Creates Value in Your Business"
+
+**Best for:** leadership summits, board retreats, annual strategy days, executive offsites.
+
+**What organisers look for in the speaker:** real experience leading AI programs inside a company, or advising leaders who did. Case studies with numbers matter more here than anywhere.
+
+## 2. AI agents and automation: what's real and what's next
+
+**Why it's requested:** agents, AI systems that can carry out multi-step tasks rather than just answer questions, are the fastest-moving part of corporate AI. McKinsey found 40% of large organisations are scaling agents, up from 27% a year earlier. Leaders want to understand what agents can actually do, where they're safe to use and what they mean for teams.
+
+**What audiences want to hear:**
+
+- What AI agents are, in plain language
+- Real examples of agents in operations, finance, IT and customer service
+- Where humans stay in the loop
+- Risks: errors, security, oversight
+- How to start small and scale
+
+**Sample talk titles:**
+
+- "AI Agents at Work: What They Can Do Today and What They Can't"
+- "Your First AI Agents: A Practical Roadmap for Operations Teams"
+- "Automation Without Chaos: Putting Agents to Work Safely"
+
+**Best for:** technology summits, operations conferences, IT leadership events, company all-hands.
+
+**What organisers look for:** someone who has deployed agents or automation in a real business and can explain both the wins and the failures. Demos help, with a backup ready.
+
+## 3. AI adoption: getting teams to actually use AI
+
+**Why it's requested:** many companies have bought AI tools that most staff barely use. Adoption is now a people and habits problem as much as a technology one. McKinsey found 80% of respondents say AI has improved their productivity, so leaders know the value is there; they want the rest of the organisation to get it too.
+
+**What audiences want to hear:**
+
+- Practical, everyday uses for their roles
+- How to build AI habits, not just try it once
+- How to write better prompts and check outputs
+- Overcoming fear, scepticism and "it's not for me"
+- How managers can encourage use
+
+**Sample talk titles:**
+
+- "AI for Busy People: Five Habits That Save a Day a Week"
+- "From Licences to Habits: Making AI Part of How We Work"
+- "Everyday AI: Practical Uses for Every Team"
+
+**Best for:** company kickoffs, all-hands meetings, L&D events, lunch-and-learns, workshops after a keynote.
+
+**What organisers look for:** energy, clarity and very practical examples. This topic often pairs a keynote with hands-on workshops, which many companies book together.
+
+## 4. AI and the future of work and jobs
+
+**Why it's requested:** employees want to know what AI means for their jobs. In McKinsey's survey, 39% of respondents expect AI to reduce headcount in the next year, up from 32%. Leaders need someone who can talk about this honestly, without false promises or fear.
+
+**What audiences want to hear:**
+
+- Which tasks AI is changing, and which it isn't
+- Skills that will matter more, not less
+- How careers and roles are likely to shift
+- What the company is doing to help people adapt
+- How to stay valuable in an AI-shaped workplace
+
+**Sample talk titles:**
+
+- "Your Job, AI and You: What's Changing and How to Get Ahead"
+- "The Human Skills AI Can't Replace"
+- "Reskilling for the AI Era: What Every Employee Should Know"
+
+**Best for:** all-hands meetings, town halls, HR conferences, employee engagement events.
+
+**What organisers look for:** balance and empathy. Speakers who either dismiss concerns or stoke fear tend to get poor feedback. Experience in HR, workforce planning or labour research helps.
+
+## 5. AI governance, risk and security
+
+**Why it's requested:** as AI spreads, so do risks: data leaks, inaccurate outputs, bias, security threats, regulation and reputational damage. Leaders, boards and risk teams want to understand how to use AI responsibly without slowing everything down.
+
+**What audiences want to hear:**
+
+- What an AI policy should include
+- Data privacy and confidentiality when staff use AI tools
+- Security risks, including AI-enabled attacks
+- How regulation is developing in their markets
+- Who should own AI governance
+
+**Sample talk titles:**
+
+- "Safe to Scale: AI Governance for Leadership Teams"
+- "AI Risk in Plain English: What Boards Need to Know"
+- "Your AI Policy: A Practical Starting Point"
+
+**Best for:** leadership offsites, board meetings, legal and compliance events, risk and security conferences.
+
+**What organisers look for:** credible expertise in law, risk, cybersecurity or governance, and the ability to make a dry topic practical and engaging.
+
+## 6. AI for sales and customer teams
+
+**Why it's requested:** sales and customer teams are among the most visible users of AI, from research and outreach to call summaries and customer support. Sales leaders want their teams to sell more without losing the human relationship.
+
+**What audiences want to hear:**
+
+- AI for prospect research, outreach and follow-up
+- Using AI to prepare for calls and handle objections
+- AI in customer service, without frustrating customers
+- What buyers think of AI-written messages
+- Keeping the human touch
+
+**Sample talk titles:**
+
+- "The AI-Powered Seller: Close More Without Losing the Relationship"
+- "AI in Customer Success: Faster Answers, Happier Customers"
+- "Prospecting With AI: What Works and What Annoys Buyers"
+
+**Best for:** sales kickoffs, revenue conferences, customer success events, partner summits.
+
+**What organisers look for:** a speaker with real sales or customer experience, who can show examples that sales teams recognise.
+
+## 7. AI for marketing and content
+
+**Why it's requested:** marketing teams use AI for content, design, research, personalisation and analytics. Leaders want speed and scale without generic content or brand damage.
+
+**What audiences want to hear:**
+
+- Using AI to plan and draft content faster
+- Keeping a distinctive brand voice
+- AI for personalisation and campaign testing
+- How search and discovery are changing as people use AI assistants
+- Legal and ethical issues with AI-generated content
+
+**Sample talk titles:**
+
+- "Faster, Not Blander: AI for Marketing Teams"
+- "How AI Search Is Changing How Customers Find You"
+- "AI Content That Still Sounds Like You"
+
+**Best for:** marketing summits, brand conferences, communications events, agency events.
+
+**What organisers look for:** current examples and a clear point of view. This field changes quickly, so freshness matters.
+
+## 8. AI for HR and people teams
+
+**Why it's requested:** HR teams are being asked to help the whole company adapt to AI, while also using it themselves for hiring, learning and employee support. They want practical guidance and an understanding of the risks.
+
+**What audiences want to hear:**
+
+- AI in hiring: benefits and bias risks
+- AI for learning and development
+- Building AI skills across the workforce
+- Policies for employee AI use
+- Supporting employees through change
+
+**Sample talk titles:**
+
+- "AI in HR: Smarter Hiring Without the Bias"
+- "Building an AI-Ready Workforce"
+- "The People Side of AI: A Playbook for HR Leaders"
+
+**Best for:** HR conferences, people and culture summits, L&D events.
+
+**What organisers look for:** HR or workforce experience, plus a clear grasp of the legal and ethical issues around AI in hiring and employee data.
+
+## 9. Leading people through AI change
+
+**Why it's requested:** AI is a change management challenge. Managers have to help teams adopt new tools, handle worry about jobs and redesign work, often without much training themselves. This topic combines two of the most requested themes: AI and leadership through change.
+
+**What audiences want to hear:**
+
+- How to talk to teams about AI honestly
+- Redesigning roles and workflows
+- Handling resistance and fear
+- Building a culture where people experiment safely
+- What good AI leadership looks like
+
+**Sample talk titles:**
+
+- "Leading Through the AI Shift"
+- "The Manager's Guide to AI Change"
+- "Bringing Your Team With You: Leadership in the Age of AI"
+
+**Best for:** leadership development programs, manager conferences, leadership offsites.
+
+**What organisers look for:** a leadership or change speaker who understands AI well enough to be credible, with practical tools managers can use. Our guide on how to [present a leadership framework on one page](https://speakerfolio.com/articles/how-to-present-your-leadership-framework-on-one-page/) is useful for packaging this kind of talk.
+
+## 10. AI ethics, trust and responsible use
+
+**Why it's requested:** customers, employees and regulators increasingly care about how companies use AI. Organisations want to build trust and avoid harm, from bias and misinformation to misuse of personal data.
+
+**What audiences want to hear:**
+
+- What responsible AI looks like in practice
+- Bias, fairness and transparency
+- Being honest with customers about AI use
+- Ethical questions employees face every day
+- How trust becomes a competitive advantage
+
+**Sample talk titles:**
+
+- "Trust by Design: Responsible AI for Business"
+- "The Ethics of Everyday AI at Work"
+- "AI Your Customers Can Trust"
+
+**Best for:** major conferences, values and culture days, customer events, industry association meetings.
+
+**What organisers look for:** depth, balance and the ability to turn big questions into practical decisions.
+
+## Industry-specific AI talks are a fast track to bookings
+
+Many companies and associations want AI talks tailored to their industry. These often get booked faster because the speaker is the obvious fit.
+
+| Industry | Popular AI talk angles |
+|---|---|
+| Healthcare | AI in clinical operations, patient communication, documentation and safety |
+| Financial services | AI for risk, fraud, compliance and customer service |
+| Legal | AI for research and drafting, confidentiality and professional responsibility |
+| Retail and ecommerce | Personalisation, customer service and AI search |
+| Manufacturing and logistics | Predictive maintenance, planning and automation |
+| Education | AI for teaching, assessment and academic integrity |
+| Public sector | Responsible AI in public services and procurement |
+
+If you have industry experience plus AI knowledge, an industry-specific talk is often the fastest route to paid bookings.
+
+## Formats companies book for AI topics
+
+AI talks are rarely booked as a single keynote alone. Common formats include:
+
+| Format | When companies use it |
+|---|---|
+| Keynote (30–60 minutes) | To inspire, set direction or open a conference |
+| Keynote plus workshop | To follow inspiration with hands-on practice |
+| Executive briefing | Small, focused sessions for leadership teams or boards |
+| Fireside chat or panel | To explore AI topics with an interviewer or multiple views |
+| Lunch-and-learn series | To build AI habits over several short sessions |
+| Virtual session | For distributed teams or global audiences |
+
+Speakers who offer a keynote plus a practical follow-up session are often more attractive to corporate buyers, because the follow-up helps change actually happen.
+
+## How event planners choose between AI talk topics
+
+If you're planning a corporate event, start from your goal, not the topic:
+
+| If your goal is... | Consider... |
+|---|---|
+| Align leaders on AI investment | AI strategy and ROI, governance and risk |
+| Get staff using AI tools | AI adoption, function-specific talks, workshops |
+| Calm worries and build trust | Future of work, leading through AI change, ethics |
+| Prepare for automation | AI agents and automation |
+| Energise a sales or marketing team | AI for sales, AI for marketing |
+| Equip managers | Leading people through AI change |
+
+Then check the speaker carefully. Our guide on what [AI conference organisers check](https://speakerfolio.com/articles/what-ai-conference-organisers-check-before-booking-a-speaker/) before booking a speaker covers experience, fit, freshness, proof and vendor ties. Browse speakers by topic in the Speakerfolio [speaker directory](https://speakerfolio.com/speakers/).
+
+## How speakers can position themselves for these topics
+
+If you speak on AI, the most requested topics tell you where demand is. To get booked:
+
+1. **Pick one or two topics from this list** that match your real experience.
+2. **Narrow to an audience**: "AI adoption for frontline managers" beats "AI adoption."
+3. **Write talk titles that name the audience and outcome**, like the samples above.
+4. **Offer a keynote plus a workshop** for the adoption and function-specific topics.
+5. **Keep examples current** and say so in your talk descriptions.
+6. **Show proof**: case studies, named testimonials and video.
+7. **Put it all on a clear speaker page**, so planners can match you to their event in seconds.
+
+For the full path from first talk to paid bookings, see how to [become a paid AI keynote speaker](https://speakerfolio.com/articles/how-to-become-a-paid-ai-keynote-speaker/). And for what planners see on your page, read [what event planners look for on a speaker landing page](https://speakerfolio.com/articles/what-event-planners-look-for-on-a-speaker-landing-page/).
+
+## How Speakerfolio helps AI speakers and corporate event planners
+
+**For event planners:** the Speakerfolio [speaker directory](https://speakerfolio.com/speakers/) lets you search speakers by topic and format, see their talks and video, and contact them directly with no booking fee.
+
+**For speakers:** Speakerfolio writes and builds a [free speaker website](https://speakerfolio.com/contact/#start) from your LinkedIn profile, on yourname.speakerfolio.com, usually within two working days, with your AI talks, reel, testimonials and a booking form. You also get a directory profile, and booking requests come straight to you with no commission. Premium ($100 a year) adds a custom design on your own domain.
+
+## Frequently asked questions
+
+### What are the most requested AI talk topics for corporate events?
+
+AI strategy and ROI, AI agents and automation, AI adoption, AI and the future of work, AI governance and risk, AI for sales, marketing and HR, leading people through AI change, and AI ethics and trust.
+
+### Why are AI talks so popular at corporate events in 2026?
+
+AI is the top topic in speaker bureau data, and companies are under pressure to turn AI use into results, adopt AI agents safely and help employees adapt. McKinsey's 2026 survey found nearly 90% use AI regularly, but only 37% see EBIT impact from it.
+
+### What AI topic is best for an all-hands meeting?
+
+Practical AI adoption and the future of work are popular for all-hands meetings, because they speak to every employee and address both opportunity and concern.
+
+### What AI topic suits a leadership offsite?
+
+AI strategy and ROI, governance and risk, and leading people through AI change are the most common choices for leadership teams.
+
+### Should we book an AI keynote or an AI workshop?
+
+Many companies book both: a keynote to set direction and a workshop to build skills. Workshops are especially useful for adoption and function-specific topics.
+
+### How do I choose the right AI speaker for my corporate event?
+
+Start with your event goal, pick the matching topic, then check the speaker's real AI experience, fit with your audience, how current their talk is, video, testimonials and any ties to AI vendors.
+
+### Are industry-specific AI talks better than general ones?
+
+Often, yes. Talks tailored to your industry use relevant examples and address the risks your audience actually faces, which usually leads to better engagement.
+
+## Match the topic to the goal
+
+The most requested AI talk topics for corporate events all share one thing: they help people do something with AI, whether that's investing wisely, adopting tools, managing risk or leading teams through change. For planners, start with your event goal and choose a speaker with real experience in that topic. For speakers, pick the topics that match your expertise, narrow them to an audience and make your talks easy to find. Find AI speakers by topic in the Speakerfolio [speaker directory](https://speakerfolio.com/speakers/), or get your [free speaker website](https://speakerfolio.com/contact/#start) if you speak on AI.
+
+*Sources: [Speakers Spotlight, Survey Says: Trending Topics in 2026](https://www.speakers.ca/2026/04/survey-says-trending-topics-in-2026/); [BigSpeak, Most-Booked Meeting Topics](https://www.bigspeak.com/?p=158478); [McKinsey, The State of AI in 2026: On the Road to ROI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai). Figures checked on 26 November 2026.*
+
+---
+
 # What AI Conference Organisers Check Before Booking a Speaker
 
 URL: https://speakerfolio.com/articles/what-ai-conference-organisers-check-before-booking-a-speaker/
