@@ -246,9 +246,9 @@ export function profilePage({ s, related, preview }) {
   // related
   if (related.length) {
     out += '<section style="background: #ffffff;"><div style="' + W + ' padding-top: 88px; padding-bottom: 88px; display: flex; flex-direction: column; gap: 32px;">'
-      + '<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px;"><div style="display: flex; flex-direction: column; gap: 16px;">' + EB('Related speakers') + '<h2 style="' + H2 + '">More ' + esc(topic.toLowerCase()) + ' speakers.</h2></div>'
-      + '<a href="/speakers/topic/' + topicSlug(topic) + '/" style="font-size: 15px; font-weight: 700; color: #14161a; text-underline-offset: 4px;">All ' + esc(topic.toLowerCase()) + ' speakers' + ARROW + '</a></div>'
-      + '<div class="sf-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px;">' + related.map((r) => card(r)).join('') + '</div></div></section>';
+      + '<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px;"><div style="display: flex; flex-direction: column; gap: 16px;">' + EB('Related speakers') + '<h2 style="' + H2 + '">' + (related.every((r) => (r.topics || []).includes(topic)) ? 'More ' + esc(topic.toLowerCase()) + ' speakers.' : 'More speakers to consider.') + '</h2></div>'
+      + (topic ? '<a href="/speakers/topic/' + topicSlug(topic) + '/" style="font-size: 15px; font-weight: 700; color: #14161a; text-underline-offset: 4px;">All ' + esc(topic.toLowerCase()) + ' speakers' + ARROW + '</a>' : '<a href="/speakers/" style="font-size: 15px; font-weight: 700; color: #14161a; text-underline-offset: 4px;">All speakers' + ARROW + '</a>') + '</div>'
+      + '<style>@media (max-width: 1000px){.sf-rel{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}</style><div class="sf-grid sf-rel" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;">' + related.map((r) => card(r)).join('') + '</div></div></section>';
   }
   out += '</main>';
 

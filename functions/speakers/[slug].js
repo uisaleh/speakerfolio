@@ -22,6 +22,10 @@ export async function onRequestGet({ request, env, params }) {
     preview = true;
   }
   const topic = (s.topics || [])[0];
-  const related = (await getIndex(env)).filter((x) => x.published && x.slug !== slug && (x.topics || []).includes(topic)).slice(0, 3);
+  // 4 related speakers: same main topic first, then any shared topic, then other published speakers
+  const pool = (await getIndex(env)).filter((x) => x.published && x.slug !== slug);
+  const mine = s.topics || [];
+  const rank = (x) => ((x.topics || []).includes(topic) ? 0 : (x.topics || []).some((t) => mine.includes(t)) ? 1 : 2);
+  const related = pool.map((x, i) => [rank(x), i, x]).sort((a, b) => a[0] - b[0] || a[1] - b[1]).slice(0, 4).map((r) => r[2]);
   return profilePage({ s, related, preview });
 }
