@@ -4,6 +4,311 @@
 
 ---
 
+# Free Website for Podcast Hosts Who Speak: Turn Your Show into Speaking Bookings
+
+URL: https://speakerfolio.com/articles/free-website-for-podcast-hosts-who-speak/
+Published: 2026-11-27 · Author: Saleh, Speakerfolio
+
+**Yes, podcast hosts who speak can get a professional website for free. Speakerfolio writes and builds a one-page speaker site from your LinkedIn profile, with your signature talks, a speaker reel or podcast clip, your show, testimonials and a booking form for event planners. It goes live on yourname.speakerfolio.com, usually within two working days, and you're listed in the Speakerfolio [speaker directory](https://speakerfolio.com/speakers/) at no cost.** Your podcast's episode page is built for listeners. This site is built for the people who book speakers, so your show becomes proof instead of the whole pitch. When you want your own domain and more pages, Premium is $100 a year.
+
+> **Key takeaways**
+>
+> - **Your podcast page and your speaker site do different jobs.** One helps people listen; the other helps planners book you.
+> - **A free speaker site can include everything planners check:** talks, a reel, proof, fees guidance and a booking form.
+> - **Speakerfolio builds it for you** from your LinkedIn profile, with no card and no trial period.
+> - **Your show becomes a credential**, alongside your guests, past talks and testimonials.
+
+## Why podcast hosts need a separate speaker website
+
+Most podcasts already have a web page. Your host probably gives you one, or you've built a simple site with episodes, a subscribe button and a contact link.
+
+That page is great for listeners. It's not built for an event planner who has five minutes to decide whether you're right for a conference.
+
+Here's what each visitor is looking for:
+
+| Visitor | What they want | What helps them act |
+|---|---|---|
+| Listener | The latest episode, where to subscribe | Play buttons and platform links |
+| Sponsor | Audience size and fit, ad options | A media kit and contact details |
+| Event planner | What you speak about, how you come across on stage, how to book you | Talk titles, a reel, testimonials and a booking form |
+
+If a planner lands on your episode page, they have to dig for the information they need. Many won't. A separate speaker page puts that information first, and it lets your podcast do what it does best: show that you have ideas worth hearing.
+
+If you're still deciding whether to pursue speaking, our guide on [how podcasters can get paid speaking gigs](https://speakerfolio.com/articles/how-podcasters-can-get-paid-speaking-gigs/) covers the full path, from choosing your talk topic to pitching events.
+
+## What event planners look for on a podcast host's website
+
+Planners take a risk every time they book a speaker they haven't seen live. Your website's job is to lower that risk. In practice, that means answering five questions quickly.
+
+### 1. What do you speak about?
+
+Two to four talk titles, each with one sentence on what the audience will leave with. Name talks by the outcome, not by your show. "Why Good Nurses Leave, and What Keeps Them" is easier to book than "The Bedside Podcast, Live".
+
+### 2. How do you come across?
+
+A short video. Podcasters have an advantage here: if you record video episodes, you already have hours of footage of yourself explaining ideas clearly. Two minutes of your best moments is enough to start.
+
+### 3. Who trusts you?
+
+Notable guests, events you've spoken at, listener reviews and, most valuable of all, a testimonial from an event organiser.
+
+### 4. What will it cost, and what's included?
+
+Planners don't need an exact quote on your site, but "from" prices or a line on how fees work saves both of you a round of emails.
+
+### 5. How do I book you?
+
+A booking form that asks for the event date, location, audience and format. One click from anywhere on the page.
+
+A good speaker website answers all five in the first scroll or two. For a full checklist, see [what every speaker website needs](https://speakerfolio.com/articles/what-every-speaker-website-needs/).
+
+## What's on the free Speakerfolio site for podcast hosts
+
+Every free Speakerfolio website is a one-page site, written and built for you. For podcast hosts who speak, the sections usually look like this:
+
+| Section | What it shows | Why it matters for podcasters |
+|---|---|---|
+| Hero | Your name, a clear headline about your topic and a booking button | Planners know straight away what you speak on |
+| Speaker reel or video | A clip of you speaking or a highlight from a video episode | Shows how you sound and look, which a podcast does better than most credentials |
+| Talks | Two to four signature talks with titles, takeaways and formats | Turns your podcast topic into something bookable |
+| About | A short bio written for event planners | Your show becomes one strong credential among others |
+| Your podcast | The show name, what it covers and where to listen | Proof of your ideas, without taking over the page |
+| Proof | Testimonials, notable guests, events and media mentions | Answers "who trusts you?" |
+| Formats | Keynote, workshop, panel host, live podcast recording | Shows the range of ways to book you |
+| FAQ | Travel, formats, fees guidance, how far ahead to book | Answers the questions planners ask before emailing |
+| Booking form | Event date, location, audience and a message | Turns interest into an enquiry |
+
+The free plan also includes:
+
+- **A speaker one-sheet** you can send to planners as a single page
+- **A profile in the Speakerfolio speaker directory**, where planners search by topic and format
+- **Basic AI visibility setup**, so assistants such as ChatGPT can understand who you are and what you speak about
+- **Limited admin access** to update your details
+
+The only condition is a small designer credit in the footer.
+
+## Example: a podcast host's speaker page, section by section
+
+Here's how a finished page might look for a fictional host, to show how the pieces fit together.
+
+**Priya Raman** hosts *The Shift Report*, a weekly show for nurse managers. She has interviewed hospital executives and nursing leaders for three years and wants to speak at healthcare conferences.
+
+| Section | What Priya's page says |
+|---|---|
+| Hero | "Keynotes on retention and team culture for nurse leaders, from the host of The Shift Report." Button: Book Priya |
+| Reel | A two-minute clip: one minute from video episodes, one minute from a talk at a regional nursing meeting |
+| Talks | 1. Why Good Nurses Leave, and What Keeps Them. 2. The Five-Minute Huddle That Changes a Shift. 3. Leading When You're Short-Staffed |
+| About | Fifteen years as a nurse, five as a unit manager, three hosting the show |
+| Podcast | What the show covers, five notable guests, two listener reviews and platform links |
+| Proof | A quote from the organiser of the regional meeting, plus names of two hospitals where she ran workshops |
+| Formats | Keynote, half-day workshop, panel moderator, live recording with a hospital leader |
+| FAQ | Travel within the US, typical lead time, virtual options |
+| Booking form | Event date, location, audience size, format and a message |
+
+Notice what's missing: a list of every episode, a sponsor rate card and a long life story. Those belong elsewhere. Everything on this page helps one person, the event planner, decide to get in touch.
+
+## Which template suits a podcast host?
+
+Speakerfolio has several templates. Two work especially well for podcasters.
+
+### Studio: for hosts with strong video
+
+[![Speaker website reel section with a large stage photo, a circular play button and the event name, from the Speakerfolio Studio template](https://speakerfolio.com/assets/img/layouts/studio-reel.webp)](https://speakerfolio.com/templates/studio.html)
+
+The Studio template puts video front and centre, with a full-width reel band and a play button that opens your clip. It suits hosts who record video episodes or already have stage footage. The dark, modern design also works well with studio-style podcast photos.
+
+### Headliner: for hosts who are also authors
+
+[![Speaker website talks section with numbered signature talks, each with a description and takeaways, from the Speakerfolio Headliner template](https://speakerfolio.com/assets/img/layouts/headliner-talks.webp)](https://speakerfolio.com/templates/headliner.html)
+
+Headliner is bold and editorial, with a numbered talks section and room for a book. Many podcast hosts write a book from their episodes, and this template lets the book, the show and the talks sit together.
+
+If you coach as well as host and speak, the Coach template adds a discovery call and programs; our [coach website examples](https://speakerfolio.com/articles/coach-website-examples/) show how those sections work. You can compare every layout on the [speaker website templates](https://speakerfolio.com/templates/) page.
+
+## How to present your podcast on a speaker website
+
+Your show is a strong credential, but it shouldn't take over the page. Here's how to make it work for you.
+
+### Lead with your topic, not your show
+
+Your headline should say what you speak about and who for. The podcast comes in your bio and its own short section further down.
+
+| Weak headline | Stronger headline |
+|---|---|
+| Host of The Growth Room podcast | Helping small business owners price their work with confidence |
+| Podcaster, speaker, creator | Keynotes on burnout and retention for hospital leaders |
+| Welcome to my website | Practical money conversations for teams and families |
+
+### Turn your show into proof
+
+In your podcast section, include:
+
+- **What the show covers**, in one or two sentences
+- **Notable guests**, as a short list of names planners might recognise
+- **One or two listener reviews**, quoted with a name or handle
+- **Where to listen**, with links to the main platforms
+- **Audience numbers, only if they help.** Share honest figures you're comfortable with anyone seeing. A specific audience, such as "a weekly show for procurement leaders", often impresses planners more than a big download number.
+
+### Use video episodes for your reel
+
+If you record video, your reel can be built almost entirely from your episodes. Pick moments where you explain an idea, tell a story or ask a sharp question. Add any stage footage you have, even from a phone. Our guide shows how to [make a two-minute speaker reel](https://speakerfolio.com/articles/make-a-two-minute-speaker-reel-from-footage-you-already-have/) from footage you already have.
+
+### Offer formats only a host can
+
+Podcast hosts can offer formats most speakers can't:
+
+- **Live podcast recording:** you interview a speaker or expert on stage, the audience asks questions and the event gets a published episode.
+- **Panel moderator:** you already know how to keep a conversation moving and bring out the best in guests.
+- **Fireside chat host:** a relaxed interview with an executive or guest of honour.
+
+Listing these on your site gives planners a reason to book you even when they already have their keynote speakers.
+
+## Free website vs other options for podcast hosts
+
+Podcast hosts usually choose between a few ways to get a website. Each has its place.
+
+| Option | Cost | Who builds it | Good for | Gaps for speaking |
+|---|---|---|---|---|
+| Episode page from your podcast host | Usually included | Automatic | Listeners finding episodes | No talks, reel, speaking proof or booking form |
+| DIY website builder | Monthly plan, plus your time | You | Full control if you enjoy design | You write and design everything yourself |
+| Freelance designer | Hundreds to thousands upfront | A designer | A custom site | Cost, and updates often cost extra |
+| Speakerfolio Free | $0 | Speakerfolio writes and builds it | A professional one-page speaker site | Speakerfolio address and a small footer credit |
+| Speakerfolio Premium | $100 a year | Speakerfolio designs and builds it | Your own domain and more pages | Annual fee |
+
+Many hosts keep their podcast page for listeners and add a speaker site for planners, then link the two together. That's often the simplest setup.
+
+For a closer look at the trade-offs, read our comparison of [free vs paid keynote speaker websites](https://speakerfolio.com/articles/free-vs-paid-keynote-speaker-websites/).
+
+## How to get your free website
+
+The process takes a few minutes of your time.
+
+1. **Fill in the short form** on the Speakerfolio site with your name, email and LinkedIn profile.
+2. **Add your links:** your podcast, YouTube channel, social profiles and any video of you speaking.
+3. **Choose a template**, or let us pick one for you.
+4. **Review a private preview**, usually within two working days.
+5. **Go live.** Once you approve it, your site is published on yourname.speakerfolio.com and your profile is added to the speaker directory.
+
+To give us the best material to work with, send:
+
+- **Two or three good photos**, including one of you at the mic or on stage
+- **Your best video clip** or a link to a video episode
+- **The topics you want to speak on**, even as rough notes
+- **Any testimonials** from listeners, guests or event organisers
+- **A list of notable guests** you'd be happy to mention
+
+If something is missing, we'll work from your LinkedIn profile and your show, and you can add more later.
+
+## What to write in each section
+
+Here's simple wording you can adapt when you review your preview.
+
+### Headline
+
+> Keynotes and workshops on **[topic]** for **[audience]**, from the host of **[podcast name]**.
+
+### Short bio
+
+> **[Name]** hosts **[podcast name]**, a weekly show about **[topic]** with guests including **[two names]**. Before launching the show, **[he/she/they]** spent **[number] years** in **[field]**. **[Name]** speaks to **[audiences]** about **[one-line promise]**.
+
+### Talk description
+
+> **[Talk title]**
+> A **[length]** keynote for **[audience]** on **[problem]**. Drawing on stories from **[podcast name]**, it covers **[three short points]**. Attendees leave with **[one practical takeaway]**.
+
+### Booking line
+
+> Booking a talk, panel or live podcast recording? Tell me about your event, and I'll reply within two working days.
+
+Replace each bracketed part with your own details before you publish.
+
+## How to link your podcast and your speaker site
+
+Your show is the best promotion your speaker site will ever get. A few small habits send the right people to it.
+
+- **Show notes.** Add one line to every episode's notes: "Book [Name] to speak at your event: [link]". Over a year, that's dozens of links to your speaker page.
+- **Your podcast website.** Add a "Speaking" item to the menu that points to your speaker site.
+- **On the show itself.** Mention once in a while that you speak at events, and say where to find out more. Listeners who organise events, or work for companies that do, will remember.
+- **Guest follow-ups.** When you send a guest their episode link, add your speaker page to your email signature.
+- **Social profiles.** Put your speaker page in your LinkedIn featured section and your Instagram or X bio, alongside your podcast link.
+- **Your speaker site, in return.** Link back to your show, so planners can listen and hear how you think.
+
+Keep your speaker page link short and easy to say out loud. "yourname.speakerfolio.com" works on air in a way a long URL never will.
+
+## Mistakes podcast hosts make with their websites
+
+- **Sending planners to an episode list.** It shows you're productive, not that you're bookable.
+- **Leading with the show instead of the topic.** Planners book outcomes for their audience.
+- **Hiding the booking form.** Put a button in the hero and the form at the bottom.
+- **Using only listener reviews.** Add at least one testimonial from an organiser as soon as you can.
+- **Rounding up numbers.** Planners and sponsors check. Honest, specific figures build trust.
+- **No video.** For a podcaster, this is the easiest proof to provide, so don't leave it out.
+- **Letting it go stale.** Add each new talk, event and testimonial as it happens.
+
+## When to upgrade to Premium
+
+The free site is a strong start. Premium is for podcast hosts who want a website that's entirely theirs.
+
+| Feature | Free | Premium |
+|---|---|---|
+| Web address | yourname.speakerfolio.com | Your own domain |
+| Design | Speakerfolio template | Custom design in your brand |
+| Pages | One page | As many as you need, such as a page per talk, an episode archive or a media kit |
+| Admin access | Limited | Full |
+| AI visibility | Basic setup | Full setup |
+| Footer credit | Small Speakerfolio credit | No credit |
+| Cost | $0 | $100 a year, with hosting and updates included |
+
+Podcast hosts often upgrade when they want one site for everything: a speaking page, a page for the show, a sponsor media kit and a newsletter sign-up, all on their own domain. See [Premium pricing](https://speakerfolio.com/pricing/) for full details.
+
+## How a speaker website helps you get found
+
+Event planners search Google, and increasingly they ask AI assistants for speaker suggestions. Your podcast helps, but a dedicated speaker page makes it much clearer what you offer.
+
+A good speaker site helps in three ways:
+
+- **It matches what planners search for.** Searches like "burnout speaker for nurses" or "small business pricing keynote" match a page that names your topics and audiences directly.
+- **It gives AI assistants clear facts.** Your name, topics, formats, location and past events, in plain text and structured data, are easier for assistants to understand and repeat.
+- **It collects links from your show.** Every episode's show notes can link to your speaker page, which helps search engines see it as important.
+
+Speakerfolio sets up the basics for you. No website can guarantee a top ranking or an AI recommendation, but without a clear page of your own, you're much harder to find and recommend.
+
+## Frequently asked questions
+
+### Is the Speakerfolio website really free for podcast hosts?
+
+Yes. There's no card and no trial period. Your one-page site on yourname.speakerfolio.com stays free for as long as you use it. The only condition is a small designer credit in the footer.
+
+### I already have a podcast website. Do I need another one?
+
+If you want speaking bookings, it helps. A podcast site is built for listeners, while a speaker site shows talks, a reel, proof and a booking form for event planners. Many hosts keep both and link them together.
+
+### Can I include my podcast episodes on the free site?
+
+Yes. Your site can include a podcast section with what the show covers, notable guests and links to where people can listen. A full episode archive is better suited to Premium, which supports multiple pages.
+
+### Do I need a speaker reel to get a free website?
+
+No. If you have video episodes, we can use a clip from one. If your show is audio only, your site can launch without a reel, and you can add one when you have it.
+
+### Which template is best for podcast hosts?
+
+Studio suits hosts with strong video or stage footage, and Headliner suits hosts who also have a book. If you coach as well, the Coach template adds a discovery call and programs.
+
+### How long does it take to get my site?
+
+You usually receive a private preview within two working days. Once you approve it, your site goes live.
+
+### Will I get booking requests through Speakerfolio?
+
+Booking requests from your site and directory profile go straight to you, with no commission. Speakerfolio can't promise a number of bookings, but a clear speaker page makes it much easier for planners to say yes.
+
+## Get your free website as a podcast host who speaks
+
+Your podcast already proves you have ideas, a voice and a network. A speaker website turns that into something an event planner can book in a few minutes: clear talks, a short reel, real proof and a booking form. Speakerfolio writes and builds it for you at no cost, and you can move to your own domain with Premium whenever you're ready. Get your [free speaker website](https://speakerfolio.com/contact/#start) today.
+
+---
+
 # How Podcasters Can Get Paid Speaking Gigs: 10 Steps from Mic to Stage
 
 URL: https://speakerfolio.com/articles/how-podcasters-can-get-paid-speaking-gigs/
