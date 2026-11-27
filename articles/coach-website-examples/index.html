@@ -214,7 +214,7 @@ textarea.in{height:132px;padding:12px 14px;resize:vertical;line-height:1.5}
 <div role="region" aria-label="Black Friday offer" style="position: relative; background: #0b0c0e; color: #ffffff;">
 <div class="ob-wrap" style="max-width: 1280px; margin: 0 auto; padding: 8px 56px 8px clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 18px; min-height: 48px; font-size: 14px; line-height: 1.35;">
 <a href="/pricing/" style="color: #ffffff; text-decoration: none;"><strong style="font-weight: 700; color: #ff5a6e;">Black Friday offer:</strong> Premium website <strong style="font-weight: 700;">$80/yr</strong><span class="ob-hide-sm"> instead of <s style="color: rgba(255,255,255,0.78);">$100</s>, first month of social posts included</span></a>
-<span role="timer" aria-label="Black Friday offer ends in 0 days, 6 hours and 51 minutes" style="display: inline-flex; align-items: center; gap: 4px;"><span class="ob-hide-sm" aria-hidden="true" style="margin-right: 4px; color: rgba(255,255,255,0.86);">Black Friday ends in</span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">00<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">d</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">06<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">h</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">51<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">m</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">00<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">s</span></span></span>
+<span role="timer" aria-label="Black Friday offer ends in 0 days, 6 hours and 26 minutes" style="display: inline-flex; align-items: center; gap: 4px;"><span class="ob-hide-sm" aria-hidden="true" style="margin-right: 4px; color: rgba(255,255,255,0.86);">Black Friday ends in</span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">00<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">d</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">06<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">h</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">26<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">m</span></span><span aria-hidden="true" style="display: inline-flex; align-items: baseline; gap: 2px; padding: 3px 7px; background: #e31837; color: #ffffff; font-weight: 700; font-variant-numeric: tabular-nums;">00<span style="font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.72);">s</span></span></span>
 </div>
 <button type="button" data-dc-click="h0" aria-label="Hide the offer bar" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; padding: 0; border: 0; background: transparent; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
 </div>
@@ -969,21 +969,27 @@ function offerStart() {
   }
 }
 function offerVals(start, now) {
-  // Black Friday offer for everyone until the end of Black Friday (27 Nov 2026)
-  var BF_START = new Date(2026, 10, 27).getTime(), BF_END = new Date(2026, 10, 28).getTime();
-  var end = start + OFFER_MS, bf = false;
-  if (now < BF_END) { bf = true; end = BF_END; }
+  // Holiday offers for everyone until 10 Jan 2027 (Black Friday, Cyber Monday, Green Monday, Super Saturday, Christmas, New Year's), then the launch offer
+  var C = [[new Date(2026, 10, 28), 'Black Friday', '', '#0b0c0e', '#ff5a6e', '#e31837'],
+    [new Date(2026, 11, 1), 'Cyber Monday', '⚡︎ ', 'linear-gradient(90deg,#0a0f2c,#1b1464)', '#38e1ff', '#2b5cff'],
+    [new Date(2026, 11, 15), 'Green Monday', '❀ ', 'linear-gradient(90deg,#063b2b,#0c5c41)', '#9cf5c4', '#16a34a'],
+    [new Date(2026, 11, 20), 'Super Saturday', '★ ', 'linear-gradient(90deg,#3b0a6b,#6d28d9)', '#ffd75e', '#1f0640'],
+    [new Date(2027, 0, 1), 'Christmas', '❄︎ ', 'linear-gradient(90deg,#7a0e1c,#b3122e)', '#ffe39a', '#0f5132'],
+    [new Date(2027, 0, 11), "New Year's", '✦ ', 'linear-gradient(90deg,#0b0c0e,#2a2112)', '#f5c451', '#8a6a1f']];
+  var end = start + OFFER_MS, c = null;
+  for (var i = 0; i < C.length; i++) { if (now < C[i][0].getTime()) { c = C[i]; end = c[0].getTime(); break; } }
+  var bf = !!c;
   var left = Math.max(0, end - now), on = left > 0;
   var s = Math.floor(left / 1000), d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60), sec = s % 60;
   var pad = function (n) { return (n < 10 ? '0' : '') + n; };
-  var box = bf ? '#e31837' : '#0b0c0e';
+  var box = bf ? c[5] : '#0b0c0e', nm = bf ? c[1] + ' offer' : 'Launch offer';
   return {
     offerOn: on, offerOff: !on, offerBf: bf,
     offerPrice: on ? '$80' : '$100',
-    offerBadge: on ? (bf ? 'Black Friday: 20% off' : 'Launch offer: 20% off') : 'Own domain',
-    offerName: bf ? 'Black Friday offer' : 'Launch offer', offerLabel: bf ? 'Black Friday offer:' : 'Launch offer:',
-    offerLabelColor: bf ? '#ff5a6e' : '#ffffff', offerBg: bf ? '#0b0c0e' : '#e31837', offerEnds: bf ? 'Black Friday ends in' : 'Ends in',
-    offerAria: (bf ? 'Black Friday offer' : 'Offer') + ' ends in ' + d + ' days, ' + h + ' hours and ' + m + ' minutes',
+    offerBadge: on ? (bf ? c[1] + ': 20% off' : 'Launch offer: 20% off') : 'Own domain',
+    offerName: nm, offerLabel: (bf ? c[2] : '') + nm + ':',
+    offerLabelColor: bf ? c[4] : '#ffffff', offerBg: bf ? c[3] : '#e31837', offerEnds: bf ? c[1] + ' ends in' : 'Ends in',
+    offerAria: nm + ' ends in ' + d + ' days, ' + h + ' hours and ' + m + ' minutes',
     offerParts: [{ v: pad(d), s: 'd', b: box }, { v: pad(h), s: 'h', b: box }, { v: pad(m), s: 'm', b: box }, { v: pad(sec), s: 's', b: box }]
   };
 }
@@ -1247,5 +1253,15 @@ class Component extends DCLogic {
 <script src="/assets/js/dc-mini.js?v=4"></script>
 <script src="/assets/js/form-v2.js?v=4"></script>
 <script>(function(){var done=false;function sfBoot(){if(done){return;}done=true;['pointerdown','keydown','touchstart','scroll','mousemove','focusin'].forEach(function(e){window.removeEventListener(e,sfBoot);});window.SF_APP = DCMini.mount(document.getElementById('app'), document.getElementById('dc-tpl').innerHTML, document.getElementById('dc-script').textContent, {});}['pointerdown','keydown','touchstart','scroll','mousemove','focusin'].forEach(function(e){window.addEventListener(e,sfBoot,{passive:true});});if(window.location.hash||window.sessionStorage&&(function(){try{return window.sessionStorage.getItem('sf_start');}catch(e){return null;}})()){sfBoot();}else{setTimeout(sfBoot,7000);}})();</script>
-</body>
+<script id="sf-ob-snap">(function(){var C=[[new Date(2026,10,28),'Black Friday','','#0b0c0e','#ff5a6e','#e31837'],[new Date(2026,11,1),'Cyber Monday','⚡︎ ','linear-gradient(90deg,#0a0f2c,#1b1464)','#38e1ff','#2b5cff'],[new Date(2026,11,15),'Green Monday','❀ ','linear-gradient(90deg,#063b2b,#0c5c41)','#9cf5c4','#16a34a'],[new Date(2026,11,20),'Super Saturday','★ ','linear-gradient(90deg,#3b0a6b,#6d28d9)','#ffd75e','#1f0640'],[new Date(2027,0,1),'Christmas','❄︎ ','linear-gradient(90deg,#7a0e1c,#b3122e)','#ffe39a','#0f5132'],[new Date(2027,0,11),"New Year's",'✦ ','linear-gradient(90deg,#0b0c0e,#2a2112)','#f5c451','#8a6a1f']];
+function p(n){return (n<10?'0':'')+n;}
+function run(){var bar=document.querySelector('[role=region][aria-label="Black Friday offer"],[role=region][data-ob-snap]');if(!bar){return false;}bar.setAttribute('data-ob-snap','1');
+var now=Date.now(),c=null;for(var i=0;i<C.length;i++){if(now<C[i][0].getTime()){c=C[i];break;}}
+if(!c){bar.style.display='none';return true;}
+bar.style.background=c[3];bar.setAttribute('aria-label',c[1]+' offer');var st=bar.querySelector('strong');if(st){st.textContent=c[2]+c[1]+' offer:';st.style.color=c[4];}
+var sp=bar.querySelectorAll('span');for(var k=0;k<sp.length;k++){if(/ends in$/.test(sp[k].textContent)&&!sp[k].children.length){sp[k].textContent=c[1]+' ends in';}}
+var s=Math.max(0,Math.floor((c[0].getTime()-now)/1000)),v=[p(Math.floor(s/86400)),p(Math.floor(s%86400/3600)),p(Math.floor(s%3600/60)),p(s%60)],j=0;
+var bx=bar.querySelectorAll('span[style*="tabular-nums"]');for(var q=0;q<bx.length;q++){bx[q].style.background=c[5];var tn=bx[q].firstChild;if(tn&&tn.nodeType===3&&j<4){tn.nodeValue=v[j++];}}
+return true;}
+run();var t=setInterval(function(){if(!run()){clearInterval(t);}},1000);})();</script></body>
 </html>
