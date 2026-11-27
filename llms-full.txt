@@ -4,6 +4,300 @@
 
 ---
 
+# Free Website for Customer Experience Speakers: Show Results and Get Booked
+
+URL: https://speakerfolio.com/articles/free-website-for-customer-experience-speakers/
+Published: 2026-11-27 · Author: Saleh, Speakerfolio
+
+**Customer experience speakers can get a professional website for free. Speakerfolio writes and builds a one-page speaker site from your LinkedIn profile, with your keynote topics, client results, case studies, testimonials, a speaker video and a booking form. It goes live on yourname.speakerfolio.com, usually within two working days, and you're listed in the Speakerfolio [speaker directory](https://speakerfolio.com/speakers/) at no cost.** For CX speakers, the site is built around what buyers care about most: proof that your ideas improve how customers are treated and how the business performs. When you want your own domain and more pages, Premium is $100 a year.
+
+> **Key takeaways**
+>
+> - **CX buyers book on proof.** Results, case studies and named testimonials matter more than a long list of stages.
+> - **Your website should practise what you preach.** A clear, easy, friendly site is part of your pitch.
+> - **Speakerfolio builds it for you** from your LinkedIn profile, with no card and no trial period.
+> - **One page can serve conferences and companies** with keynotes, workshops and team programs.
+
+## Why customer experience speakers need their own website
+
+If you speak about customer experience, every planner who visits your website is also a customer of yours. They'll notice whether the information they need is easy to find, whether the page loads quickly on their phone and whether booking feels simple or tiresome.
+
+A clumsy site quietly undermines your message. A clear one shows you understand what good experience feels like before you've said a word.
+
+Customer experience speakers are booked by a wide range of buyers:
+
+| Who books | Typical events | What they want |
+|---|---|---|
+| Customer service and contact centre leaders | Team conferences, service weeks, kick-offs | Energy, practical service skills, better morale |
+| CX and service design teams | CX conferences, internal summits | Fresh methods and credible examples |
+| Sales and account management leaders | Sales kick-offs, client retention programs | Loyalty, retention and relationship skills |
+| Executives and strategy teams | Leadership offsites, strategy days | How experience drives growth and loyalty |
+| Industry associations | Annual conferences in retail, hospitality, healthcare, banking and more | Sector-specific insight |
+| HR and culture teams | Engagement and values events | The link between employee and customer experience |
+
+Each buyer wants to know three things quickly: what you speak about, what changes after you speak and how to book you. Your website should answer all three.
+
+## What planners check on a customer experience speaker's website
+
+### 1. Topics tied to business results
+
+CX planners need to justify every speaker. Talks framed around outcomes such as loyalty, retention, complaints, reviews or employee engagement are far easier to approve than talks framed around "delighting customers".
+
+### 2. Proof from real organisations
+
+Case studies, client logos and named testimonials. If you've led CX at a company, the work you did there counts. If you consult, short client stories with one-line results work well.
+
+### 3. How you come across
+
+A short video of you speaking. CX audiences are often frontline teams, so planners want to see that you can connect with people at every level, not only executives.
+
+### 4. Formats
+
+Many CX bookings include more than a keynote: a workshop for team leaders, training for frontline staff or a session with the leadership team.
+
+### 5. A simple booking process
+
+A booking form that asks for the event date, audience and goals, and a clear promise about when you'll reply.
+
+## What's on the free Speakerfolio site for CX speakers
+
+Every free Speakerfolio website is a single page, written and built for you. For customer experience speakers, it typically includes:
+
+| Section | What it shows | Why it matters for CX speakers |
+|---|---|---|
+| Hero | Your name, a clear promise and a booking button | Planners know immediately what you help organisations improve |
+| Trust strip | Client logos, a rating or a headline result | Instant credibility |
+| About | Your story, such as leading service teams or CX programs | Shows hands-on experience |
+| Keynote topics | Titles, takeaways and formats | Turns "customer experience" into something bookable |
+| Results | Numbers from your work and client programs | Answers "will this make a difference?" |
+| Case studies | Short client stories with one-line outcomes | Shows how your ideas work in practice |
+| Testimonials | Quotes from named organisers and leaders | Reassurance from people like the buyer |
+| Video | A clip of you speaking | Shows how you connect with an audience |
+| FAQ | Formats, travel, tailoring and lead times | Answers questions before they're asked |
+| Booking form | Event date, audience, format and a message | Makes the next step easy |
+
+The free plan also includes:
+
+- **A speaker one-sheet** you can send to planners
+- **A profile in the Speakerfolio speaker directory**, where planners search by topic and format
+- **Basic AI visibility setup**, so assistants like ChatGPT can understand who you are and what you speak about
+- **Limited admin access** to update your details
+
+The only condition is a small designer credit in the footer.
+
+## Which template suits a customer experience speaker?
+
+### Trainer: for CX speakers who show results
+
+[![Speaker website results section with a tool adoption figure, an average session rating and a named testimonial from an HR director, from the Speakerfolio Trainer template](https://speakerfolio.com/assets/img/layouts/trainer-results.webp)](https://speakerfolio.com/templates/trainer.html)
+
+The Trainer template is built around measurable impact. It has a results section with headline numbers, client case studies, named testimonials and a programs section that shows keynotes, workshops and coaching side by side. It suits CX speakers who also run training for service teams.
+
+[![Speaker website client work section with four short client stories, each with a company name, a one-line result and a Read story link, from the Speakerfolio Trainer template](https://speakerfolio.com/assets/img/layouts/trainer-stories.webp)](https://speakerfolio.com/templates/trainer.html)
+
+The client stories section is especially useful for CX speakers. Each story has a company name, a one-line result and a link to read more, which is exactly how planners like to scan proof.
+
+### Headliner: for CX keynote speakers and authors
+
+[![Speaker website talks section with numbered signature talks, each with a description and takeaways, from the Speakerfolio Headliner template](https://speakerfolio.com/assets/img/layouts/headliner-talks.webp)](https://speakerfolio.com/templates/headliner.html)
+
+Headliner is bold and editorial, with numbered signature talks and room for a book. It suits CX speakers who mainly give keynotes at conferences, especially if they've written a book on service or loyalty.
+
+You can compare every layout on the [speaker website templates](https://speakerfolio.com/templates/) page.
+
+## How to write customer experience keynote topics
+
+"Customer experience" is a broad topic. Planners book specific promises. Compare:
+
+| Vague | Specific |
+|---|---|
+| Delighting your customers | The First Five Minutes: How Small Moments Build Loyalty |
+| Customer-centric culture | Happy Teams, Happy Customers: The Link Between Employee and Customer Experience |
+| Improving service | From Complaint to Comeback: Turning Unhappy Customers into Loyal Ones |
+| The future of CX | AI and the Human Touch: What Customers Still Want from People |
+| Customer journeys | Fix the Friction: Finding and Removing the Moments Customers Hate |
+| Service excellence | Every Interaction Counts: Service Skills for Frontline Teams |
+
+Each specific title names a moment, a method or a result, and it tells the planner who the talk is for.
+
+A few more tips:
+
+- **Name the audience.** Frontline teams, CX leaders and executives need different talks.
+- **Use customer language.** "Waiting on hold" and "being passed around" are more vivid than "contact resolution".
+- **Give three takeaways per talk**, such as a recovery script, a journey-mapping exercise or a feedback habit.
+- **Show formats.** Note whether each topic works as a keynote, workshop or training session.
+
+## How to show results on a CX speaker website
+
+Results are what separate a CX speaker who gets booked from one who gets compared. Useful proof includes:
+
+- **Outcomes from roles you've held**, such as improving customer satisfaction scores, reducing complaints or raising review ratings, described honestly
+- **Client program results**, such as satisfaction or retention changes after your training, where clients agree to share them
+- **Session ratings** from post-event surveys
+- **Scale**, such as how many service staff you've trained or how many organisations you've worked with
+
+A few rules keep your results credible:
+
+- **Only share numbers you can explain.** Say where they come from, such as "post-session survey, 1,200 participants".
+- **Get permission** before naming clients or sharing their figures.
+- **Don't round up.** Specific, modest numbers build more trust than big round ones.
+- **Show the before and after** where you can, so the change is clear.
+
+If you can't share client figures, describe the type of organisation and the result in words, such as "a regional bank that cut repeat complaints after a six-week service program".
+
+## Testimonials that convince CX buyers
+
+The best testimonials for CX speakers come from people who look like your buyers: heads of customer service, CX directors, contact centre managers and event organisers.
+
+Strong testimonials mention:
+
+- **A specific result**, such as "our team still uses the recovery script"
+- **The audience reaction**, such as "frontline staff asked for a follow-up session"
+- **Tailoring**, such as "every example felt like it came from our own customers"
+
+Ask for testimonials straight after the event, when the impact is fresh. Our guide on how to [ask for testimonials](https://speakerfolio.com/articles/ask-for-testimonials-the-right-way-right-after-the-event/) has wording you can copy.
+
+## Make your website a great customer experience
+
+This is where CX speakers can stand out. Apply your own principles to your site:
+
+- **Make the main action obvious.** One "Book" button in the hero, repeated near the end.
+- **Answer questions before they're asked.** An FAQ on formats, travel, tailoring and lead times saves planners an email.
+- **Keep the booking form short.** Ask only for what you need to reply.
+- **Promise a response time, and keep it.** "I reply within two working days" sets expectations.
+- **Make it easy on mobile.** Many planners first see your site on a phone.
+- **Use a friendly, human tone.** Write the way you'd speak to a client, not like a brochure.
+- **Follow up well.** Send a short, helpful reply with availability and next steps.
+
+Planners notice these details, and they're a direct preview of what working with you will feel like.
+
+## Free website vs other options for CX speakers
+
+| Option | Cost | Who builds it | Good for | Trade-offs |
+|---|---|---|---|---|
+| LinkedIn profile only | Free | You | Networking and credibility | Not built for booking: no talks layout, video focus or booking form |
+| Consulting or company website | Varies | You or your firm | Selling consulting services | Speaking gets buried among services |
+| DIY website builder | Monthly plan, plus your time | You | Full control | You write, design and maintain everything |
+| Speakerfolio Free | $0 | Speakerfolio writes and builds it | A professional one-page speaker site | Speakerfolio address and a small footer credit |
+| Speakerfolio Premium | $100 a year | Speakerfolio designs and builds it | Your own domain, custom design and more pages | Annual fee |
+
+Many CX consultants keep their consulting site for clients and add a dedicated speaker page for planners. For more on the trade-offs, read our comparison of [free vs paid keynote speaker websites](https://speakerfolio.com/articles/free-vs-paid-keynote-speaker-websites/).
+
+## How to get your free website
+
+1. **Fill in the short form** on the Speakerfolio site with your name, email and LinkedIn profile.
+2. **Add your links:** your video, social profiles and any consulting or company site.
+3. **Choose a template**, such as Trainer or Headliner, or let us pick one for you.
+4. **Review a private preview**, usually within two working days.
+5. **Go live.** Once you approve it, your site is published on yourname.speakerfolio.com and your profile is added to the speaker directory.
+
+To help us build the best site, send:
+
+- **A clear headshot and photos of you speaking or running a session**
+- **A video clip** of you on stage or online
+- **Your topics**, even as rough notes
+- **Results** you're happy to share, with where they come from
+- **Testimonials** from organisers and clients
+- **Client names or logos** you have permission to show
+
+## Wording you can adapt for your site
+
+When you review your preview, these short templates help you sharpen the key lines. Replace each bracketed part with your own details before you publish.
+
+**Headline**
+> I help **[audience]** turn **[customer moment or problem]** into **[result]**.
+
+For example: "I help contact centre teams turn difficult calls into loyal customers."
+
+**Short bio**
+> **[Name]** spent **[number] years** leading **[service, CX or support teams]** at **[type of organisation]**. Today **[he/she/they]** helps **[audiences]** improve **[outcome]** through keynotes, workshops and team programs.
+
+**Booking line**
+> Planning a conference, service week or team day? Tell me about your audience and goals, and I'll reply within two working days with ideas and availability.
+
+## Mistakes CX speakers make with their websites
+
+- **Generic promises.** "Delighting customers" could be anyone. Name the moment, method or result.
+- **No proof.** CX buyers need results, case studies or testimonials.
+- **Speaking hidden inside a consulting site.** Planners may never find it.
+- **A complicated booking process.** Long forms and slow replies contradict your message.
+- **Executive-only content.** If you also speak to frontline teams, show it.
+- **Out-of-date details.** Old events and broken links make you look inactive, which is a poor experience in itself.
+
+## When to upgrade to Premium
+
+| Feature | Free | Premium |
+|---|---|---|
+| Web address | yourname.speakerfolio.com | Your own domain |
+| Design | Speakerfolio template | Custom design in your brand |
+| Pages | One page | As many as you need, such as a page per talk, case studies or a blog |
+| Admin access | Limited | Full |
+| AI visibility | Basic setup | Full setup |
+| Footer credit | Small Speakerfolio credit | No credit |
+| Cost | $0 | $100 a year, with hosting and updates included |
+
+CX speakers often upgrade when they want detailed case study pages, a page for each training program or a blog on service and loyalty. See [Premium pricing](https://speakerfolio.com/pricing/) for full details.
+
+## A quick checklist for your CX speaker website
+
+| Section | Have it? |
+|---|---|
+| Hero with a specific promise and a booking button | |
+| Client logos, a rating or a headline result | |
+| About section with hands-on CX experience | |
+| Three or four specific keynote topics with takeaways | |
+| Results with numbers you can explain | |
+| Short case studies | |
+| Named testimonials from CX and service leaders | |
+| A short video of you speaking | |
+| FAQ on formats, travel and tailoring | |
+| Short booking form with a reply promise | |
+
+For a full list of essentials, read [what every speaker website needs](https://speakerfolio.com/articles/what-every-speaker-website-needs/), and for the planner's view, see [what event planners look for on a speaker landing page](https://speakerfolio.com/articles/what-event-planners-look-for-on-a-speaker-landing-page/).
+
+## How Speakerfolio helps customer experience speakers
+
+- **Free website:** Speakerfolio writes and builds your one-page speaker site from your LinkedIn profile, on yourname.speakerfolio.com, usually within two working days. It includes your topics, results, case studies, testimonials, video and a booking form.
+- **A profile in the Speakerfolio speaker directory**, where planners search by topic and format.
+- **No commission:** booking requests go straight to you.
+- **Premium ($100 a year):** a custom design on your own domain, with as many pages as you need.
+
+## Frequently asked questions
+
+### Can customer experience speakers really get a free website?
+
+Yes. Speakerfolio builds a free one-page speaker site on yourname.speakerfolio.com, with no card and no trial period. The only condition is a small designer credit in the footer.
+
+### Which template is best for a customer experience speaker?
+
+Trainer suits CX speakers who show results and run training for service teams. Headliner suits keynote speakers and authors who mainly speak at conferences.
+
+### What should a customer experience speaker website include?
+
+A clear promise, your topics with takeaways, results, case studies, named testimonials, a video, an FAQ and a short booking form.
+
+### How do I show results without breaking client confidentiality?
+
+Describe the organisation type and the result in words, use session ratings and scale numbers, and only name clients or share figures with permission.
+
+### Can I keep my consulting website and add a speaker site?
+
+Yes. Many CX consultants do. Link the two, so planners see your speaking offer clearly and clients can still find your consulting services.
+
+### How long does it take to get my site?
+
+You usually receive a private preview within two working days. Once you approve it, your site goes live.
+
+### Will I get booking requests through Speakerfolio?
+
+Booking requests from your site and directory profile go straight to you, with no commission. Speakerfolio can't promise a number of bookings, but a clear speaker page makes it easier for planners to say yes.
+
+## Get your free website as a customer experience speaker
+
+Customer experience speakers are judged by the experience they create, starting with their own website. A clear page with specific topics, real results, case studies, named testimonials and an easy booking form shows planners you practise what you teach. Speakerfolio writes and builds it for you at no cost, and you can move to your own domain with Premium whenever you're ready. Get your [free speaker website](https://speakerfolio.com/contact/#start) today.
+
+---
+
 # Creativity Keynote Topics for Corporate Events: 24 Ideas Matched to Your Event and Audience
 
 URL: https://speakerfolio.com/articles/creativity-keynote-topics-for-corporate-events/
