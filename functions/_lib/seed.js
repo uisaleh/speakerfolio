@@ -692,6 +692,43 @@ export const SEEDS = [
     links: { website: 'https://delane.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/erica-williams-4b749839a/' },
     bookingEmail: 'delanecollab@gmail.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-9626, Free plan, Headliner template), 28 Nov 2026'
+  },
+  {
+    name: 'James Gorry',
+    slug: 'james-gorry',
+    photo: '/assets/seed/james-gorry.webp',
+    headline: 'Health and safety keynote speaker. Fell 26 feet from a roof in 2005 and has spoken to construction, industrial and manufacturing teams since 2008',
+    speakerType: 'Keynote speaker',
+    topics: ['Health and wellbeing', 'Motivation', 'HR and culture'],
+    formats: ['Keynote', 'Virtual'],
+    location: 'Ireland',
+    languages: 'English',
+    travel: 'Ireland, the UK and Europe',
+    audience: 'Construction, industrial, manufacturing and engineering companies, safety weeks and site inductions',
+    fee: '',
+    shortBio: 'James Gorry is a health and safety keynote speaker from Ireland. A former steel erector, he fell 26 feet from a roof in 2005 and was left paraplegic. Since 2008 he has helped companies across Ireland, the UK and Europe build safety cultures where every worker goes home safely.',
+    bio: 'James (Jimmy) Gorry is a health and safety keynote and motivational speaker from Ireland. He spent nearly thirty years in steel fabrication and construction, starting as a welder in 1976 and running his own businesses in steel erection, demolition, crane hire and roofing.\nIn 2005, on a routine roof repair in Dublin, he didn\'t clip on his harness. He fell 26 feet and was left paraplegic. "I never classed it as a risk because I had done it so many times."\nSince 2008, through James Gorry Ltd, he has delivered talks to construction, industrial and manufacturing companies across Ireland, the UK and Europe, including CBRE, DBFL Consulting Engineers, Summerhill Construction and Cantwell, helping them build safety cultures where every worker returns home safely.',
+    talks: [
+      { title: 'Choices', format: 'Keynote', length: '',
+        summary: 'Our choices lead to consequences, and we must live with them. The split-second decisions behind most accidents, and why familiarity is the real hazard.',
+        takeaways: ['Why routine jobs feel safe', 'The cost of one shortcut', 'Choosing safety every time'] },
+      { title: 'Safety-First Mindset', format: 'Keynote', length: '',
+        summary: 'Equipping staff for a secure work environment: personal responsibility, speaking up and looking out for each other.',
+        takeaways: ['Personal responsibility', 'Speaking up on site', 'Looking out for each other'] },
+      { title: 'Falls Are Preventable', format: 'Keynote', length: '',
+        summary: 'For teams working on roofs, steel and scaffolds: harnesses, routine jobs and the three seconds that cannot be undone.',
+        takeaways: ['Working at heights', 'Harness discipline', 'Three seconds, 26 feet'] },
+      { title: 'Safety Week Talk', format: 'Virtual', length: '',
+        summary: 'A talk shaped around your safety week theme, in person or online for several sites.',
+        takeaways: ['Built for your theme', 'One site or many', 'Live Q&A'] }
+    ],
+    events: [],
+    quotes: [
+      { quote: 'I highly recommend James Gorry as an HSE keynote speaker. He shared his personal experiences about his life-changing accident in a way that resonated with the audience.', name: 'Oshoma Zekeri', role: 'CBRE, Global Safety Week' }
+    ],
+    links: { website: 'https://jamesgorry.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/jamesgorry' },
+    bookingEmail: 'james@jamesgorry.ie',
+    published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com via Saleh, 28 Nov 2026'
   }
 ];
 
