@@ -669,13 +669,13 @@ export const SEEDS = [
     speakerType: 'Poet and author',
     topics: ['Health and wellbeing', 'Motivation', 'Communication'],
     formats: ['Keynote', 'Workshop', 'Virtual'],
-    location: 'Moss Point, Mississippi',
+    location: 'Mississippi',
     languages: 'English',
-    travel: '',
+    travel: 'Travels frequently',
     audience: 'Schools, students and young adults, literary events, faith communities, podcasts and virtual events',
     fee: '',
     shortBio: 'Delane is a poet, author and mental-health advocate from Mississippi. She has published three poetry books, including You Don\'t Have to Die to Matter, and uses spoken word to help people feel seen, understood and reminded that their lives matter.',
-    bio: 'Delane is a poet, author and mental-health advocate from Moss Point, Mississippi. Her work centers on mental health, faith, identity, healing, self-worth and the experiences that shape us.\nShe has published three poetry books: You Don\'t Have to Die to Matter, The Kitchen Doesn\'t Stay Clean for Long and The Lane\'s Heart Vol. 1. She shares her poetry through spoken-word performances and digital platforms, where she has built an online community of more than 20,000 followers.\nDelane is available for speaking engagements, poetry performances, school visits, literary events, podcast interviews and virtual events, and especially loves connecting with students and young adults through poetry, conversations about mental health and the power of creative expression.',
+    bio: 'Delane is a poet, author and mental-health advocate from Mississippi. Her work centers on mental health, faith, identity, healing, self-worth and the experiences that shape us.\nShe has published three poetry books: You Don\'t Have to Die to Matter, The Kitchen Doesn\'t Stay Clean for Long and The Lane\'s Heart Vol. 1. She shares her poetry through spoken-word performances and digital platforms, where she has built a community of more than 70,000 followers across her social media platforms.\nDelane is available for speaking engagements, poetry performances, school visits, literary events, podcast interviews and virtual events, and especially loves connecting with students and young adults through poetry, conversations about mental health and the power of creative expression.',
     talks: [
       { title: 'You Don\'t Have to Die to Matter', format: 'Keynote', length: '',
         summary: 'Poems and conversation about self-worth and mental health, built around the message of her book: every life and every story already matters.',
@@ -734,6 +734,7 @@ export const SEEDS = [
 
 // One-time changes to speakers already in storage (applied once, then remembered).
 export const PATCHES = [
+  { id: 'delane-location-followers-2026-11-28', slug: 'delane', set: { location: 'Mississippi', travel: 'Travels frequently', bio: 'Delane is a poet, author and mental-health advocate from Mississippi. Her work centers on mental health, faith, identity, healing, self-worth and the experiences that shape us.\nShe has published three poetry books: You Don\'t Have to Die to Matter, The Kitchen Doesn\'t Stay Clean for Long and The Lane\'s Heart Vol. 1. She shares her poetry through spoken-word performances and digital platforms, where she has built a community of more than 70,000 followers across her social media platforms.\nDelane is available for speaking engagements, poetry performances, school visits, literary events, podcast interviews and virtual events, and especially loves connecting with students and young adults through poetry, conversations about mental health and the power of creative expression.' } },
   { id: 'delane-instagram-2026-11-28', slug: 'delane', links: { instagram: 'https://www.instagram.com/delanewrites/' } },
   { id: 'pete-talks-2026-11-21', slug: 'pete-a-kennedy', set: { talks: [
     { title: 'Your Talent Is Not Just a Gift. It Is an Assignment.', format: 'Keynote', length: '',
