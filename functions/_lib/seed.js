@@ -660,6 +660,38 @@ export const SEEDS = [
     links: { website: 'https://matthewharless.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/matthew-harless-71a270a1/', youtube: 'https://youtube.com/shorts/qns7KMx0ntA', facebook: 'https://www.facebook.com/p/Matthew-Harless-100076467751968/' },
     bookingEmail: 'matthew.harless@gmail.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-7111, Free plan, Studio template), 25 Nov 2026'
+  },
+  {
+    name: 'Delane',
+    slug: 'delane',
+    photo: '/assets/seed/delane.webp',
+    headline: 'Poet, author and mental-health advocate from Mississippi. Spoken word on mental health, faith, identity, healing and self-worth',
+    speakerType: 'Poet and author',
+    topics: ['Health and wellbeing', 'Motivation', 'Communication'],
+    formats: ['Keynote', 'Workshop', 'Virtual'],
+    location: 'Moss Point, Mississippi',
+    languages: 'English',
+    travel: '',
+    audience: 'Schools, students and young adults, literary events, faith communities, podcasts and virtual events',
+    fee: '',
+    shortBio: 'Delane is a poet, author and mental-health advocate from Mississippi. She has published three poetry books, including You Don\'t Have to Die to Matter, and uses spoken word to help people feel seen, understood and reminded that their lives matter.',
+    bio: 'Delane is a poet, author and mental-health advocate from Moss Point, Mississippi. Her work centers on mental health, faith, identity, healing, self-worth and the experiences that shape us.\nShe has published three poetry books: You Don\'t Have to Die to Matter, The Kitchen Doesn\'t Stay Clean for Long and The Lane\'s Heart Vol. 1. She shares her poetry through spoken-word performances and digital platforms, where she has built an online community of more than 20,000 followers.\nDelane is available for speaking engagements, poetry performances, school visits, literary events, podcast interviews and virtual events, and especially loves connecting with students and young adults through poetry, conversations about mental health and the power of creative expression.',
+    talks: [
+      { title: 'You Don\'t Have to Die to Matter', format: 'Keynote', length: '',
+        summary: 'Poems and conversation about self-worth and mental health, built around the message of her book: every life and every story already matters.',
+        takeaways: ['Talking about anxiety and depression without stigma', 'Recognising your worth', 'Poems that open honest conversation'] },
+      { title: 'Say It Out Loud: Poetry for Healing', format: 'Workshop', length: '',
+        summary: 'A school visit for students and young adults on using poetry and creative expression to put feelings into words.',
+        takeaways: ['Simple writing prompts', 'Turning feelings into words', 'Sharing at your own pace'] },
+      { title: 'Faith, Identity and the Stories That Shape Us', format: 'Virtual', length: '',
+        summary: 'A reading from her three poetry books followed by conversation, for literary events, faith communities, podcasts and virtual audiences.',
+        takeaways: ['Readings from all three books', 'Faith, identity and healing', 'Open Q&A'] }
+    ],
+    events: [],
+    quotes: [],
+    links: { website: 'https://delane.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/erica-williams-4b749839a/' },
+    bookingEmail: 'delanecollab@gmail.com',
+    published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-9626, Free plan, Headliner template), 28 Nov 2026'
   }
 ];
 

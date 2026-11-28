@@ -30,6 +30,6 @@ jobs:
               except Exception as e:
                   print(host, "failed:", e)
           send("speakerfolio.com", open("urls.txt").read().split())
-          for c in ["aymannassar", "robertabogany", "admiraljim", "anthonybaptiste", "kudramohammed", "rudolphmills", "joshmccartney", "peteakennedy", "sadiqzahir", "atuljagga", "nickjonsson", "meredithbaker", "matthewharless"]:
+          for c in ["aymannassar", "robertabogany", "admiraljim", "anthonybaptiste", "kudramohammed", "rudolphmills", "joshmccartney", "peteakennedy", "sadiqzahir", "atuljagga", "nickjonsson", "meredithbaker", "matthewharless", "delane"]:
               send(f"{c}.speakerfolio.com", [f"https://{c}.speakerfolio.com/"])
           PY
