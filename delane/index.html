@@ -20,7 +20,7 @@
 <meta name="twitter:image" content="https://delane.speakerfolio.com/delane/img/dl-share.jpg">
 <meta name="author" content="Delane">
 <meta name="theme-color" content="#111111">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfilePage", "@id": "https://delane.speakerfolio.com/", "url": "https://delane.speakerfolio.com/", "name": "Delane | Poet, Author and Mental Health Speaker from Mississippi", "description": "Delane is a poet, author and mental-health advocate from Mississippi. Book her for spoken-word performances, school visits, literary events, podcasts and virtual events.", "inLanguage": "en", "mainEntity": {"@id": "https://delane.speakerfolio.com/#delane"}}, {"@type": "Person", "@id": "https://delane.speakerfolio.com/#delane", "name": "Delane", "alternateName": "Erica Williams", "url": "https://delane.speakerfolio.com/", "image": "https://delane.speakerfolio.com/delane/img/dl-portrait.jpg", "jobTitle": "Poet, Author and Mental Health Advocate", "email": "mailto:delanecollab@gmail.com", "description": "Poet, author and mental-health advocate from Mississippi whose work centers on mental health, faith, identity, healing and self-worth. Author of three poetry books, including You Don't Have to Die to Matter.", "alumniOf": [{"@type": "CollegeOrUniversity", "name": "The University of Southern Mississippi"}, {"@type": "CollegeOrUniversity", "name": "Jones College"}], "address": {"@type": "PostalAddress", "addressLocality": "Moss Point", "addressRegion": "MS", "addressCountry": "US"}, "sameAs": ["https://www.linkedin.com/in/erica-williams-4b749839a/"], "knowsAbout": ["Poetry", "Spoken word", "Mental health", "Anxiety and depression", "Faith", "Identity", "Healing", "Self-worth", "Creative expression"]}, {"@type": "Book", "name": "You Don't Have to Die to Matter", "author": {"@id": "https://delane.speakerfolio.com/#delane"}, "genre": "Poetry"}, {"@type": "Book", "name": "The Kitchen Doesn't Stay Clean for Long: A Book of Poems", "author": {"@id": "https://delane.speakerfolio.com/#delane"}, "genre": "Poetry"}, {"@type": "Book", "name": "The Lane's Heart Vol. 1", "author": {"@id": "https://delane.speakerfolio.com/#delane"}, "genre": "Poetry"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfilePage", "@id": "https://delane.speakerfolio.com/", "url": "https://delane.speakerfolio.com/", "name": "Delane | Poet, Author and Mental Health Speaker from Mississippi", "description": "Delane is a poet, author and mental-health advocate from Mississippi. Book her for spoken-word performances, school visits, literary events, podcasts and virtual events.", "inLanguage": "en", "mainEntity": {"@id": "https://delane.speakerfolio.com/#delane"}}, {"@type": "Person", "@id": "https://delane.speakerfolio.com/#delane", "name": "Delane", "alternateName": "Erica Williams", "url": "https://delane.speakerfolio.com/", "image": "https://delane.speakerfolio.com/delane/img/dl-portrait.jpg", "jobTitle": "Poet, Author and Mental Health Advocate", "email": "mailto:delanecollab@gmail.com", "description": "Poet, author and mental-health advocate from Mississippi whose work centers on mental health, faith, identity, healing and self-worth. Author of three poetry books, including You Don't Have to Die to Matter.", "alumniOf": [{"@type": "CollegeOrUniversity", "name": "The University of Southern Mississippi"}, {"@type": "CollegeOrUniversity", "name": "Jones College"}], "address": {"@type": "PostalAddress", "addressLocality": "Moss Point", "addressRegion": "MS", "addressCountry": "US"}, "sameAs": ["https://www.instagram.com/delanewrites/", "https://www.tiktok.com/@delanewrites", "https://www.linkedin.com/in/erica-williams-4b749839a/"], "knowsAbout": ["Poetry", "Spoken word", "Mental health", "Anxiety and depression", "Faith", "Identity", "Healing", "Self-worth", "Creative expression"]}, {"@type": "Book", "name": "You Don't Have to Die to Matter", "url": "https://www.amazon.com/dp/B0GCRPN6RP", "author": {"@id": "https://delane.speakerfolio.com/#delane"}, "genre": "Poetry"}, {"@type": "Book", "name": "The Kitchen Doesn't Stay Clean for Long: A Book of Poems", "url": "https://www.amazon.com/dp/B0G9SQY6N9", "author": {"@id": "https://delane.speakerfolio.com/#delane"}, "genre": "Poetry"}, {"@type": "Book", "name": "The Lane's Heart Vol. 1", "url": "https://www.amazon.com/dp/B0FNJJ4NWY", "author": {"@id": "https://delane.speakerfolio.com/#delane"}, "genre": "Poetry"}]}</script>
 <link rel="icon" href="/delane/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/delane/favicon-192.png" sizes="192x192" type="image/png">
 <link rel="apple-touch-icon" href="/delane/apple-touch-icon.png">
@@ -125,6 +125,18 @@ nav.m a:hover{color:var(--li)}
 .qt .who{display:inline-flex;align-items:center;gap:12px;font-size:14.5px}
 .qt .who img{width:48px;height:48px;border-radius:50%;object-fit:cover}
 .qt .who span{color:var(--mute)}
+.vid{background:#0c0b10;color:#fff;padding:clamp(80px,10vw,120px) 0}
+.vid .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,380px);gap:64px;align-items:center}
+.vid h2{font-size:clamp(50px,6vw,82px)}
+.vid h2 .s{display:block;color:var(--li)}
+.vid p{color:rgba(255,255,255,.8);font-size:16.5px;margin:22px 0 28px;max-width:480px}
+.vid .cta{display:flex;gap:12px;flex-wrap:wrap}
+.vid .pl{position:relative;aspect-ratio:9/16;background:#000;overflow:hidden;box-shadow:18px 18px 0 var(--ac)}
+.vid video{width:100%;height:100%;object-fit:cover;display:block}
+.vid .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(0deg,rgba(0,0,0,.45),rgba(0,0,0,0) 50%);border:0;cursor:pointer;color:#fff}
+.vid .play span{width:78px;height:78px;border-radius:50%;background:var(--ac);display:flex;align-items:center;justify-content:center;transition:transform .25s}
+.vid .play:hover span{transform:scale(1.1)}
+.vid .play em{position:absolute;left:18px;bottom:16px;font-style:normal;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
 /* formats */
 .fm{background:var(--sand);padding:clamp(80px,10vw,130px) 0}
 .fm .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
@@ -149,6 +161,11 @@ nav.m a:hover{color:var(--li)}
 .shelf{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
 .bk{display:flex;flex-direction:column;gap:20px}
 .cov{position:relative;aspect-ratio:2/3;padding:28px 24px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:18px 18px 0 rgba(0,0,0,.18);transition:transform .35s}
+.bk>a.ci{display:block;box-shadow:18px 18px 0 rgba(0,0,0,.18);transition:transform .35s}
+.bk>a.ci img{width:100%;aspect-ratio:350/522;object-fit:cover}
+.bk:hover>a.ci{transform:translateY(-6px) rotate(-1deg)}
+.bk .amz{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--ac);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:11px 16px;margin-top:-4px}
+.bk .amz:hover{background:var(--ink);color:#fff}
 .bk:hover .cov{transform:translateY(-6px) rotate(-1deg)}
 .cov small{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
 .cov h3{margin:0}
@@ -198,6 +215,7 @@ form .btn{justify-self:start;white-space:nowrap;font-size:14px;letter-spacing:.0
  .hero .ph:after{background:linear-gradient(0deg,#0c0b10 0%,rgba(12,11,16,.35) 40%,rgba(12,11,16,0) 70%)}
  .hero .wrap{grid-template-columns:minmax(0,1fr);min-height:0;padding:0 0 60px;margin-top:-120px}
  .stats{gap:18px}.stats b{font-size:34px}
+ .vid .wrap{grid-template-columns:minmax(0,1fr);gap:44px}.vid .pl{max-width:340px}
  .intro .wrap,.about .wrap,.fm .wrap,.ct .grid{grid-template-columns:minmax(0,1fr);gap:44px}
  .tk{grid-template-columns:70px minmax(0,1fr);gap:16px 24px}.tk .n{font-size:52px;grid-row:span 2}
  .shelf{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
@@ -205,7 +223,7 @@ form .btn{justify-self:start;white-space:nowrap;font-size:14px;letter-spacing:.0
 }
 @media (max-width:640px){
  .tb .wrap{gap:8px 12px}.tb i{font-size:18px}
- .shelf{grid-template-columns:minmax(0,1fr);gap:44px}.cov{max-width:300px}
+ .shelf{grid-template-columns:minmax(0,1fr);gap:44px}.cov,.bk>a.ci{max-width:300px}
  .about .nums{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
  form{grid-template-columns:minmax(0,1fr);padding:24px}
  .row{flex-direction:column;align-items:flex-start;gap:8px}.row span{text-align:left}
@@ -220,10 +238,10 @@ form .btn{justify-self:start;white-space:nowrap;font-size:14px;letter-spacing:.0
 <header>
  <div class="wrap">
   <a class="logo" href="#top" aria-label="Delane, home">Delane<span>.</span></a>
-  <nav class="m" aria-label="Main"><a href="#about">About</a><a href="#talks">Talks</a><a href="#formats">Formats</a><a href="#books">Books</a><a href="#contact">Contact</a></nav>
+  <nav class="m" aria-label="Main"><a href="#about">About</a><a href="#talks">Talks</a><a href="#watch">Watch</a><a href="#books">Books</a><a href="#contact">Contact</a></nav>
   <a class="btn b-ac hb" href="#contact" style="height:46px">Book Delane</a>
   <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" onclick="var n=document.getElementById('mnav'),o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
-  <nav class="mnav" id="mnav" aria-label="Mobile"><a href="#about">About</a><a href="#talks">Talks</a><a href="#formats">Formats</a><a href="#books">Books</a><a href="#contact">Book Delane</a></nav>
+  <nav class="mnav" id="mnav" aria-label="Mobile"><a href="#about">About</a><a href="#talks">Talks</a><a href="#watch">Watch</a><a href="#books">Books</a><a href="#contact">Book Delane</a></nav>
  </div>
 </header>
 
@@ -239,7 +257,7 @@ form .btn{justify-self:start;white-space:nowrap;font-size:14px;letter-spacing:.0
   </div>
   <div class="stats">
    <div><b>3</b><span>Published poetry books</span></div>
-   <div><b>20K+</b><span>Followers in her online community</span></div>
+   <div><b>20K+</b><span>Followers at <a href="https://www.instagram.com/delanewrites/" target="_blank" rel="noopener" style="color:#fff">@delanewrites</a></span></div>
    <div><b>6</b><span>Ways to book her</span></div>
   </div>
  </div>
@@ -253,7 +271,7 @@ form .btn{justify-self:start;white-space:nowrap;font-size:14px;letter-spacing:.0
   <div class="rv">
    <p class="k">Meet Delane</p>
    <h2>Poetry that helps people feel <i>seen, understood and reminded they matter.</i></h2>
-   <p>Delane writes and performs about the experiences that shape us. Her goal is simple: use her voice and her writing to help people embrace their stories, recognise their worth and find meaning in what they have lived through.</p>
+   <p>Delane writes and performs about the experiences that shape us. Her goal is simple: use her voice and her writing to help people embrace their stories, recognize their worth and find meaning in what they have lived through.</p>
    <div class="chips"><span>Mental health</span><span>Faith</span><span>Identity</span><span>Healing</span><span>Self-worth</span><span>Creative expression</span></div>
   </div>
  </div>
@@ -267,7 +285,7 @@ form .btn{justify-self:start;white-space:nowrap;font-size:14px;letter-spacing:.0
   <div class="tk rv">
    <div class="n">I</div>
    <div><p class="tg">Keynote or performance</p><h3>You Don't Have to Die to Matter</h3></div>
-   <div><p>Poems and conversation about self-worth and mental health, built around the message of her book: every life and every story already matters.</p><ul><li>Talking about anxiety and depression without stigma</li><li>Recognising your worth before anyone confirms it</li><li>Poems that open honest conversation</li></ul></div>
+   <div><p>Poems and conversation about self-worth and mental health, built around the message of her book: every life and every story already matters.</p><ul><li>Talking about anxiety and depression without stigma</li><li>Recognizing your worth before anyone confirms it</li><li>Poems that open honest conversation</li></ul></div>
   </div>
   <div class="tk rv">
    <div class="n">II</div>
@@ -307,16 +325,28 @@ form .btn{justify-self:start;white-space:nowrap;font-size:14px;letter-spacing:.0
  </div>
 </section>
 
+<section class="vid dark" id="watch">
+ <div class="wrap">
+  <div class="rv">
+   <p class="k">Watch her perform</p>
+   <h2 class="d">Hear it <span class="s">in her voice.</span></h2>
+   <p>Delane performing spoken word on stage at The Debut. Her poems on mental health, faith and self-worth are written to be heard out loud.</p>
+   <div class="cta"><a class="btn b-ac" href="#contact">Book a performance</a><a class="btn b-ol" href="https://www.tiktok.com/@delanewrites" target="_blank" rel="noopener">More on TikTok</a></div>
+  </div>
+  <div class="pl rv"><video id="pv" src="/delane/img/dl-performance.mp4" poster="/delane/img/dl-performance-poster.jpg" preload="none" playsinline></video><button class="play" type="button" id="pb" aria-label="Play Delane's performance video"><span><svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></span><em>Spoken word · 1:29</em></button></div>
+ </div>
+</section>
+
 <section class="fm" id="formats">
  <div class="wrap">
   <div class="grid rv">
    <img class="a" src="/delane/img/dl-hero.jpg" alt="Delane at an evening event" width="900" height="1280" loading="lazy" decoding="async">
-   <img class="b" src="/delane/img/dl-portrait.jpg" alt="Delane portrait" width="560" height="560" loading="lazy" decoding="async">
+   <img class="b" src="/delane/img/dl-stage.jpg" alt="Delane performing spoken word at a microphone on stage" width="972" height="1464" loading="lazy" decoding="async" style="object-position:50% 30%">
    <img class="b" src="/delane/img/dl-book.jpg" alt="Delane with her book of poems" width="719" height="1009" loading="lazy" decoding="async">
   </div>
   <div class="rv">
    <p class="k">Ways to book</p>
-   <h2 class="d">Every room has a story. <span class="s">Let's honour it.</span></h2>
+   <h2 class="d">Every room has a story. <span class="s">Let's honor it.</span></h2>
    <div class="row"><div><h3>Speaking engagement</h3><p>Mental health, self-worth and the power of your story</p></div><span>In person</span></div>
    <div class="row"><div><h3>Poetry performance</h3><p>Spoken-word set for events, evenings and celebrations</p></div><span>Spoken word</span></div>
    <div class="row"><div><h3>School visit</h3><p>Poetry and mental-health conversation for students</p></div><span>Students and young adults</span></div>
@@ -335,9 +365,9 @@ form .btn{justify-self:start;white-space:nowrap;font-size:14px;letter-spacing:.0
    <p>Poetry about mental health, faith, identity and healing, written so readers feel less alone with what they carry.</p>
   </div>
   <div class="shelf">
-   <div class="bk rv"><div class="cov c1"><small>Delane</small><h3>You Don't Have to Die <em>to Matter</em></h3><span class="ln"></span></div><p><b>You Don't Have to Die to Matter</b>Poems on self-worth and mental health, and the book her keynote is named after.</p></div>
-   <div class="bk rv"><div class="cov c2"><small>Delane</small><h3>The Kitchen Doesn't Stay Clean for Long</h3><small style="opacity:.85;letter-spacing:.06em;text-transform:none;font-size:14px">A Book of Poems</small></div><p><b>The Kitchen Doesn't Stay Clean for Long</b>A book of poems about the everyday experiences that shape us.</p></div>
-   <div class="bk rv"><div class="cov c3"><small>Delane</small><h3>The Lane's Heart <b>Vol. 1</b></h3><span class="ln"></span></div><p><b>The Lane's Heart Vol. 1</b>The first volume in her collection of poems from the heart.</p></div>
+   <div class="bk rv"><a class="ci" href="https://www.amazon.com/dp/B0GCRPN6RP" target="_blank" rel="noopener"><img src="/delane/img/dl-cover-matter.jpg" alt="Cover of You Don't Have to Die to Matter: Poems for Healing by Delane" width="350" height="522" loading="lazy" decoding="async"></a><p><b>You Don't Have to Die to Matter</b>Poems for healing, on self-worth and mental health, and the book her keynote is named after.</p><a class="amz" href="https://www.amazon.com/dp/B0GCRPN6RP" target="_blank" rel="noopener">Buy on Amazon →</a></div>
+   <div class="bk rv"><a class="ci" href="https://www.amazon.com/dp/B0G9SQY6N9" target="_blank" rel="noopener"><img src="/delane/img/dl-cover-kitchen.jpg" alt="Cover of The Kitchen Doesn't Stay Clean for Long: A Book of Poems by Delane" width="600" height="895" loading="lazy" decoding="async"></a><p><b>The Kitchen Doesn't Stay Clean for Long</b>A book of poems about the everyday experiences that shape us.</p><a class="amz" href="https://www.amazon.com/dp/B0G9SQY6N9" target="_blank" rel="noopener">Buy on Amazon →</a></div>
+   <div class="bk rv"><a class="ci" href="https://www.amazon.com/dp/B0FNJJ4NWY" target="_blank" rel="noopener"><img src="/delane/img/dl-cover-lane.jpg" alt="Cover of The Lane's Heart Vol. 1 by Delane" width="350" height="522" loading="lazy" decoding="async"></a><p><b>The Lane's Heart Vol. 1</b>The first volume in her collection of poems from the heart.</p><a class="amz" href="https://www.amazon.com/dp/B0FNJJ4NWY" target="_blank" rel="noopener">Buy on Amazon →</a></div>
   </div>
   <p class="note">Planning a school visit or reading? <a href="mailto:delanecollab@gmail.com?subject=Books%20for%20our%20event">Ask about copies for your event</a></p>
  </div>
@@ -351,12 +381,13 @@ form .btn{justify-self:start;white-space:nowrap;font-size:14px;letter-spacing:.0
     <h2 class="d">Bring her voice <span class="s">to your room.</span></h2>
     <p>Based in Moss Point, Mississippi. Available for speaking engagements, poetry performances, school visits, literary events, podcast interviews and virtual events.</p>
     <a class="ml" href="mailto:delanecollab@gmail.com">delanecollab@gmail.com</a>
+    <a class="ml" href="https://www.instagram.com/delanewrites/" target="_blank" rel="noopener">Instagram and TikTok: @delanewrites</a>
     <a class="ml" href="https://www.linkedin.com/in/erica-williams-4b749839a/" target="_blank" rel="noopener">LinkedIn</a>
    </div>
-   <form class="rv" onsubmit="event.preventDefault();var f=this,v=function(n){return (f[n]&&f[n].value||'').trim()};var b='Name: '+v('name')+'\nEmail: '+v('email')+'\nOrganisation: '+v('org')+'\nEvent date: '+v('date')+'\nType of booking: '+v('format')+'\n\n'+v('message');location.href='mailto:delanecollab@gmail.com?subject='+encodeURIComponent('Booking request'+(v('org')?' from '+v('org'):''))+'&body='+encodeURIComponent(b);f.querySelector('.sent').style.display='block'">
+   <form class="rv" onsubmit="event.preventDefault();var f=this,v=function(n){return (f[n]&&f[n].value||'').trim()};var b='Name: '+v('name')+'\nEmail: '+v('email')+'\nOrganization: '+v('org')+'\nEvent date: '+v('date')+'\nType of booking: '+v('format')+'\n\n'+v('message');location.href='mailto:delanecollab@gmail.com?subject='+encodeURIComponent('Booking request'+(v('org')?' from '+v('org'):''))+'&body='+encodeURIComponent(b);f.querySelector('.sent').style.display='block'">
     <label>Your name<input name="name" placeholder="Monique Carter" required></label>
     <label>Email<input name="email" type="email" placeholder="monique@gulfcoasthigh.org" required></label>
-    <label>Organisation<input name="org" placeholder="Gulf Coast High School"></label>
+    <label>Organization<input name="org" placeholder="Gulf Coast High School"></label>
     <label>Event date<input name="date" placeholder="14 March 2027"></label>
     <label class="full">Type of booking<select name="format"><option>School visit</option><option>Speaking engagement</option><option>Poetry performance</option><option>Literary event</option><option>Podcast interview</option><option>Virtual event</option></select></label>
     <label class="full">Tell Delane about your event<textarea name="message" placeholder="Mental Health Awareness Week assembly for about 300 students in grades 9 to 12. We'd love a spoken-word set and a short Q&amp;A."></textarea></label>
@@ -369,6 +400,8 @@ form .btn{justify-self:start;white-space:nowrap;font-size:14px;letter-spacing:.0
   <div class="ft">
    <nav aria-label="Footer"><a href="#about">About</a><a href="#talks">Talks</a><a href="#formats">Formats</a><a href="#books">Books</a><a href="#contact">Contact</a></nav>
    <div class="soc">
+    <a href="https://www.instagram.com/delanewrites/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+    <a href="https://www.tiktok.com/@delanewrites" target="_blank" rel="noopener" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 11-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.4 6.4 0 106.4 6.4V8.7a8.2 8.2 0 004.4 1.3V6.6a4.8 4.8 0 01-4.4-4.6z"/></svg></a>
     <a href="https://www.linkedin.com/in/erica-williams-4b749839a/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zm7 0h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9V21h-4z"/></svg></a>
     <a href="mailto:delanecollab@gmail.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg></a>
    </div>
@@ -382,6 +415,7 @@ form .btn{justify-self:start;white-space:nowrap;font-size:14px;letter-spacing:.0
 (function(){
  var W=['Mental health','Faith','Identity','Healing','Self-worth','Spoken word','School visits','Creative expression'];
  var h=W.map(function(w){return '<span>'+w+'</span><i>✦</i>'}).join('');document.getElementById('mq').innerHTML=h+h+h+h;
+ var pv=document.getElementById('pv'),pb=document.getElementById('pb');pb.addEventListener('click',function(){pb.style.display='none';pv.controls=true;pv.play()});
  var c=document.getElementById('copy');c.addEventListener('click',function(){var t=document.getElementById('bio').innerText;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){c.lastChild.textContent='Bio copied'},function(){c.lastChild.textContent='Select and copy'});setTimeout(function(){c.lastChild.textContent='Copy bio'},2200)});
  document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mnav').classList.remove('open')})});
  var els=document.querySelectorAll('.rv');

@@ -689,7 +689,7 @@ export const SEEDS = [
     ],
     events: [],
     quotes: [],
-    links: { website: 'https://delane.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/erica-williams-4b749839a/' },
+    links: { website: 'https://delane.speakerfolio.com/', linkedin: 'https://www.linkedin.com/in/erica-williams-4b749839a/', instagram: 'https://www.instagram.com/delanewrites/' },
     bookingEmail: 'delanecollab@gmail.com',
     published: true, featured: false, consent: true, consentNote: 'Requested a free listing and website on speakerfolio.com (SF-9626, Free plan, Headliner template), 28 Nov 2026'
   },
@@ -734,6 +734,7 @@ export const SEEDS = [
 
 // One-time changes to speakers already in storage (applied once, then remembered).
 export const PATCHES = [
+  { id: 'delane-instagram-2026-11-28', slug: 'delane', links: { instagram: 'https://www.instagram.com/delanewrites/' } },
   { id: 'pete-talks-2026-11-21', slug: 'pete-a-kennedy', set: { talks: [
     { title: 'Your Talent Is Not Just a Gift. It Is an Assignment.', format: 'Keynote', length: '',
       summary: 'Stop fixing weaknesses, start leading from strength, and let purpose turn talent into impact. Ideal for leadership conferences and corporate kickoffs.',
